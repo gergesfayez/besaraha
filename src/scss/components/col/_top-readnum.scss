@@ -1,0 +1,53 @@
+@use '../../critical/helpers/var'as *;
+
+
+.topread-num {
+    @media(min-width: 1200px) {
+        .row.col-2 {
+            grid-template-columns: 100% !important;
+        }
+    }
+
+    .cont {
+        padding-bottom: 0;
+    }
+
+    .item-li {
+
+
+        padding: 10px;
+
+
+        transition: all 0.35s;
+
+        .num {
+            float: right;
+            width: 25px;
+            font-size: 40px;
+            line-height: 100px;
+            font-weight: bold;
+            color: #dcdcdc;
+            transition: all 0.35s;
+
+        }
+
+        .img-cont {
+            width: 120px;
+            box-shadow: $box-shadow-sm;
+        }
+
+        .txt-cont {
+            width: calc(100% - 145px);
+        }
+
+        &:hover {
+            background: #f4f4f4;
+
+            .num {
+                color: $primary;
+                padding-left: 5px;
+            }
+        }
+    }
+
+}

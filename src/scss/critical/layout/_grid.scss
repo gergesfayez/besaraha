@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+
+    max-width: 100%;
+
+
+    @media(min-width: 1200px) {
+        //max-width: 1200px;
+    }
+
+
+    @media(min-width: 1300px) {
+        width: calc(100% - 360px);
+        max-width: 1400px;
+    }
+
+
+
+
+
+
+
+    .right-col {
+        width: 100%;
+
+        @media(min-width: 1300px) {
+            width: calc(100% - 320px);
+        }
+
+        @media(min-width: 1500px) {
+            width: calc(100% - 320px);
+        }
+
+        @media(min-width: 1500px) {
+            width: calc(100% - 400px);
+        }
+    }
+
+    .left-col {
+        width: 100%;
+
+        @media(min-width: 1300px) {
+            width: 320px;
+        }
+
+        @media(min-width: 1500px) {
+            width: 400px;
+        }
+    }
+
+
+
+}

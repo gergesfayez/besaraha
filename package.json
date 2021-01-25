@@ -1,0 +1,17 @@
+{
+  "name": "codekit-project",
+  "version": "1.0.0",
+  "description": "CodeKit created this starter package.json file. You should customize it appropriately.",
+  "scripts": {},
+  "author": "",
+  "license": "UNLICENSED",
+  "repository": {},
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21",
+    "bootstrap": "^5.0.0-beta1",
+    "lazysizes": "^5.2.2",
+    "pushbar.js": "^1.0.0",
+    "sticky-sidebar": "^3.3.1",
+    "swiper": "^6.4.5"
+  }
+}

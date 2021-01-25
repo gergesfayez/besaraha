@@ -1,0 +1,25 @@
+h1 {
+    font-size: large;
+    font-weight: bold;
+}
+
+ul,
+ol {
+    text-align: left;
+
+    & & {
+        padding: {
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    font-size: 33px;
+}

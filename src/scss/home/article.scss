@@ -1,0 +1,83 @@
+@use '../critical/helpers/var'as *;
+
+
+
+@use '../critical/plugins/splide';
+
+
+
+
+@use "../components/article/newArticle";
+
+
+@use "../components/article/gallery";
+
+//components
+
+@use '../components/col/poll';
+
+@use '../components/col/top-read';
+@use '../components/col/top-readnum';
+@use '../components/col/top-read2';
+
+
+
+.ratio {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+    }
+}
+
+.breadcrumb {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.rtl .breadcrumb-item+.breadcrumb-item,
+[dir=rtl] .breadcrumb-item+.breadcrumb-item {
+    padding-right: .5rem;
+    padding-left: 0;
+    color: #6c757d;
+    content: "/";
+}
+
+.rtl .breadcrumb-item+.breadcrumb-item::before,
+[dir=rtl] .breadcrumb-item+.breadcrumb-item::before {
+    padding-right: 0;
+    padding-left: .5rem;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem;
+    color: #6c757d;
+    content: "/";
+}
+
+
+//plugins

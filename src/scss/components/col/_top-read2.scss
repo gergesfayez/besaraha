@@ -1,0 +1,78 @@
+@use '../../critical/helpers/var'as *;
+
+
+.topread-ts {
+    @media(min-width: 1200px) {
+        .row.col-2 {
+            grid-template-columns: 100% !important;
+        }
+    }
+
+    .cont {
+        // padding: 0;
+
+        .col-md-6 {
+            &:last-child {
+                .item-li {
+
+                    margin-bottom: 0;
+
+                }
+
+            }
+        }
+
+
+    }
+
+    .item-li {
+
+        .img-cont {
+            &:after {
+                padding-top: 80px;
+            }
+        }
+
+        .txt-cont {
+            padding-left: 0;
+            height: 80px;
+            overflow: hidden;
+
+            .cat {
+                border-right: 2px solid $primary;
+                background: transparent;
+                color: #444;
+                line-height: 16px;
+                margin-bottom: 5px;
+                border-radius: 0 !important;
+                padding: 0 5px;
+            }
+
+            h3 {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+.album {
+
+
+    .col-xl-12 {
+        @media(min-width: 1200px)and (max-width: 1299px) {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+    }
+}

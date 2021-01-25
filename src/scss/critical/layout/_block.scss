@@ -1,0 +1,115 @@
+@use '../helpers/var'as *;
+
+
+.block {
+    float: right;
+    width: 100%;
+    margin-bottom: 20px;
+    // border: 1px solid #dcdcdc;
+
+
+    // background: #fff;
+
+    position: relative;
+    padding-top: 0;
+
+    box-shadow: $box-shadow-sm;
+
+
+    .title {
+        float: right;
+        width: 100%;
+        padding: 5px 10px;
+        background: #fff;
+
+        position: relative;
+        // border-bottom: 1px solid $third;
+        padding-right: 15px;
+        box-shadow: $box-shadow-sm;
+
+        &:after {
+            content: "";
+            width: calc(100% - 60px);
+            position: absolute;
+            right: 30px;
+            top: 23px;
+            height: 2px;
+            background: $primary;
+
+
+        }
+
+
+
+        &:before {
+            content: "";
+            width: 16px;
+            height: 36px;
+
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            background: url("../images/icn-pn.svg") no-repeat center;
+            background-size: contain !important;
+            transition: all 1.35s;
+            z-index: 33;
+
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            background: #fff;
+            display: inline-block;
+            z-index: 23;
+            position: relative;
+            padding: 0 20px;
+
+        }
+
+        .icon {
+            position: absolute;
+            left: 10px;
+            top: 14px;
+            fill: $primary;
+
+        }
+    }
+
+    .cont {
+        float: right;
+        width: 100%;
+        padding: 5px;
+        padding-top: 10px;
+
+
+
+
+    }
+
+    .foot {
+        float: right;
+        width: 100%;
+        // border-top: 1px solid #dcdcdc;
+        text-align: center;
+        padding: 5px;
+        background-color: #fff;
+
+        a {
+            color: $primary;
+            font-weight: bold;
+            line-height: 24px;
+            border: 1px solid $primary;
+            padding: 3px 35px;
+            display: inline-block;
+            border-radius: 30px;
+            font-size: 14px;
+
+
+            &:hover {
+                background: $primary;
+                color: #fff;
+            }
+        }
+    }
+}

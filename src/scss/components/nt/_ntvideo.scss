@@ -1,0 +1,22 @@
+@use '../../critical/helpers/var'as *;
+
+.ntvideo {
+
+    background: #1C2527;
+
+
+    .title {
+        h2 {
+            color: #fff;
+        }
+    }
+
+
+    .item-card {
+        .txt-cont {
+            h3 {
+                color: #fff;
+            }
+        }
+    }
+}

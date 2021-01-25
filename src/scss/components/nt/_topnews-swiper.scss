@@ -1,0 +1,59 @@
+@use '../../critical/helpers/var'as *;
+
+.topnews {
+    //background: #414141;
+
+
+
+
+    .cont {
+        .item-card {
+
+            //background: transparent;
+
+            .txt-cont {
+
+                h3 {
+                    //  color: #fff;
+                }
+            }
+
+        }
+
+
+        .swiper-pagination {
+            text-align: center;
+            padding: 10px;
+            float: right;
+            position: relative;
+            width: 100%;
+
+
+
+
+
+
+            .swiper-pagination-bullet {
+
+                width: 10px;
+                height: 10px;
+
+                border-radius: 50%;
+                background: #999;
+                opacity: 1;
+
+
+
+                &:focus {
+                    outline: 0;
+                }
+
+                &.swiper-pagination-bullet-active {
+                    background: $primary;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}

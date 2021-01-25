@@ -1,0 +1,40 @@
+@use '../helpers/var'as *;
+
+
+.item-article {
+    margin-bottom: 10px;
+    float: right;
+    width: 100%;
+    border: 2px solid $primary;
+    background: #fff;
+    padding: 10px;
+
+    .img-cont {
+
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+
+
+        &:after {
+            padding-top: 100%;
+        }
+
+
+
+    }
+
+    .txt-cont {
+        padding-top: 0;
+        padding-bottom: 0;
+
+        width: calc(100% - 90px);
+
+
+
+
+    }
+
+
+
+}

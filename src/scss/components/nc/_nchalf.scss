@@ -1,0 +1,42 @@
+.nchalf {
+    .cont {
+        // padding-bottom: 0;
+    }
+
+    .item-li {
+
+
+
+
+
+
+
+
+        .img-cont {
+
+            @media(min-width: 1500px) {
+
+
+                width: 200px;
+
+
+                &:after {
+                    padding-top: 56.25%;
+                }
+            }
+
+        }
+
+        .txt-cont {
+
+            @media(min-width: 1500px) {
+                width: calc(100% - 200px);
+            }
+
+        }
+
+        &:hover {
+            background: #f4f4f4;
+        }
+    }
+}

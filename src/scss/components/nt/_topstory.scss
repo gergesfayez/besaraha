@@ -1,0 +1,113 @@
+@use '../../critical/helpers/var'as *;
+
+
+
+.top-story-row {
+
+    .right-col,
+    .left-col {
+        @media(max-width: 1335px) {
+            width: 100% !important;
+        }
+    }
+
+    .left-col {
+
+        .col-md-6 {
+            @media(max-width: 1335px) {
+                width: 50%;
+                text-align: center;
+            }
+
+        }
+
+        .adfull {
+            display: inline-block;
+            float: none;
+            padding-top: 0;
+            margin-bottom: 10px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+
+
+    }
+}
+
+
+.topstory {
+
+    float: right;
+    width: 100%;
+    margin-bottom: 20px;
+
+    #primary-slider {
+
+
+
+        .item-card {
+            margin-bottom: 0;
+
+            @media(min-width:768px) {
+
+
+                position: relative;
+
+
+                .txt-cont {
+                    position: absolute;
+                    bottom: 10px;
+                    right: 0;
+                    z-index: 1;
+
+                    h3 {
+                        color: #fff;
+                        font-size: 1.8rem;
+                        line-height: 34px;
+                        height: auto;
+                        max-height: 140px;
+                    }
+
+                    @media(min-width:1200px) {
+                        padding: 20px 30px;
+                        width: 70%;
+
+                        h3 {
+                            line-height: 44px;
+                        }
+                    }
+
+                }
+
+                .img-cont {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        bottom: 0;
+                        height: 70%;
+                        z-index: 1;
+                        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+                        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+                    }
+
+                    &:after {
+                        @media(min-width: 1336px) {
+                            padding-top: 520px;
+                        }
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+
+
+}

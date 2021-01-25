@@ -1,0 +1,130 @@
+.nclist {
+
+    .item-li {
+
+        padding: 10px 0;
+        margin-bottom: 0;
+        border-bottom: 1px solid #dcdcdc;
+    }
+
+    .item-li.lg {
+
+
+        .img-cont {
+            @media(min-width: 768px) {
+                width: 150px;
+
+                &:after {
+                    padding-top: 56.25%;
+                }
+            }
+
+            @media(min-width:1300px) {
+                width: 180px;
+
+                &:after {
+                    padding-top: 56.25%;
+                }
+            }
+
+            @media(min-width: 1500px) {
+                width: 280px;
+
+                &:after {
+                    padding-top: 56.25%;
+                }
+            }
+
+        }
+
+        .txt-cont {
+
+
+            h3 {
+                line-height: 25px;
+                height: auto;
+                max-height: 75px;
+            }
+
+            p {
+                display: none;
+                line-height: 20px;
+                height: auto;
+                max-height: 60px;
+                overflow: hidden;
+                color: #393939;
+            }
+
+
+            @media(min-width: 768px) {
+                width: calc(100% - 150px);
+
+                p {
+                    display: none;
+
+                }
+
+
+            }
+
+            @media(min-width:1300px) {
+                width: calc(100% - 180px);
+
+                p {
+                    display: none;
+
+                }
+
+
+            }
+
+            @media(min-width: 1500px) {
+                width: calc(100% - 280px);
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                p {
+                    display: block;
+
+                }
+
+
+            }
+
+        }
+    }
+
+
+
+    @media(max-width: 767px) {
+
+
+        .col-sm-12 {
+            &:first-child {
+
+                .item-li {
+                    .img-cont {
+                        width: 100%;
+
+                        &:after {
+                            padding-top: 56.25%;
+
+                        }
+                    }
+
+                    .txt-cont {
+                        width: 100%;
+                        padding: 10px 0;
+                    }
+                }
+
+            }
+
+
+        }
+
+
+    }
+}

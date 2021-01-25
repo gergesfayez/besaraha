@@ -1,0 +1,68 @@
+.paper {
+    background: #414141;
+
+
+    .title {
+        h2 {
+            color: #fff;
+        }
+    }
+
+    .cont {
+        text-align: center;
+
+        .item-paper {
+            width: 220px;
+            display: inline-block;
+            position: relative;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+
+            background: #fff;
+            z-index: 3;
+            margin-bottom: 20px;
+
+            &::before {
+                content: "";
+                background: #fff;
+                width: 90%;
+                left: 5%;
+                height: 6px;
+                bottom: -6px;
+                z-index: 1;
+                position: absolute;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            }
+
+            &::after {
+                content: "";
+                background: #fff;
+                width: 80%;
+                left: 10%;
+                height: 6px;
+                bottom: -12px;
+                z-index: 0;
+                position: absolute;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            }
+
+            .img-cont {
+                border-radius: 0;
+
+                &:after {
+                    padding-top: 140%;
+                }
+            }
+        }
+
+    }
+
+    .foot {
+        .more {
+            color: #fff;
+        }
+    }
+
+
+
+
+}

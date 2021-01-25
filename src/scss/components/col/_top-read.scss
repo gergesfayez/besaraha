@@ -1,0 +1,14 @@
+.topread-col {
+    @media(min-width: 1200px) {
+        .row.col-2 {
+            grid-template-columns: 100% !important;
+        }
+    }
+
+    .item-li {
+        .img-cont {
+            float: left;
+        }
+    }
+
+}

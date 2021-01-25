@@ -1,0 +1,62 @@
+.ncwide {
+
+
+    .cont>.row> {
+
+        div:nth-child(2) {
+            @media(min-width:992px) {
+
+                order: -1;
+
+            }
+        }
+
+
+
+
+
+
+
+    }
+
+    .item-li {
+
+
+        .img-cont {
+            &::after {
+                padding-top: 60%;
+
+                @media(min-width: 1200px) and (max-width: 1499px) {
+                    padding-top: 85%;
+                }
+
+            }
+        }
+
+
+    }
+
+    .item-bg {
+
+
+
+        .img-cont {
+            &::after {
+                @media(min-width: 992px) {
+                    padding-top: 90%;
+
+                }
+
+                @media(min-width: 1200px) {
+                    padding-top: 86%;
+                }
+            }
+        }
+
+
+
+    }
+
+
+
+}
