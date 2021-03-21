@@ -91,22 +91,14 @@
                 width: 100%;
                 box-shadow: $box-shadow-sm;
                 margin-bottom: 20px;
-                .container {
-                    width: 100%;
-                    max-width: 1560px;
-                    @media(max-width: 768px) {
-                        padding: 0 3px;
-                        //overflow-x: hidden;
-                    }
-                }
                 .top {
                     width: 100%;
-                    background: #fff;
+                    border-top: 2px solid $primary;
+                    background: #454444;
                     float: right;
                     width: 100%;
-                    // padding     box-shadow: $box-shadow-sm;
-                    padding: 5px;
-                    background: #f4f4f4;
+                    box-shadow: $box-shadow-sm;
+                    color: #fff;
                     .social {
                         float: left;
                         width: auto;
@@ -196,14 +188,19 @@
                         padding: 10px 0;
                         display: block;
                     }
-                    .container {
-                        width: 100%;
-                        @media(min-width: 1500px) {
-                            max-width: 1560px;
-                        }
-                    }
                     .logo-area {
                         display: none;
+                        @media(min-width: 1200px) {
+                            display: block;
+                        }
+                        .logo {
+                            float: right;
+                            height: 90px;
+                            img {
+                                height: 100%;
+                                width: auto;
+                            }
+                        }
                         .admin {
                             margin-top: 30px;
                             margin-right: 20px;
@@ -222,19 +219,6 @@
                         @media(min-width: 1200px) {
                             width: calc(100% - 490px);
                         }
-                        .top {
-                            float: left;
-                            width: 100%;
-                            background: transparent;
-                            text-align: left;
-                            .mode {
-                                display: inline-block;
-                                float: none;
-                            }
-                            .social {
-                                float: left;
-                            }
-                        }
                     }
                     .adfull {
                         width: 100%;
@@ -249,55 +233,6 @@
                         float: left;
                         padding-top: 0;
                     }
-                    @media(min-width: 992px)and(max-width: 1199px) {
-                        .logo-area {
-                            display: block;
-                            float: right;
-                            width: calc(100% - 728px);
-                            .logo {
-                                float: right;
-                                width: 220px;
-                                margin-top: 35px;
-                            }
-                            .admin {
-                                margin-top: 0;
-                                margin-right: 0;
-                                width: 100%;
-                                .title {
-                                    width: auto;
-                                    float: right;
-                                    line-height: 25px;
-                                    margin-left: 10px;
-                                }
-                                .name {
-                                    font-size: 18px;
-                                    width: auto;
-                                    float: right;
-                                }
-                            }
-                        }
-                        .left-area {
-                            width: 728px;
-                        }
-                    }
-                    @media(min-width: 1200px) {
-                        .logo-area {
-                            float: right;
-                            display: block;
-                            .logo {
-                                float: right;
-                                width: 320px;
-                                margin-top: 25px;
-                                img {
-                                    width: 100%;
-                                    height: auto;
-                                }
-                            }
-                            .admin {
-                                margin-top: 46px;
-                            }
-                        }
-                    }
                 }
                 #navbar {
                     float: right;
@@ -307,11 +242,19 @@
                 .navbar {
                     float: right;
                     width: 100%;
-                    height: 52px;
-                    border: 1px solid $secondary;
-                    background: $graidient;
-                    border-top-left-radius: 10px;
-                    border-top-right-radius: 10px;
+                    height: 53px;
+                    border-top: 3px solid $primary;
+                    background: #fff;
+                    @media(min-width: 1200px) {
+                        background: rgb(67, 66, 66);
+                        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzQzNDI0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjE5JSIgc3RvcC1jb2xvcj0iIzQzNDI0MiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ1JSIgc3RvcC1jb2xvcj0iIzUxNGY0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU0JSIgc3RvcC1jb2xvcj0iIzUxNGY0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc3JSIgc3RvcC1jb2xvcj0iIzQ0NDM0MyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0MzQyNDIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                        background: -moz-linear-gradient(top, rgba(67, 66, 66, 1) 0%, rgba(67, 66, 66, 1) 19%, rgba(81, 79, 79, 1) 45%, rgba(81, 79, 79, 1) 54%, rgba(68, 67, 67, 1) 77%, rgba(67, 66, 66, 1) 100%);
+                        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(67, 66, 66, 1)), color-stop(19%, rgba(67, 66, 66, 1)), color-stop(45%, rgba(81, 79, 79, 1)), color-stop(54%, rgba(81, 79, 79, 1)), color-stop(77%, rgba(68, 67, 67, 1)), color-stop(100%, rgba(67, 66, 66, 1)));
+                        background: -webkit-linear-gradient(top, rgba(67, 66, 66, 1) 0%, rgba(67, 66, 66, 1) 19%, rgba(81, 79, 79, 1) 45%, rgba(81, 79, 79, 1) 54%, rgba(68, 67, 67, 1) 77%, rgba(67, 66, 66, 1) 100%);
+                        background: -o-linear-gradient(top, rgba(67, 66, 66, 1) 0%, rgba(67, 66, 66, 1) 19%, rgba(81, 79, 79, 1) 45%, rgba(81, 79, 79, 1) 54%, rgba(68, 67, 67, 1) 77%, rgba(67, 66, 66, 1) 100%);
+                        background: -ms-linear-gradient(top, rgba(67, 66, 66, 1) 0%, rgba(67, 66, 66, 1) 19%, rgba(81, 79, 79, 1) 45%, rgba(81, 79, 79, 1) 54%, rgba(68, 67, 67, 1) 77%, rgba(67, 66, 66, 1) 100%);
+                        background: linear-gradient(to bottom, rgba(67, 66, 66, 1) 0%, rgba(67, 66, 66, 1) 19%, rgba(81, 79, 79, 1) 45%, rgba(81, 79, 79, 1) 54%, rgba(68, 67, 67, 1) 77%, rgba(67, 66, 66, 1) 100%);
+                    }
                     padding: 0;
                     box-shadow: $box-shadow-sm;
                     //  margin-bottom: 20px;
@@ -320,17 +263,6 @@
                     align-items: right;
                     justify-content: space-between;
                     ///  box-shadow: $box-shadow-sm;
-                    .container {
-                        @media(max-width: 1199px) {
-                            padding: 0 3px;
-                        }
-                        @media(min-width:1200px) {
-                            width: 100% !important;
-                        }
-                        @media(min-width:1500px) {
-                            width: calc(100% - 360px) !important;
-                        }
-                    }
                     .nav-item-mobile {
                         float: right;
                         // border-top: 1px solid $primary;
@@ -345,10 +277,10 @@
                             height: 50px;
                             line-height: 33px;
                             &:first-child {
-                                border-left: 1px solid #dcdcdc;
+                                border-left: 1px solid $primary;
                             }
                             &:last-child {
-                                border-right: 1px solid #dcdcdc;
+                                border-right: 1px solid $primary;
                             }
                             img {
                                 height: 100%;
@@ -374,10 +306,10 @@
                                 }
                                 .admin .name {
                                     font-size: 12px;
-                                    color: #fff;
+                                    color: #000;
                                 }
                                 .admin .title {
-                                    color: #fff;
+                                    color: #000;
                                     font-size: 10px;
                                 }
                             }
@@ -385,10 +317,9 @@
                                 float: right;
                                 display: block;
                                 width: 50px;
-                                background: $secondary;
+                                background: $primary;
                                 color: #fff;
                                 fill: #fff;
-                                border-top-right-radius: 10px;
                                 .icon {
                                     fill: #fff;
                                 }
@@ -397,45 +328,22 @@
                                 display: block;
                                 float: left;
                                 width: 50px;
-                                background: $secondary;
+                                background: $primary;
                                 color: #fff;
                                 fill: #fff;
-                                border-top-left-radius: 10px;
                                 .icon {
                                     fill: #fff;
                                 }
                             }
                         }
                     }
-                    .scroll-wrapper {
-                        display: none;
-                        @media(min-width: 992px) {
-                            display: block;
-                        }
-                        white-space: nowrap;
-                        height: 50px;
-                        float: right;
-                        position: relative;
-                        width: calc(100% - 200px);
-                        overflow-x: auto;
-                        overflow-y: hidden;
-                        -webkit-overflow-scrolling: touch;
-                        -webkit-overflow-style: -ms-autohiding-scrollbar;
-                        -ms-overflow-style: none;
-                        /* IE and Edge */
-                        scrollbar-width: none;
-                        /* Firefox */
-                        &::-webkit-scrollbar {
-                            display: none;
-                        }
-                    }
                     .navbar-collapse {
                         height: 50px;
-                        // overflow: hidden;
+                        overflow: hidden;
                         width: 100%;
                         white-space: nowrap;
                         display: none;
-                        @media(min-width: 992px) {
+                        @media(min-width: 1200px) {
                             display: block;
                         }
                         .logo-area {
@@ -508,7 +416,7 @@
                                     display: block;
                                     line-height: 40px;
                                     color: #fff;
-                                    padding: 5px 17px;
+                                    padding: 5px 14px;
                                     font-weight: bold;
                                     text-decoration: none !important;
                                     position: relative;
@@ -544,11 +452,11 @@
                                 &:hover,
                                 &.active {
                                     .nav-link {
-                                        background: #1C212E;
-                                        fill: $secondary;
-                                        color: $secondary;
+                                        background: $primary;
+                                        fill: #fff;
+                                        color: #fff;
                                         .icon {
-                                            fill: $secondary;
+                                            fill: #fff;
                                         }
                                         &:after {
                                             opacity: 1;
@@ -618,11 +526,8 @@
                             float: right;
                             .btn.menu {
                                 fill: $secondary;
-                                border-top-left-radius: 10px;
                                 border-right: 1px solid $secondary;
                                 line-height: 38px;
-                                border-top-right-radius: 10px;
-                                border-top-left-radius: 0 !important;
                                 border-left: 1px solid $secondary;
                                 color: #fff;
                                 &:hover {
@@ -637,7 +542,6 @@
                             }
                             .btn.search {
                                 fill: $secondary;
-                                border-top-left-radius: 10px;
                                 border-right: 1px solid $secondary;
                                 line-height: 38px;
                                 &:hover {
@@ -692,10 +596,6 @@
                 z-index: 333;
                 width: 100%;
                 height: 50px;
-                .container {
-                    //  width: 100% !important;
-                    //   max-width: 100% !important;
-                }
                 .navbar {
                     // padding: 0 15px;
                     transition: all 0.34s;
