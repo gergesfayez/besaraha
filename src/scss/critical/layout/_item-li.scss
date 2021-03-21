@@ -1,5 +1,4 @@
 @use '../helpers/var'as *;
-
 .item-li {
     margin-bottom: 10px;
     float: right;
@@ -7,81 +6,52 @@
     margin-bottom: 10px;
     // box-shadow: $box-shadow-sm;
     background: #fff;
-
     .img-cont {
-
         width: 100px;
-
         &:after {
-            padding-top: 80%;
+            padding-top: 60%;
         }
-
         @media(min-width:768px) and (max-width: 1199px) {
             width: 120px;
         }
-
         @media(min-width:1500px) {
             width: 120px;
         }
-
-
     }
-
     .txt-cont {
         padding-top: 0;
         padding-bottom: 0;
-
-
         width: calc(100% - 100px);
-
-
-        @media(min-width:768px) and (max-width: 1199px) {
+        @media(min-width: 768px) and (max-width: 1199px) {
             width: calc(100% - 120px);
-
             h3 {
                 height: 90px;
             }
         }
-
         @media(min-width:1500px) {
             width: calc(100% - 120px);
-
             h3 {
                 height: 90px;
             }
         }
-
     }
-
-
-
-
-
-
 }
 
 .to-li-sm {
     @media(max-width: 767px) {
-
         padding: 5px 0;
         background: #fff;
         box-shadow: $box-shadow-sm;
-
-
         .img-cont {
             width: 100px;
-
             &:after {
                 padding-top: 80%;
             }
         }
-
         .txt-cont {
             padding-top: 0;
             padding-bottom: 0;
-
             width: calc(100% - 100px);
         }
-
     }
 }

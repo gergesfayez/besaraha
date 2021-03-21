@@ -132,6 +132,7 @@
                                     font-weight: bold;
                                     padding-right: 40px;
                                     display: inline-block;
+                                    position: relative;
                                     &:before {
                                         content: "";
                                         width: 32px;
@@ -140,7 +141,7 @@
                                         background-size: contain;
                                         background: url("../images/favicon/favicon-32x32.png") no-repeat center;
                                         border-radius: 50%;
-                                        left: 0;
+                                        right: 0;
                                         top: 0;
                                         @media(max-width: 767px) {
                                             top: 0;

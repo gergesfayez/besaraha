@@ -1380,7 +1380,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nc\/articles.html",
       "oF" : 0
     },
@@ -1428,7 +1428,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nc\/nc4.html",
       "oF" : 0
     },
@@ -1444,7 +1444,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nc\/nc62.html",
       "oF" : 0
     },
@@ -1484,7 +1484,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nc\/ncsport.html",
       "oF" : 0
     },
@@ -1492,7 +1492,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nc\/nctopread.html",
       "oF" : 0
     },
@@ -1524,7 +1524,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/np\/video.html",
       "oF" : 0
     },
@@ -1532,7 +1532,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nt\/files.html",
       "oF" : 0
     },
@@ -1540,7 +1540,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nt\/topnews-swiper.html",
       "oF" : 0
     },
