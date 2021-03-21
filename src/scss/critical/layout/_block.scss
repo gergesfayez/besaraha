@@ -1,142 +1,62 @@
 @use '../helpers/var'as *;
-
-
 .block {
     float: right;
     width: 100%;
     margin-bottom: 20px;
-    padding: 5px;
-    //border: 1px solid #dcdcdc;
-
-
-    // background: #fff;
-
-    position: relative;
-    padding-top: 0;
-    border-bottom: 1px solid $third;
-    padding-bottom: 0;
-
-    //   box-shadow: $box-shadow-sm;
-
-
     .title {
         float: right;
         width: 100%;
-        padding: 8px 10px;
-        //  background: #fff;
-
-        position: relative;
-        // border-bottom: 1px solid #dcdcdc;
-        padding-right: 25px;
-        // box-shadow: $box-shadow-sm;
-
-        &:after {
-            content: "";
-
-            position: absolute;
-            right: 0;
+        line-height: 30px;
+        border-bottom: 3px solid $primary;
+        a {
+            display: block;
             width: 100%;
-
-            top: 48%;
-            height: 2px;
-            background: $graidient;
-
-
-        }
-
-
-        /*
-        &:before {
-            content: "";
-            width: 26px;
-            height: 26px;
-
-            position: absolute;
-            bottom: 9px;
-            right: 10px;
-            background: url("../images/favicon.png") no-repeat center;
-            background-size: contain !important;
-            transition: all 1.35s;
-            z-index: 33;
-
-        }*/
-
-        h2 {
-            font-size: 1.2rem;
-            line-height: 1.8rem;
-            // background: #fff;
-            display: inline-block;
-            z-index: 23;
-            position: relative;
-            padding: 0 20px;
-            color: #fff;
-            font-weight: bolder;
-            background: $secondary;
-            border-radius: 30px;
-            line-height: 32px;
-            transition: all 0.35s;
-
-            &:hover {
-                background: darkred;
+            float: right;
+            h2 {
+                font-size: 24px;
+                margin: 0;
+                line-height: 40px;
+                padding: 0;
+                display: inline-block;
+                color: #000;
             }
-
-        }
-
-        .icon {
-            position: absolute;
-            left: 10px;
-            top: 13px;
-            fill: $secondary;
-            width: 11px;
-            transition: all 0.35s;
-
-            &:hover {
-                transform: scale(1, 1);
+            svg.icon {
+                float: left;
+                width: 26px !important;
+                height: 26px !important;
+                margin-top: 10px;
             }
-
+            &:hover {
+                color: $primary;
+                fill: $primary;
+            }
         }
     }
-
     .cont {
         float: right;
         width: 100%;
-        padding: 5px;
-        padding-top: 10px;
-
-
-
-
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        padding: 10px;
     }
-
     .foot {
         float: right;
         width: 100%;
-
-        text-align: center;
-        padding: 5px;
-        // background-color: #fff;
-        padding-bottom: 0;
-
-
         a {
-            color: $primary;
-            font-weight: bold;
-            line-height: 24px;
-            border: 1px solid $third;
-            padding: 0px 45px;
-            display: inline-block;
-
-            font-size: 14px;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
-            border-bottom: 0;
-
-
-
+            display: block;
+            float: right;
+            width: 100%;
+            text-align: left;
+            color: #fff;
+            fill: #fff;
+            background: #3b3b3b;
+            line-height: 32px;
+            padding: 0 15px;
+            .icon {
+                fill: #fff;
+            }
             &:hover {
-                background: $third;
-
-                color: #fff;
+                background: #5d5d5d;
             }
         }
     }

@@ -202,7 +202,6 @@
                             }
                         }
                         .admin {
-                            margin-top: 30px;
                             margin-right: 20px;
                             text-align: right;
                             //color: #fff;
@@ -553,36 +552,6 @@
                 }
             }
             
-            .admin {
-                float: right;
-                width: 140px;
-                text-align: center;
-                //margin-top: 20px;
-                color: #707070;
-                .item {
-                    float: right;
-                    width: 100%;
-                    line-height: 14px;
-                    font-size: 13px;
-                    margin-bottom: 10px;
-                    font-weight: lighter;
-                    .title {
-                        max-width: 111px;
-                        display: inline-block;
-                        font-weight: bold;
-                    }
-                    .name {
-                        font-size: 20px;
-                        font-weight: 700;
-                        color: #000;
-                        margin-top: 5px;
-                        &.lg {
-                            font-size: 24px;
-                        }
-                    }
-                }
-            }
-            
             .breaking-news {
                 position: fixed;
                 bottom: 0;
@@ -604,39 +573,6 @@
                             width: calc(100% - 450px);
                         }
                     }
-                    /*
-        .nav-item-mobile {
-
-            .logo {
-                .white {
-                    display: block;
-                }
-
-                .red {
-                    display: none;
-                }
-            }
-
-            .icon {
-                fill: #fff;
-            }
-
-            .admin {
-                color: #fff;
-
-                .name {
-                    color: #fff;
-                }
-            }
-
-
-
-
-        }
-
-
-
-*/
                     .social {
                         a {
                             background: #fff !important;
@@ -677,6 +613,13 @@
                 .logo-area {
                     display: block;
                 }
+            }
+            
+            .admin {
+                float: right;
+                width: 150px;
+                text-align: center;
+                margin-top: 20px;
             }
             
             .admin.mobile {
