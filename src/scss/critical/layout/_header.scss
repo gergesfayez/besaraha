@@ -103,6 +103,53 @@
                         float: left;
                         width: auto;
                     }
+                    .marq {
+                        display: none;
+                        @media(min-width: 1200px) {
+                            display: block;
+                            float: right;
+                            width: 80%;
+                            .name {
+                                background: #d10b0c;
+                                color: #fff;
+                                float: right;
+                                text-align: center;
+                                font: 700 26px arial;
+                                width: 102px;
+                                line-height: 40px;
+                                fill: #fff;
+                            }
+                            .cont {
+                                float: right;
+                                width: calc(100% - 102px);
+                                overflow: hidden;
+                                height: 40px;
+                                a {
+                                    color: #fff;
+                                    white-space: nowrap;
+                                    line-height: 40px;
+                                    direction: rtl;
+                                    font-weight: bold;
+                                    padding-right: 40px;
+                                    display: inline-block;
+                                    &:before {
+                                        content: "";
+                                        width: 32px;
+                                        height: 32px;
+                                        position: absolute;
+                                        background-size: contain;
+                                        background: url("../images/favicon/favicon-32x32.png") no-repeat center;
+                                        border-radius: 50%;
+                                        left: 0;
+                                        top: 0;
+                                        @media(max-width: 767px) {
+                                            top: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .btn {
                         background: $primary;
                         color: #fff;
