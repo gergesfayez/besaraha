@@ -2,17 +2,13 @@
     width: 100%;
     margin-bottom: 20px;
     justify-content: center;
-
     .cont {
-
         display: inline-block;
         float: none;
-
         img {
             max-width: 100%;
             height: auto;
         }
-
     }
 }
 
@@ -25,35 +21,26 @@
     margin-bottom: 20px;
     text-align: center;
     background: #f4f4f4;
-    padding-top: 24px;
+    //padding-top: 24px;
     position: relative;
-
-
     &.a728 {
-
         .cont {
             max-width: 728px;
             min-height: 90px
         }
-
         ;
     }
-
     &.a336 {
         .cont {
             max-width: 336px;
         }
-
     }
-
     &.a300 {
         .cont {
             max-width: 300px;
         }
-
     }
-
-    &:before {
+    /*&:before {
         content: 'Advertisement';
         position: absolute;
         width: 100%;
@@ -66,23 +53,17 @@
         font-size: 11px;
 
     }
-
-
+*/
     .cont {
         display: inline-block;
-
-
     }
-
 }
-
 
 .stickyL,
 .stickyR {
     position: fixed;
     top: 60px;
     width: 100%;
-
 }
 
 .stick {
@@ -90,11 +71,9 @@
     height: 600px;
     display: none;
     top: 0 !important;
-
-    @media(min-width: 1200px) {
+    @media(min-width: 1300px) {
         display: block;
     }
-
     .sponser {
         width: 160px;
         height: 600px;
@@ -105,7 +84,6 @@
 .stick-r {
     margin-right: -170px;
     float: right;
-
 }
 
 .stick-l {

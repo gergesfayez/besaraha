@@ -28,16 +28,19 @@
             font-weight: bold;
             color: #dcdcdc;
             transition: all 0.35s;
+            background: $graidient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
         }
 
         .img-cont {
-            width: 120px;
+            width: 100px;
             box-shadow: $box-shadow-sm;
         }
 
         .txt-cont {
-            width: calc(100% - 145px);
+            width: calc(100% - 125px);
         }
 
         &:hover {

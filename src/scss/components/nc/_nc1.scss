@@ -1,72 +1,68 @@
 .nc1 {
+    .cont {
+        padding: 0;
+        padding-left: 10px;
+    }
 
-    .item-bg {
+    .item-card {
+
+        margin-top: 20px;
 
 
         @media(min-width: 768px) {
             .img-cont {
                 &::after {
-                    padding-top: 274px;
+                    //     padding-top: 274px;
 
                 }
             }
         }
 
-        @media(min-width: 1200px) {
-            .img-cont {
-                &::after {
-                    padding-top: 274px;
+        .txt-cont {
 
+            h3 {
+                max-height: 70px;
+                height: auto;
+
+                @media(min-width: 768px) {
+                    font-size: 20px;
+                    line-height: 32px;
                 }
             }
-        }
 
-        @media(min-width: 1300px) {
-            .img-cont {
-                &::after {
-                    padding-top: 324px;
-
-                }
+            p {
+                line-height: 24px;
             }
-        }
 
-        @media(min-width: 1500px) {
-            .img-cont {
-                &::after {
-                    padding-top: 504px;
-
-                }
-            }
+            height: 140px;
+            overflow: hidden;
         }
     }
 
+    .col-xl-5 {
+        padding-top: 20px;
+        background: #f4f4f4;
+    }
 
-    .item-li.lg {
+
+    .item-li {
+        margin-bottom: 20px;
+        background: transparent;
+
         .img-cont {
-            @media(min-width: 768px) {
-                width: 150px;
+            &::after {
+                padding-top: 80px;
 
-                &:after {
-                    padding-top: 56.25%;
-                }
             }
 
-            @media(min-width:1300px) {
-                width: 180px;
 
-                &:after {
-                    padding-top: 56.25%;
-                }
+            @media(min-width: 1300px) {
+                width: 80px;
             }
 
-            @media(min-width: 1500px) {
-                width: 280px;
-
-                &:after {
-                    padding-top: 56.25%;
-                }
+            @media(min-width: 1400px) {
+                width: 120px;
             }
-
         }
 
         .txt-cont {
@@ -89,41 +85,29 @@
 
 
             @media(min-width: 768px) {
-                width: calc(100% - 150px);
+                width: calc(100% - 120px);
 
-                p {
-                    display: none;
 
-                }
 
 
             }
 
-            @media(min-width:1300px) {
-                width: calc(100% - 180px);
-
-                p {
-                    display: none;
-
-                }
-
-
-            }
-
-            @media(min-width: 1500px) {
-                width: calc(100% - 280px);
+            @media(min-width: 1300px) {
+                width: calc(100% - 80px);
 
                 h3 {
-                    font-size: 20px;
+                    font-size: 14px;
                 }
-
-                p {
-                    display: block;
-
-                }
-
-
             }
+
+            @media(min-width: 1400px) {
+                width: calc(100% - 120px);
+
+                h3 {
+                    font-size: 16px;
+                }
+            }
+
 
         }
     }

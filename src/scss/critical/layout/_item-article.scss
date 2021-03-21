@@ -1,20 +1,81 @@
 @use '../helpers/var'as *;
 
+.article-col {}
+
+.articles-wide {
+
+    .title,
+    .foot {
+        background: transparent !important;
+    }
+
+
+    background: transparent !important;
+
+}
+
+/*
+.item-article {
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    float: right;
+    width: 100%;
+    transition: all 0.35s;
+
+    &:hover {
+        background: #f5f5f5;
+    }
+
+    .img-cont {
+        width: 80px;
+        border-radius: 50%;
+
+
+
+        &:after {
+            padding-top: 100%;
+        }
+
+
+    }
+
+
+    .txt-cont {
+        width: calc(100% - 80px);
+        padding-top: 0;
+
+        .writer {
+            float: right;
+            width: 100%;
+            padding: 0
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+    }
+}
+*/
 
 .item-article {
     margin-bottom: 10px;
     float: right;
     width: 100%;
-    border: 2px solid $primary;
-    background: #fff;
+
+    background: transparent;
     padding: 10px;
 
     .img-cont {
 
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
         border-radius: 50%;
+        box-shadow: $box-shadow-sm;
+        margin-right: 10px;
 
+        transition: all 0.3s;
 
         &:after {
             padding-top: 100%;
@@ -24,17 +85,47 @@
 
     }
 
+    .writer {
+        float: right;
+        width: calc(100% - 80px);
+        line-height: 60px;
+        padding-right: 20px;
+        color: $secondary;
+
+        font-weight: bolder;
+        font-size: 15px;
+
+    }
+
     .txt-cont {
-        padding-top: 0;
+        padding-top: 20px;
+        margin-top: -15px;
         padding-bottom: 0;
 
-        width: calc(100% - 90px);
+        width: 100%;
+        background: #fff;
+        transition: all 0.3s ease;
 
 
 
 
     }
 
+    &:hover {
+        .txt-cont {
+            background: $primary;
+
+            h3 {
+                color: #fff;
+            }
+        }
+    }
+
+    &:hover {
+        .img-cont {
+            transform: scale(1.1);
+        }
+    }
 
 
 }
