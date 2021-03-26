@@ -13,14 +13,17 @@
         @media(min-width: 1300px) {
             width: calc(100% - 356px);
         }
+        @media(min-width: 1600px) {
+            width: calc(100% - 380px);
+        }
     }
     .left-col {
         width: 100%;
         @media(min-width: 1300px) {
             width: 356px;
         }
-        @media(min-width: 1500px) {
-            //  width: 400px;
+        @media(min-width: 1600px) {
+            width: 380px;
         }
     }
 }
