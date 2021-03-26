@@ -1,0 +1,78 @@
+.item-album {
+    position: relative;
+    float: right;
+    width: 100%;
+    border-bottom: 1px solid #dcdcdc;
+    .icon-cont {
+        background: rgba(7, 118, 181, .7);
+        color: #fff;
+        padding: 5px 10px;
+        position: absolute;
+        z-index: 5;
+        top: 30px;
+        font-size: 20px;
+        right: 5.5%;
+        border-radius: 3px;
+        z-index: 223;
+        .icon {
+            fill: #fff;
+        }
+    }
+    .pic-cont {
+        float: right;
+        width: 90%;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 66.25%;
+        }
+    }
+    .pic-cont .img-cont {
+        transition: all .3s ease-in;
+        margin: 20px 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        border: 10px solid #fff;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .71);
+        z-index: 111;
+        &:nth-child(3) {
+            transform: rotate(-10deg);
+            -webkit-transform: rotate(-10deg);
+            -moz-transform: rotate(-10deg);
+            -o-transform: rotate(-10deg);
+            -ms-transform: rotate(-10deg);
+            z-index: 2;
+        }
+        &:nth-child(2) {
+            transform: rotate(10deg);
+            -webkit-transform: rotate(10deg);
+            -moz-transform: rotate(10deg);
+            -o-transform: rotate(10deg);
+            -ms-transform: rotate(10deg);
+            z-index: 1;
+        }
+    }
+    &:hover {
+        .pic-cont .img-cont {
+            &:nth-child(2) {
+                transform: rotate(-10deg);
+                -webkit-transform: rotate(-10deg);
+                -moz-transform: rotate(-10deg);
+                -o-transform: rotate(-10deg);
+                -ms-transform: rotate(-10deg);
+            }
+            &:nth-child(3) {
+                transform: rotate(10deg);
+                -webkit-transform: rotate(10deg);
+                -moz-transform: rotate(10deg);
+                -o-transform: rotate(10deg);
+                -ms-transform: rotate(10deg);
+            }
+        }
+    }
+}

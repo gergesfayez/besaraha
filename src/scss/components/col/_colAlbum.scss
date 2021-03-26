@@ -1,0 +1,17 @@
+@use '../../critical/helpers/var'as *;
+.block.album-col {
+    float: right;
+    width: 100%;
+    .title {
+        h2 {
+            background: $primary;
+            color: #fff;
+            padding: 0 10px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+    }
+    .cont {
+        border: 0;
+    }
+}

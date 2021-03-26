@@ -7,7 +7,7 @@
       "uuidString" : "551DD6D0-D838-4158-A3F1-DEDC7C8B2E0F"
     }
   ],
-  "creatorBuild" : "34081",
+  "creatorBuild" : "34127",
   "files" : {
     "\/.autogit\/autogit.json" : {
       "ft" : 524288,
@@ -1232,6 +1232,38 @@
       "oAP" : "\/src\/html\/col\/articles.html",
       "oF" : 0
     },
+    "\/src\/html\/col\/colAlbum.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/col\/colAlbum.html",
+      "oF" : 0
+    },
+    "\/src\/html\/col\/colArticles.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/col\/colArticles.html",
+      "oF" : 0
+    },
+    "\/src\/html\/col\/colTopRead.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/col\/colTopRead.html",
+      "oF" : 0
+    },
+    "\/src\/html\/col\/colVideo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/col\/colVideo.html",
+      "oF" : 0
+    },
     "\/src\/html\/col\/paper.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1688,6 +1720,48 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/components\/col\/_aricles.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/col\/_colAlbum.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/col\/_colAlbum.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/col\/_colTopRead.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/col\/_colTopRead.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/col\/_colVideo.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/col\/_colVideo.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -2190,6 +2264,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/critical\/layout\/_header.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/critical\/layout\/_item-album.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/critical\/layout\/_item-album.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -4474,6 +4562,9 @@
       "removeVariables" : 0,
       "safelistEntries" : [
 
+      ],
+      "skippedEntries" : [
+        "node_modules\/**"
       ]
     },
     "rollupContext" : "",
@@ -4508,6 +4599,7 @@
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
     "tsNoLib" : 0,
+    "tsNoPropertyAccessFromIndexSignature" : 0,
     "tsNoResolve" : 0,
     "tsNoStrictGenericChecks" : 0,
     "tsNoUncheckedIndexAccess" : 0,

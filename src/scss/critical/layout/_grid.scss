@@ -11,13 +11,13 @@
     .right-col {
         width: 100%;
         @media(min-width: 1300px) {
-            width: calc(100% - 346px);
+            width: calc(100% - 356px);
         }
     }
     .left-col {
         width: 100%;
         @media(min-width: 1300px) {
-            width: 346px;
+            width: 356px;
         }
         @media(min-width: 1500px) {
             //  width: 400px;

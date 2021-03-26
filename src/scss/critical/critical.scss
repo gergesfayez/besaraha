@@ -1,15 +1,10 @@
 @use 'helpers/var'as *;
-
 @use 'helpers/typography';
 @use 'helpers/images';
 @use 'helpers/reset';
 @use 'helpers/bootstrap-grid.rtl';
 @use "plugins/pushbar";
-
-
-
 //layout 
-
 @use 'layout/grid';
 @use 'layout/side-nav';
 @use 'layout/ads';
@@ -17,6 +12,7 @@
 @use 'layout/item-cards';
 @use 'layout/item-bg';
 @use 'layout/item-li';
+@use 'layout/item-album';
 @use 'layout/item-article';
 @use 'layout/header';
 @use 'layout/block';
