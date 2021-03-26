@@ -11,9 +11,12 @@
              border-bottom: 0;
          }
          .img-cont,
-         picture {
+         {
              border: 2px solid #fff;
              box-shadow: $box-shadow-sm;
+             &:after {
+                 padding-top: 56.25%;
+             }
          }
          @media(min-width: 768px) {
              width: 50%;
@@ -33,6 +36,9 @@
          .img-cont,
          picture {
              width: 100%;
+             &:after {
+                 padding-top: 56.25%;
+             }
          }
          .txt-cont {
              width: 100%;
