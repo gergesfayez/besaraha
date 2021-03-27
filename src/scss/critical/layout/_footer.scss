@@ -52,7 +52,7 @@ footer {
                 width: auto;
             }
             .logo {
-                height: 70px;
+                height: 100px;
                 display: block;
                 margin: 10px 0;
                 img {
@@ -92,11 +92,15 @@ footer {
             float: right;
             width: 122px;
             margin: 10px;
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: bold;
             line-height: 32px;
             white-space: nowrap;
             color: #fff;
             border-bottom: 1px solid #000;
+            &:hover {
+                color: $primary;
+            }
         }
     }
     .copy {
