@@ -6,10 +6,45 @@ footer {
     text-align: center;
     padding-top: 10px;
     content-visibility: auto;
+    .footer-top {
+        float: right;
+        width: 100%;
+        border-bottom: 1px solid #000;
+        text-align: right;
+        padding: 5px 0;
+        .cd-top {
+            color: #fff;
+            display: inline-block;
+            line-height: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+            .icn-cont {
+                display: inline-block;
+                background: #0d67a4;
+                background: linear-gradient(to top, #0d67a4 0%, #0f9afa 100%);
+                fill: #fff;
+                right: 15px;
+                height: 25px;
+                width: 25px;
+                line-height: 25px;
+                text-align: center;
+                border-radius: 50%;
+                font-size: 18px;
+                border: 1px solid #0776b5;
+                .icon {
+                    transform: rotate(90deg);
+                    width: 10px;
+                    height: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
     .top {
         float: right;
         width: 100%;
-        border-bottom: 1px solid #dcdcdc;
+        border-bottom: 1px solid #0000;
         .logo-area {
             @media(min-width: 768px) {
                 display: inline-block;
@@ -50,15 +85,18 @@ footer {
         }
     }
     .fnav {
-        text-align: center;
+        text-align: right;
         float: right;
         width: 100%;
         a {
-            //  width: 120px;
+            float: right;
+            width: 122px;
             margin: 10px;
-            display: inline-block;
+            font-size: 12px;
+            line-height: 32px;
             white-space: nowrap;
             color: #fff;
+            border-bottom: 1px solid #000;
         }
     }
     .copy {
