@@ -1,62 +1,45 @@
 @use '../helpers/var'as *;
-
-
 footer {
     float: right;
     width: 100%;
-    background: $primary;
+    background: url(../images/sitemap.gif) #fff;
     text-align: center;
     padding-top: 10px;
-
     content-visibility: auto;
-
     .top {
         float: right;
         width: 100%;
         border-bottom: 1px solid #dcdcdc;
-
         .logo-area {
-            @media(min-width:768px) {
+            @media(min-width: 768px) {
                 display: inline-block;
                 float: right;
                 width: auto;
-
-
             }
-
-
             .logo {
                 height: 70px;
                 display: block;
                 margin: 10px 0;
-
                 img {
                     height: 100%;
                     width: auto;
                 }
             }
         }
-
-
         .follow {
             display: inline-block;
-
             color: #fff;
             width: 100%;
-
             @media(min-width: 768px) {
                 float: left;
                 width: auto;
                 margin-top: 20px;
             }
-
-
             .social {
                 a {
                     background: #fff !important;
                     color: $primary !important;
                     fill: $primary !important;
-
                     &:hover {
                         background: #333 !important;
                         color: #ffff !important;
@@ -65,36 +48,19 @@ footer {
                 }
             }
         }
-
-
     }
-
-
-
     .fnav {
         text-align: center;
         float: right;
         width: 100%;
-
-
-
-
-
-
-
         a {
             //  width: 120px;
             margin: 10px;
             display: inline-block;
             white-space: nowrap;
-
             color: #fff;
-
         }
-
     }
-
-
     .copy {
         background: #000;
         color: #fff;
@@ -111,10 +77,5 @@ footer {
         align-items: center;
         align-content: center;
         justify-content: center;
-
     }
-
-
-
-
 }

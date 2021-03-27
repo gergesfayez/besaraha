@@ -32,6 +32,12 @@
             width: 20px;
             height: 100%;
         }
-        .item-bg {}
+        .item-card {
+            background: transparent;
+            margin-bottom: 0 !important;
+            h3 {
+                color: #fff;
+            }
+        }
     }
 }
