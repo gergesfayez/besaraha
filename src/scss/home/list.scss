@@ -6,6 +6,11 @@
 @use '../components/col/colAlbum';
 @use '../components/col/colVideo';
 //plugins    
+.featured-list {
+    float: right;
+    width: 100%;
+}
+
 .list-title {
     float: right;
     width: 100%;

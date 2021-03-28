@@ -1,5 +1,4 @@
 @use 'var'as *;
-
 a {
     text-decoration: none;
     -webkit-transition: all 0.3s ease 0s;
@@ -8,12 +7,10 @@ a {
     -ms-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     color: #000;
-
     &:hover {
         color: $secondary;
     }
 }
-
 
 .bg-gradient {
     background: rgb(38, 170, 210);
@@ -58,7 +55,6 @@ svg.icon {
     max-height: 100%;
     transition: all 0.35s;
 }
-
 
 svg {
     overflow: hidden;
@@ -110,6 +106,10 @@ body {
     margin: 0;
     padding: 0;
     background: #f4f4f4;
+    .container.main {
+        background: #fff;
+        box-shadow: 0 0 103px 0 rgb(0 0 0 / 35%);
+    }
 }
 
 button {
@@ -118,16 +118,13 @@ button {
     outline: 0;
     background: transparent;
     cursor: pointer;
-
     &:hover,
     &:focus {
         outline: 0;
     }
-
     &.btn-primary {
         background: $primary;
         color: #fff;
-
         &:hover {
             background: $secondary;
             color: #fff;

@@ -46,8 +46,10 @@
 
 
     <main>
-        <div class="container">
-
+        <div class="container main">
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
             <!--@import "list/featured.html"-->
 
             <div class="row">
@@ -118,7 +120,7 @@
     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded', function() {
             var tnswiper = new Swiper('.tn-swiper', {
-                slidesPerView: 1,
+                slidesPerView: 3,
                 spaceBetween: 10,
                 loop: true,
                 loopFillGroupWithBlank: true,
@@ -137,19 +139,19 @@
                 },
                 breakpoints: {
                     440: {
-                        slidesPerView: 1,
+                        slidesPerView: 3,
                         spaceBetween: 10,
                     },
                     640: {
-                        slidesPerView: 2,
+                        slidesPerView: 4,
                         spaceBetween: 10,
                     },
                     768: {
-                        slidesPerView: 3,
+                        slidesPerView: 6,
                         spaceBetween: 20,
                     },
                     1024: {
-                        slidesPerView: 4,
+                        slidesPerView: 8,
                         spaceBetween: 20,
                     },
                 }
