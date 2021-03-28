@@ -1352,6 +1352,22 @@
       "oAP" : "\/build\/list.html",
       "oF" : 0
     },
+    "\/src\/html\/list\/featured.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/list\/featured.html",
+      "oF" : 0
+    },
+    "\/src\/html\/list\/itemList.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/list\/itemList.html",
+      "oF" : 0
+    },
     "\/src\/html\/list\/list-album.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1428,7 +1444,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nc\/list.html",
       "oF" : 0
     },
@@ -1958,6 +1974,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/components\/nc\/_ncWide.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/nc\/_newsList.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/nc\/_newsList.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,

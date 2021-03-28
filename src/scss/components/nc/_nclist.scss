@@ -1,52 +1,47 @@
 .nclist {
-
     .item-li {
-
         padding: 10px 0;
         margin-bottom: 0;
         border-bottom: 1px solid #dcdcdc;
+        &:first-child {
+            @media (min-width: 992px) {
+                .img-cont {
+                    width: 60%;
+                }
+                .txt-cont {
+                    width: 40%;
+                }
+            }
+        }
     }
-
     .item-li.lg {
-
-
         .img-cont {
             @media(min-width: 768px) {
                 width: 150px;
-
                 &:after {
                     padding-top: 56.25%;
                 }
             }
-
             @media(min-width:1300px) {
                 width: 180px;
-
                 &:after {
                     padding-top: 56.25%;
                 }
             }
-
             @media(min-width: 1500px) {
                 width: 280px;
-
                 &:after {
                     padding-top: 56.25%;
                 }
             }
-
         }
-
         .txt-cont {
-
-
             h3 {
                 line-height: 25px;
                 height: auto;
                 max-height: none;
                 font-size: 16px;
             }
-
             p {
                 display: none;
                 line-height: 20px;
@@ -55,80 +50,47 @@
                 overflow: hidden;
                 color: #393939;
             }
-
-
             @media(min-width: 768px) {
                 width: calc(100% - 150px);
-
                 p {
                     display: none;
-
                 }
-
-
             }
-
             @media(min-width:1300px) {
                 width: calc(100% - 180px);
-
                 p {
                     display: none;
-
                 }
-
-
             }
-
             @media(min-width: 1500px) {
                 width: calc(100% - 280px);
-
                 height: 152px;
                 overflow: hidden;
-
                 h3 {
                     font-size: 20px;
                 }
-
                 p {
                     display: block;
-
                 }
-
-
             }
-
         }
     }
-
-
-
     @media(max-width: 767px) {
-
-
         .col-sm-12 {
             &:first-child {
-
                 .item-li {
                     .img-cont {
                         width: 100%;
-
                         &:after {
                             padding-top: 56.25%;
-
                         }
                     }
-
                     .txt-cont {
                         width: 100%;
                         padding: 10px 0;
                     }
                 }
-
             }
-
-
         }
-
-
     }
 }

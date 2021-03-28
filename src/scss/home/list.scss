@@ -1,18 +1,24 @@
 @use '../critical/helpers/var'as *;
-
 //components
-
-
 @use '../components/col/poll';
-@use '../components/col/top-read';
-
-@use '../components/nc/nclist';
-
-@use '../components/nt/topstory-swiper';
-
+@use '../components/nc/newsList';
+@use '../components/col/colTopRead';
+@use '../components/col/colAlbum';
+@use '../components/col/colVideo';
 //plugins    
-
-
+.list-title {
+    float: right;
+    width: 100%;
+    border-top: 4px solid $primary;
+    h1 {
+        float: right;
+        line-height: 58px;
+        padding: 0 15px;
+        border-bottom-left-radius: 20px;
+        background: #0776b5;
+        color: #fff;
+    }
+}
 
 .breadcrumb {
     display: -webkit-box;
@@ -46,12 +52,10 @@
     content: "/";
 }
 
-
 .nav-pagination {
     float: right;
     width: 100%;
     justify-content: center;
-
     .pagination {
         display: flex;
         padding-left: 0;
@@ -59,7 +63,6 @@
         list-style: none;
         flex-wrap: wrap;
     }
-
     .page-link {
         position: relative;
         display: block;
@@ -69,9 +72,7 @@
         border: 1px solid #dcdcdc;
         transition: all 0.35s ease;
         padding: .375rem .75rem;
-
         font-weight: bold;
-
         &:hover {
             z-index: 2;
             color: #fff;
@@ -79,32 +80,26 @@
             background-color: $primary;
             border-color: $primary;
         }
-
         &:focus {
             z-index: 3;
-
             color: #fff;
             text-decoration: none;
             background-color: $primary;
             border-color: $primary;
         }
     }
-
     .page-item {
         &:not(:first-child) .page-link {
             margin-right: 0;
         }
-
         &:last-child .page-link {
             border-top-left-radius: .25rem;
             border-bottom-left-radius: .25rem;
         }
-
         &:first-child .page-link {
             border-top-right-radius: .25rem;
             border-bottom-right-radius: .25rem;
         }
-
         &.active .page-link {
             z-index: 3;
             color: #fff;
@@ -112,16 +107,8 @@
             background-color: $primary;
             border-color: $primary;
         }
-
-
     }
-
-
-
-
-
 }
-
 
 .block.list {
     .foot {
