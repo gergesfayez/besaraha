@@ -110,7 +110,7 @@
                         @media(min-width: 1200px) {
                             display: block;
                             float: right;
-                            width: 80%;
+                            width: calc(100% - 260px);
                             .name {
                                 background: #d10b0c;
                                 color: #fff;
@@ -157,12 +157,15 @@
                         background: $primary;
                         color: #fff;
                         fill: #fff;
-                        margin: 0 10px;
-                        border-radius: 30px;
+                        margin: 0 5px !important;
                         font-weight: bold;
                         line-height: 20px;
                         margin-top: 3px;
                         padding: 5px 20px;
+                        img {
+                            height: 14px;
+                            margin-top: 5px;
+                        }
                         &:hover {
                             background: #393939;
                             color: #fff;
@@ -205,7 +208,8 @@
                         height: 36px;
                         background: $primary;
                         padding: 0;
-                        margin-right: -4px;
+                        margin-right: -4px !important;
+                        margin-left: 0 !important;
                         margin-top: 0;
                         border-radius: 0;
                         .icon {
@@ -221,7 +225,7 @@
                     color: #fff;
                     background-color: $primary;
                     font-weight: bold;
-                    padding: 6px 5px;
+                    padding: 6px 5px !important;
                 }
                 .search-form {
                     float: left;
@@ -514,9 +518,10 @@
                                     position: relative;
                                     white-space: nowrap;
                                     svg {
-                                        fill: $secondary;
+                                        fill: #fff;
                                         height: 20px;
                                         width: 30px;
+                                        display: inline-block !important;
                                     }
                                     /*
                         &:after {
