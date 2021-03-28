@@ -6,8 +6,9 @@
      border-bottom: 1px solid #dcdcdc;
      .txt-cont {
          h3 {
-             font-size: 22px;
+             font-size: 18px;
              text-align: center;
+             color: $primary;
              margin-top: 0;
              margin-bottom: 10px;
              float: right;
@@ -25,7 +26,7 @@
              fill: #fff;
              padding: 5px 10px;
              position: absolute;
-             z-index: 5;
+             z-index: 11;
              top: 8%;
              font-size: 20px;
              right: 5.5%;
@@ -39,7 +40,7 @@
          .img-cont {
              border: 10px solid #fff;
              box-shadow: 0 0 3px 0 rgb(0 0 0 / 71%);
-             z-index: 111;
+             z-index: 10;
              position: absolute;
              width: 90%;
              right: 5%;
