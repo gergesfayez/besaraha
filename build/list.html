@@ -43,7 +43,7 @@
 <body>
     <header>
         <div class="adfull">
-            <div class="cont"><img src="https://tpc.googlesyndication.com/simgad/12014845849296059879" alt="" /></div>
+            <div class="cont"><img src="https://tpc.googlesyndication.com/simgad/12014845849296059879" width="970" height="250" alt="" /></div>
         </div>
         <div class="top">
             <div class="container">
@@ -90,7 +90,7 @@
     
                 <div class="logo-area">
     
-                    <a href="/" class="logo" title="logo">
+                    <a href="index.html" class="logo" title="logo">
                         <img class="dark-logo" src="images/logo-d.png" alt="" loading="lazy">
                         <img class="light-logo" src="images/logo-w.png" alt="" loading="lazy">
                     </a>
@@ -123,7 +123,9 @@
                 <div class="left-area">
     
                     <div class="adfull">
-                        <div class="cont"></div>
+                        <div class="cont">
+                            <img src="https://tpc.googlesyndication.com/simgad/12014845849296059879" width="970" height="250" alt="" />
+                        </div>
                     </div>
                 </div>
     
@@ -275,8 +277,11 @@
                                 </a>
                             </li>
                             <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    كايرو لايت
+                                <a href="#" class="nav-link menu" data-pushbar-target="menu" title="menu" rel="noreferrer noopener">
+                                    <svg class="icon ">
+                                        <use xlink:href="images/icons.svg#list" />
+                                    </svg>
+                                    <span> القائمة</span>
                                 </a>
                             </li>
     
@@ -320,6 +325,28 @@
     
     
     </header>
+    
+    
+    <div class="admin mobile">
+        <div class="item">
+            <div class="title">
+                الإشراف العام
+            </div>
+            <div class="name">
+                إلهام أبو الفتح
+    
+            </div>
+    
+        </div>
+    
+        <div class="item">
+            <div class="title"> رئيس التحرير
+            </div>
+            <div class="name">أحمــد صبـري
+            </div>
+        </div>
+    </div>
+    
     <div id="search-box">
         <button type="button" class="close" onclick="closeSearch()">×</button>
         <form id="search-form" action="/search/term">
@@ -405,10 +432,10 @@
         
             <div class="nav-side-menu">
                 <div class="brand">
-                    <a href="/" class="logo" title="site nname"><img src="images/logo.png" alt="site name" loading="lazy"></a>
+                    <a href="/" class="logo" title="site nname"><img src="images/logo-w.png" alt="site name" loading="lazy"></a>
                     <button type="button" aria-label="close" class="close" data-pushbar-close>
                         <svg class="icon lg">
-                            <use xlink:href="images/icons.svg#next"></use>
+                            <use xlink:href="images/icons.svg#add"></use>
                         </svg>
                     </button>
                 </div>
@@ -561,8 +588,7 @@
         
         
                 <div class="social">
-                    <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"
-                        rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
+                    <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank" rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
                         <span class="sr-only"> facebook</span>
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#facebook"></use>
@@ -570,24 +596,20 @@
         
         
                     </a>
-                    <a class="tw" href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow"
-                        title="تابع    علي تويتر"> <span class="sr-only">twitter</span>
+                    <a class="tw" href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي تويتر"> <span class="sr-only">twitter</span>
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#twitter"></use>
                         </svg> </a>
-                    <a class="yt" href="https://www.youtube.com/c/" target="_blank" rel="noreferrer noopener nofollow"
-                        title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
+                    <a class="yt" href="https://www.youtube.com/c/" target="_blank" rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
         
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#youtube"></use>
                         </svg></a>
-                    <a class="ins" href="https://www.instagram.com//" target="_blank" rel="noreferrer noopener nofollow"
-                        title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
+                    <a class="ins" href="https://www.instagram.com//" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#instagram-sketched"></use>
                         </svg></a>
-                    <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow"
-                        title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
+                    <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow" title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#rss"></use>
                         </svg></a>
@@ -613,8 +635,7 @@
                                 <!--end of col-->
                                 <div class="col-12 ">
         
-                                    <input class="form-control form-control-lg   " id="search" name="search" type="search "
-                                        placeholder="البحث   ">
+                                    <input class="form-control form-control-lg   " id="search" name="search" type="search " placeholder="البحث   ">
                                 </div>
                                 <!--end of col-->
                                 <div class=" btm ">
@@ -622,8 +643,7 @@
                                             class="icon ">
                                             <use xlink:href="images/icons.svg#magnifying-glass" />
                                         </svg> بحث</button>
-                                    <button class="btn btn-lg btn-secondary " type="button " aria-label="close"
-                                        data-pushbar-close>إلغاء</button>
+                                    <button class="btn btn-lg btn-secondary " type="button " aria-label="close" data-pushbar-close>إلغاء</button>
                                 </div>
                                 <!--end of col-->
                             </div>
@@ -1838,7 +1858,7 @@
                                                                                 
                                                                                     </div>
                                                                                 </div>
-                    <div class="block">
+                    <div class="block article-col">
                                                                                                         <div class="title">
                                                                                                             <a href="list.html">
                                                                                                                 <h2>ساحة رأي</h2>
@@ -1856,7 +1876,7 @@
                                                                                                                         <img src="https://www.elbalad.news/upload/photo/writers/0/2/77x98o/262.jpg" alt="writerr name">
                                                                                                                     </picture>
                                                                                                                     <div class="txt-cont">
-                                                                                                                        <div class="name">د.جهاد عودة</div>
+                                                                                                                        <div class="writer">د.جهاد عودة</div>
                                                                                                                         <h3> الصراع من أجل التفوق التكنولوجي والفلبين</h3>
                                                                                                                     </div>
                                                                                                                 </a>
@@ -1871,7 +1891,7 @@
                                                                                                                         <img src="https://www.elbalad.news/upload/photo/writers/0/2/77x98o/262.jpg" alt="writerr name">
                                                                                                                     </picture>
                                                                                                                     <div class="txt-cont">
-                                                                                                                        <div class="name">د.جهاد عودة</div>
+                                                                                                                        <div class="writer">د.جهاد عودة</div>
                                                                                                                         <h3> الصراع من أجل التفوق التكنولوجي والفلبين</h3>
                                                                                                                     </div>
                                                                                                                 </a>
@@ -1886,7 +1906,7 @@
                                                                                                                         <img src="https://www.elbalad.news/upload/photo/writers/0/2/77x98o/262.jpg" alt="writerr name">
                                                                                                                     </picture>
                                                                                                                     <div class="txt-cont">
-                                                                                                                        <div class="name">د.جهاد عودة</div>
+                                                                                                                        <div class="writer">د.جهاد عودة</div>
                                                                                                                         <h3> الصراع من أجل التفوق التكنولوجي والفلبين</h3>
                                                                                                                     </div>
                                                                                                                 </a>
@@ -1901,7 +1921,7 @@
                                                                                                                         <img src="https://www.elbalad.news/upload/photo/writers/0/2/77x98o/262.jpg" alt="writerr name">
                                                                                                                     </picture>
                                                                                                                     <div class="txt-cont">
-                                                                                                                        <div class="name">د.جهاد عودة</div>
+                                                                                                                        <div class="writer">د.جهاد عودة</div>
                                                                                                                         <h3> الصراع من أجل التفوق التكنولوجي والفلبين</h3>
                                                                                                                     </div>
                                                                                                                 </a>

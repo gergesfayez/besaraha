@@ -18,6 +18,16 @@
             }
         }
     }
+    .swiper-container {
+        width: 100%;
+        opacity: 0;
+        overflow: hidden;
+        height: 160px;
+        &.swiper-container-initialized {
+            display: block;
+            opacity: 1;
+        }
+    }
 }
 
 .list-title {

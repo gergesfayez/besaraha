@@ -1,5 +1,9 @@
 @use '../helpers/var'as *;
-.article-col {}
+.article-col {
+    .cont {
+        padding: 0 !important;
+    }
+}
 
 .articles-wide {
     .title,
@@ -61,12 +65,14 @@
     width: 100%;
     background: transparent;
     padding: 10px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 0 !important;
     .img-cont {
         width: 80px;
         height: 80px;
         box-shadow: $box-shadow-sm;
-        margin-right: 10px;
         transition: all 0.3s;
+        float: right;
         &:after {
             padding-top: 100%;
         }
@@ -74,7 +80,7 @@
     .writer {
         float: right;
         width: calc(100% - 80px);
-        line-height: 60px;
+        //line-height: 60px;
         padding-right: 20px;
         color: #fff;
         font-weight: bolder;
@@ -83,21 +89,21 @@
         font-weight: bold;
     }
     .txt-cont {
+        padding: 0 10px;
         width: calc(100% - 80px);
-        background: #fff;
+        background: transparent;
         transition: all 0.3s ease;
     }
     &:hover {
-        .txt-cont {
+        background: #f2f2f2;
+        .writer {
             background: $primary;
-            h3 {
-                color: #fff;
-            }
         }
-    }
-    &:hover {
-        .img-cont {
-            transform: scale(1.1);
+        .txt-cont {
+            //    background: $primary;
+            h3 {
+                color: $primary;
+            }
         }
     }
 }
