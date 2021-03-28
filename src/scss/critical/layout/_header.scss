@@ -185,6 +185,42 @@
                         display: block;
                     }
                 }
+                .search {
+                    float: right;
+                    width: 180px;
+                    .fc {
+                        display: inline;
+                    }
+                    .form-control {
+                        width: calc(100% - 50px);
+                        display: inline-block;
+                        border: 1px solid $primary;
+                        &:focus {
+                            border: $primary;
+                            outline: 0;
+                        }
+                    }
+                    .btn {
+                        width: 36px;
+                        height: 36px;
+                        background: $primary;
+                        padding: 0;
+                        margin-right: -4px;
+                        .icon {
+                            fill: #fff;
+                        }
+                        &:hover {
+                            background-color: $secondary;
+                        }
+                    }
+                }
+                .en {
+                    direction: ltr;
+                    color: #fff;
+                    background-color: $primary;
+                    font-weight: bold;
+                    padding: 6px 5px;
+                }
                 .search-form {
                     float: left;
                     line-height: 32px;
