@@ -1,18 +1,14 @@
 @use '../helpers/var'as *;
-
 .article-col {}
 
 .articles-wide {
-
     .title,
     .foot {
         background: transparent !important;
     }
-
-
     background: transparent !important;
-
 }
+
 
 /*
 .item-article {
@@ -63,69 +59,45 @@
     margin-bottom: 10px;
     float: right;
     width: 100%;
-
     background: transparent;
     padding: 10px;
-
     .img-cont {
-
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
+        width: 80px;
+        height: 80px;
         box-shadow: $box-shadow-sm;
         margin-right: 10px;
-
         transition: all 0.3s;
-
         &:after {
             padding-top: 100%;
         }
-
-
-
     }
-
     .writer {
         float: right;
         width: calc(100% - 80px);
         line-height: 60px;
         padding-right: 20px;
-        color: $secondary;
-
+        color: #fff;
         font-weight: bolder;
         font-size: 15px;
-
+        background: #444;
+        font-weight: bold;
     }
-
     .txt-cont {
-        padding-top: 20px;
-        margin-top: -15px;
-        padding-bottom: 0;
-
-        width: 100%;
+        width: calc(100% - 80px);
         background: #fff;
         transition: all 0.3s ease;
-
-
-
-
     }
-
     &:hover {
         .txt-cont {
             background: $primary;
-
             h3 {
                 color: #fff;
             }
         }
     }
-
     &:hover {
         .img-cont {
             transform: scale(1.1);
         }
     }
-
-
 }

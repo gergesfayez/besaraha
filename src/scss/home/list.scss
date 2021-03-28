@@ -9,6 +9,15 @@
 .featured-list {
     float: right;
     width: 100%;
+    background: #f4f4f4;
+    .item-card {
+        .txt-cont {
+            padding: 4px;
+            h3 {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 .list-title {
@@ -17,11 +26,16 @@
     border-top: 4px solid $primary;
     h1 {
         float: right;
-        line-height: 58px;
-        padding: 0 15px;
-        border-bottom-left-radius: 20px;
+        padding: 0 25px;
+        border-bottom-left-radius: 30px;
         background: #0776b5;
         color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        @media(min-width: 1200px) {
+            font-size: 30px;
+            line-height: 50px;
+        }
     }
 }
 
