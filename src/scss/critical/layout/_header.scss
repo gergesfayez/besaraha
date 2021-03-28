@@ -287,7 +287,7 @@
                         }
                         .logo {
                             float: right;
-                            height: 90px;
+                            height: 110px;
                             img {
                                 height: 100%;
                                 width: auto;
@@ -296,12 +296,19 @@
                         .admin {
                             margin-right: 20px;
                             text-align: right;
+                            margin-top: 0;
                             //color: #fff;
                             .title {
-                                margin-bottom: 5px;
+                                font-size: 15px;
+                                font-weight: bold;
                             }
                             .name {
                                 // color: #fff;
+                                font-size: 18px;
+                                font-weight: bolder;
+                                &.lg {
+                                    font-size: 20px;
+                                }
                             }
                         }
                     }
@@ -314,6 +321,7 @@
                     .adfull {
                         width: 100%;
                         max-width: 100%;
+                        margin: 0;
                         &:before {
                             display: none;
                         }
