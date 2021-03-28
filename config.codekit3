@@ -286,6 +286,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/en.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/en.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/build\/images\/favicon\/android-icon-36x36.png" : {
       "ft" : 32768,
       "iS" : 2425,
