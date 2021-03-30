@@ -28,23 +28,24 @@
         }
 
         @media(min-width: 1500px) {
-            width: calc(100% - 320px);
+            width: calc(100% - 360px);
         }
 
         @media(min-width: 1500px) {
-            width: calc(100% - 400px);
+            //  width: calc(100% - 400px);
         }
     }
 
     .left-col {
         width: 100%;
+        content-visibility: auto;
 
         @media(min-width: 1300px) {
             width: 320px;
         }
 
         @media(min-width: 1500px) {
-            width: 400px;
+            width: 360px;
         }
     }
 

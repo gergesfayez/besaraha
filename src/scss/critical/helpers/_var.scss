@@ -1,7 +1,7 @@
-$primary: #9E0F11 !default;
+$secondary: #FA941A !default;
 
-$secondary:$primary !default;
-$third:#9E0F11 !default;
+$primary:#084F88 !default;
+$third:#334F65 !default;
 
 
 $border-color:#dcdcdc !default;
@@ -20,3 +20,6 @@ $viber: #8176d6 !default;
 $tel: #39a7da !default;
 
 $box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !default;
+
+
+$graidient : linear-gradient(to left, #084F88 0%, #042844 100%) !default;

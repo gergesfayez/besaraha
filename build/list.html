@@ -9,6 +9,13 @@
     <title> Site Name | Home </title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="preload" href="css/home.css" as="style">
+    <link rel="preload" href="css/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="js/lazysizes.min.js" as="script">
+    <link rel="preload" href="js/swiper-bundle-min.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" as="style">
+
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -34,275 +41,279 @@
     <link rel="stylesheet" href="css/critical.css" media="all">
     <link rel="stylesheet" href="css/list.css" media="all">
 
-
-
-
+    <script type="text/javascript" src="js/lazysizes.min.js" async></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
+    <script type="text/javascript" src="js/swiper-bundle-min.js" async></script>
 </head>
 
 <body>
-    <header>
-        <div class="top">
-            <div class="container">
-    
-                <div class="date">الاثنين - 28 ديسمبر 2020
-                </div>
-    
-                <a href="list.html" class=" btn btn-primary ">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24.883" height="21" viewBox="0 0 24.883 21">
-                        <path id="Icon_metro-feed" data-name="Icon metro-feed"
-                            d="M10.759,12.915a3.11,3.11,0,1,1,3.11,3.113,3.112,3.112,0,0,1-3.11-3.113Zm6.813-6.846a7.789,7.789,0,0,1,0,13.692,13.124,13.124,0,0,0,1.741-6.846A13.124,13.124,0,0,0,17.572,6.069ZM8.427,12.915a13.124,13.124,0,0,0,1.741,6.846,7.789,7.789,0,0,1,0-13.692A13.124,13.124,0,0,0,8.427,12.915Zm-4.666,0a16.718,16.718,0,0,0,3.418,10.5,12.461,12.461,0,0,1,0-21,16.718,16.718,0,0,0-3.418,10.5Zm16.8-10.5a12.461,12.461,0,0,1,0,21,16.718,16.718,0,0,0,3.418-10.5,16.718,16.718,0,0,0-3.418-10.5Z"
-                            transform="translate(-1.428 -2.415)" fill="#fff" />
-                    </svg>
-    
-    
-                    حالا
-    
-                </a>
-    
-    
-    
-                <div class="search-form">
-                    <form action="list.html">
-                        <input type="search" class="form-control" placeholder="بحث">
-                        <button type="submit" class="search-icn">
-                            <svg class="icon ">
-                                <use xlink:href="images/icons.svg#magnifying-glass" />
-                            </svg>
-                        </button>
-    
-                    </form>
-                </div>
-    
-    
-    
-            </div>
-        </div>
-    
-        <div class="md">
-            <div class="container">
-    
-    
-    
-                <div class="logo-area">
-    
-                    <a href="/" class="logo">
-                        <img src="images/logoh.svg" alt="" width="204" height="105"></a>
-    
-    
-                    <div class="admin">
-    
-                        <div class="item">
-                            <div class="title"> رئيس التحرير
-    
-                            </div>
-                            <div class="name ">
-                                محمود سعد الدين
-    
-                            </div>
-                        </div>
-                    </div>
-    
-    
-                </div>
-    
-    
-                <div class="adfull">
-                    <div class="cont"></div>
-                </div>
-    
-    
-    
-            </div>
-        </div>
+    <div class="header-container">
         <div id="navbar">
-            <nav class="navbar">
-                <div class="container">
     
     
-                    <div class="nav-item-mobile">
-    
-                        <a href="#" class="btn btn-primary menu" data-pushbar-target="menu" title="menu"
-                            rel="noreferrer noopener">
-                            <svg class="icon ">
-                                <use xlink:href="images/icons.svg#list" />
-                            </svg>
-                        </a>
-    
-                        <a href="/" class="logo" title=" name">
-                            <img class="red" src="images/logoh.svg" alt="name" loading="lazy">
+            <header>
+                <div class="logo-area">
+                    <a href="#" class="logo" title="name"><img src="images/logo-d.png" alt="name">
     
     
     
-                            <div class="admin">
-    
-                                <div class="item">
-                                    <div class="title"> رئيس التحرير
-    
-                                    </div>
-                                    <div class="name ">
-                                        محمود سعد الدين
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-    
-    
-                        <a href="#" class="btn btn-primary search" data-pushbar-target="search" title="search"
-                            rel="noreferrer noopener">
-                            <svg class="icon ">
-                                <use xlink:href="images/icons.svg#magnifying-glass" />
-                            </svg>
-                        </a>
-                    </div>
-    
-    
-                    <div class="navbar-collapse">
-    
-                        <div class="logo-area">
-                            <a href="#" class="logo"><img src="images/logof.svg" alt="name" loading="lazy"></a>
-    
-                            <div class="admin">
-    
-                                <div class="item">
-                                    <div class="title"> رئيس التحرير
-    
-                                    </div>
-                                    <div class="name ">
-                                        محمود سعد الدين
-    
-                                    </div>
-                                </div>
-                            </div>
-    
-                        </div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a href="index.html" class="nav-link" title=" الرئيسية">
-                                    <svg class="icon ">
-                                        <use xlink:href="images/icons.svg#home" />
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    قسم
-                                </a>
-                            </li>
-    
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/List/3/المدن-الحديثة" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">المدن الجديدة </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                    <a class="dropdown-item" href="/List/13/التجمع-الخامس">التجمع الخامس</a>
-                                    <a class="dropdown-item" href="/List/14/العبور-الجديدة">العبور الجديدة</a>
-                                    <a class="dropdown-item" href="/List/15/السويس-الجديدة">السويس الجديدة</a>
-                                    <a class="dropdown-item" href="/List/16/دمياط-الجديدة">دمياط الجديدة</a>
-                                    <a class="dropdown-item" href="/List/17/العلمين-الجديدة">العلمين الجديدة</a>
-                                    <a class="dropdown-item" href="/List/19/العاصمة-الإدارية-الجديدة">العاصمة الإدارية
-                                        الجديدة</a>
-                                    <a class="dropdown-item" href="/List/20/أسيوط-الجديدة">أسيوط الجديدة</a>
-                                    <a class="dropdown-item" href="/List/21/الفيوم-الجديدة">الفيوم الجديدة</a>
-                                    <a class="dropdown-item" href="/List/22/أسوان-الجديدة">أسوان الجديدة</a>
-                                    <a class="dropdown-item" href="/List/23/مدينة-السادات">مدينة السادات</a>
-                                    <a class="dropdown-item" href="/List/24/المنيا-الجديدة">المنيا الجديدة</a>
-                                    <a class="dropdown-item" href="/List/25/العبور-الجديدة">العبور الجديدة</a>
-                                </div>
-                            </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    قسم
-                                </a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    قسم
-                                </a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    قسم
-                                </a>
-                            </li>
-                            <li class="nav-item menu ">
-                                <a href="#" class="nav-link" data-pushbar-target="menu" title="menu"
-                                    rel="noreferrer noopener">
-                                    <svg class="icon ">
-                                        <use xlink:href="images/icons.svg#list" />
-                                    </svg>
-                                    القائمة
-    
-    
-    
-                                </a>
-                            </li>
-    
-                        </ul>
-    
-                        <div class="left-btns">
-    
-    
-                            <div class="social">
-                                <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
-                                    <span class="sr-only"> facebook</span>
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#facebook"></use>
-                                    </svg>
-    
-    
-                                </a>
-                                <a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="تابع    علي تويتر"> <span
-                                        class="sr-only">twitter</span>
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#twitter"></use>
-                                    </svg> </a>
-                                <a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span
-                                        class="sr-only">youtube</span>
-    
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#youtube"></use>
-                                    </svg></a>
-                                <a class="ins" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span
-                                        class="sr-only">instagram</span>
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#instagram-sketched"></use>
-                                    </svg></a>
-                                <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow"
-                                    title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#rss"></use>
-                                    </svg></a>
-                            </div>
-    
-    
-                        </div>
-    
-    
-                    </div>
-    
-    
+                    </a>
                 </div>
-            </nav>
+                <div class="cont-area">
+                    <div class="top">
+                        <div class="date">الثلاثاء 16 فبراير 2021 - 04 رجب 1442 هـ
+                        </div>
+    
+                        <div class="search-form">
+                            <form action="/Search" method="get">
+                                <label for="q" class="sr-only">بحث</label>
+                                <input type="search" class="form-control" name="q" placeholder="بحث">
+                                <button type="submit" class="search-icn" aria-label="search button">
+                                    <svg class="icon ">
+                                        <use xlink:href="images/icons.svg#magnifying-glass"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        <a href="list.html" class="btn-paper"><img src="images/btn-paper.png" alt="تحميل  العدد الورقي من جريدة المصدر"></a>
+                        <div class="social">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
+                                <span class="sr-only"> facebook</span>
+                                <svg class="icon">
+                                    <use xlink:href="images/icons.svg#facebook"></use>
+                                </svg>
+    
+    
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي تويتر">
+                                <span class="sr-only">twitter</span>
+                                <svg class="icon">
+                                    <use xlink:href="images/icons.svg#twitter"></use>
+                                </svg> </a>
+                            <a href="https://www.youtube.com/c/" target="_blank" rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
+    
+                                <svg class="icon">
+                                    <use xlink:href="images/icons.svg#youtube"></use>
+                                </svg></a>
+                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
+                                <svg class="icon">
+                                    <use xlink:href="images/icons.svg#instagram-sketched"></use>
+                                </svg></a>
+                            <a href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow" title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
+                                <svg class="icon">
+                                    <use xlink:href="images/icons.svg#rss"></use>
+                                </svg></a>
+                        </div>
+                        <div class="search"></div>
+                    </div>
+    
+                    <div class="md">
+                        <nav class="navbar">
+    
+                            <div class="nav-item-mobile">
+                                <a href="#" class="btn menu" title="menu" data-pushbar-target="menu" title="menu" rel="noreferrer noopener">
+                                    <svg class="icon ">
+                                        <use xlink:href="images/icons.svg#right-align" />
+                                    </svg>
+    
+    
+                                </a>
+    
+                                <a href="#" class="logo" title="name"><img src="images/logo-w.png" alt="name">
+    
+    
+    
+                                </a>
+    
+    
+                                <a href="#" class="btn btn-primary search" data-pushbar-target="search" title="search" rel="noreferrer noopener">
+                                    <svg class="icon ">
+                                        <use xlink:href="images/icons.svg#magnifying-glass" />
+                                    </svg>
+                                </a>
+                            </div>
+    
+    
+    
+    
+    
+                            <div class="navbar-collapse">
+    
+                                <div class="logo-area">
+                                    <a href="#" class="logo" title="name"><img src="images/logo-w.png" alt="name"></a>
+    
+    
+                                </div>
+    
+                                <div class="right-btn">
+                                    <a href="#" class="btn menu" title="menu" data-pushbar-target="menu" title="menu" rel="noreferrer noopener">
+                                        <svg class="icon ">
+                                            <use xlink:href="images/icons.svg#right-align" />
+                                        </svg>
+    
+    
+                                    </a>
+                                </div>
+    
+    
+    
+    
+                                <div class="scroll-wrapper">
+                                    <ul class="navbar-nav">
+    
+                                        <li class="nav-item ">
+                                            <a href="index.html" class="nav-link" title=" الرئيسية">
+                                                الرئيسية
+    
+    
+                                            </a>
+                                        </li>
+    
+    
+                                        <li class="nav-item ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                عاجل
+                                            </a>
+                                        </li>
+    
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="/List/3/المدن-الحديثة" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" rel="noreferrer noopener">المدن
+                                                الجديدة </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                                <a class="dropdown-item" href="/List/13/التجمع-الخامس">التجمع الخامس</a>
+                                                <a class="dropdown-item" href="/List/14/العبور-الجديدة">العبور الجديدة</a>
+                                                <a class="dropdown-item" href="/List/15/السويس-الجديدة">السويس الجديدة</a>
+                                                <a class="dropdown-item" href="/List/16/دمياط-الجديدة">دمياط الجديدة</a>
+                                                <a class="dropdown-item" href="/List/17/العلمين-الجديدة">العلمين الجديدة</a>
+                                                <a class="dropdown-item" href="/List/19/العاصمة-الإدارية-الجديدة">العاصمة
+                                                    الإدارية
+                                                    الجديدة</a>
+                                                <a class="dropdown-item" href="/List/20/أسيوط-الجديدة">أسيوط الجديدة</a>
+                                                <a class="dropdown-item" href="/List/21/الفيوم-الجديدة">الفيوم الجديدة</a>
+                                                <a class="dropdown-item" href="/List/22/أسوان-الجديدة">أسوان الجديدة</a>
+                                                <a class="dropdown-item" href="/List/23/مدينة-السادات">مدينة السادات</a>
+                                                <a class="dropdown-item" href="/List/24/المنيا-الجديدة">المنيا الجديدة</a>
+                                                <a class="dropdown-item" href="/List/25/العبور-الجديدة">العبور الجديدة</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                قسم
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                تقارير وتحقيقات
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                رياضة
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                حوادث
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                فن
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                قسم
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                تقارير وتحقيقات
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                رياضة
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                حوادث
+                                            </a>
+                                        </li>
+                                        <li class="nav-item  ">
+                                            <a href="list.html" class="nav-link" title=" قسم">
+                                                فن
+                                            </a>
+                                        </li>
+    
+    
+    
+                                    </ul>
+                                </div>
+    
+    
+                                <div class="left-btns">
+                                    <a href="#" class="btn menu" title="menu" data-pushbar-target="menu" title="menu" rel="noreferrer noopener">
+                                        <svg class="icon ">
+                                            <use xlink:href="images/icons.svg#list" />
+                                        </svg> القائمة
+    
+    
+                                    </a>
+    
+    
+    
+                                </div>
+    
+    
+                            </div>
+    
+    
+    
+                        </nav>
+                    </div>
+                </div>
+    
+                <div class="nav-item-mobile">
+                    <a href="#" class="btn menu" title="menu" data-pushbar-target="menu" title="menu" rel="noreferrer noopener">
+                        <svg class="icon ">
+                            <use xlink:href="images/icons.svg#list" />
+                        </svg>
+    
+    
+                    </a>
+    
+                    <a href="index.html" class="logo" title="name"><img src="images/logo-w.png" width="139" height="40" alt="name">
+    
+    
+                    </a>
+    
+    
+                    <a href="#" class="btn btn-primary search" data-pushbar-target="search" title="search" rel="noreferrer noopener">
+                        <svg class="icon ">
+                            <use xlink:href="images/icons.svg#magnifying-glass" />
+                        </svg>
+                    </a>
+                </div>
+    
+            </header>
+    
         </div>
-    
-    
-    </header>
+    </div>
     
     
     <div class="container">
     
         <div class="sponser-cont" style="float: right; width:100%; z-index: 3333;">
             <div class="stick stick-r" style="height: 0;">
-                <div class="sponser right  " id="stick-r"> <a href="show.html"
-                        style="display: block;width:100%; height: 100%;  "> text</a> </div>
+                <div class="sponser right  " id="stick-r">
+                    <a href="show.html" style="display: block;width:100%; height: 100%;  "> <img src="https://via.placeholder.com/160x600" width="160" height="600" alt="ads"></a>
+                </div>
             </div>
             <div class="stick stick-l" style="height: 0;">
                 <div class="sponser left  " id="stick-l">
-    
+                    <img src="https://via.placeholder.com/160x600" width="160" height="600" alt="ads">
                 </div>
             </div>
     
@@ -312,48 +323,43 @@
     </div>
     <div class="menu-nav" data-pushbar-id="menu" data-pushbar-direction="right" style="right: 0;
             transform: translateZ(0) translateX(100%);">
-        
+            <button type="button" aria-label="close" class="close" data-pushbar-close>
+                <svg class="icon lg">
+                    <use xlink:href="images/icons.svg#add"></use>
+                </svg>
+            </button>
             <div class="nav-side-menu">
                 <div class="brand">
-                    <a href="/" class="logo" title="site nname"><img src="images/logo.svg" alt="site name" class="lazyload"
-                            loading="lazy"></a>
-                    <button type="button" aria-label="close" class="close" data-pushbar-close>
-                        <svg class="icon lg">
-                            <use xlink:href="images/icons.svg#next"></use>
-                        </svg>
-                    </button>
+                    <a href="/" class="logo" title="site nname"><img src="images/logo-d.png" alt="site name" loading="lazy"></a>
+        
                 </div>
                 <div class="menu-list">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" title="موقع صدي البلد" href="/">
+                            <a class="nav-link active" title="موقع  site name" href="/">
                                 الرئيسية
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title=" صدي البلد - اهم الاخبار">
+                            <a href="#" class="nav-link" title="  site name - اهم الاخبار">
                                 أهم الاخبار
                             </a>
                         </li>
+        
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title=" صدي البلد  - أخبار البلد">
-                                أخبار البلد
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 رياضة
                             </a>
                         </li>
                         <li class="nav-item dropdown">
         
         
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
         
@@ -363,146 +369,141 @@
         
         
                         <li class=" nav-item dropdown-menu">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 فن
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 تعليم
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 توك شو
                             </a>
                         </li>
                         <li class="nav-item dropdown-toggle">
-                            <a href="javascript:void(0)" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name " rel="noopener noreferrer">
                                 مرأة
                             </a>
                         </li>
         
                         <li class=" nav-item dropdown-menu">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 ديني
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 اخبار العالم
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" title="   صدي البلد ">
+                            <a class="nav-link" href="#" title="    site name ">
                                 اخبار العالم
                             </a>
                         </li>
         
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4023">أصل الحكاية</a>
+                            <a class="nav-link" href="/list/4023" title="    site name ">أصل الحكاية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4022">فيديو جراف</a>
+                            <a class="nav-link" href="/list/4022" title="    site name ">فيديو جراف</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/3">محافظات</a>
+                            <a class="nav-link" href="/list/3" title="    site name ">محافظات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/6">اقتصاد</a>
+                            <a class="nav-link" href="/list/6" title="    site name ">اقتصاد</a>
+                        </li>
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/list/4027" title="    site name ">بين الناس</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/11">منوعات</a>
+                            <a class="nav-link" href="/list/17" title="    site name ">سيارات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4027">بين الناس</a>
+                            <a class="nav-link" href="/list/4727/tech" title="    site name ">تكنولوجيا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/17">سيارات</a>
+                            <a class="nav-link" href="/list/2066" title="    site name ">مقالات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4727/tech">تكنولوجيا</a>
+                            <a class="nav-link" href="/list/2067" title="    site name ">ثقافة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2066">مقالات</a>
+                            <a class="nav-link" href="/list.aspx?type=2" title="    site name ">فيديو</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2067">ثقافة</a>
+                            <a class="nav-link" href="/list.aspx?type=1" title="    site name ">صور</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list.aspx?type=2">فيديو</a>
+                            <a class="nav-link" href="/list/2070" title="    site name ">ساحة رأي</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list.aspx?type=1">صور</a>
+                            <a class="nav-link" href="/list/2" title="    site name ">برلمان</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2070">ساحة رأي</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/list/2">برلمان</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/list/2065">ملفات</a>
+                            <a class="nav-link" href="/list/2065" title="    site name ">ملفات</a>
                         </li>
         
                     </ul>
                 </div>
         
         
-                <div class="social">
-                    <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"
-                        rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
-                        <span class="sr-only"> facebook</span>
-                        <svg class="icon">
-                            <use xlink:href="images/icons.svg#facebook"></use>
-                        </svg>
+        
+            </div>
+        
+            <div class="social">
+                <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank" rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
+                    <span class="sr-only"> facebook</span>
+                    <svg class="icon">
+                        <use xlink:href="images/icons.svg#facebook"></use>
+                    </svg>
         
         
-                    </a>
-                    <a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank" rel="noreferrer noopener nofollow"
-                        title="تابع    علي تويتر"> <span class="sr-only">twitter</span>
-                        <svg class="icon">
-                            <use xlink:href="images/icons.svg#twitter"></use>
-                        </svg> </a>
-                    <a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"
-                        rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
+                </a>
+                <a class="tw" href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي تويتر"> <span class="sr-only">twitter</span>
+                    <svg class="icon">
+                        <use xlink:href="images/icons.svg#twitter"></use>
+                    </svg> </a>
+                <a class="yt" href="https://www.youtube.com/c/" target="_blank" rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
         
-                        <svg class="icon">
-                            <use xlink:href="images/icons.svg#youtube"></use>
-                        </svg></a>
-                    <a class="ins" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"
-                        rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
-                        <svg class="icon">
-                            <use xlink:href="images/icons.svg#instagram-sketched"></use>
-                        </svg></a>
-                    <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow"
-                        title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
-                        <svg class="icon">
-                            <use xlink:href="images/icons.svg#rss"></use>
-                        </svg></a>
-                </div>
+                    <svg class="icon">
+                        <use xlink:href="images/icons.svg#youtube"></use>
+                    </svg></a>
+                <a class="ins" href="https://www.instagram.com//" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
+                    <svg class="icon">
+                        <use xlink:href="images/icons.svg#instagram-sketched"></use>
+                    </svg></a>
+                <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow" title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
+                    <svg class="icon">
+                        <use xlink:href="images/icons.svg#rss"></use>
+                    </svg></a>
             </div>
         </div>
         
@@ -524,8 +525,7 @@
                                 <!--end of col-->
                                 <div class="col-12 ">
         
-                                    <input class="form-control form-control-lg   " name="search" type="search "
-                                        placeholder="البحث   ">
+                                    <input class="form-control form-control-lg   " id="search" name="search" type="search " placeholder="البحث   ">
                                 </div>
                                 <!--end of col-->
                                 <div class=" btm ">
@@ -533,8 +533,7 @@
                                             class="icon ">
                                             <use xlink:href="images/icons.svg#magnifying-glass" />
                                         </svg> بحث</button>
-                                    <button class="btn btn-lg btn-secondary " type="button " aria-label="close"
-                                        data-pushbar-close>إلغاء</button>
+                                    <button class="btn btn-lg btn-secondary " type="button " aria-label="close" data-pushbar-close>إلغاء</button>
                                 </div>
                                 <!--end of col-->
                             </div>
@@ -549,14 +548,285 @@
 
     <main>
         <div class="container">
+
             <div class="row">
                 <div class="col-8 right-col">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">بنوك وتأمين</li>
-                        </ol>
-                    </nav>
+
+                    <div class="topstory">
+                        <div class="swiper-container ts-swiper" dir="rtl">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" srcset="images/img-sm.jpg 360w, images/img.jpg 768w" sizes="100vw" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" srcset="images/img-sm.jpg 360w, images/img.jpg 768w" sizes="100vw" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" data-src="images/img.jpg" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" data-src="images/img.jpg" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" data-src="images/img.jpg" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" data-src="images/img.jpg" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" data-src="images/img.jpg" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="item-bg  ">
+                                        <a href="show.html" title="news-title">
+                    
+                                            <div class="img-cont">
+                    
+                    
+                    
+                    
+                                                <img src="images/no.jpg" data-src="images/img.jpg" class="lazyload" alt="image  alt" title="image title" />
+                    
+                                            </div>
+                    
+                    
+                                            <div class="txt-cont">
+                                                <div class="cat"> بورصة </div>
+                    
+                                                <h3>
+                                                    الوضع صعب في القاهرة| فايلر: لم أحسم قرار تمديد عقدى مع الأهلي
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                            </div>
+                    
+                    
+                    
+                    
+                            <div class="ts-prv swiper-button-prev"></div>
+                            <div class="ts-nxt swiper-button-next"></div>
+                    
+                    
+                    
+                        </div>
+                    
+                        <div class="thumbs-container">
+                            <div class="swiper-container ts-thumbs" dir="rtl">
+                                <div class="swiper-wrapper">
+                    
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img-sm.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img-sm.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img src="images/no.jpg" data-src="images/img-sm.jpg" alt="" class="lazyload" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img src="images/no.jpg" data-src="images/img-sm.jpg" alt="" class="lazyload" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img src="images/no.jpg" data-src="images/img-sm.jpg" alt="" class="lazyload" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img src="images/no.jpg" data-src="images/img-sm.jpg" alt="" class="lazyload" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img src="images/no.jpg" data-src="images/img-sm.jpg" alt="" class="lazyload" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img-cont"><img src="images/no.jpg" data-src="images/img-sm.jpg" alt="" class="lazyload" />
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <div class="tst-prv swiper-button-prev"></div>
+                                <div class="tst-nxt swiper-button-next"></div>
+                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 left-col"></div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-8 right-col">
                     <div class="block-wrap">
                         <div class="block">
                             <div class="title">
@@ -653,155 +923,168 @@
                             </div>
                     
                             <div class="foot">
-                                <div class="pagination">
-                                    <a href="#">&laquo;</a>
-                                    <a href="#">1</a>
-                                    <a href="#" class="active">2</a>
-                                    <a href="#">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a>
-                                    <a href="#">6</a>
-                                    <a href="#">&raquo;</a>
-                                </div>
+                    
                             </div>
                         </div>
                     </div>
+                    
+                    
+                    <nav class="nav-pagination" aria-label="Page navigation  ">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item  active"><a class="page-link" href="/category/25?page=1">1</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=2">2</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=3">3</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=4">4</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=5">5</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=6">6</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=7">7</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=8">8</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=9">9</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=10">10</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=11">11</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=12">12</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/25?page=13">...</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="/category/25?page=2"><svg class="icon">
+                                        <use xlink:href="images/icons.svg#back"></use>
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
                 <div class=" col-4 left-col">
 
-                    <div class="block-wrap">
-                        <div class="block articels-col">
-                            <div class="title">
-                                <a href="list.html" title="catName">
-                                    <h2>مقالات</h2>
-                                </a>
-                            </div>
+                    <div class="block articels-col">
+                        <div class="title">
+                            <a href="list.html" title="catName">
+                                <h2>مقالات</h2>
+                            </a>
+                        </div>
                     
-                            <div class="cont">
+                        <div class="cont">
                     
-                                <div class="row ">
-                    
-                    
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
+                            <div class="row ">
                     
                     
-                                                <div class='img-cont'>
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-article'>
+                                        <a href='show.html' title=''>
                     
                     
-                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
+                                            <div class='img-cont'>
+                    
+                    
+                                                <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <div class="writer">اسم الكاتب</div>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
                     
                     
                     
-                                                </div>
-                                            </a>
-                                        </div>
+                                            </div>
+                                        </a>
                                     </div>
-                    
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                    
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg " loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                    
-                    
                                 </div>
-                            </div>
                     
-                            <div class="foot">
-                                <a href="list.html" class="more" title="cat name"> المزيد</a>
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-article'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <div class="writer">اسم الكاتب</div>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-article'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                    
+                                                <div class="writer">اسم الكاتب</div>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-article'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg " loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <div class="writer">اسم الكاتب</div>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-article'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <div class="writer">اسم الكاتب</div>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-article'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <div class="writer">اسم الكاتب</div>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                    
                             </div>
+                        </div>
+                    
+                        <div class="foot">
+                            <a href="list.html" class="more" title="cat name"> المزيد</a>
                         </div>
                     </div>
                     <div class="block-wrap">
@@ -940,7 +1223,7 @@
     
     
                 <div class="logo-area">
-                    <a href="/" class="logo" title="sitename"><img class="lazyload" data-src="images/logof.svg" alt=""
+                    <a href="/" class="logo" title="sitename"><img class="lazyload" data-src="images/logo-w.png" alt=""
                             width="204" height="105" class="lazyload"></a>
                 </div>
     
@@ -950,8 +1233,8 @@
                 <div class="follow">
     
                     <div class="social">
-                        <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"
-                            rel="noreferrer noopener nofollow" title="  تابع الشوري علي فيسبوك">
+                        <a class="fb" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener nofollow"
+                            title="  تابع   علي فيسبوك">
                             <span class="sr-only"> facebook</span>
                             <svg class="icon">
                                 <use xlink:href="images/icons.svg#facebook"></use>
@@ -959,22 +1242,19 @@
     
     
                         </a>
-                        <a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"
-                            rel="noreferrer noopener nofollow" title="تابع الشوري علي تويتر"> <span
-                                class="sr-only">twitter</span>
+                        <a class="tw" href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow"
+                            title="تابع   علي تويتر"> <span class="sr-only">twitter</span>
                             <svg class="icon">
                                 <use xlink:href="images/icons.svg#twitter"></use>
                             </svg> </a>
-                        <a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"
-                            rel="noreferrer noopener nofollow" title="قناة الشوري علي يوتيوب"> <span
-                                class="sr-only">youtube</span>
+                        <a class="yt" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener nofollow"
+                            title="قناة   علي يوتيوب"> <span class="sr-only">youtube</span>
     
                             <svg class="icon">
                                 <use xlink:href="images/icons.svg#youtube"></use>
                             </svg></a>
-                        <a class="ins" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"
-                            rel="noreferrer noopener nofollow" title="تابع الشوري علي انستاجرام"> <span
-                                class="sr-only">instagram</span>
+                        <a class="ins" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener nofollow"
+                            title="تابع   علي انستاجرام"> <span class="sr-only">instagram</span>
                             <svg class="icon">
                                 <use xlink:href="images/icons.svg#instagram-sketched"></use>
                             </svg></a>
@@ -1043,13 +1323,82 @@
     
         </div>
         <div class="copy">
-            <div> 2020 © All Rights Reserved. Powered by powered by sync solutionns
-            </div>
+            2021 © All Rights Reserved.
+    
         </div>
     </footer>
 
 
     <script type="text/javascript" src="js/core-min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+
+            var tsThumbs = new Swiper('.ts-thumbs', {
+                spaceBetween: 1,
+                slidesPerView: 6,
+                loop: true,
+                freeMode: true,
+                loopedSlides: 6, //looped slides should be the same
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                navigation: {
+                    nextEl: '.tst-nxt',
+                    prevEl: '.tst-prv',
+                },
+                breakpoints: {
+                    240: {
+                        slidesPerView: 2,
+                        spaceBetween: 3,
+                    },
+                    380: {
+                        slidesPerView: 3,
+                        spaceBetween: 2,
+                    },
+                    540: {
+                        slidesPerView: 4,
+                        spaceBetween: 2,
+                    },
+                    768: {
+                        slidesPerView: 6,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 40,
+                    },
+                }
+            });
+
+            var tsswiper = new Swiper('.ts-swiper', {
+                loop: true,
+                loopFillGroupWithBlank: true,
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+
+                    clickable: true,
+
+                },
+                navigation: {
+                    nextEl: '.ts-nxt',
+                    prevEl: '.ts-prv',
+                },
+                thumbs: {
+                    swiper: tsThumbs,
+                },
+            });
+
+
+
+
+
+        });
+    </script>
 </body>
 
 </html>

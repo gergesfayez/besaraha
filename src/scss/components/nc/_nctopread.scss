@@ -1,0 +1,43 @@
+@use '../../critical/helpers/var'as *;
+
+
+.nc-topread {
+
+
+    float: right;
+    width: 100%;
+
+
+
+    @media(min-width: 1200px) {
+
+        .item-card {
+            .img-cont {
+                &:after {
+                    padding-top: 50%;
+                }
+            }
+        }
+
+        .item-li {
+            margin-bottom: 25px;
+
+            .img-cont {
+                width: 148px;
+
+                &:after {
+                    padding-top: 124px;
+                }
+
+            }
+
+            .txt-cont {
+                width: calc(100% - 148px);
+                padding: 15px 10px;
+            }
+        }
+    }
+
+
+
+}

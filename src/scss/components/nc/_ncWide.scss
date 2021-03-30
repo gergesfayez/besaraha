@@ -43,12 +43,27 @@
         .img-cont {
             &::after {
                 @media(min-width: 992px) {
-                    padding-top: 90%;
+                    padding-top: 438px;
 
                 }
 
                 @media(min-width: 1200px) {
                     padding-top: 86%;
+                }
+
+                @media(min-width: 1600px) {
+                    padding-top: 82%;
+                }
+            }
+        }
+
+
+        .txt-cont {
+            h3 {
+                @media(min-width: 992px) {
+                    font-size: 30px;
+                    line-height: 42px;
+                    text-align: center;
                 }
             }
         }

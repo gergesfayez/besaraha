@@ -6,9 +6,10 @@
     width: 100%;
 
     position: relative;
-    box-shadow: $box-shadow-sm;
+    //  box-shadow: $box-shadow-sm;
     background: #fff;
     margin-bottom: 10px;
+    border-radius: 10px;
 
 
 
@@ -21,6 +22,9 @@
     .txt-cont {
         float: right;
         width: 100%;
+
+
+        border-bottom: 1px solid $secondary;
 
 
 

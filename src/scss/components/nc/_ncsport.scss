@@ -1,6 +1,99 @@
+@use '../../critical/helpers/var'as *;
+
 .ncsport {
 
     .item-card {
         border-bottom: 1px solid #dcdcdc;
+    }
+}
+
+
+.sec-sport {
+    background: url("../images/sport-bg.jpg") no-repeat center;
+    background-size: cover;
+    float: right;
+    width: 100%;
+    padding: 30px 0;
+
+    .block {
+        .title {
+            text-align: center;
+
+            h2 {
+                float: none;
+                display: inline-block;
+
+                padding: 0px 50px;
+            }
+
+            &:after {
+                background: #fff;
+            }
+        }
+    }
+
+
+    .item-bg {
+        .img-cont {
+            &:before {
+
+                opacity: 0;
+
+            }
+
+            &:after {
+                padding-top: 75%;
+            }
+        }
+
+
+        .txt-cont {
+            background: rgba($primary, 0.7);
+            bottom: 15px;
+            text-align: center;
+            padding: 5px;
+            transition: all 0.34s;
+
+            h3 {
+                font-size: 14px;
+            }
+        }
+
+        &.lg {
+
+            .txt-cont {
+                h3 {
+                    font-size: 16px;
+                }
+            }
+
+            @media(min-width: 1200px) {
+                .txt-cont {
+                    width: 90%;
+                    margin-right: 5%;
+                    bottom: 10%;
+                    border-top: 2px solid $secondary;
+
+                    h3 {
+                        font-size: 20px;
+                    }
+
+
+                }
+            }
+
+
+        }
+
+
+        &:hover {
+            .txt-cont {
+                background: rgba($secondary, 0.7);
+            }
+        }
+    }
+
+    .foot .more {
+        color: #fff
     }
 }

@@ -1,0 +1,373 @@
+@use '../../critical/helpers/var'as *;
+
+
+
+/****************************************************************
+ * article contents
+ * 1.title
+ * 2.atuhor
+ * 3.main image
+ * 4.puhblish
+ * 5.share
+ * 6.images inline
+ * 7.social embeds
+ * 8.keywords
+ * 9.paragarph list items
+ * *************/
+
+
+.block.news-article {
+    padding: 0;
+
+    .title {
+        background: transparent;
+
+        text-align: center;
+        margin-bottom: -25px;
+
+        h2 {
+            float: none;
+            display: inline-block;
+        }
+
+    }
+}
+
+article.cont {
+    background: #fff;
+
+    padding: 0;
+    padding-top: 30px;
+
+    .cat-name {
+        background: $secondary;
+        color: #000;
+        padding: 5px 20px;
+        border-radius: 40px;
+        float: right;
+        font-size: 20px;
+        display: block;
+        font-weight: bold;
+
+        margin-bottom: 20px;
+
+        clear: both;
+
+    }
+
+
+    .pre-title {
+        float: right;
+        width: 100%;
+        padding: 0 15px;
+        font-size: 16px;
+
+        @media(min-width:1200px) {
+            font-size: 18px;
+            font-weight: bold;
+            color: $primary;
+        }
+    }
+
+    h1 {
+        float: right;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0 15px;
+        font-size: 18px;
+        line-height: 32px;
+
+        @media(min-width: 1200px) {
+            font-size: 23px;
+            line-height: 40px;
+        }
+    }
+
+
+    .author {
+        float: right;
+
+        position: relative;
+        font-weight: bold;
+
+        color: $secondary;
+        fill: $secondary;
+
+        a {
+            color: $primary;
+            fill: $secondary;
+        }
+
+
+    }
+
+
+    .article-author {
+        float: right;
+        width: 100%;
+        padding: 5px 20px;
+
+        margin-bottom: 20px;
+
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+
+
+        .img-cont {
+            width: 100px;
+            border-radius: 50%;
+
+            &:after {
+                padding-top: 100%;
+            }
+        }
+
+        .name {
+            width: calc(100% - 100px);
+            float: right;
+
+            font-weight: bold;
+            line-height: 100px;
+            padding-right: 30px;
+        }
+    }
+
+    .publish {
+        float: right;
+        width: 100%;
+        //  border-top: 1px solid #dcdcdc;
+        // border-bottom: 1px solid #dcdcdc;
+
+        margin-bottom: 20px;
+
+
+
+        .item {
+            line-height: 42px;
+            display: inline-block;
+
+            font-size: 14px;
+            font-weight: bold;
+
+            color: $primary;
+
+            .icon {
+                fill: $secondary;
+            }
+
+            strong {
+                color: $secondary;
+            }
+        }
+
+        .share-top {
+            float: left;
+            margin: 0;
+
+            @media(min-width: 768px) {
+                width: auto;
+            }
+        }
+    }
+
+    figure.main-img {
+        float: right;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+
+        position: relative;
+
+        padding-bottom: 30px;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            padding-top: 56.25%;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover;
+            transition: all 0.34s ease-in-out;
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            z-index: 33;
+            text-align: center;
+            background: rgba(#fff, 0.6);
+        }
+    }
+
+    figure.img-inline {
+
+        width: 90%;
+
+        margin: 10px 5%;
+        text-align: center;
+
+        position: relative;
+
+        padding-bottom: 30px;
+
+
+
+
+        img {
+
+            display: inline-block;
+
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+
+            -o-object-fit: contain;
+            object-fit: contain;
+            transition: all 0.34s ease-in-out;
+        }
+
+        figcaption {
+
+            width: 100%;
+            font-size: 14px;
+            z-index: 33;
+            text-align: center;
+            background: rgba(#fff, 0.6);
+        }
+    }
+
+
+}
+
+.paragraph-list {
+    float: right;
+    width: 100%;
+    line-height: 1.8;
+
+
+    p {
+        padding: 0 15px;
+        text-align: justify;
+
+        @media(min-width: 768px) {
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        @media(min-width: 1400px) {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+
+    }
+
+
+    iframe {
+
+        max-width: 100%;
+        align-self: center;
+    }
+
+    a {
+        color: $primary;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.share-bottom {
+    float: right;
+    width: 100%;
+
+    border-top: 1px solid #dcdcdc;
+}
+
+.keywords {
+    float: right;
+    width: 100%;
+    border-top: 1px solid #dcdcdc;
+    padding: 0 15px;
+    text-align: center;
+
+    .name {
+        float: right;
+        width: 100%;
+        text-align: right;
+        margin-right: 15px;
+
+
+
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+            display: inline;
+        }
+    }
+
+    a {
+        display: inline-block;
+        background: transparent;
+        border: 1px solid #dcdcdc;
+        margin: 5px;
+        padding: 3px 10px;
+        cursor: pointer;
+
+        &:hover {
+            background: #f4f4f4;
+            border: 1px solid $primary;
+
+        }
+    }
+}
+
+.related-inline {
+    float: right;
+    width: 100%;
+    background: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    .item-li {
+        padding: 5px;
+        box-shadow: $box-shadow-sm;
+
+
+        .img-cont {
+            &:after {
+                padding-top: 56.25%;
+            }
+        }
+
+        .txt-cont {
+            h3 {
+                height: 70px;
+            }
+        }
+
+        @media(min-width: 768px) {
+            margin-bottom: 0;
+        }
+    }
+}

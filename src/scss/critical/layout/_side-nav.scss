@@ -1,73 +1,80 @@
  @use '../helpers/var'as *;
-
-
-
+ .menu-nav {
+     width: 300px !important;
+     &:before {
+         content: "";
+         position: absolute;
+         height: 100%;
+         width: 50%;
+         right: 0;
+         top: 0;
+         background-color: #f4f4f4;
+     }
+     .close {
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 50px;
+         padding: 10px;
+         background: $secondary;
+         .icon {
+             width: 28px;
+             height: 28px;
+             transform: rotate(45deg);
+             fill: #fff;
+         }
+         &:hover {
+             background: $secondary;
+             .icon {
+                 fill: #fff;
+             }
+         }
+     }
+     .social {
+         text-align: center;
+         display: block;
+         //  background: #292825;
+         float: right;
+         width: 50px;
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         a {
+             margin: 5px;
+             width: 36px;
+             height: 36px;
+             line-height: 36px;
+         }
+     }
+ }
+ 
  .nav-side-menu {
      content-visibility: auto;
-     float: right;
-     width: 100%;
+     float: left;
+     width: calc(100% - 50px);
      height: 100%;
      background: #fff;
-
-
-
      .brand {
          width: 100%;
-         background: #fff;
-
+         // background: #fff;
          text-align: center;
          float: right;
-         padding: 10px;
+         //padding: 10px;
          height: 50px;
-
          box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
-
          display: block;
-
          img {
              height: 100%;
              width: auto;
-         }
-
-         .close {
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 38px;
-
-             padding: 10px;
-
-
-
-             background: #f4f4f4;
-
-             .icon {
-                 width: 28px;
-                 height: 28px;
-                 //transform: rotate(45deg);
-                 fill: $primary;
-
-             }
-
-             &:hover {
-                 background: $secondary;
-
-                 .icon {
-                     fill: #fff;
-                 }
-             }
-
+             display: inline-block;
          }
      }
-
      .menu-list {
          height: calc(100% - 108px);
          overflow: scroll;
          float: right;
          width: 100%;
-
          -webkit-overflow-scrolling: touch;
-
          .nav {
              display: -webkit-box;
              display: -ms-flexbox;
@@ -78,8 +85,6 @@
              margin-bottom: 0;
              list-style: none;
              padding-right: 0;
-
-
              .nav-item {
                  border-bottom: 1px solid #dcdcdc;
                  position: relative;
@@ -87,12 +92,10 @@
                  transition: all .35s;
                  float: right;
                  width: 100%;
-                 margin-bottom: 5px;
-                 box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
-                 background: #fff;
-
-
-
+                 // margin-bottom: 5px;
+                 color: $primary;
+                 //  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16);
+                 // background: #fff;
                  &.dropdown-menu {
                      height: 0;
                      overflow: hidden;
@@ -100,79 +103,69 @@
                      border-bottom: 1px solid $secondary;
                      background: #f4f4f4;
                      transition: all 0.3s;
-
                      padding-right: 10px;
-
                      .nav-item {
                          border-bottom: 1px solid #fff;
                      }
-
-
                      &.show {
                          height: auto;
                          opacity: 1;
                      }
                  }
-
-
                  &.active {
                      a {
                          background: #f4f4f4;
                      }
                  }
-
                  a {
                      display: block;
                      float: right;
                      width: 100%;
-                     color: #333;
+                     color: $primary;
                      font-weight: 700;
-                     font-size: 18px;
-                     font-size: 1.2rem;
-                     padding: 9px 10px 9px 0;
-
-
+                     font-size: 16px;
+                     // font-size: 1.2rem;
+                     padding: 6px 10px 6px 0;
+                     position: relative;
+                     &:after {
+                         content: "";
+                         right: 0;
+                         top: 0;
+                         height: 100%;
+                         width: 0;
+                         position: absolute;
+                         background: $graidient;
+                         transition: all 0.6s ease-in;
+                         z-index: -1;
+                     }
                      .icon {
-
-                         fill: #f3b433;
-
+                         fill: $secondary;
                          height: 11px;
                          position: relative;
-
                          text-align: left;
                          line-height: 34px;
-
-
-
                          display: inline-block;
-
                          width: 20px;
-
                      }
-
                      h2 {
                          display: inline-block;
                          width: calc(100% - 26px);
-
                          margin: 0 !important;
                          font-size: inherit !important;
                          line-height: inherit !important;
                          font-weight: 700;
                          font-weight: inherit !important;
                      }
-
                      &:hover {
-                         background: $secondary;
+                         background: transparent;
                          color: #fff;
-
+                         &:after {
+                             width: 100%;
+                         }
                      }
                  }
-
              }
          }
-
-
-
          .flex-column {
              -webkit-box-orient: vertical !important;
              -webkit-box-direction: normal !important;
@@ -180,31 +173,13 @@
              flex-direction: column !important;
          }
      }
-
      .badges {
          margin: 5px 0;
          padding: 0;
          text-align: center;
-
          a {
              margin: 0px 0;
              height: 35px;
          }
      }
-
-     .social {
-         text-align: center;
-         //  background: #292825;
-         border-top: 2px solid $primary;
-         float: right;
-         width: 100%;
-
-         a {
-             margin: 5px;
-             width: 36px;
-             height: 36px;
-             line-height: 36px;
-         }
-     }
-
  }

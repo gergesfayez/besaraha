@@ -17,7 +17,7 @@
             @media(min-width: 1500px) {
 
 
-                width: 200px;
+                width: 150px;
 
 
                 &:after {
@@ -30,7 +30,7 @@
         .txt-cont {
 
             @media(min-width: 1500px) {
-                width: calc(100% - 200px);
+                width: calc(100% - 150px);
             }
 
         }

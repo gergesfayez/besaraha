@@ -9,6 +9,13 @@
     <title> Site Name | Home </title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="preload" href="css/home.css" as="style">
+    <link rel="preload" href="css/swiper-bundle.min.css" as="style">
+    <link rel="preload" href="js/lazysizes.min.js" as="script">
+    <link rel="preload" href="js/swiper-bundle-min.js" as="script">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" as="style">
+
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -34,9 +41,9 @@
     <link rel="stylesheet" href="css/critical.css" media="all">
     <link rel="stylesheet" href="css/list.css" media="all">
 
-
-
-
+    <script type="text/javascript" src="js/lazysizes.min.js" async></script>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
+    <script type="text/javascript" src="js/swiper-bundle-min.js" async></script>
 </head>
 
 <body>
@@ -46,14 +53,18 @@
 
     <main>
         <div class="container">
+
             <div class="row">
                 <div class="col-8 right-col">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/">الرئيسية</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">بنوك وتأمين</li>
-                        </ol>
-                    </nav>
+
+                    <!--@import "nt/topstory-swiper.html"-->
+                </div>
+                <div class="col-8 left-col"></div>
+            </div>
+            <div class="row">
+
+
+                <div class="col-8 right-col">
                     <!--@import "nc/list.html"-->
                 </div>
 
@@ -78,6 +89,75 @@
 
 
     <script type="text/javascript" src="js/core-min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+
+            var tsThumbs = new Swiper('.ts-thumbs', {
+                spaceBetween: 1,
+                slidesPerView: 6,
+                loop: true,
+                freeMode: true,
+                loopedSlides: 6, //looped slides should be the same
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                navigation: {
+                    nextEl: '.tst-nxt',
+                    prevEl: '.tst-prv',
+                },
+                breakpoints: {
+                    240: {
+                        slidesPerView: 2,
+                        spaceBetween: 3,
+                    },
+                    380: {
+                        slidesPerView: 3,
+                        spaceBetween: 2,
+                    },
+                    540: {
+                        slidesPerView: 4,
+                        spaceBetween: 2,
+                    },
+                    768: {
+                        slidesPerView: 6,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 6,
+                        spaceBetween: 40,
+                    },
+                }
+            });
+
+            var tsswiper = new Swiper('.ts-swiper', {
+                loop: true,
+                loopFillGroupWithBlank: true,
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+
+                    clickable: true,
+
+                },
+                navigation: {
+                    nextEl: '.ts-nxt',
+                    prevEl: '.ts-prv',
+                },
+                thumbs: {
+                    swiper: tsThumbs,
+                },
+            });
+
+
+
+
+
+        });
+    </script>
 </body>
 
 </html>
