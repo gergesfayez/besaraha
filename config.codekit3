@@ -881,6 +881,14 @@
       "oAP" : "\/src\/html\/Article\/article.html",
       "oF" : 0
     },
+    "\/src\/html\/Article\/coments.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/Article\/coments.html",
+      "oF" : 0
+    },
     "\/src\/html\/Article\/embed-fb.html" : {
       "cB" : 0,
       "ft" : 8192,
