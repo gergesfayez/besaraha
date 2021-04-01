@@ -293,7 +293,11 @@ article.cont {
     .item-li {
         padding: 5px;
         box-shadow: $box-shadow-sm;
+        border: 1px solid #dcdcdc;
+        border-right: 4px solid $primary;
         .img-cont {
+            border-radius: 0;
+            border: 2px solid $primary;
             &:after {
                 padding-top: 56.25%;
             }
