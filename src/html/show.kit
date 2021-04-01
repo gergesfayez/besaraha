@@ -409,6 +409,38 @@
         }
     </script>
     <script type="text/javascript" src="js/core-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+
+
+            const shortUrl = document.querySelectorAll('.shortUrl');
+            for (i = 0; i < shortUrl.length; i++) {
+
+
+                shortUrl[i].onclick = function() {
+
+                    Swal.fire({
+                            input: 'url',
+                            inputLabel: 'الرابط المختصر  ',
+                            inputValue: "https://almasdar.com/9516",
+                            confirmButtonText: 'إغلاق',
+                            didOpen: () => {
+                                    const input = document.getElementById("swal2-input");
+                                    input.focus();
+                                    input.select();
+
+                                }
+                                //  inputPlaceholder: 'Enter the URL'
+                        }
+
+
+                    )
+                }
+
+            }
+        });
+    </script>
 </body>
 
 </html>

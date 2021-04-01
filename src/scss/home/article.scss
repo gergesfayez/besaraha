@@ -1,40 +1,16 @@
 @use '../critical/helpers/var'as *;
-
-
-
-
-
-
 @use "../components/article/articlecont";
-
-
 @use "../components/article/gallery";
-
 //components
-
 @use '../components/col/poll';
-
 @use '../components/col/top-read';
-
-
-
-
-
-
-
-
-
-
-
-
 .post-share {
     border-radius: 20px;
 }
 
-
-
 .news-post .social {
     flex-wrap: wrap !important;
+    display: block;
 }
 
 .post-share a,
@@ -47,14 +23,14 @@
 .post-share .sharetitle,
 .post-share .mobile-native {
     display: inline-block;
-    border: 1px solid #a52239;
-    border-radius: 30px;
+    border: 1px solid $primary;
+    border-radius: 0px;
     line-height: 28px;
     height: 32px;
     width: auto !important;
     font-weight: bold;
-    color: #a52239;
-    fill: #a52239;
+    color: $primary;
+    fill: $primary;
     margin: 5px;
     padding: 0 5px;
 }
@@ -71,7 +47,6 @@
 @media(min-width: 768px) {
     .post-share .sharetitle {
         display: inline-block;
-
     }
 }
 
@@ -103,7 +78,6 @@
 .share-inline {
     float: right;
     width: 100%;
-
     text-align: center;
 }
 
@@ -115,14 +89,12 @@
 .ratio {
     position: relative;
     overflow: hidden;
-
     &:after {
         content: "";
         display: block;
         width: 100%;
         padding-top: 56.25%;
     }
-
     img {
         position: absolute;
         top: 0;
@@ -169,5 +141,14 @@
     content: "/";
 }
 
-
 //plugins
+.coments {
+    float: right;
+    width: 100%;
+    .coments-form {
+        float: right;
+        width: 100%;
+        background: #fff;
+        padding: 10px;
+    }
+}
