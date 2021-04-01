@@ -1069,7 +1069,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/src\/html\/list\/list-news.html",
       "oF" : 0
     },
@@ -1125,7 +1125,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/nc\/list.html",
       "oF" : 0
     },
