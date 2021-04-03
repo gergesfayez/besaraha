@@ -4,6 +4,41 @@
 //components
 @use '../components/col/poll';
 @use '../components/col/top-read';
+.follow-app {
+    float: right;
+    width: 100%;
+    background: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    .name {
+        color: $primary;
+        font-weight: bold;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+        line-height: 30px;
+        margin: 4px;
+    }
+    a {
+        display: inline-block;
+        // width: 100%;
+        background: #fff;
+        margin: 4px;
+        img {
+            height: 30px;
+            width: auto;
+            display: block;
+            float: right;
+        }
+        span {
+            display: inline-block;
+            line-height: 30px;
+            padding: 0 10px;
+            font-weight: bold;
+        }
+    }
+}
+
 .post-share {
     border-radius: 20px;
 }
