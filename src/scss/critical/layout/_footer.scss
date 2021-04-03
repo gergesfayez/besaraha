@@ -1,62 +1,46 @@
 @use '../helpers/var'as *;
-
-
 footer {
     float: right;
     width: 100%;
     background: #011423;
     text-align: center;
     padding-top: 10px;
-
     content-visibility: auto;
-
+    background: linear-gradient(#001e36 0%, #032c4d 100%);
     .top {
         float: right;
         width: 100%;
         border-bottom: 2px solid $secondary;
-
         .logo-area {
-            @media(min-width:768px) {
+            @media(min-width: 768px) {
                 display: inline-block;
                 float: right;
                 width: auto;
-
-
             }
-
-
             .logo {
                 height: 70px;
                 display: block;
                 margin: 10px 0;
-
                 img {
                     height: 100%;
                     width: auto;
                 }
             }
         }
-
-
         .follow {
             display: inline-block;
-
             color: #fff;
             width: 100%;
-
             @media(min-width: 768px) {
                 float: left;
                 width: auto;
                 margin-top: 20px;
             }
-
-
             .social {
                 a {
                     background: #fff !important;
                     color: $primary !important;
                     fill: $primary !important;
-
                     &:hover {
                         background: #333 !important;
                         color: #ffff !important;
@@ -65,43 +49,25 @@ footer {
                 }
             }
         }
-
-
     }
-
-
-
     .fnav {
         text-align: center;
         float: right;
         width: 100%;
-
         display: none;
-
         @media(min-width: 768px) {
             display: block;
         }
-
-
-
-
-
-
         a {
             //  width: 120px;
             margin: 10px;
             display: inline-block;
             white-space: nowrap;
-
             color: #fff;
-
         }
-
     }
-
-
     .copy {
-        background: #222;
+        background: #04365F;
         color: #fff;
         float: right;
         width: 100%;
@@ -116,10 +82,5 @@ footer {
         align-items: center;
         align-content: center;
         justify-content: center;
-
     }
-
-
-
-
 }

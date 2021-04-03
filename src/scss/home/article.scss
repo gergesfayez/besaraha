@@ -149,7 +149,9 @@
         float: right;
         width: 100%;
         background: #fff;
-        padding: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 1rem;
         .form-group {
             margin-bottom: 1rem;
         }
@@ -157,10 +159,11 @@
             resize: vertical;
         }
         textarea.form-control {
-            min-height: calc(1.5em + .75rem + 2px);
+            min-height: 10em;
         }
         .form-label {
             margin-bottom: .5rem;
+            font-weight: bold;
         }
         label {
             display: inline-block;
@@ -181,6 +184,34 @@
             appearance: none;
             border-radius: .25rem;
             transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
+    }
+    .comnts-list {
+        float: right;
+        width: 100%;
+        .coment-item {
+            float: right;
+            width: 100%;
+            background: #fff;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            padding: 15px;
+            .info {
+                border-bottom: 1px solid $secondary;
+                .name {
+                    font-weight: bold;
+                    .icon {
+                        border-radius: 50%;
+                        border: 1px solid $secondary;
+                        fill: $primary;
+                        margin-left: 10px;
+                    }
+                }
+                time {
+                    color: #999;
+                    font-size: 14px;
+                }
+            }
         }
     }
 }
