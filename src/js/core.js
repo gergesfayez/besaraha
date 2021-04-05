@@ -90,32 +90,37 @@
 
  */
 
-
- window.onscroll = function() {
-     stickyEl();
- };
+ /*
+  window.onscroll = function() {
+      stickyEl();
+  };
 
  var navbar = document.getElementById("navbar");
  var sponserLeft = document.getElementById("stick-l");
  var sponserRight = document.getElementById("stick-r");
  var sticky = navbar.offsetTop + 10;
-
+ var state = 1;
 
  function stickyEl() {
-     if (window.pageYOffset >= sticky) {
+     if (window.pageYOffset >= sticky && state === 1) {
+         state = 2;
          navbar.classList.add("sticky");
          sponserLeft.classList.add("stickyL");
          sponserRight.classList.add("stickyR");
-     } else {
+
+
+     } else if (window.pageYOffset < sticky && state === 2) {
+         state = 1;
          navbar.classList.remove("sticky");
          sponserLeft.classList.remove("stickyL");
          sponserRight.classList.remove("stickyR");
+
      }
 
 
  }
 
-
+ */
  // collapse menu 
 
  var coll = document.getElementsByClassName("dropdown-toggle");
@@ -140,7 +145,7 @@
          document.body.scrollTop || document.documentElement.scrollTop;
      if (position) {
          window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-         scrollAnimation = setTimeout("scrollToTop()", 10);
+         scrollAnimation = setTimeout("scrollToTop()", 5);
      } else clearTimeout(scrollAnimation);
  }
 
