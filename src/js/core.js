@@ -90,10 +90,11 @@
 
  */
 
- /*
-  window.onscroll = function() {
-      stickyEl();
-  };
+
+ window.onscroll = function() {
+     stickyEl();
+
+ };
 
  var navbar = document.getElementById("navbar");
  var sponserLeft = document.getElementById("stick-l");
@@ -102,14 +103,18 @@
  var state = 1;
 
  function stickyEl() {
-     if (window.pageYOffset >= sticky && state === 1) {
+     if (state === 1 && window.pageYOffset >= sticky) {
          state = 2;
          navbar.classList.add("sticky");
+
+
          sponserLeft.classList.add("stickyL");
          sponserRight.classList.add("stickyR");
 
 
-     } else if (window.pageYOffset < sticky && state === 2) {
+
+
+     } else if (state === 2 && window.pageYOffset < sticky) {
          state = 1;
          navbar.classList.remove("sticky");
          sponserLeft.classList.remove("stickyL");
@@ -120,7 +125,7 @@
 
  }
 
- */
+
  // collapse menu 
 
  var coll = document.getElementsByClassName("dropdown-toggle");
