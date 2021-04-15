@@ -125,7 +125,7 @@ header {
         justify-content: center;
         align-items: center;
         line-height: 90px;
-        height: 90px;
+        height:110px;
         border-left: 1px solid #dcdcdc;
         transition: all 0.33s;
         box-shadow: $box-shadow-sm;
@@ -157,23 +157,34 @@ header {
         .top {
             float: right;
             width: 100%;
-            height: 40px;
-            padding: 0 10px;
-            .date {
-                float: right;
-                line-height: 40px;
-                font-size: 14px;
-            }
-            .btn-paper {
-                float: left;
-            }
+            height: 60px;
+            padding:  10px;
+            color: #fff;
+            line-height: 40px;
+            
+
+            a.address , a.phone {
+                display: inline-block;
+                border-radius: 20px;
+                border:1px solid #fff;
+                color: #fff;
+                line-height: 28px;
+                padding: 0 10px;
+                margin: 0 10px;
+
+                .icon{
+                    fill: #fff;
+                }
+            }             
             .social {
+                width: auto;
+                float: left;
                 a {
-                    border: 2px solid $primary;
-                    color: $primary;
-                    fill: $primary;
+                    border: 1px solid #fff;
+                    color: #fff;
+                    fill: #fff;
                     background: transparent;
-                    line-height: 25px;
+                    line-height:32px;
                     margin: 3px 5px;
                     &:hover {
                         background: $secondary;
@@ -202,17 +213,7 @@ header {
                 align-items: right;
                 justify-content: space-between;
                 ///  box-shadow: $box-shadow-sm;
-                .container {
-                    @media(max-width: 1199px) {
-                        padding: 0;
-                    }
-                    @media(min-width:1200px) {
-                        width: 100% !important;
-                    }
-                    @media(min-width:1500px) {
-                        width: calc(100% - 360px) !important;
-                    }
-                }
+              
                 .nav-item-mobile {
                     float: right;
                     // border-top: 1px solid $primary;
@@ -531,54 +532,7 @@ header {
             }
         }
     }
-    .container {
-        width: 100%;
-        max-width: 1560px;
-    }
-    .top {
-        width: 100%;
-        // background: #fff;
-        float: right;
-        width: 100%;
-        // padding     box-shadow: $box-shadow-sm;
-        padding: 5px;
-        // background: #f4f4f4;
-        .social {
-            float: left;
-            width: auto;
-        }
-        .btn {
-            background: $primary;
-            color: #fff;
-            fill: #fff;
-            margin: 0 10px;
-            border-radius: 30px;
-            font-weight: bold;
-            line-height: 20px;
-            margin-top: 3px;
-            padding: 5px 20px;
-            &:hover {
-                background: #393939;
-                color: #fff;
-                svg {
-                    fill: $primary !important;
-                }
-            }
-        }
-        .date {
-            float: right;
-            line-height: 36px;
-            font-size: 14px;
-            color: #000;
-            .icon {
-                fill: $primary;
-            }
-        }
-        display: none;
-        @media(min-width: 768px) {
-            display: block;
-        }
-    }
+ 
     .search-form {
         float: left;
         line-height: 32px;
