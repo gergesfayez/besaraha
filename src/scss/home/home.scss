@@ -1,13 +1,10 @@
 @use '../critical/helpers/var'as *;
 //components
-@use '../components/nc/nc1';
-@use '../components/nc/nc2';
-@use '../components/nc/nchalf';
-@use '../components/nc/ncsport';
-@use '../components/nc/nctopread';
-@use '../components/nc/nc-mogaz';
-@use '../components/nt/topstory-swiper';
-@use '../components/nt/ntvideo';
-@use '../components/col/poll';
-@use '../components/col/top-read';
+@use '../change/about';
+@use '../change/video';
+@use '../change/sep';
+@use '../change/categories';
+@use '../change/blog';
+@use '../change/consult-form';
+ 
 //plugins
