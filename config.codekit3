@@ -898,6 +898,70 @@
       "oAP" : "\/src\/html\/Article\/youtube.html",
       "oF" : 0
     },
+    "\/src\/html\/change\/about.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/about.html",
+      "oF" : 0
+    },
+    "\/src\/html\/change\/blog.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/blog.html",
+      "oF" : 0
+    },
+    "\/src\/html\/change\/categories.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/categories.html",
+      "oF" : 0
+    },
+    "\/src\/html\/change\/consult-form.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/consult-form.html",
+      "oF" : 0
+    },
+    "\/src\/html\/change\/doctors.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/doctors.html",
+      "oF" : 0
+    },
+    "\/src\/html\/change\/sep1.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/sep1.html",
+      "oF" : 0
+    },
+    "\/src\/html\/change\/sep2.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/sep2.html",
+      "oF" : 0
+    },
+    "\/src\/html\/change\/video.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/change\/video.html",
+      "oF" : 0
+    },
     "\/src\/html\/col\/album.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1206,7 +1270,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/np\/album.html",
       "oF" : 0
     },
@@ -1214,7 +1278,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/src\/html\/np\/video.html",
       "oF" : 0
     },
