@@ -203,32 +203,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/build\/images\/ad300x250.jpg" : {
-      "ft" : 16384,
-      "iS" : 8288,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/build\/images\/ad300x250.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/build\/images\/btn-paper.png" : {
-      "ft" : 32768,
-      "iS" : 7177,
-      "oA" : 0,
-      "oAP" : "\/build\/images\/btn-paper.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/build\/images\/favicon\/android-icon-36x36.png" : {
       "ft" : 32768,
       "iS" : 1860,
@@ -616,22 +590,9 @@
     },
     "\/build\/images\/logo-d.png" : {
       "ft" : 32768,
-      "iS" : 12844,
+      "iS" : 51157,
       "oA" : 0,
       "oAP" : "\/build\/images\/logo-d.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/build\/images\/logo-w.png" : {
-      "ft" : 32768,
-      "iS" : 10309,
-      "oA" : 0,
-      "oAP" : "\/build\/images\/logo-w.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -660,7 +621,7 @@
     },
     "\/build\/images\/no.jpg" : {
       "ft" : 16384,
-      "iS" : 7447,
+      "iS" : 14475,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/build\/images\/no.jpg",
@@ -2147,7 +2108,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 628386110.40685701,
-    "displayValue" : "almasdar",
+    "displayValue" : "changeme",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-forest",
     "iconImageWasSetByUser" : 0

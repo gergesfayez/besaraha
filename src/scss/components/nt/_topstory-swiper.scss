@@ -28,13 +28,11 @@
                 border: 0;
                 &:before {
                     background: linear-gradient(rgba(8, 79, 136, 0) 0%, #084F88 100%);
-                    opacity: 0.75;
+                    opacity:0;
                 }
                 &:after {
                     padding-top: 56.25%;
-                    @media(min-width: 992px) {
-                        padding-top: 500px;
-                    }
+                  
                 }
             }
             .txt-cont {

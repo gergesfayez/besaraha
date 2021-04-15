@@ -47,7 +47,8 @@
     <link rel="preload" href="css/swiper-bundle.min.css" as="style">
     <link rel="preload" href="js/lazysizes.min.js" as="script">
     <link rel="preload" href="js/swiper-bundle-min.js" as="script">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap"
+        as="style">
 
 
 
@@ -58,8 +59,11 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
 
     <script type="text/javascript" src="js/lazysizes.min.js" async></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
     <script src="js/swiper-bundle-min.js"></script>
+
+
+
 </head>
 
 <body>
@@ -68,62 +72,8 @@
 
 
     <main>
+        <!--@import "nt/topstory-swiper.html"-->
 
-        <div class="container">
-            <div class="row">
-                <div class="adfull">
-                    <div class="cont">
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div class="row">
-                <div class="col-8  right-col">
-
-                    <!--@import "nt/topstory-swiper.html"-->
-
-                </div>
-
-
-
-
-
-
-                <div class="col-4  left-col">
-
-
-                    <div class="row">
-                        <div class="col-md-6 col-xl-12">
-                            <div class="adfull a300">
-                                <div class="cont" style="height: 250px;">
-
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-12">
-                            <div class="adfull a300">
-                                <div class="cont" style="height: 250px;">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-        </div>
         <div class="container">
 
 
@@ -257,43 +207,7 @@
     <script type="text/javascript" src="js/core-min.js"></script>
 
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-
-            var tsThumbs = new Swiper('.ts-thumbs', {
-                spaceBetween: 1,
-                slidesPerView: 6,
-                loop: true,
-                freeMode: true,
-                loopedSlides: 6, //looped slides should be the same
-                watchSlidesVisibility: true,
-                watchSlidesProgress: true,
-                navigation: {
-                    nextEl: '.tst-nxt',
-                    prevEl: '.tst-prv',
-                },
-                breakpoints: {
-                    240: {
-                        slidesPerView: 3,
-                        spaceBetween: 3,
-                    },
-                    380: {
-                        slidesPerView: 3,
-                        spaceBetween: 2,
-                    },
-                    540: {
-                        slidesPerView: 4,
-                        spaceBetween: 2,
-                    },
-                    768: {
-                        slidesPerView: 5,
-                        spaceBetween: 30,
-                    },
-                    1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 40,
-                    },
-                }
-            });
+        document.addEventListener('DOMContentLoaded', function () {
 
             var tsswiper = new Swiper('.ts-swiper', {
                 loop: true,
