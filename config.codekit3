@@ -679,6 +679,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/build\/images\/icons2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/icons2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/build\/images\/Image 2.png" : {
       "ft" : 32768,
       "iS" : 24422,
@@ -757,6 +767,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/My icons collection-SVG-sprite 2.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/My icons collection-SVG-sprite 2.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/build\/images\/My icons collection-SVG-sprite.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -773,6 +793,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/images\/My icons collection-SVG-Sprites-Demo.html",
+      "oF" : 0
+    },
+    "\/build\/images\/My icons collection-SVG-Sprites-Demo2.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/My icons collection-SVG-Sprites-Demo2.html",
       "oF" : 0
     },
     "\/build\/images\/no.jpg" : {
