@@ -26,6 +26,7 @@
 .special-btns {
     float: right;
     width: 100%;
+    margin-top: 10px;
 
 
     a{
@@ -55,23 +56,63 @@
         }
 
         .txt {
-            float:right;
+            float:left;
             width: calc(100% - 80px);
-            padding-top: 30px;
+            padding-top: 10px;
             span{
                 display: block;
                 &:first-child{
                     font-size: 16px;
+                    margin-bottom: 5px;
                 }
 
                 &:last-child{
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: bolder;
                 }
             }
         }
+
+        &:hover{
+            background: $secondary;
+            .icn-cont{
+                background-color: $third;
+            }
+        }
     }
 
+}
+
+
+
+.item-cat {
+
+
+    .txt-cont {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+        background: rgba($secondary, 0.7);
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        line-height: 24px;
+        font-weight: bold;
+
+    }
+}
+
+.btn-more {
+    border-radius: 30px;
+    padding: 3px 20px;
+    line-height: 20px;
+    font-weight: bold;
+    border:1px solid $primary;
+    color: $primary;
+    &:hover {
+        background-color: $primary;
+        color: $third;
+    }
 }
 
 .about {
@@ -115,7 +156,7 @@
         z-index:19;
 
         &:after{
-           padding-top: 80%;
+           padding-top: 90%;
         }
     }
 }
@@ -127,7 +168,7 @@
         padding-top: 30px;
 
         .m-title{
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         p{
