@@ -147,29 +147,29 @@
     
                                     <li class="nav-item ">
                                         <a href="list.html" class="nav-link" title=" قسم">
-                                            عن المركز
+                                            أخبار
                                         </a>
                                     </li>
     
     
                                     <li class="nav-item  ">
                                         <a href="list.html" class="nav-link" title=" قسم">
-                                            التخصصات
+                                            قوائم
                                         </a>
                                     </li>
                                     <li class="nav-item  ">
                                         <a href="list.html" class="nav-link" title=" قسم">
-                                            أطباؤنا
+                                            تحليلات
                                         </a>
                                     </li>
                                     <li class="nav-item  ">
                                         <a href="list.html" class="nav-link" title=" قسم">
-                                            معلومات طبية
+                                            بنوك
                                         </a>
                                     </li>
-                                    <li class="nav-item  ">
+                                    <li class="nav-item" title="menu" data-pushbar-target="menu">
                                         <a href="list.html" class="nav-link" title=" قسم">
-                                            اتصل بنا
+                                            القائمة
                                         </a>
                                     </li>
     
@@ -216,6 +216,8 @@
                                                 <use xlink:href="images/icons.svg#rss"></use>
                                             </svg></a>
                                     </div>
+    
+                                    <a class="btn lang" href="lang">EN</a>
                                 </div>
     
     
@@ -243,9 +245,24 @@
             </button>
             <div class="nav-side-menu">
                 <div class="brand">
-                    <a href="/" class="logo" title="site nname"><img src="images/logo-d.png" alt="site name" loading="lazy"></a>
+                    <a href="/" class="logo" title="site nname"><img src="images/logo-w.png" alt="site name" loading="lazy"></a>
         
                 </div>
+        
+                <div class="search-form">
+                    <form action="/Search" method="get">
+                        <label for="q" class="sr-only">بحث</label>
+                        <input type="search" class="form-control" name="q" placeholder="بحث">
+                        <button type="submit" class="search-icn" aria-label="search button">
+                            <svg class="icon ">
+                                <use xlink:href="images/icons.svg#magnifying-glass"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+        
+        
+        
                 <div class="menu-list">
                     <ul class="nav flex-column">
                         <li class="nav-item">
@@ -392,7 +409,8 @@
             </div>
         
             <div class="social">
-                <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank" rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
+                <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank" rel="noreferrer noopener nofollow"
+                    title="  تابع    علي فيسبوك">
                     <span class="sr-only"> facebook</span>
                     <svg class="icon">
                         <use xlink:href="images/icons.svg#facebook"></use>
@@ -400,20 +418,24 @@
         
         
                 </a>
-                <a class="tw" href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي تويتر"> <span class="sr-only">twitter</span>
+                <a class="tw" href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow"
+                    title="تابع    علي تويتر"> <span class="sr-only">twitter</span>
                     <svg class="icon">
                         <use xlink:href="images/icons.svg#twitter"></use>
                     </svg> </a>
-                <a class="yt" href="https://www.youtube.com/c/" target="_blank" rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
+                <a class="yt" href="https://www.youtube.com/c/" target="_blank" rel="noreferrer noopener nofollow"
+                    title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
         
                     <svg class="icon">
                         <use xlink:href="images/icons.svg#youtube"></use>
                     </svg></a>
-                <a class="ins" href="https://www.instagram.com//" target="_blank" rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
+                <a class="ins" href="https://www.instagram.com//" target="_blank" rel="noreferrer noopener nofollow"
+                    title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
                     <svg class="icon">
                         <use xlink:href="images/icons.svg#instagram-sketched"></use>
                     </svg></a>
-                <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow" title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
+                <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow"
+                    title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
                     <svg class="icon">
                         <use xlink:href="images/icons.svg#rss"></use>
                     </svg></a>
@@ -438,7 +460,8 @@
                                 <!--end of col-->
                                 <div class="col-12 ">
         
-                                    <input class="form-control form-control-lg   " id="search" name="search" type="search " placeholder="البحث   ">
+                                    <input class="form-control form-control-lg   " id="search" name="search" type="search "
+                                        placeholder="البحث   ">
                                 </div>
                                 <!--end of col-->
                                 <div class=" btm ">
@@ -446,7 +469,8 @@
                                             class="icon ">
                                             <use xlink:href="images/icons.svg#magnifying-glass" />
                                         </svg> بحث</button>
-                                    <button class="btn btn-lg btn-secondary " type="button " aria-label="close" data-pushbar-close>إلغاء</button>
+                                    <button class="btn btn-lg btn-secondary " type="button " aria-label="close"
+                                        data-pushbar-close>إلغاء</button>
                                 </div>
                                 <!--end of col-->
                             </div>

@@ -51,6 +51,11 @@ header {
             color: #fff;
             line-height: 40px;
 
+            display: none;
+            @media(min-width: 768px){
+                display: block;
+            }
+
 
             .logo  {
                 height: 40px;
@@ -65,21 +70,6 @@ header {
             }
             
 
-            .logo-indicator {
-                height:40px;
-                padding: 5px 10px;
-                border:1px solid $primary;
-                display: block;
-                float: left;
-                border-radius: 5px;
-                img{
-                    height: 100%;
-                    width: auto;
-                }
-                &:hover {
-                    background: $primary;
-                }
-            }
                         
           
         }
@@ -90,7 +80,11 @@ header {
             float: right;
             width: 100%;
             padding: 0;
-            background: #fff;
+            background: $third;
+            @media(min-width: 768px){
+  background: #fff;
+            }
+          
             .navbar {
                 float: right;
                 width: 100%;
@@ -114,7 +108,7 @@ header {
                     width: 100%;
                     height: 50px;
                     text-align: center;
-                    @media(min-width: 992px) {
+                    @media(min-width: 768px) {
                         display: none;
                     }
                     a {
@@ -140,8 +134,10 @@ header {
                             border-radius: 5px;
                             img {
                                 float: right;
-                                height: 40px;
+                                    height: 28px;
+    margin-top: 3px;
                                 width: auto;
+                                
                             }
                             .admin {
                                 width: 90px;
@@ -190,7 +186,7 @@ header {
                     float: right;
                     white-space: nowrap;
                     display: none;
-                    @media(min-width: 992px) {
+                    @media(min-width:768px) {
                         display: block;
                     }
                   
@@ -337,13 +333,22 @@ header {
                     }
                   
                     .left-btns {
-                        float: left;
-                        .btn.menu {
+                        float: left;padding-top:5px;
+
+                        .social {
+                            width: auto !important  ;
+                            display: inline-block !important;
+                            margin-left: 10px;
+                        }
+
+                        
+                        .btn.lang {
                             background: $primary;
                             color: #fff;
                             margin: 0;
-                            line-height: 36px;
-                            padding: 6px 37px;
+                            line-height: 32px;
+                            padding: 2px 10px;
+                            float: left;
                         }
                         .btn.search {
                             fill: $secondary;
@@ -357,6 +362,27 @@ header {
                     }
                 }
             }
+
+
+            .social {
+                 a{
+                     border:1px solid $primary;
+                     fill: $secondary ;
+                     background: transparent;
+
+                     .icon{
+                         fill: $secondary !important;
+                     }
+                     &:hover {
+
+                        .icon {
+                            fill: #fff !important;
+                        }
+                        
+                     }
+
+                 }
+            }
         }
 
 
@@ -368,10 +394,8 @@ header {
         width: 100%;
         height: 50px;
         text-align: center;
-        background: $primary;
-        @media(min-width: 992px) {
-            display: none;
-        }
+        background: $secondary;
+      
         a {
             display: inline-block;
             height: 50px;
@@ -440,7 +464,64 @@ header {
         }
     }
   
-    .search-form {
+  
+   
+    /// sticky css
+    &.stick-h {
+        /*
+        z-index: 999;
+        margin-top: 0;
+
+
+        .logo-area {
+            height: 50px;
+            line-height: 50px;
+
+            width: 140px;
+
+            a {
+                height: 100%;
+
+                img {
+                    height: 40px;
+                    width: auto;
+                }
+            }
+        }
+
+        .cont-area {
+            width: calc(100% - 140px);
+
+            .top {
+                display: none;
+            }
+        }
+        */
+    }
+}
+
+            .logo-indicator {
+                height:40px;
+                padding: 5px 10px;
+                border:1px solid $primary;
+                display: block;
+                float: left;
+                border-radius: 5px;
+                img{
+                    height: 100%;
+                    width: auto;
+                }
+                &:hover {
+                    background: $primary;
+                }
+            }
+.breaking-news {
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background: $third;
+}
+  .search-form {
         float: left;
         line-height: 38px;
        background: #fff;
@@ -495,48 +576,6 @@ header {
             box-shadow: $box-shadow-sm;
         }
     }
-   
-    /// sticky css
-    &.stick-h {
-        /*
-        z-index: 999;
-        margin-top: 0;
-
-
-        .logo-area {
-            height: 50px;
-            line-height: 50px;
-
-            width: 140px;
-
-            a {
-                height: 100%;
-
-                img {
-                    height: 40px;
-                    width: auto;
-                }
-            }
-        }
-
-        .cont-area {
-            width: calc(100% - 140px);
-
-            .top {
-                display: none;
-            }
-        }
-        */
-    }
-}
-
-.breaking-news {
-    position: fixed;
-    bottom: 0;
-    z-index: 999;
-    background: $third;
-}
-
 .social {
     width: 100%;
     display: flex;
