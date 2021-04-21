@@ -8,7 +8,7 @@ body {
     min-height: 50px;
     margin-bottom: 20px;
     @media(min-width: 992px) {
-        height: 90px;
+        //height: 90px;
     }
     /* Safari */
     /// position: sticky;
@@ -22,7 +22,7 @@ body {
         &.sticky {
             position: fixed;
             top: 0;
-            height: 90px;
+           // height: 90px;
             width: 100%;
             z-index: 998;
         }
@@ -30,14 +30,7 @@ body {
 }
 
 header {
-      .container {
-        @media(min-widh:1200px) and (max-width:1400px){
-            width: 100%;
-            max-width: 100% !important;
-        }
-
-    
-    }
+     
 
 
     background: $third;
@@ -498,49 +491,12 @@ header {
         display: block;
         float: right;
         width: 100%;
+        background: #fff;
         @media(min-width: 992px) {
             padding: 10px 0;
         }
-        .container {
-            width: 100%;
-            @media(min-width: 1500px) {
-                max-width: 1560px;
-            }
-        }
-        .logo-area {
-            display: none;
-            .admin {
-                margin-top: 30px;
-                margin-right: 20px;
-                text-align: right;
-                //color: #fff;
-                .title {
-                    margin-bottom: 5px;
-                }
-                .name {
-                    // color: #fff;
-                }
-            }
-        }
-        .left-area {
-            float: left;
-            @media(min-width: 1200px) {
-                width: calc(100% - 490px);
-            }
-            .top {
-                float: left;
-                width: 100%;
-                background: transparent;
-                text-align: left;
-                .mode {
-                    display: inline-block;
-                    float: none;
-                }
-                .social {
-                    float: left;
-                }
-            }
-        }
+        
+       
     }
     /// sticky css
     &.stick-h {
