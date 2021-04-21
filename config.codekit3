@@ -806,6 +806,32 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/logo-in-d.png" : {
+      "ft" : 32768,
+      "iS" : 20613,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/logo-in-d.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/logo-in-w.png" : {
+      "ft" : 32768,
+      "iS" : 19509,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/logo-in-w.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/build\/images\/logo-w.png" : {
       "ft" : 32768,
       "iS" : 15036,
@@ -1134,70 +1160,6 @@
       "oAP" : "\/src\/html\/Article\/youtube.html",
       "oF" : 0
     },
-    "\/src\/html\/change\/about.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/about.html",
-      "oF" : 0
-    },
-    "\/src\/html\/change\/blog.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/blog.html",
-      "oF" : 0
-    },
-    "\/src\/html\/change\/categories.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/categories.html",
-      "oF" : 0
-    },
-    "\/src\/html\/change\/consult-form.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/consult-form.html",
-      "oF" : 0
-    },
-    "\/src\/html\/change\/doctors.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/doctors.html",
-      "oF" : 0
-    },
-    "\/src\/html\/change\/sep1.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/sep1.html",
-      "oF" : 0
-    },
-    "\/src\/html\/change\/sep2.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/sep2.html",
-      "oF" : 0
-    },
-    "\/src\/html\/change\/video.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/src\/html\/change\/video.html",
-      "oF" : 0
-    },
     "\/src\/html\/col\/album.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1292,6 +1254,62 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/src\/html\/design\/side-nav.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/banker.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/first\/banker.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/indicator.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/first\/indicator.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/infograph.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/first\/infograph.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/lists.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/first\/lists.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/news.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/first\/news.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/top-banks.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/first\/top-banks.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/video.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/src\/html\/first\/video.html",
       "oF" : 0
     },
     "\/src\/html\/index.kit" : {
