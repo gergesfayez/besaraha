@@ -75,6 +75,18 @@
       "oAP" : "\/build\/css\/article.css.map",
       "oF" : 0
     },
+    "\/build\/css\/bvselect.css" : {
+      "aP" : 1,
+      "bl" : 0,
+      "ci" : 0,
+      "co" : 0,
+      "ft" : 16,
+      "ma" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/css\/bvselect-min.css",
+      "oF" : 0,
+      "pg" : 0
+    },
     "\/build\/css\/critical.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -915,6 +927,28 @@
       "oAP" : "\/build\/index.html",
       "oF" : 0
     },
+    "\/build\/js\/bvselect.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/bvselect-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/build\/js\/bvselect.polyfill.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/bvselect.polyfill-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/build\/js\/core-min.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -925,31 +959,6 @@
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
-    },
-    "\/build\/js\/hi.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/build\/js\/hi-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/build\/js\/hi.ts" : {
-      "cDF" : 0,
-      "ft" : 128,
-      "jxM" : 0,
-      "ma" : 0,
-      "mi" : 0,
-      "moR" : 0,
-      "moT" : 2,
-      "oA" : 0,
-      "oAP" : "\/build\/js\/hi.js",
-      "oF" : 0,
-      "rC" : 0,
-      "tEC" : 0
     },
     "\/build\/js\/lazysizes.min.js" : {
       "bF" : 0,
@@ -962,32 +971,13 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/build\/js\/splide.min.js" : {
+    "\/build\/js\/swiper-bundle-min.js11.js" : {
       "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/build\/js\/splide.min-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
-    },
-    "\/build\/js\/splide.min.js.gz" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/build\/js\/splide.min.js.gz",
-      "oF" : 0
-    },
-    "\/build\/js\/swiper-bundle-min.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/build\/js\/swiper-bundle-min-min.js",
+      "oAP" : "\/build\/js\/swiper-bundle-min.js11-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -1004,6 +994,17 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/build\/js\/swiper-bundle.min.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 0,
+      "oAP" : "\/build\/js\/swiper-bundle.min-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/build\/js\/swiper-bundle.min.js.map" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1011,17 +1012,6 @@
       "oA" : 0,
       "oAP" : "\/build\/js\/swiper-bundle.min.js.map",
       "oF" : 0
-    },
-    "\/build\/js\/swiper-bundle.min.js11.js" : {
-      "bF" : 0,
-      "ft" : 64,
-      "ma" : 0,
-      "mi" : 1,
-      "oA" : 0,
-      "oAP" : "\/build\/js\/swiper-bundle.min.js11-min.js",
-      "oF" : 0,
-      "sC" : 3,
-      "tS" : 0
     },
     "\/build\/list.html" : {
       "cB" : 0,
