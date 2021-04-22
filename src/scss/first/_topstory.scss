@@ -17,14 +17,19 @@
         }
 
         &:after {
+
+           padding-top: 75%;
+            @media(min-width: 768px){
+                padding-top: 60%;
+            }
             @media(min-width: 1200px){
-                padding-top: 740px;
+                padding-top: 640px;
             }
         }
         }
         .txt-cont {
 
-
+bottom: 0;
             background: rgba($third, 0.63);
           
             text-align: center;
