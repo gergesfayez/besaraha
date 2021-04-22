@@ -1,0 +1,38 @@
+@use '../critical/helpers/var'as *;
+
+
+.topstory {
+    float: right;
+    width: 100%;
+    margin-bottom: 20px;
+
+
+
+
+    .item-bg {
+
+        .img-cont {
+        &:before {
+            opacity: 0;
+        }
+        }
+        .txt-cont {
+            background: rgba($third, 0.63);
+            bottom: 0;
+            text-align: center;
+
+            h3{
+                
+                height: auto;
+                max-height: fit-content !important;
+                display: inline-block;
+                max-width: 768px;
+                float: none;
+
+                font-size: 33px;
+                line-height: 50px;
+                
+            }
+        }
+    }
+}
