@@ -3,7 +3,7 @@
     color: #031f35;
     border-radius: 30px;
     padding: 3px 10px;
-    background: $secondary;
+    background: $graidient;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -36,11 +36,13 @@
 .txt-cont {
     .cat {
         position: relative;
-        float: right;
+        display: inline-block;
+        clear: both;
         top: auto;
         right: auto;
         margin-bottom: 10px;
-        background: $secondary;
+        
+        
     }
     float: right;
     width: 100%;
