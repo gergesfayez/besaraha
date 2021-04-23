@@ -17,34 +17,34 @@
         padding: 8px 10px;
         //  background: #fff;
         position: relative;
-        border-top: 1px solid $primary;
-        padding-right: 0;
+       padding-right: 40px;
         // box-shadow: $box-shadow-sm;
         &:after {
             content: "";
             position: absolute;
             right: 0;
-            width: 120px;
-            top: -1px;
-            height: 4px;
-            background: $secondary;
+            width: 100%;
+            top: 47%;
+            height: 1px;
+            background: $primary;
         }
-        /*
+        
         &:before {
             content: "";
-            width: 26px;
-            height: 26px;
+            width: 36px;
+            height: 36px;
 
             position: absolute;
             bottom: 9px;
-            right: 10px;
-            background: url("../images/favicon.png") no-repeat center;
+            right: 0px;
+            background: url("../images/favicon.png") no-repeat center #fff;
             background-size: contain !important;
             transition: all 1.35s;
             z-index: 33;
 
-        }*/
+        } 
         h2 {
+            background: #fff;
             font-size: 1.2rem;
             line-height: 1.8rem;
             // background: #fff;
@@ -52,7 +52,7 @@
             z-index: 23;
             position: relative;
             padding: 0 20px;
-            color: $primary;
+            color: #000;
             font-weight: bolder;
             //   background: $secondary;
             //border-radius: 30px;
