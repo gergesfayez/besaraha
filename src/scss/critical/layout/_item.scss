@@ -132,3 +132,79 @@
 }
 
  
+
+
+
+.item-top-bank {
+    background: #fff;
+    display: inline-block;
+    width: 300px;
+    border:1px solid #dcdcdc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: $box-shadow-sm;
+
+    .img-cont {
+        width: 100px;
+    border:1px solid #dcdcdc;
+        &:after {
+           padding-top: 100%
+        }
+
+
+    }
+
+    .txt-cont {
+        width: calc(100% - 100px);
+        padding: 0;
+        
+
+        .top{
+            width: 100%;
+            line-height:20px;
+            border-bottom: 1px solid #dcdcdc;
+            padding-right: 10px;
+            padding-top: 20px;
+
+            position: relative;
+            font-weight: bolder;
+            font-size: 14px;
+            &:before{
+                content: "";
+                width: 26px;
+                height: 20px;
+                top: 0;
+                right: 0;
+                position: absolute;
+                background:url("../images/favicon.png") no-repeat center;
+                background-size: contain;
+            }
+
+        }
+
+        .btm {
+            height: 60px;
+            line-height: 24px;
+            overflow: hidden;
+            float: right;
+            width: 100%;
+            padding-right: 10px;
+            color: $primary;
+        }
+    }
+}
+
+.swiper-pagination{
+    border-top: 2px solid $primary;
+    .swiper-pagination-bullet{
+        background: $graidient !important;
+        transition: all 0.34s ease-in;
+
+        &.swiper-pagination-bullet-active{
+
+            width:20px;
+            border-radius: 20px;
+
+        }
+    }
+}
