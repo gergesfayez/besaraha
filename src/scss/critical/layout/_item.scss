@@ -193,7 +193,9 @@
         }
     }
 }
-
+.swiper-container{
+        padding-bottom: 45px !important;
+}
 .swiper-pagination{
     border-top: 2px solid $primary;
     .swiper-pagination-bullet{

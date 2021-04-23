@@ -1,0 +1,41 @@
+
+
+.top-banks{
+
+ .tp-swiper {
+     text-align: center;
+
+    .item-top-bank {
+        display: inline-block;
+    }
+     .swiper-pagination {
+     border-top: 1px solid transparent !important; 
+ }
+
+
+.tp-nxt,
+.tp-prv {
+    position: relative;
+    width: 32px;
+    height: 32px;
+
+    top: auto;
+    bottom: -31px;
+    z-index: 33;
+    opacity: 0;
+}
+
+
+.tp-nxt{
+float: left;
+}
+
+.tp-prv{
+    float:right;
+}
+
+ }
+
+
+
+}
