@@ -1,12 +1,30 @@
 
 
 .top-banks{
+background: #f4f4f4;
+border-bottom: 1px solid #dcdcdc;
 
+.title{
+    &:before{
+        background-color: #f4f4f4;
+    }
+    h2{
+        background:#f4f4f4;
+    }
+}
  .tp-swiper {
      text-align: center;
+    .swiper-slide{
+        width: 300px !important;
 
+        @media(min-width: 768px){
+            width: 340px !important;
+        }
+
+    }
     .item-top-bank {
         display: inline-block;
+        width: 100% !important;
     }
      .swiper-pagination {
      border-top: 1px solid transparent !important; 
