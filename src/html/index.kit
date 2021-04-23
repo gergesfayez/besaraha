@@ -129,15 +129,15 @@
 
 
             var topbanks = new Swiper('.tp-swiper', {
-                slidesPerView: 1,
-                spaceBetween: 10,
+                slidesPerView: 'auto',
+                spaceBetween: 30,
                 loop: true,
                 loopFillGroupWithBlank: true,
                 preloadImages: false,
                 lazy: true,
 
                 autoplay: {
-                    delay: 6500,
+                    delay: 3500,
                     disableOnInteraction: false,
                 },
                 pagination: {
@@ -148,24 +148,24 @@
                     nextEl: '.tp-nxt',
                     prevEl: '.tp-prv',
                 },
-                breakpoints: {
-                    440: {
-                        slidesPerView: 1,
-                        spaceBetween: 10,
-                    },
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                    },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                    },
-                    1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 20,
-                    },
-                }
+                /*   breakpoints: {
+                       440: {
+                           slidesPerView: 1,
+                           spaceBetween: 10,
+                       },
+                       640: {
+                           slidesPerView: 2,
+                           spaceBetween: 10,
+                       },
+                       768: {
+                           slidesPerView: 3,
+                           spaceBetween: 20,
+                       },
+                       1024: {
+                           slidesPerView: auto,
+                           spaceBetween: 20,
+                       },
+                   }*/
 
             });
             var videoswiper = new Swiper('.video-swiper', {
