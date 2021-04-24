@@ -1531,11 +1531,19 @@
       "oAP" : "\/src\/html\/np\/album.html",
       "oF" : 0
     },
-    "\/src\/html\/np\/video.html" : {
+    "\/src\/html\/np\/info.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
+      "oAP" : "\/src\/html\/np\/info.html",
+      "oF" : 0
+    },
+    "\/src\/html\/np\/video.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
       "oAP" : "\/src\/html\/np\/video.html",
       "oF" : 0
     },

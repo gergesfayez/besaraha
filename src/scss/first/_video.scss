@@ -1,0 +1,52 @@
+@use '../critical/helpers/var'as *;
+
+
+.video-slider {
+
+
+
+    .item-card {
+        background: $third;
+
+        .img-cont {
+            .icn-cont {
+                top: auto;
+                bottom: 10px;
+                left: 10px;
+                width: 76px;
+                height: 57px;
+                border-radius: 10px;
+                padding: 0;
+
+                background-color: rgba($primary, 0.7);
+
+                .icon{
+                       width: 57px;
+                         height: 57px;
+                }
+
+            }
+        }
+        .txt-cont {
+            color: #fff;
+
+            h3{
+                color: #fff;
+                text-align: center;
+            }
+        }
+    }
+
+.swiper-container {
+    background: $third;
+    padding-bottom: 19px !important;
+}
+    .swiper-button-next, .swiper-button-prev {
+        top: 30%;
+        &:after {
+ color: #fff;
+        }
+       
+ 
+    }
+}
