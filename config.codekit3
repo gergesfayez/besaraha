@@ -241,6 +241,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/bg-footer.jpg" : {
+      "ft" : 16384,
+      "iS" : 36461,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/bg-footer.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/build\/images\/bg-indicator.jpg" : {
       "ft" : 16384,
       "iS" : 639696,

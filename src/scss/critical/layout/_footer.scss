@@ -2,15 +2,16 @@
 footer {
     float: right;
     width: 100%;
-    background: #011423;
+    background: url("../images/bg-footer.jpg") no-repeat center $third;
+    background-size: cover;
     text-align: center;
     padding-top: 10px;
     content-visibility: auto;
-    background: linear-gradient(#001e36 0%, #032c4d 100%);
+  
     .top {
         float: right;
         width: 100%;
-        border-bottom: 2px solid $secondary;
+        border-bottom:1px solid #707070;
         .logo-area {
             @media(min-width: 768px) {
                 display: inline-block;
@@ -18,9 +19,9 @@ footer {
                 width: auto;
             }
             .logo {
-                height: 70px;
+                height: 40px;
                 display: block;
-                margin: 10px 0;
+              //  margin: 10px 0;
                 img {
                     height: 100%;
                     width: auto;
@@ -28,19 +29,28 @@ footer {
             }
         }
         .follow {
-            display: inline-block;
+           
             color: #fff;
-            width: 100%;
+     
+            float: left;
+            width: auto;
+
+            >a {
+                float:right
+            }
             @media(min-width: 768px) {
                 float: left;
                 width: auto;
                 margin-top: 20px;
             }
             .social {
+                width: auto;
+                float: right;
                 a {
-                    background: #fff !important;
-                    color: $primary !important;
-                    fill: $primary !important;
+                    background: transparent !important;
+                    border:1px solid $primary;
+                    color: #fff !important;
+                    fill: #fff !important;
                     &:hover {
                         background: #333 !important;
                         color: #ffff !important;
@@ -54,7 +64,8 @@ footer {
         text-align: center;
         float: right;
         width: 100%;
-        display: none;
+      
+                border-bottom:1px solid #707070;
         @media(min-width: 768px) {
             display: block;
         }
@@ -67,7 +78,7 @@ footer {
         }
     }
     .copy {
-        background: #04365F;
+        //background: #04365F;
         color: #fff;
         float: right;
         width: 100%;
