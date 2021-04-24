@@ -154,26 +154,36 @@
                     nextEl: '.tp-nxt',
                     prevEl: '.tp-prv',
                 },
-                /*   breakpoints: {
-                       440: {
-                           slidesPerView: 1,
-                           spaceBetween: 10,
-                       },
-                       640: {
-                           slidesPerView: 2,
-                           spaceBetween: 10,
-                       },
-                       768: {
-                           slidesPerView: 3,
-                           spaceBetween: 20,
-                       },
-                       1024: {
-                           slidesPerView: auto,
-                           spaceBetween: 20,
-                       },
-                   }*/
+
 
             });
+
+
+            //lists slider
+
+            var lists = new Swiper('.gallery-thumbs', {
+                spaceBetween: 10,
+                slidesPerView: 4,
+                loop: true,
+                freeMode: true,
+                loopedSlides: 5, //looped slides should be the same
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+            });
+            var galleryTop = new Swiper('.gallery-top', {
+                spaceBetween: 10,
+                loop: true,
+                loopedSlides: 5, //looped slides should be the same
+                navigation: {
+                    nextEl: '.list-next',
+                    prevEl: '.list-prev',
+                },
+                thumbs: {
+                    swiper: galleryThumbs,
+                },
+            });
+
+
             var videoswiper = new Swiper('.video-swiper', {
                 slidesPerView: 1,
                 spaceBetween: 10,

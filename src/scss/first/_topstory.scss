@@ -43,7 +43,7 @@ bottom: 0;
          border-top-left-radius: 20px;
             border-top-right-radius: 20px;
             opacity: 0;
-            bottom: -300px;
+          
             transition: all 1s ease-in;
             }
 
@@ -84,7 +84,7 @@ bottom: 0;
     .swiper-slide-active {
         .item-bg {
             .txt-cont {
-                bottom: 0;
+                
                 opacity: 1;
             }
         }
