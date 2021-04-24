@@ -75,7 +75,7 @@
         <!--@import "nt/topstory-swiper.html"-->
         <!--@import "first/top-banks.html"-->
 
-
+        <!--@import "first/lists.html"-->
         <div class="container">
             <!--@import "first/indicator.html"-->
             <!--@import "nc/nc1.html"-->
@@ -161,16 +161,16 @@
 
             //lists slider
 
-            var lists = new Swiper('.gallery-thumbs', {
+            var listCats = new Swiper('.lists-cats-swiper', {
                 spaceBetween: 10,
-                slidesPerView: 4,
+                slidesPerView: 'auto',
                 loop: true,
                 freeMode: true,
                 loopedSlides: 5, //looped slides should be the same
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
             });
-            var galleryTop = new Swiper('.gallery-top', {
+            var listSlides = new Swiper('.lists-slides-swiper', {
                 spaceBetween: 10,
                 loop: true,
                 loopedSlides: 5, //looped slides should be the same
@@ -179,7 +179,7 @@
                     prevEl: '.list-prev',
                 },
                 thumbs: {
-                    swiper: galleryThumbs,
+                    swiper: listCats,
                 },
             });
 
