@@ -689,48 +689,150 @@
         
         
                 </div>
-            </div>
         
-            <div class="swiper-container lists-slides-swiper" dir="rtl">
-                <div class="swiper-wrapper">
+                <div class="lists-cats-cont">
+                    <div class="swiper-container lists-slides-swiper" dir="rtl">
+                        <div class="swiper-wrapper">
         
         
-                    <div class="swiper-slide">
+                            <div class="swiper-slide">
         
-                        <h1>
-                            الأثرياء
-                        </h1>>
+                                <h1>
+                                    الأثرياء
+                                </h1>
         
-                    </div>
+                                <div class="swiper-container list-cat-swiper" dir="rtl">
+                                    <div class="swiper-wrapper">
         
-                    <div class="swiper-slide">
+                                        <div class="swiper-slide">
+                                            <div class='item-card'>
+                                                <a href='show.html' title=''>
         
-                        <h1>
-                            رواد
-                        </h1>>
         
-                    </div>
+                                                    <div class='img-cont'>
         
-                    <div class="swiper-slide">
         
-                        <h1>
-                            سيدات
-                        </h1>>
         
-                    </div>
+                                                        <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg"
+                                                            loading="lazy"
+                                                            alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                    </div>
+                                                    <div class='txt-cont'>
         
-                    <div class="swiper-slide">
         
-                        <h1>
-                            شركات
-                        </h1>>
+                                                        <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                        </h3>
         
+        
+        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class='item-card'>
+                                                <a href='show.html' title=''>
+        
+        
+                                                    <div class='img-cont'>
+        
+        
+                                                        <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg"
+                                                            loading="lazy"
+                                                            alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                    </div>
+                                                    <div class='txt-cont'>
+        
+                                                        <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                        </h3>
+        
+        
+        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="swiper-slide">
+                                            <div class='item-card'>
+                                                <a href='show.html' title=''>
+        
+        
+                                                    <div class='img-cont'>
+        
+                                                        <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg"
+                                                            loading="lazy"
+                                                            alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                    </div>
+                                                    <div class='txt-cont'>
+        
+                                                        <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                        </h3>
+        
+        
+        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="swiper-slide">
+                                            <div class='item-card'>
+                                                <a href='show.html' title=''>
+        
+        
+                                                    <div class='img-cont'>
+        
+        
+                                                        <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg"
+                                                            loading="lazy"
+                                                            alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                    </div>
+                                                    <div class='txt-cont'>
+        
+                                                        <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                        </h3>
+        
+        
+        
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                            </div>
+        
+                            <div class="swiper-slide">
+        
+                                <h1>
+                                    رواد
+                                </h1>
+        
+                            </div>
+        
+                            <div class="swiper-slide">
+        
+                                <h1>
+                                    سيدات
+                                </h1>
+        
+                            </div>
+        
+                            <div class="swiper-slide">
+        
+                                <h1>
+                                    شركات
+                                </h1>
+        
+                            </div>
+        
+                        </div>
                     </div>
         
                 </div>
-            </div>
-        
-        
         
         
             </div>
@@ -1872,10 +1974,10 @@
 
             var listCats = new Swiper('.lists-cats-swiper', {
                 spaceBetween: 10,
-                slidesPerView: 'auto',
-                loop: true,
+                slidesPerView: 4,
+                loop: false,
                 freeMode: true,
-                loopedSlides: 5, //looped slides should be the same
+                //    loopedSlides: 5, //looped slides should be the same
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
             });
@@ -1884,14 +1986,36 @@
                 loop: true,
                 loopedSlides: 5, //looped slides should be the same
                 navigation: {
-                    nextEl: '.list-next',
-                    prevEl: '.list-prev',
+                    nextEl: '.lists-next',
+                    prevEl: '.lists-prev',
                 },
                 thumbs: {
                     swiper: listCats,
                 },
             });
+            var listCat = new Swiper('.list-cat-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 40,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
 
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.tp-nxt',
+                    prevEl: '.tp-prv',
+                },
+
+
+            });
 
             var videoswiper = new Swiper('.video-swiper', {
                 slidesPerView: 1,

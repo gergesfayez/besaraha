@@ -6,4 +6,69 @@
     width: 100%;
     background: url("../images/bg-lists.jpg") top center no-repeat;
 
+    padding: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+
+
+
+
+
+
+
+    .title-center {
+        float: right;
+        width: 100%;
+       
+        
+        h2{
+            color: #fff;
+            line-height: 50px;
+            font-size: 20px;
+            @media(min-width: 1200px){
+                font-size: 24px;
+            }
+        }
+
+    }
+
+
+
+    .lists-cats-cont{
+        float: right;
+        width: 100%;
+    }
+    .lists-tabs {
+        float: right;
+        width: 100%;
+
+
+        .item-tab{
+
+            color: #fff;
+
+            border:1px solid transparent;
+
+            line-height: 30px;
+            display: inline-block;
+            padding: 0 20px;
+
+        }
+
+        .swiper-slide-thumb-active{
+            .item-tab{
+
+            border:1px solid $primary;
+            }
+        }
+    }
+
+    .list-cat-swiper{
+        float: right;
+        width:100%;
+        .swiper-slide{
+            width: 280px;
+        }
+    }
+
 }

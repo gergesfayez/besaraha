@@ -163,10 +163,10 @@
 
             var listCats = new Swiper('.lists-cats-swiper', {
                 spaceBetween: 10,
-                slidesPerView: 'auto',
-                loop: true,
+                slidesPerView: 4,
+                loop: false,
                 freeMode: true,
-                loopedSlides: 5, //looped slides should be the same
+                //    loopedSlides: 5, //looped slides should be the same
                 watchSlidesVisibility: true,
                 watchSlidesProgress: true,
             });
@@ -175,14 +175,36 @@
                 loop: true,
                 loopedSlides: 5, //looped slides should be the same
                 navigation: {
-                    nextEl: '.list-next',
-                    prevEl: '.list-prev',
+                    nextEl: '.lists-next',
+                    prevEl: '.lists-prev',
                 },
                 thumbs: {
                     swiper: listCats,
                 },
             });
+            var listCat = new Swiper('.list-cat-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 40,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
 
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.tp-nxt',
+                    prevEl: '.tp-prv',
+                },
+
+
+            });
 
             var videoswiper = new Swiper('.video-swiper', {
                 slidesPerView: 1,
