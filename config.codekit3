@@ -1328,7 +1328,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/src\/html\/first\/banker.html",
       "oF" : 0
     },

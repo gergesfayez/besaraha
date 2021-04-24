@@ -6,5 +6,71 @@
 }
 
 .item-profile {
-    
+    float: right;
+    width: 100%;
+
+    .img{
+        position: relative;
+        float: right;
+        width:100%;
+
+        &:before {
+            content: "";
+
+            width: 100%;
+            height: 110px;
+            background: $third;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+               transition: all 0.35s ease-in-out;   
+        }
+
+        .icon-cont {
+            position: absolute;
+            bottom: 20px;
+            right: 30px;
+            width: 60px;
+            transition: all 0.35s ease-in-out;
+
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .img-cont {
+        width: 168px;
+        float: left;
+        &:after {
+            padding-top: 240px;
+        }
+        }
+
+      
+    }
+  .txt {
+            float: right;
+            width: 100%;
+            padding: 10px 0;
+            h3 {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+    &:hover{
+        .img{
+            .icon-cont {
+                width: 200px;
+                height: auto;
+            }
+            &:before{
+                background: $primary;
+            }
+        }
+    }
 }
