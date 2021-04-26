@@ -65,25 +65,25 @@
 
 
 
- window.onscroll = function() {
+ window.onscroll = function () {
      stickyEl();
  };
 
  var navbar = document.getElementById("navbar");
- var sponserLeft = document.getElementById("stick-l");
- var sponserRight = document.getElementById("stick-r");
+ //var sponserLeft = document.getElementById("stick-l");
+ //var sponserRight = document.getElementById("stick-r");
  var sticky = navbar.offsetTop;
 
 
  function stickyEl() {
      if (window.pageYOffset >= sticky) {
          navbar.classList.add("sticky");
-         sponserLeft.classList.add("stickyL");
-         sponserRight.classList.add("stickyR");
+         //   sponserLeft.classList.add("stickyL");
+         // sponserRight.classList.add("stickyR");
      } else {
          navbar.classList.remove("sticky");
-         sponserLeft.classList.remove("stickyL");
-         sponserRight.classList.remove("stickyR");
+         //  sponserLeft.classList.remove("stickyL");
+         //   sponserRight.classList.remove("stickyR");
      }
 
 
@@ -96,7 +96,7 @@
  var i;
 
  for (i = 0; i < coll.length; i++) {
-     coll[i].addEventListener("click", function() {
+     coll[i].addEventListener("click", function () {
          this.classList.toggle("active");
          var content = this.nextElementSibling;
          if (hasClass(content, "show")) {
