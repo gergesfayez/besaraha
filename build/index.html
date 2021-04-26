@@ -885,19 +885,13 @@
                             <div class="from-group">
                                 <label for="IndicatorList" class="form-label"> المؤشر</label>
                                 <select class="form-control" id="IndicatorList">
-                                    <option> الارباح </option>
-                                    <option> الأصول </option>
-                                    <option> الدخل </option>
-                                    <option> الأرباح </option>
+            
                                 </select>
                             </div>
                             <div class="from-group">
                                 <label for="BankList" cclass="form-label"> البنك</label>
-                                <select class="form-control" id="BankList">
-                                    <option> الارباح </option>
-                                    <option> الأصول </option>
-                                    <option> الدخل </option>
-                                    <option> الأرباح </option>
+                                <select class="form-control" id="BankList" multiple="multiple">
+            
                                 </select>
                             </div>
             
@@ -920,6 +914,8 @@
                 $(function () {
                     $('#IndicatorList').multipleSelect({
             
+            
+                        filter: true,
                         placeholder: 'اختار مؤشر ',
                         data: [
                             {
@@ -974,8 +970,74 @@
             
                     });
                     $('#BankList').multipleSelect({
+                        formatSelectAll() {
+                            return 'اختار الكل'
+                        },
             
+                        formatAllSelected() {
+                            return 'تم اختيار الكل'
+                        },
+            
+                        formatNoMatchesFound() {
+                            return ' لا يوجد نتائج'
+                        },
                         placeholder: 'اختار بنك او أكثر',
+                        displayDelimiter: ' | ',
+                        ellipsis: true,
+            
+                        filter: true,
+            
+                        data: [
+                            {
+                                text: 'البنك الأهلي المصري-NBE',
+                                value: 1
+                            },
+                            {
+                                text: 'البنك التجاري الدولي-CIB',
+                                value: 2
+                            },
+                            {
+                                text: 'بنك مصر',
+                                value: 3
+                            },
+                            {
+                                text: 'بنك قطر الوطني الأهلي-QNB',
+                                value: 4
+                            },
+                            {
+                                text: 'HSBC',
+                                value: 5
+                            },
+                            {
+                                text: 'المؤشر المجمع للسلامة المالية',
+                                value: 6
+                            },
+                            {
+                                text: 'المؤشر المجمع للانتشار الجغرافي',
+                                value: 7
+                            },
+                            {
+                                text: 'بنك الاستثمار العربي-AI',
+                                value: 8
+                            },
+                            {
+                                text: 'التجاري وفا بنك',
+                                value: 9
+                            },
+                            {
+                                text: 'بلوم مصر',
+                                value: 10
+                            },
+                            {
+                                text: 'كريدي أجريكول مصر',
+                                value: 11
+                            },
+                            {
+                                text: 'المصرف العربي الدولي-AIB',
+                                value: 12
+                            }
+                        ]
+            
             
                     });
                 })
