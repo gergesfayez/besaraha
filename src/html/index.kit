@@ -181,6 +181,31 @@
             });
 
 
+            var profiles = new Swiper('.profile-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
+
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.pro-nxt',
+                    prevEl: '.pro-prv',
+                },
+
+
+            });
+
+
             //lists slider
 
             var listCats = new Swiper('.lists-cats-swiper', {

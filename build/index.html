@@ -882,13 +882,24 @@
             
                         <form>
             
-            
-                            <select id="IndicatorList">
-                                <option> الارباح </option>
-                                <option> الأصول </option>
-                                <option> الدخل </option>
-                                <option> الأرباح </option>
-                            </select>
+                            <div class="from-group">
+                                <label for="IndicatorList" class="form-label"> المؤشر</label>
+                                <select class="form-control" id="IndicatorList">
+                                    <option> الارباح </option>
+                                    <option> الأصول </option>
+                                    <option> الدخل </option>
+                                    <option> الأرباح </option>
+                                </select>
+                            </div>
+                            <div class="from-group">
+                                <label for="BankList" cclass="form-label"> البنك</label>
+                                <select class="form-control" id="BankList">
+                                    <option> الارباح </option>
+                                    <option> الأصول </option>
+                                    <option> الدخل </option>
+                                    <option> الأرباح </option>
+                                </select>
+                            </div>
             
                         </form>
             
@@ -903,6 +914,72 @@
                     المصرية
                 </p>
             </div>
+            
+            
+            <script>
+                $(function () {
+                    $('#IndicatorList').multipleSelect({
+            
+                        placeholder: 'اختار مؤشر ',
+                        data: [
+                            {
+                                text: 'صافي الأرباح',
+                                value: 1
+                            },
+                            {
+                                text: 'محفظة القروض',
+                                value: 2
+                            },
+                            {
+                                text: 'محفظة الودائع',
+                                value: 3
+                            },
+                            {
+                                text: 'الأصول',
+                                value: 4
+                            },
+                            {
+                                text: 'المؤشر المجمع للنمو',
+                                value: 5
+                            },
+                            {
+                                text: 'المؤشر المجمع للسلامة المالية',
+                                value: 6
+                            },
+                            {
+                                text: 'المؤشر المجمع للانتشار الجغرافي',
+                                value: 7
+                            },
+                            {
+                                text: 'المؤشر المجمع للكفاءة',
+                                value: 8
+                            },
+                            {
+                                text: 'القيمة السوقية للسهم',
+                                value: 9
+                            },
+                            {
+                                text: 'العائد على حقوق الملكية',
+                                value: 10
+                            },
+                            {
+                                text: 'العائد على الأصول',
+                                value: 11
+                            },
+                            {
+                                text: 'صافي الدخل من العائد',
+                                value: 12
+                            }
+                        ]
+            
+                    });
+                    $('#BankList').multipleSelect({
+            
+                        placeholder: 'اختار بنك او أكثر',
+            
+                    });
+                })
+            </script>
             <div class="block nc1">
                             <div class="title">
                                 <a href="list.html" title="catName">
@@ -1018,130 +1095,125 @@
                                         <div class='cont'>
                                     
                                             <div class="row">
-                                                <div class="col-sm-6 col-lg-3">
                                     
                                     
-                                                    <div class="item-profile">
-                                                        <a href="profile.html">
-                                                            <div class="img">
-                                                                <div class="img-cont">
                                     
-                                                                    <img src="images/no.jpg" data-src="images/1.png" alt="" class="lazyload">
+                                                <div class="item-profile">
+                                                    <a href="profile.html">
+                                                        <div class="img">
+                                                            <div class="img-cont">
                                     
-                                                                </div>
-                                    
-                                                                <div class="icon-cont">
-                                                                    <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
-                                                                </div>
-                                    
+                                                                <img src="images/no.jpg" data-src="images/1.png" alt="" class="lazyload">
                                     
                                                             </div>
                                     
-                                                            <div class="txt">
-                                                                <h3>هشام عكاشة</h3>
-                                    
-                                                                <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
-                                    
-                                    
-                                    
+                                                            <div class="icon-cont">
+                                                                <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
                                                             </div>
-                                                        </a>
-                                                    </div>
                                     
+                                    
+                                                        </div>
+                                    
+                                                        <div class="txt">
+                                                            <h3>هشام عكاشة</h3>
+                                    
+                                                            <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
+                                    
+                                    
+                                    
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-sm-6 col-lg-3">
                                     
                                     
-                                                    <div class="item-profile">
-                                                        <a href="profile.html">
-                                                            <div class="img">
-                                                                <div class="img-cont">
+                                                <div class="item-profile">
+                                                    <a href="profile.html">
+                                                        <div class="img">
+                                                            <div class="img-cont">
                                     
-                                                                    <img src="images/no.jpg" data-src="images/2.png" alt="" class="lazyload">
-                                    
-                                                                </div>
-                                    
-                                                                <div class="icon-cont">
-                                                                    <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
-                                                                </div>
-                                    
+                                                                <img src="images/no.jpg" data-src="images/2.png" alt="" class="lazyload">
                                     
                                                             </div>
                                     
-                                                            <div class="txt">
-                                                                <h3>هشام عكاشة</h3>
-                                    
-                                                                <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
-                                    
-                                    
-                                    
+                                                            <div class="icon-cont">
+                                                                <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
                                                             </div>
-                                                        </a>
-                                                    </div>
                                     
+                                    
+                                                        </div>
+                                    
+                                                        <div class="txt">
+                                                            <h3>هشام عكاشة</h3>
+                                    
+                                                            <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
+                                    
+                                    
+                                    
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-sm-6 col-lg-3">
                                     
                                     
-                                                    <div class="item-profile">
-                                                        <a href="profile.html">
-                                                            <div class="img">
-                                                                <div class="img-cont">
                                     
-                                                                    <img src="images/no.jpg" data-src="images/3.png" alt="" class="lazyload">
                                     
-                                                                </div>
+                                                <div class="item-profile">
+                                                    <a href="profile.html">
+                                                        <div class="img">
+                                                            <div class="img-cont">
                                     
-                                                                <div class="icon-cont">
-                                                                    <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
-                                                                </div>
-                                    
+                                                                <img src="images/no.jpg" data-src="images/3.png" alt="" class="lazyload">
                                     
                                                             </div>
                                     
-                                                            <div class="txt">
-                                                                <h3>هشام عكاشة</h3>
-                                    
-                                                                <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
-                                    
-                                    
-                                    
+                                                            <div class="icon-cont">
+                                                                <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
                                                             </div>
-                                                        </a>
-                                                    </div>
                                     
+                                    
+                                                        </div>
+                                    
+                                                        <div class="txt">
+                                                            <h3>هشام عكاشة</h3>
+                                    
+                                                            <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
+                                    
+                                    
+                                    
+                                                        </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-sm-6 col-lg-3">
                                     
                                     
-                                                    <div class="item-profile">
-                                                        <a href="profile.html">
-                                                            <div class="img">
-                                                                <div class="img-cont">
                                     
-                                                                    <img src="images/no.jpg" data-src="images/4.png" alt="" class="lazyload">
                                     
-                                                                </div>
+                                                <div class="item-profile">
+                                                    <a href="profile.html">
+                                                        <div class="img">
+                                                            <div class="img-cont">
                                     
-                                                                <div class="icon-cont">
-                                                                    <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
-                                                                </div>
-                                    
+                                                                <img src="images/no.jpg" data-src="images/4.png" alt="" class="lazyload">
                                     
                                                             </div>
                                     
-                                                            <div class="txt">
-                                                                <h3>هشام عكاشة</h3>
-                                    
-                                                                <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
-                                    
-                                    
-                                    
+                                                            <div class="icon-cont">
+                                                                <img src=" " data-src="images/favicon.png" alt="" class="lazyload">
                                                             </div>
-                                                        </a>
-                                                    </div>
                                     
+                                    
+                                                        </div>
+                                    
+                                                        <div class="txt">
+                                                            <h3>هشام عكاشة</h3>
+                                    
+                                                            <h4>رئيس مجلس إدارة البنك الأهلي المصري</h4>
+                                    
+                                    
+                                    
+                                                        </div>
+                                                    </a>
                                                 </div>
+                                    
+                                    
                                     
                                     
                                     
@@ -1986,6 +2058,31 @@
                 navigation: {
                     nextEl: '.tp-nxt',
                     prevEl: '.tp-prv',
+                },
+
+
+            });
+
+
+            var profiles = new Swiper('.profile-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
+
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.pro-nxt',
+                    prevEl: '.pro-prv',
                 },
 
 

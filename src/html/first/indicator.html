@@ -17,13 +17,24 @@
 
             <form>
 
-
-                <select id="IndicatorList">
-                    <option> الارباح </option>
-                    <option> الأصول </option>
-                    <option> الدخل </option>
-                    <option> الأرباح </option>
-                </select>
+                <div class="from-group">
+                    <label for="IndicatorList" class="form-label"> المؤشر</label>
+                    <select class="form-control" id="IndicatorList">
+                        <option> الارباح </option>
+                        <option> الأصول </option>
+                        <option> الدخل </option>
+                        <option> الأرباح </option>
+                    </select>
+                </div>
+                <div class="from-group">
+                    <label for="BankList" cclass="form-label"> البنك</label>
+                    <select class="form-control" id="BankList">
+                        <option> الارباح </option>
+                        <option> الأصول </option>
+                        <option> الدخل </option>
+                        <option> الأرباح </option>
+                    </select>
+                </div>
 
             </form>
 
@@ -38,3 +49,69 @@
         المصرية
     </p>
 </div>
+
+
+<script>
+    $(function () {
+        $('#IndicatorList').multipleSelect({
+
+            placeholder: 'اختار مؤشر ',
+            data: [
+                {
+                    text: 'صافي الأرباح',
+                    value: 1
+                },
+                {
+                    text: 'محفظة القروض',
+                    value: 2
+                },
+                {
+                    text: 'محفظة الودائع',
+                    value: 3
+                },
+                {
+                    text: 'الأصول',
+                    value: 4
+                },
+                {
+                    text: 'المؤشر المجمع للنمو',
+                    value: 5
+                },
+                {
+                    text: 'المؤشر المجمع للسلامة المالية',
+                    value: 6
+                },
+                {
+                    text: 'المؤشر المجمع للانتشار الجغرافي',
+                    value: 7
+                },
+                {
+                    text: 'المؤشر المجمع للكفاءة',
+                    value: 8
+                },
+                {
+                    text: 'القيمة السوقية للسهم',
+                    value: 9
+                },
+                {
+                    text: 'العائد على حقوق الملكية',
+                    value: 10
+                },
+                {
+                    text: 'العائد على الأصول',
+                    value: 11
+                },
+                {
+                    text: 'صافي الدخل من العائد',
+                    value: 12
+                }
+            ]
+
+        });
+        $('#BankList').multipleSelect({
+
+            placeholder: 'اختار بنك او أكثر',
+
+        });
+    })
+</script>
