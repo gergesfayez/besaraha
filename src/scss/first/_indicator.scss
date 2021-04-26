@@ -7,6 +7,19 @@
 .ms-drop input[type="radio"], .ms-drop input[type="checkbox"] {
        margin-right: -1.25rem;
        margin-left: auto !important;
+}.ms-choice {
+    text-align: right;
+}
+.ms-choice>span {
+        padding-left: 0 !important;
+        padding-right: 8px;
+        right: 0 !important;
+    left: 20px  !important;
+    text-align: right;
+}
+.ms-choice>div.icon-caret {
+       left: 8px;
+       right: auto !important;
 }
 .indicator {
     float: right;
