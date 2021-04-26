@@ -3,7 +3,9 @@
     padding-right: 1.25rem !important;
     padding-left: 0 !important;
 }
-
+.ms-choice {
+    border: 0 !important;
+}
 .ms-drop input[type="radio"], .ms-drop input[type="checkbox"] {
        margin-right: -1.25rem;
        margin-left: auto !important;
@@ -31,7 +33,7 @@
     background-size: 100%  ;
 
     position: relative;
-    overflow: hidden;
+   // overflow: hidden;
 
     &:after {
         content: "";
