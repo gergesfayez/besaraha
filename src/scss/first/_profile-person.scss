@@ -1,0 +1,68 @@
+@use '../critical/helpers/var'as *;
+
+article.profile-peroson{
+    float: right;
+    width: 100%;
+    background: $secondary;
+
+    color: #fff;
+
+    .title {
+        h2 {
+            background: $secondary;
+            color: #fff;
+        }
+
+        &:before {
+            background-color: $secondary;
+        }
+    }
+
+    .profile-cover {
+        float: right;
+        width: 100%;
+
+
+        padding: 20px 0;
+
+
+        .img-cont.cover {
+            width:  50%;
+            &:after{
+                padding-top: 844px;
+            }
+
+        }
+
+        .cover-cont {
+            float: right;
+            width: 50%;
+        }
+    }
+
+    .career ,.prizes {
+        float: right;
+        width: 100%;
+        background: #242220;
+        @media(min-width: 1200px){
+            border-radius: 220px;
+        }
+         .title {
+        h2 {
+            background: #242220;
+            color: #fff;
+        }
+
+        &:before {
+            background-color: #242220;
+        }
+    }
+
+    }
+
+
+
+
+
+}
+

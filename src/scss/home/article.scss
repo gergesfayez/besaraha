@@ -4,6 +4,11 @@
 //components
 @use '../components/col/poll';
 @use '../components/col/top-read';
+
+@use '../first/profile-person';
+
+
+
 .follow-app {
     float: right;
     width: 100%;
