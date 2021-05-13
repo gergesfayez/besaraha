@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Site Name | Home </title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="preload" href="css/article.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap"
+        as="style">
+    <link rel="preload" href="js/lazysizes.min.js" as="script">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json?">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="description" content="text description for website">
+
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/critical.css" media="all">
+    <link rel="stylesheet" href="css/article.css" media="all">
+    <script type="text/javascript" src="js/lazysizes.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <!--@import "design/header.html"-->
+    <!--@import "design/side-nav.html"-->
+
+
+    <main>
+        <div class="container">
+
+            <!--@import "first/profile-person.html"-->
+
+        </div>
+
+
+
+
+    </main>
+
+    <!--@import "design/footer.html"-->
+
+    <!-- show plugins--->
+
+    <script>
+        /* Share */
+        var url = "URL Here";
+        var title = "Sanitized title here ";
+        var desc = "sanitized desc Here";
+
+        var fbBtn = document.getElementsByClassName("fbshare");
+        var twBtn = document.getElementsByClassName("twshare");
+        var waBtn = document.getElementsByClassName("whatsapp");
+        var tgBtn = document.getElementsByClassName("telegram");
+        var vibBtn = document.getElementsByClassName("viber");
+        var mailBtn = document.getElementsByClassName("mail");
+
+        for (var i = 0; i < fbBtn.length; i++) {
+            fbBtn[i].href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+        }
+
+        for (var i = 0; i < twBtn.length; i++) {
+            twBtn[i].href = 'https://twitter.com/intent/tweet?text=' + title + url;
+        }
+
+        for (var i = 0; i < waBtn.length; i++) {
+            waBtn[i].href = "whatsapp://send?text=" + title + " " + url;
+        }
+
+        for (var i = 0; i < tgBtn.length; i++) {
+            tgBtn[i].href = "https://telegram.me/share/url?url=" + url + "&text=" + title;
+        }
+
+        for (var i = 0; i < vibBtn.length; i++) {
+            vibBtn[i].href = "viber://forward?text=" + title + " " + url;
+        }
+
+        for (var i = 0; i < mailBtn.length; i++) {
+            mailBtn[i].href = 'mailto:?body=' + encodeURIComponent(url) + '%0A%0A' + encodeURIComponent(desc) +
+                '&subject=' + encodeURIComponent(title) + '';
+        }
+
+        var NativeShareBtn = document.getElementsByClassName("mobile-native");
+        for (var i = 0; i < NativeShareBtn.length; i++) {
+            NativeShareBtn[i].addEventListener('click', function () {
+
+                if (typeof navigator.share === 'undefined') {
+                    log("No share API available!");
+                } else {
+                    navigator.share({
+                        title: '' + title + '',
+                        url: '' + url + '',
+                        text: '' + desc + ''
+                    })
+
+                        .then(function () {
+                            log("Share success!");
+                        })
+                        .catch(function () {
+                            log("Share failure!");
+                        });
+                }
+            });
+
+
+
+        }
+    </script>
+    <script type="text/javascript" src="js/core-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
+
+
+            const shortUrl = document.querySelectorAll('.shortUrl');
+            for (i = 0; i < shortUrl.length; i++) {
+
+
+                shortUrl[i].onclick = function () {
+
+                    Swal.fire({
+                        input: 'url',
+                        inputLabel: 'الرابط المختصر  ',
+                        inputValue: "https://almasdar.com/9516",
+                        confirmButtonText: 'إغلاق',
+                        didOpen: () => {
+                            const input = document.getElementById("swal2-input");
+                            input.focus();
+                            input.select();
+
+                        }
+                        //  inputPlaceholder: 'Enter the URL'
+                    }
+
+
+                    )
+                }
+
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -237,7 +237,7 @@
     },
     "\/build\/images\/1.png" : {
       "ft" : 32768,
-      "iS" : 65382,
+      "iS" : 220780,
       "oA" : 0,
       "oAP" : "\/build\/images\/1.png",
       "oF" : 0,
@@ -1002,6 +1002,14 @@
       "oAP" : "\/build\/list.html",
       "oF" : 0
     },
+    "\/build\/profile-person.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/profile-person.html",
+      "oF" : 0
+    },
     "\/build\/show.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1265,6 +1273,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/src\/html\/first\/news.html",
+      "oF" : 0
+    },
+    "\/src\/html\/first\/profile-person.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/first\/profile-person.html",
       "oF" : 0
     },
     "\/src\/html\/first\/top-banks.html" : {
@@ -1554,6 +1570,14 @@
       "oA" : 0,
       "oAP" : "\/src\/html\/nt\/topstory.html",
       "oF" : 0
+    },
+    "\/src\/html\/profile-person.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/profile-person.html",
+      "oF" : 2
     },
     "\/src\/html\/show.kit" : {
       "cB" : 0,
@@ -3551,6 +3575,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/first\/_lists.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/first\/_profile-person.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/first\/_profile-person.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
