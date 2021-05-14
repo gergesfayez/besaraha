@@ -6,6 +6,7 @@ article.profile-peroson{
     background: $secondary;
 
     color: #fff;
+    position: relative;
 
     .title {
         h2 {
@@ -28,13 +29,20 @@ article.profile-peroson{
  
 
         .img-cont.cover {
-            width:  50%;
+             width: 100%;
+
+            @media(min-width: 768px){
+     width: 50%;
+            }
 
             img {
                 z-index: 2;
             }
             &:after{
-                padding-top: 844px;
+                @media(min-width: 768px){
+       padding-top: 844px;
+                }
+         
           background: url(../images/favicon.png) no-repeat;
     background-size: contain;
     background-position-y: -54px;
@@ -48,8 +56,80 @@ article.profile-peroson{
 
         .cover-cont {
             float: right;
-            width: 50%;
+            width: 70%;
+            @media(min-width: 768px){
+     width: 50%;
+            }
+       
+h1{
+font-size: 30px;
+margin-bottom: 20px;
+@media(min-width: 1200px){
+    font-size: 42px;
+}
+}
 
+
+
+h4{
+    border-top: 1px solid $primary;
+display: block;
+float:right;
+width: 100%;
+    font-size: 16px;
+  
+    line-height: 32px;
+   
+
+}
+
+.updated{
+    float: right;
+    width: 100%;
+    text-align: right;
+    line-height: 32px;
+    margin-bottom: 10px;
+    border-top:1px solid $primary;
+    border-bottom:1px solid $primary;
+    .icon {
+        fill: #fff;
+    }
+}
+.post-share{
+   display: block;
+   text-align: right;
+   margin-bottom: 20px;
+   .mobile-native{
+       border-radius: 20px;
+       color: #fff;
+   }
+
+   a{
+       background-color: transparent;
+       border:1px solid $primary;
+   }
+}
+
+.info {float: right;
+width: 100%;
+margin-bottom: 20px;
+
+.item{
+    float: right;
+    width: 100%;
+    line-height: 32px;
+}
+.name {
+    float: right;
+    width: 50px;
+
+}
+.val {
+    float: right;
+    width: calc(100% - 50%);
+    font-weight:bolder;
+}
+}
 
              blockquote  {
 
