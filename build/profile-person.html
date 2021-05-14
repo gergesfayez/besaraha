@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="css/critical.css" media="all">
     <link rel="stylesheet" href="css/article.css" media="all">
     <script type="text/javascript" src="js/lazysizes.min.js"></script>
-
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
 
 
 </head>
@@ -638,36 +638,52 @@
                             <h2> التدرج الوظيفي</h2>
                         </div>
                         <div class='cont'>
+                            <div class="swiper-container career-swiper" dir="rtl">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="item-career">
+                                            <div class="date">مارس 2014</div>
         
-                            <div class="item-career">
-                                <div class="date">مارس 2014</div>
+                                            <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-career">
+                                            <div class="date">مارس 2014</div>
         
-                                <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
-                            </div>
-                            <div class="item-career">
-                                <div class="date">مارس 2014</div>
+                                            <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-career">
+                                            <div class="date">مارس 2014</div>
         
-                                <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
-                            </div>
-                            <div class="item-career">
-                                <div class="date">مارس 2014</div>
+                                            <div class="info">تم تكليفه بالقيام بأعمال رئيس مجلس إدارة البنك الأهلي المصري</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-career">
+                                            <div class="date">مارس 2014</div>
         
-                                <div class="info">تم تكليفه بالقيام بأعمال رئيس مجلس إدارة البنك الأهلي المصري</div>
-                            </div>
-                            <div class="item-career">
-                                <div class="date">مارس 2014</div>
+                                            <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-career">
+                                            <div class="date">مارس 2014</div>
         
-                                <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
-                            </div>
-                            <div class="item-career">
-                                <div class="date">مارس 2014</div>
+                                            <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="item-career">
+                                            <div class="date">مارس 2014</div>
         
-                                <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
-                            </div>
-                            <div class="item-career">
-                                <div class="date">مارس 2014</div>
+                                            <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
+                                        </div>
+                                    </div>
         
-                                <div class="info">تم انتخابه نائب لرئيس مجلس إدارة اتحاد بنوك مصر</div>
+                                </div>
                             </div>
                         </div>
         
@@ -887,7 +903,36 @@
     </footer>
 
     <!-- show plugins--->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function () {
 
+            var career = new Swiper('.career-swiper', {
+                slidesPerView: 'auto',
+                spaceBetween: 30,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
+
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.tp-nxt',
+                    prevEl: '.tp-prv',
+                },
+
+
+            });
+
+        });
+    </script>
     <script>
         /* Share */
         var url = "URL Here";
