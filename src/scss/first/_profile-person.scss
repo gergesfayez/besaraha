@@ -225,12 +225,61 @@ margin-bottom: 20px;
 
 
 .career-swiper{
+    &:before {
+        content: "";
+        width:100%;
+     background: #fff;
+        height: 2px ;
+        position: absolute;
+           top: 39px;
+        right: 0;
+    }
    .swiper-slide {
          width: 280px;
          float:right;
    }
 }
+.item-number{
+    float: right;
+    width: 100%;
 
+
+    .number{
+        color: $primary;
+        font-weight: boldder;
+        font-size: 60px;
+
+        float: right;
+        width: 100%;
+        line-height: 1.6;
+
+    }
+    .name{
+      color: #fff;
+        font-weight: bold;
+        font-size: 18px;
+
+        float: right;
+        width: 100%;
+        line-height: 1.6;
+    }
+    .desc{
+
+
+  
+        float: right;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 20px;
+        border:1px solid $primary;
+
+        padding: 10px;
+        text-align: right;
+        color: #fff;
+        line-height: 32px;
+   
+    }
+}
 .item-career{
     float: right;
     width: 280px;
