@@ -96,6 +96,99 @@
 
             });
 
+
+            var numbers = new Swiper('.number-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: false,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
+
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.n-nxt',
+                    prevEl: '.n-prv',
+                },
+                breakpoints: {
+                    440: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                }
+
+            });
+
+
+            var prizes = new Swiper('.prizes-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: false,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
+
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.p-nxt',
+                    prevEl: '.p-prv',
+                },
+                breakpoints: {
+                    440: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                }
+
+            });
+
+
         });
     </script>
     <script>

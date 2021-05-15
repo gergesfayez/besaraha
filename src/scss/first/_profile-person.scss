@@ -239,6 +239,51 @@ margin-bottom: 20px;
          float:right;
    }
 }
+
+section.prizes{
+    border-top-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+
+
+
+.item-prize{
+    float: right;
+    width: 100%;
+    background:$secondary;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    .year{
+        float: right;
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 800;
+        background: -moz-linear-gradient(left, rgb(186,135,58) 0%, rgb(230,194,105) 47%, rgb(236,222,162) 100%);
+background: -webkit-linear-gradient(left, rgb(186,135,58) 0%,rgb(230,194,105) 47%,rgb(236,222,162) 100%);
+background: linear-gradient(to right, rgb(186,135,58) 0%,rgb(230,194,105) 47%,rgb(236,222,162) 100%);
+    text-shadow: 0 1px 0 rgba($primary, 0.4);
+
+   // -webkit-text-stroke: 1px #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+        &:before{
+            content: "";
+            width: 50px;
+            height: 50px;
+            float: right;
+            margin-left:20px;
+            border-radius: 50%;
+            background:url("../images/favicon.png") no-repeat center   #242220;
+            background-size: contain;
+        }
+    }
+}
+
+
 .item-number{
     float: right;
     width: 100%;
@@ -246,9 +291,16 @@ margin-bottom: 20px;
 
     .number{
         color: $primary;
-        font-weight: boldder;
+        font-weight: 800;
         font-size: 60px;
+background: -moz-linear-gradient(left, rgb(186,135,58) 0%, rgb(230,194,105) 47%, rgb(236,222,162) 100%);
+background: -webkit-linear-gradient(left, rgb(186,135,58) 0%,rgb(230,194,105) 47%,rgb(236,222,162) 100%);
+background: linear-gradient(to right, rgb(186,135,58) 0%,rgb(230,194,105) 47%,rgb(236,222,162) 100%);
+    text-shadow: 0 1px 0 rgba($primary, 0.4);
 
+   // -webkit-text-stroke: 1px #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
         float: right;
         width: 100%;
         line-height: 1.6;
