@@ -72,11 +72,14 @@
             var career = new Swiper('.career-swiper', {
                 slidesPerView: 'auto',
                 spaceBetween: 30,
-                loop: true,
-                loopFillGroupWithBlank: true,
+                loop: false,
+                //  loopFillGroupWithBlank: true,
                 preloadImages: false,
                 lazy: true,
-
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                    hide: false,
+                },
                 autoplay: {
                     delay: 3500,
                     disableOnInteraction: false,
