@@ -287,6 +287,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/bank-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 70228,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/bank-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/build\/images\/bg-footer.jpg" : {
       "ft" : 16384,
       "iS" : 36461,
@@ -974,6 +987,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/build\/list.html",
+      "oF" : 0
+    },
+    "\/build\/profile-bank.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/profile-bank.html",
       "oF" : 0
     },
     "\/build\/profile-person.html" : {

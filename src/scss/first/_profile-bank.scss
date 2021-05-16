@@ -8,8 +8,91 @@
     background:url("../images/bank-bg.jpg") no-repeat center #f4f4f4;
     background-size: cover;
     padding: 30px 0;
+    overflow: hidden;
 
-    
+
+    .item-li {
+        background: transparent;
+    }
+
+    .scroll-wrapper{
+            white-space: nowrap;
+    height: 40px;
+    float: right;
+    position: relative;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-style: -ms-autohiding-scrollbar;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-bottom: 1px solid #293144;
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: nowrap;
+}
+    }
+  .navbar-nav {
+                        display: flex;
+                        flex-direction: row;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        list-style: none;
+                        padding: 0 0;
+                        margin: 0;
+                        flex-wrap: nowrap;
+
+                        float: right;
+                        /* Firefox */
+                        &::-webkit-scrollbar {
+                            display: none;
+                        }
+                        @media(min-width: 992px) {
+                            flex-direction: row;
+                            height: 50px;
+                            // width: ;
+                        }
+                        .nav-item {
+                            float: right;
+                            margin: 0;
+                            border:1px solid #dcdcdc;
+                            background: #fff;
+                            border-radius: 5px;
+                            margin: 4px;
+                            &:hover {
+                                // background: $secondary;
+                                .nav-link {
+                                    &:after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                            .nav-link {
+                                display: block;
+                                line-height: 40px;
+                                color:  #000;
+                                padding: 5px 17px;
+                                font-weight: bold;
+                                text-decoration: none !important;
+                                position: relative;
+                                white-space: nowrap;
+                                svg {
+                                    fill: $secondary;
+                                    height: 20px;
+                                    width: 30px;
+                                }
+                            }
+                            }
+                            }
+                            
+
  
 }
 
