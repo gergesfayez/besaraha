@@ -287,32 +287,6 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/build\/images\/about.jpg" : {
-      "ft" : 16384,
-      "iS" : 9505,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/build\/images\/about.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/build\/images\/about@2x.jpg" : {
-      "ft" : 16384,
-      "iS" : 25939,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/build\/images\/about@2x.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/build\/images\/bg-footer.jpg" : {
       "ft" : 16384,
       "iS" : 36461,
@@ -1275,6 +1249,14 @@
       "oAP" : "\/src\/html\/first\/news.html",
       "oF" : 0
     },
+    "\/src\/html\/first\/profile-bank.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/first\/profile-bank.html",
+      "oF" : 0
+    },
     "\/src\/html\/first\/profile-person.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1570,6 +1552,14 @@
       "oA" : 0,
       "oAP" : "\/src\/html\/nt\/topstory.html",
       "oF" : 0
+    },
+    "\/src\/html\/profile-bank.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/profile-bank.html",
+      "oF" : 2
     },
     "\/src\/html\/profile-person.kit" : {
       "cB" : 0,
@@ -3575,6 +3565,20 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/first\/_lists.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/first\/_profile-bank.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/first\/_profile-bank.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
