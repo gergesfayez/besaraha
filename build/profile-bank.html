@@ -39,6 +39,7 @@
 
     <link rel="stylesheet" href="css/critical.css" media="all">
     <link rel="stylesheet" href="css/article.css" media="all">
+    <link rel="stylesheet" href="css/home.css" media="all">
     <script type="text/javascript" src="js/lazysizes.min.js"></script>
     <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
 
@@ -669,7 +670,7 @@
         
         
         
-            <section class="numbers">
+            <section class="numbers light">
                 <div class="container">
                     <div class='block'>
                         <div class='title center'>
@@ -846,6 +847,182 @@
         
         
         </article>
+
+        <div class="container">
+            <div class="indicator">
+            
+                <div class="title">
+                    <a href="indicator.html" title="first bank indicator">
+                        <img src="images/logo-in-w.png" alt="first bank indicator" loading="lazy">
+                    </a>
+                </div>
+                <div class="cont">
+            
+                    <a class="title2" href="indicator.html" title="first bank indicator">
+                        <h2> القوائم المالية </h2>
+                    </a>
+            
+            
+            
+                    <div class="indicator-filter">
+            
+                        <form>
+            
+                            <div class="from-group">
+                                <label for="IndicatorList" class="form-label"> المؤشر</label>
+                                <select class="form-control" id="IndicatorList">
+            
+                                </select>
+                            </div>
+                            <div class="from-group">
+                                <label for="BankList" cclass="form-label"> البنك</label>
+                                <select class="form-control" id="BankList" multiple="multiple">
+            
+                                </select>
+                            </div>
+            
+                        </form>
+            
+                    </div>
+            
+            
+                </div>
+            
+                <p>
+                    يقوم مؤشر فيرست بنك بعرض القوائم المالية للبنوك من خلال 24 مؤشر مالي يعرض معدلات النمو والتغير في أداء البنوك في
+                    السوق
+                    المصرية
+                </p>
+            </div>
+            
+            
+            <script>
+                $(function () {
+                    $('#IndicatorList').multipleSelect({
+            
+            
+                        filter: true,
+                        placeholder: 'اختار مؤشر ',
+                        data: [
+                            {
+                                text: 'صافي الأرباح',
+                                value: 1
+                            },
+                            {
+                                text: 'محفظة القروض',
+                                value: 2
+                            },
+                            {
+                                text: 'محفظة الودائع',
+                                value: 3
+                            },
+                            {
+                                text: 'الأصول',
+                                value: 4
+                            },
+                            {
+                                text: 'المؤشر المجمع للنمو',
+                                value: 5
+                            },
+                            {
+                                text: 'المؤشر المجمع للسلامة المالية',
+                                value: 6
+                            },
+                            {
+                                text: 'المؤشر المجمع للانتشار الجغرافي',
+                                value: 7
+                            },
+                            {
+                                text: 'المؤشر المجمع للكفاءة',
+                                value: 8
+                            },
+                            {
+                                text: 'القيمة السوقية للسهم',
+                                value: 9
+                            },
+                            {
+                                text: 'العائد على حقوق الملكية',
+                                value: 10
+                            },
+                            {
+                                text: 'العائد على الأصول',
+                                value: 11
+                            },
+                            {
+                                text: 'صافي الدخل من العائد',
+                                value: 12
+                            }
+                        ]
+            
+                    });
+                    $('#BankList').multipleSelect({
+                        formatSelectAll() {
+                            return 'اختار الكل'
+                        },
+            
+                        formatAllSelected() {
+                            return 'تم اختيار الكل'
+                        },
+            
+                        formatNoMatchesFound() {
+                            return ' لا يوجد نتائج'
+                        },
+                        placeholder: 'اختار بنك او أكثر',
+                        displayDelimiter: ' | ',
+                        ellipsis: true,
+            
+                        filter: true,
+            
+                        data: [
+                            {
+                                text: 'البنك الأهلي المصري-NBE',
+                                value: 1
+                            },
+                            {
+                                text: 'البنك التجاري الدولي-CIB',
+                                value: 2
+                            },
+                            {
+                                text: 'بنك مصر',
+                                value: 3
+                            },
+                            {
+                                text: 'بنك قطر الوطني الأهلي-QNB',
+                                value: 4
+                            },
+                            {
+                                text: 'HSBC',
+                                value: 5
+                            },
+            
+                            {
+                                text: 'بنك الاستثمار العربي-AI',
+                                value: 8
+                            },
+                            {
+                                text: 'التجاري وفا بنك',
+                                value: 9
+                            },
+                            {
+                                text: 'بلوم مصر',
+                                value: 10
+                            },
+                            {
+                                text: 'كريدي أجريكول مصر',
+                                value: 11
+                            },
+                            {
+                                text: 'المصرف العربي الدولي-AIB',
+                                value: 12
+                            }
+                        ]
+            
+            
+                    });
+                })
+            </script>
+        </div>
+
 
 
 

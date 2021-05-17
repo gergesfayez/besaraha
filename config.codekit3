@@ -1238,6 +1238,14 @@
       "oAP" : "\/src\/html\/first\/banker.html",
       "oF" : 0
     },
+    "\/src\/html\/first\/indicator-bank.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/first\/indicator-bank.html",
+      "oF" : 0
+    },
     "\/src\/html\/first\/indicator.html" : {
       "cB" : 0,
       "ft" : 8192,

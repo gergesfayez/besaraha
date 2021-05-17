@@ -5,8 +5,32 @@ section.board{
     width: 100%;
     background: url("../images/bank-bg.jpg") no-repeat center;
     background-size: cover;
+    padding: 30px 0;
+
+   .block .title {
+        h2, &:before{
+            background-color: transparent;
+
+        }
+
+        &:after {
+            left: 0;
+            right: auto;
+    width: calc(100% - 220px);
+        }
+    }
+}
+
+.light {
+    .item-number {
+        .name, .desc {
+            color: $primary;
+
+        }
+    }
 }
 .item-board {
+
     .img-cont {
         &:after {
             padding-top:100%;
