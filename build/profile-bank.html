@@ -849,6 +849,11 @@
         </article>
 
         <div class="container">
+            <!--  multiSelect.js CSS CDN  -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@kleimaj/multiselect.js/css/style.min.css">
+            <!--  multiSelect.js JS CDN  -->
+            <script src="https://cdn.jsdelivr.net/npm/@kleimaj/multiselect.js/js/multiselect.min.js"></script>
+            
             <div class="indicator">
             
                 <div class="title">
@@ -897,6 +902,11 @@
             
             
             <script>
+            
+                new SlimSelect({
+                    select: '#slim-select'
+                })
+            
                 $(function () {
                     $('#IndicatorList').multipleSelect({
             
