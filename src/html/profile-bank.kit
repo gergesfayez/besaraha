@@ -97,6 +97,51 @@
             });
 
 
+            var board = new Swiper('.board-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: false,
+                loopFillGroupWithBlank: true,
+                preloadImages: false,
+                lazy: true,
+
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.b-nxt',
+                    prevEl: '.b-prv',
+                },
+                breakpoints: {
+                    440: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                    },
+                    1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                }
+
+            });
+
             var numbers = new Swiper('.number-swiper', {
                 slidesPerView: 1,
                 spaceBetween: 10,
