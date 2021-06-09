@@ -18,16 +18,16 @@
             <form>
 
                 <div class="from-group">
-                    <label for="IndicatorList" class="form-label"> المؤشر</label>
-                    <select class="form-control" id="IndicatorList">
 
-                    </select>
+
+
+                    <label for="IndicatorList" class="form-label"> المؤشر</label>
+
+                    <div id="IndicatorList"></div>
                 </div>
                 <div class="from-group">
-                    <label for="BankList" cclass="form-label"> البنك</label>
-                    <select class="form-control" id="BankList" multiple="multiple">
-
-                    </select>
+                    <label for="bankList" class="form-label"> البنك</label>
+                    <div id="bankList"></div>
                 </div>
 
             </form>
@@ -44,129 +44,86 @@
     </p>
 </div>
 
-
+<link rel="stylesheet" href="select/tooltip.min.css">
+<link rel="stylesheet" href="select/virtual-select.min.css">
+<script src="select/tooltip.min.js"></script>
+<script src="select/virtual-select.min.js"></script>
 <script>
-    $(function () {
-        $('#IndicatorList').multipleSelect({
 
-
-            filter: true,
-            placeholder: 'اختار مؤشر ',
-            data: [
-                {
-                    text: 'صافي الأرباح',
-                    value: 1
-                },
-                {
-                    text: 'محفظة القروض',
-                    value: 2
-                },
-                {
-                    text: 'محفظة الودائع',
-                    value: 3
-                },
-                {
-                    text: 'الأصول',
-                    value: 4
-                },
-                {
-                    text: 'المؤشر المجمع للنمو',
-                    value: 5
-                },
-                {
-                    text: 'المؤشر المجمع للسلامة المالية',
-                    value: 6
-                },
-                {
-                    text: 'المؤشر المجمع للانتشار الجغرافي',
-                    value: 7
-                },
-                {
-                    text: 'المؤشر المجمع للكفاءة',
-                    value: 8
-                },
-                {
-                    text: 'القيمة السوقية للسهم',
-                    value: 9
-                },
-                {
-                    text: 'العائد على حقوق الملكية',
-                    value: 10
-                },
-                {
-                    text: 'العائد على الأصول',
-                    value: 11
-                },
-                {
-                    text: 'صافي الدخل من العائد',
-                    value: 12
-                }
-            ]
+    VirtualSelect.init(
+        {
+            ele: '#IndicatorList',
+            options: [
+                { label: 'صافي الأرباح', value: '1' },
+                { label: 'محفظة القروض', value: '2' },
+                { label: 'محفظة الودائع', value: '3' },
+                { label: 'الأصول', value: '4' },
+                { label: 'المؤشر المجمع للنمو', value: '5' },
+                { label: 'المؤشر المجمع للسلامة المالية', value: '6' },
+                { label: 'المؤشر المجمع للانتشار الجغرافي', value: '7' },
+                { label: 'المؤشر المجمع للسلامة ', value: '78' },
+                { label: 'القيمة السوقية للسهم ', value: '88' },
+                { label: 'العائد على الأصول ', value: '89' },
+                { label: 'صافي الدخل من العائد ', value: '83' },
+            ],
+            search: true,
+            showSelectedOptionsFirst: true,
 
         });
-        $('#BankList').multipleSelect({
-            formatSelectAll() {
-                return 'اختار الكل'
-            },
+    VirtualSelect.init(
+        {
+            ele: '#bankList',
+            options: [
+                { label: 'البنك الأهلي المصري-NBE', value: '1' },
+                { label: 'البنك التجاري الدولي-CIB', value: '2' },
+                { label: 'بنك مصر', value: '3' },
+                { label: 'بنك قطر الوطني الأهلي-QNB', value: '4' },
+                { label: 'HSBC', value: '5' },
+                { label: 'بنك الاستثمار العربي-AI', value: '6' },
+                { label: 'التجاري وفا بنك', value: '7' },
+                { label: 'بلوم مصر ', value: '78' },
+                { label: 'كريدي أجريكول مصر ', value: '88' },
+                { label: 'المصرف العربي الدولي-AIB ', value: '89' },
 
-            formatAllSelected() {
-                return 'تم اختيار الكل'
-            },
+            ],
 
-            formatNoMatchesFound() {
-                return ' لا يوجد نتائج'
-            },
-            placeholder: 'اختار بنك او أكثر',
-            displayDelimiter: ' | ',
-            ellipsis: true,
-
-            filter: true,
-
-            data: [
-                {
-                    text: 'البنك الأهلي المصري-NBE',
-                    value: 1
-                },
-                {
-                    text: 'البنك التجاري الدولي-CIB',
-                    value: 2
-                },
-                {
-                    text: 'بنك مصر',
-                    value: 3
-                },
-                {
-                    text: 'بنك قطر الوطني الأهلي-QNB',
-                    value: 4
-                },
-                {
-                    text: 'HSBC',
-                    value: 5
-                },
-
-                {
-                    text: 'بنك الاستثمار العربي-AI',
-                    value: 8
-                },
-                {
-                    text: 'التجاري وفا بنك',
-                    value: 9
-                },
-                {
-                    text: 'بلوم مصر',
-                    value: 10
-                },
-                {
-                    text: 'كريدي أجريكول مصر',
-                    value: 11
-                },
-                {
-                    text: 'المصرف العربي الدولي-AIB',
-                    value: 12
-                }
-            ]
+            multiple: true,
+            search: true,
+            showSelectedOptionsFirst: true,
+        }
 
 
-        });
-    })
+
+
+
+    );
+    VirtualSelect.init(
+        {
+            ele: '#duration',
+            options: [
+                { label: 'البنك الأهلي المصري-NBE', value: '1' },
+                { label: 'البنك التجاري الدولي-CIB', value: '2' },
+                { label: 'بنك مصر', value: '3' },
+                { label: 'بنك قطر الوطني الأهلي-QNB', value: '4' },
+                { label: 'HSBC', value: '5' },
+                { label: 'بنك الاستثمار العربي-AI', value: '6' },
+                { label: 'التجاري وفا بنك', value: '7' },
+                { label: 'بلوم مصر ', value: '78' },
+                { label: 'كريدي أجريكول مصر ', value: '88' },
+                { label: 'المصرف العربي الدولي-AIB ', value: '89' },
+
+            ],
+
+            multiple: true,
+            search: true,
+            showSelectedOptionsFirst: true,
+        }
+
+
+
+
+
+    );
+
+
 </script>
