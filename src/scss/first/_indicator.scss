@@ -1,28 +1,5 @@
 @use '../critical/helpers/var'as *;
-.ms-drop ul>li label {
-    padding-right: 1.25rem !important;
-    padding-left: 0 !important;
-}
-.ms-choice {
-    border: 0 !important;
-}
-.ms-drop input[type="radio"], .ms-drop input[type="checkbox"] {
-       margin-right: -1.25rem;
-       margin-left: auto !important;
-}.ms-choice {
-    text-align: right;
-}
-.ms-choice>span {
-        padding-left: 0 !important;
-        padding-right: 8px;
-        right: 0 !important;
-    left: 20px  !important;
-    text-align: right;
-}
-.ms-choice>div.icon-caret {
-       left: 8px;
-       right: auto !important;
-}
+ 
 .indicator {
     float: right;
     width: 100%;
@@ -30,8 +7,11 @@
 
     background: url("../images/bg-indicator.jpg") no-repeat      $secondary;
     border-radius: 20px;
-    background-size: 100%  ;
+    z-index: 400;
 
+ 
+ 
+background-size: cover;
     position: relative;
    // overflow: hidden;
 
@@ -45,6 +25,7 @@
         background: $secondary;
         opacity: 0.6;
         z-index:0;
+            border-radius: 20px;
     }
 
   
@@ -54,6 +35,7 @@
         width: 100%;
         position: relative;
          z-index: 22;
+         margin-top: 10px;
 
         img {
             display: inline-block;
@@ -87,13 +69,38 @@
 
     p {
         text-align: center;
-        width: 100%;
+        width: 90%;
         color: #fff;
         display: block;
         float: right;
-        padding: 30px 0;
+        margin-right: 5%;
+        padding: 10px 30px;
                 position: relative;
-                z-index: 0;
+                z-index: 1;
+    }
+
+    .form-group {
+        float: right;
+        width: 100%;
+        padding: 0 15px;
+
+        @media(min-width: 768px){
+            width: 50%;
+        }
+        
+        @media(min-width: 1200px){
+            width: 25%;
+        }
+        
+
+        label {
+            color: #fff;
+            font-weight: bold;
+            width: 100%;
+            display: block;
+            line-height: 50px;
+            text-align: right;
+        }
     }
 
    

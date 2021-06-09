@@ -17,7 +17,7 @@
 
             <form>
 
-                <div class="from-group">
+                <div class="form-group">
 
 
 
@@ -25,17 +25,17 @@
 
                     <div id="IndicatorList"></div>
                 </div>
-                <div class="from-group">
+                <div class="form-group">
                     <label for="bankList" class="form-label"> البنك</label>
                     <div id="bankList"></div>
                 </div>
-                <div class="from-group">
+                <div class="form-group">
                     <label for="duration" class="form-label">المدة</label>
                     <div id="duration"></div>
                 </div>
 
                 <div class="form-group">
-                    <label for="duration" class="form-label">ختر سنة عدد من السنين</label>
+                    <label for="duration" class="form-label"> إختر سنة او اكثر </label>
                     <div id="years"></div>
                 </div>
 
@@ -64,7 +64,8 @@
 
     }
 
-    .vscomp-option {
+    .vscomp-option,
+    .vscomp-search-container {
         flex-direction: row-reverse;
     }
 
@@ -72,6 +73,20 @@
         border-color: #b1833d;
         border-left-color: transparent;
         border-top-color: transparent;
+    }
+
+    .vscomp-wrapper {
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+
+    .vscomp-toggle-button {
+        padding: 10px 30px 10px 10px;
+    }
+
+    .vscomp-ele {
+        max-width: none;
     }
 
     .vscomp-option-text {
@@ -135,6 +150,8 @@
             searchPlaceholderText: "ابحث",
             selectAllText: "اختر الكل",
             clearButtonText: "مسح",
+
+
         }
 
 
