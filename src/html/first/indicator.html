@@ -29,6 +29,15 @@
                     <label for="bankList" class="form-label"> البنك</label>
                     <div id="bankList"></div>
                 </div>
+                <div class="from-group">
+                    <label for="duration" class="form-label">المدة</label>
+                    <div id="duration"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration" class="form-label">ختر سنة عدد من السنين</label>
+                    <div id="years"></div>
+                </div>
 
             </form>
 
@@ -48,6 +57,30 @@
 <link rel="stylesheet" href="select/virtual-select.min.css">
 <script src="select/tooltip.min.js"></script>
 <script src="select/virtual-select.min.js"></script>
+<style>
+    .vscomp-arrow {
+        right: auto;
+        left: 0;
+
+    }
+
+    .vscomp-option {
+        flex-direction: row-reverse;
+    }
+
+    .vscomp-wrapper.multiple .vscomp-option.selected .checkbox-icon::after {
+        border-color: #b1833d;
+        border-left-color: transparent;
+        border-top-color: transparent;
+    }
+
+    .vscomp-option-text {
+        text-align: right;
+        font-weight: bolder;
+        font-size: 16px;
+
+    }
+</style>
 <script>
 
     VirtualSelect.init(
@@ -68,6 +101,11 @@
             ],
             search: true,
             showSelectedOptionsFirst: true,
+            placeholder: 'إختر المؤشر',
+            noOptionsText: "لاتوجد نتائج",
+            searchPlaceholderText: "ابحث",
+            selectAllText: "اختر الكل",
+            clearButtonText: "مسح",
 
         });
     VirtualSelect.init(
@@ -87,9 +125,16 @@
 
             ],
 
+            optionHeight: '50px',
+
             multiple: true,
             search: true,
             showSelectedOptionsFirst: true,
+            placeholder: 'إختر بنك او أكثر ',
+            noOptionsText: "لاتوجد نتائج",
+            searchPlaceholderText: "ابحث",
+            selectAllText: "اختر الكل",
+            clearButtonText: "مسح",
         }
 
 
@@ -101,27 +146,65 @@
         {
             ele: '#duration',
             options: [
-                { label: 'البنك الأهلي المصري-NBE', value: '1' },
-                { label: 'البنك التجاري الدولي-CIB', value: '2' },
-                { label: 'بنك مصر', value: '3' },
-                { label: 'بنك قطر الوطني الأهلي-QNB', value: '4' },
-                { label: 'HSBC', value: '5' },
-                { label: 'بنك الاستثمار العربي-AI', value: '6' },
-                { label: 'التجاري وفا بنك', value: '7' },
-                { label: 'بلوم مصر ', value: '78' },
-                { label: 'كريدي أجريكول مصر ', value: '88' },
-                { label: 'المصرف العربي الدولي-AIB ', value: '89' },
+                { label: 'الربع الأول', value: '1' },
+                { label: 'الربع الثاني', value: '2' },
+                { label: 'الربع الثالث', value: '3' },
+                { label: 'الربع الرابع', value: '4' },
+                { label: 'نصف سنوي', value: '5' },
+                { label: 'تسعة اشهر', value: '7' },
+                { label: 'سنوي', value: '6' },
+
+
 
             ],
-
-            multiple: true,
+            optionHeight: '50px',
+            multiple: false,
             search: true,
             showSelectedOptionsFirst: true,
+            placeholder: 'إختر المدة',
+            noOptionsText: "لاتوجد نتائج",
+            searchPlaceholderText: "ابحث",
+            selectAllText: "اختر الكل",
+            clearButtonText: "مسح",
         }
 
 
 
 
+
+    );
+    VirtualSelect.init(
+        {
+            ele: '#years',
+            options: [
+                { label: '2010', value: '1' },
+                { label: '2011', value: '2' },
+                { label: '2012', value: '3' },
+                { label: '2013', value: '4' },
+                { label: '2014', value: '5' },
+                { label: '2015', value: '7' },
+                { label: '2016', value: '6' },
+                { label: '2017', value: '68' },
+                { label: '2018', value: '681' },
+                { label: '2019', value: '682' },
+                { label: '2020', value: '683' },
+                { label: '2021', value: '6834' },
+
+
+
+            ],
+            optionHeight: '50px',
+            multiple: true,
+            search: true,
+            showSelectedOptionsFirst: true,
+            placeholder: 'إختر السنة او أكثر',
+            noOptionsText: "لاتوجد نتائج",
+            searchPlaceholderText: "ابحث",
+            selectAllText: "اختر الكل",
+            clearButtonText: "مسح",
+
+
+        }
 
     );
 
