@@ -78,18 +78,35 @@ background-size: cover;
                 position: relative;
                 z-index: 1;
     }
-
+.form-wrap {
+    float: right;
+    width: 100%;
+    @media(min-width: 992px){
+        width: 70%;
+        margin-right: 15%;
+    }
+}
     .form-group {
         float: right;
         width: 100%;
         padding: 0 15px;
+
+        &.btn-g{
+            padding-top: 50px;
+        }
 
         @media(min-width: 768px){
             width: 50%;
         }
         
         @media(min-width: 1200px){
-            width: 25%;
+            width: 30%;
+            &.bank-group {
+                width: 70%;
+            }
+            &.years{
+                width: 40%;
+            }
         }
         
 
@@ -103,8 +120,20 @@ background-size: cover;
         }
     }
 
+.btn-primary{
+    background: linear-gradient(#ffd79b 0%, #b1833d 100%);
+border: 1px solid #707070;
+color: #fff;
+border-radius: 5px;
+width: 100%;
+    padding: 9px 12px;
+    font-weight: bolder;
+}
+
    
 
 
 
 }
+
+ 

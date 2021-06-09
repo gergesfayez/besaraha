@@ -864,27 +864,33 @@
                     <div class="indicator-filter">
             
                         <form>
+                            <div class="form-wrap">
+                                <div class="form-group">
             
-                            <div class="form-group">
             
             
+                                    <label for="IndicatorList" class="form-label"> المؤشر</label>
             
-                                <label for="IndicatorList" class="form-label"> المؤشر</label>
+                                    <div id="IndicatorList"></div>
+                                </div>
+                                <div class="form-group bank-group">
+                                    <label for="bankList" class="form-label"> البنك</label>
+                                    <div id="bankList"></div>
+                                </div>
             
-                                <div id="IndicatorList"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="bankList" class="form-label"> البنك</label>
-                                <div id="bankList"></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="duration" class="form-label">المدة</label>
-                                <div id="duration"></div>
-                            </div>
+                                <div class="form-group">
+                                    <label for="duration" class="form-label">المدة</label>
+                                    <div id="duration"></div>
+                                </div>
             
-                            <div class="form-group">
-                                <label for="duration" class="form-label"> إختر سنة او اكثر </label>
-                                <div id="years"></div>
+                                <div class="form-group years">
+                                    <label for="duration" class="form-label"> إختر سنة او اكثر </label>
+                                    <div id="years"></div>
+                                </div>
+                                <div class="form-group btn-g">
+            
+                                    <button type="submit" class="btn btn-primary"> عرض </button>
+                                </div>
                             </div>
             
                         </form>
@@ -931,6 +937,7 @@
             
                 .vscomp-toggle-button {
                     padding: 10px 30px 10px 10px;
+                    border-radius: 4px;
                 }
             
                 .vscomp-ele {
