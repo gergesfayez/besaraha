@@ -110,11 +110,11 @@
     <script type="text/javascript">
 
 
-        var listCats = new Swiper('.lists-cats-swiper', {
+        var listCats = new Swiper('.list-cat-swiper', {
             spaceBetween: 10,
             slidesPerView: 4,
             loop: false,
-            freeMode: true,
+            //   freeMode: true,
             //    loopedSlides: 5, //looped slides should be the same
             watchSlidesVisibility: true,
             watchSlidesProgress: true,
@@ -124,41 +124,35 @@
         function loadSlides(cat) {
 
             this.addEventListener("click", function (e) {
-                e.preventDefault();
+
+
+
 
                 listCats.removeAllSlides();
+                listCats.addSlide(1,
+                    '<div class="swiper-slide"><div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere 33</h3></div></a></div></div>',
+                )
 
-                if (cat == 1) {
-                    listCats.addSlide([
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>'
-                    ])
-                }
-                else if (cat == 2) {
-                    listCats.addSlide([
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                    ])
-                }
-                else if (cat == 3) {
-                    listCats.addSlide([
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                    ])
-                }
-                else if (cat == 4) {
-                    listCats.addSlide([
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                        '<div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere</h3></div></a></div>',
-                    ])
-                }
+                listCats.addSlide(2,
+                    '<div class="swiper-slide"><div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere 33</h3></div></a></div></div>',
+                )
+
+                listCats.addSlide(3,
+                    '<div class="swiper-slide"><div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere 33</h3></div></a></div></div>',
+                )
+
+                listCats.addSlide(4,
+                    '<div class="swiper-slide"><div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere 33</h3></div></a></div></div>',
+                )
+
+                listCats.addSlide(5,
+                    '<div class="swiper-slide"><div class="item-card"><a href="show.html"><div class="img-cont"><img class="lazyload" src="images/no.jpg" data-src="images/img.jpg"/></div><div class="txt-cont"><h3>TitleHere 33</h3></div></a></div></div>',
+                )
+
+
+
+
+
 
 
             });
@@ -270,29 +264,6 @@
 
 
 
-            var listCat = new Swiper('.list-cat-swiper', {
-                slidesPerView: 'auto',
-                spaceBetween: 40,
-                loop: true,
-                loopFillGroupWithBlank: true,
-                preloadImages: false,
-                lazy: true,
-
-                autoplay: {
-                    delay: 3500,
-                    disableOnInteraction: false,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.tp-nxt',
-                    prevEl: '.tp-prv',
-                },
-
-
-            });
 
             var videoswiper = new Swiper('.video-swiper', {
                 slidesPerView: 1,
