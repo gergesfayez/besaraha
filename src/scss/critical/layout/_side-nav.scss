@@ -1,11 +1,11 @@
  @use '../helpers/var'as *;
  .menu-nav {
-     width: 100% !important;
+     width: 300px !important;
      @media(min-width: 768px){
          width: 400px !important;
      }
  
-              background-color:rgba($third,0.933);
+         background-color:rgba($third,0.933);
      &:before {
          content: "";
          position: absolute;
@@ -40,7 +40,7 @@
          display: block;
          //  background: #292825;
          float: right;
-         width: 50px;
+         width: 100%;
          position: absolute;
          bottom: 0;
          right: 0;
