@@ -3288,6 +3288,20 @@
       "pg" : 0,
       "sct" : 1
     },
+    "\/src\/scss\/critical\/helpers\/_grid2.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/critical\/helpers\/_grid2.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
     "\/src\/scss\/critical\/helpers\/_images.scss" : {
       "aP" : 1,
       "bl" : 0,
