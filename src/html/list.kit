@@ -30,11 +30,12 @@
 
     <meta name="description" content="text description for website">
 
-    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/critical.css" media="all">
     <link rel="stylesheet" href="css/list.css" media="all">
 
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
 
+    <script type="text/javascript" src="js/lazysizes.min.js" async></script>
 
 
 </head>
@@ -45,7 +46,12 @@
 
 
     <main>
-        <div class="container">
+        <div class="container main">
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+            <!--@import "list/featured.html"-->
+
             <div class="row">
                 <div class="col-8 right-col">
                     <nav aria-label="breadcrumb">
@@ -54,14 +60,49 @@
                             <li class="breadcrumb-item active" aria-current="page">بنوك وتأمين</li>
                         </ol>
                     </nav>
-                    <!--@import "nc/list.html"-->
+                    <!--@import "list/itemList.html"-->
+
+                    <nav class="nav-pagination" aria-label="Page navigation  ">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item  active"><a class="page-link" href="/category/3?page=1" title="page 1">1</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=2" title="page 2">2</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=3" title="page 3">3</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=4" title="page 4">4</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=5" title="page 5">5</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=6" title="page 6">6</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=7" title="page 7">7</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=8" title="page 8">8</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=9" title="page 9">9</a>
+                            </li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=10" title="page 10">10</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=11" title="page 11">11</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=12" title="page 12">12</a></li>
+                            <li class="page-item  "><a class="page-link" href="/category/3?page=13" title="page ...">...</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="/category/3?page=2" title="next page" aria-label="next">
+                                    <svg class="icon">
+                                        <use xlink:href="/themes/mwatan/assets/images/icons.svg#back"></use>
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
 
                 <div class=" col-4 left-col">
 
-                    <!--@import "col/articles.html"-->
-                    <!--@import "col/paper.html"-->
+
+                    <!--@import "col/colTopRead.html"-->
                     <!--@import "col/poll.html"-->
+                    <!--@import "col/colAlbum.html"-->
+                    <!--@import "col/colVideo.html"-->
+                    <!--@import "col/colArticles.html"-->
                 </div>
 
             </div>
@@ -78,6 +119,48 @@
 
 
     <script type="text/javascript" src="js/core-min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle-min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            var tnswiper = new Swiper('.tn-swiper', {
+                slidesPerView: 3,
+                spaceBetween: 10,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                // init: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: '.tn-nxt',
+                    prevEl: '.tn-prv',
+                },
+                breakpoints: {
+                    440: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    640: {
+                        slidesPerView: 4,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 6,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 8,
+                        spaceBetween: 20,
+                    },
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

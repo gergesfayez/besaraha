@@ -1,18 +1,62 @@
 @use '../critical/helpers/var'as *;
-
 //components
-
-
 @use '../components/col/poll';
+<<<<<<< HEAD
 @use '../components/col/top-read';
 
 @use '../components/nc/nclist';
 
 @use '../components/nt/topstory-swiper';
 
+=======
+@use '../components/nc/newsList';
+@use '../components/col/colTopRead';
+@use '../components/col/colAlbum';
+@use '../components/col/colVideo';
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 //plugins    
+.featured-list {
+    float: right;
+    width: 100%;
+    background: #f4f4f4;
+    .item-card {
+        .txt-cont {
+            padding: 4px;
+            h3 {
+                font-size: 14px;
+            }
+        }
+    }
+    .swiper-container {
+        width: 100%;
+        opacity: 0;
+        overflow: hidden;
+        height: 160px;
+        &.swiper-container-initialized {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
 
-
+.list-title {
+    float: right;
+    width: 100%;
+    border-top: 4px solid $primary;
+    h1 {
+        float: right;
+        padding: 0 25px;
+        border-bottom-left-radius: 30px;
+        background: #0776b5;
+        color: #fff;
+        font-size: 20px;
+        line-height: 40px;
+        @media(min-width: 1200px) {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
+}
 
 .breadcrumb {
     display: -webkit-box;
@@ -46,12 +90,18 @@
     content: "/";
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 .nav-pagination {
     float: right;
     width: 100%;
     justify-content: center;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
     .pagination {
         display: flex;
         padding-left: 0;
@@ -59,7 +109,10 @@
         list-style: none;
         flex-wrap: wrap;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
     .page-link {
         position: relative;
         display: block;
@@ -69,9 +122,13 @@
         border: 1px solid #dcdcdc;
         transition: all 0.35s ease;
         padding: .375rem .75rem;
+<<<<<<< HEAD
 
         font-weight: bold;
 
+=======
+        font-weight: bold;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         &:hover {
             z-index: 2;
             color: #fff;
@@ -79,16 +136,42 @@
             background-color: $primary;
             border-color: $primary;
         }
+<<<<<<< HEAD
 
         &:focus {
             z-index: 3;
 
+=======
+        &:focus {
+            z-index: 3;
             color: #fff;
             text-decoration: none;
             background-color: $primary;
             border-color: $primary;
         }
     }
+    .page-item {
+        &:not(:first-child) .page-link {
+            margin-right: 0;
+        }
+        &:last-child .page-link {
+            border-top-left-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+        &:first-child .page-link {
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+        }
+        &.active .page-link {
+            z-index: 3;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
+            color: #fff;
+            text-decoration: none;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+<<<<<<< HEAD
 
     .page-item {
         &:not(:first-child) .page-link {
@@ -120,6 +203,8 @@
 
 
 
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 }
 
 

@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 .nc2   {
 
     .item-li {
@@ -31,6 +32,56 @@
                     padding-top: 70.25%;
                 }
             }
+=======
+.nc2 {
+
+
+
+    .item-li.lg {
+
+
+        .img-cont {
+            width: 100%;
+
+            @media(min-width: 768px) {
+                width: 50%;
+
+
+                &:after {
+                    padding-top: 56.25%;
+                }
+
+            }
+
+
+        }
+
+        .txt-cont {
+            width: 100%;
+
+            p {
+                display: none;
+            }
+
+            @media(min-width: 768px) {
+                width: 50%;
+
+                h3 {
+                    max-height: 70px;
+                    height: auto;
+                }
+            }
+
+            @media(min-width: 1200px) {
+
+                p {
+                    display: block;
+                }
+
+            }
+
+
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         }
     }
 }

@@ -1,6 +1,6 @@
 @use '../helpers/var'as *;
-
 .item-li {
+<<<<<<< HEAD
     margin-bottom    : 10px;
     float            : right;
     width            : 100%;
@@ -18,14 +18,30 @@
 
         &:after {
             padding-top: 90px;
+=======
+    float: right;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: all 0.35s;
+    // box-shadow: $box-shadow-sm;
+    background: #fff;
+    .img-cont {
+        width: 100px;
+        &:after {
+            padding-top: 60%;
         }
-
-
+        @media(min-width:768px) and (max-width: 1199px) {
+            width: 120px;
+        }
+        @media(min-width:1500px) {
+            width: 120px;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
+        }
     }
-
     .txt-cont {
         padding-top   : 0;
         padding-bottom: 0;
+<<<<<<< HEAD
 
 
         width     : calc(100% - 90px);
@@ -39,41 +55,56 @@
         }
 
 
+=======
+        width: calc(100% - 100px);
+        @media(min-width: 768px) and (max-width: 1199px) {
+            width: calc(100% - 120px);
+            h3 {
+                height: 70px;
+            }
+        }
+        @media(min-width:1500px) {
+            width: calc(100% - 120px);
+            h3 {
+                height: 70px;
+            }
+        }
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
     }
-
-
-
-
-
-
+    &:hover {
+        background: #f2f2f2;
+        box-shadow: $box-shadow-sm;
+    }
 }
 
 .to-li-sm {
     @media(max-width: 767px) {
+<<<<<<< HEAD
         border-radius: 5px;
         padding      : 5px;
         background   : #fff;
         box-shadow   : $box-shadow-sm;
 
 
+=======
+        padding: 5px 0;
+        background: #fff;
+        box-shadow: $box-shadow-sm;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         .img-cont {
             width: 100px;
-
             &:after {
                 padding-top: 80%;
             }
         }
-
         .txt-cont {
             padding-top   : 0;
             padding-bottom: 0;
-
             width: calc(100% - 100px);
 
             &:before {
                 opacity: 0;
             }
         }
-
     }
 }

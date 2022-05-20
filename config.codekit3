@@ -328,6 +328,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/9m.png" : {
+      "ft" : 32768,
+      "iS" : 36546,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/9m.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/build\/images\/ad300x250.jpg" : {
       "ft" : 16384,
       "iS" : 8288,
@@ -354,6 +367,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/badge-lrg.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/badge-lrg.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/build\/images\/browserconfig.xml" : {
       "cB" : 0,
       "ft" : 8192,
@@ -361,6 +384,42 @@
       "oA" : 0,
       "oAP" : "\/build\/images\/browserconfig.xml",
       "oF" : 0
+    },
+    "\/build\/images\/elham-banner.jpg" : {
+      "ft" : 16384,
+      "iS" : 27996,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/elham-banner.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/en.png" : {
+      "ft" : 32768,
+      "iS" : 1375,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/en.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/en.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/en.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/build\/images\/favicon.png" : {
       "ft" : 32768,
@@ -711,6 +770,29 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/gnews.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/build\/images\/gnews.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/build\/images\/gplay.png" : {
+      "ft" : 32768,
+      "iS" : 7071,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/gplay.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/build\/images\/icons.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1046,6 +1128,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/live-banner.jpg" : {
+      "ft" : 16384,
+      "iS" : 24830,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/live-banner.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/build\/images\/logo-b.png" : {
       "ft" : 32768,
       "iS" : 21447,
@@ -1059,6 +1154,30 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/logo-d.png" : {
+      "ft" : 32768,
+      "iS" : 14344,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/logo-d.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/logo-d.webp" : {
+      "ft" : 8388608,
+      "iS" : 3902,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/logo-d.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/build\/images\/logo-w.png" : {
       "ft" : 32768,
       "iS" : 17251,
@@ -1070,6 +1189,17 @@
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/logo-w.webp" : {
+      "ft" : 8388608,
+      "iS" : 8954,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/logo-w.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
       "rq" : 75
     },
     "\/build\/images\/logo.png" : {
@@ -1105,6 +1235,19 @@
       "oF" : 0,
       "oO" : 0,
       "oS" : 1
+    },
+    "\/build\/images\/menu.png" : {
+      "ft" : 32768,
+      "iS" : 1043,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/menu.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/build\/images\/My icons collection-SVG-sprite.svg" : {
       "ft" : 2097152,
@@ -1150,6 +1293,143 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/build\/images\/ptrn.png" : {
+      "ft" : 32768,
+      "iS" : 960,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/ptrn.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/reel-h.png" : {
+      "ft" : 32768,
+      "iS" : 941,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/reel-h.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/reel-v.png" : {
+      "ft" : 32768,
+      "iS" : 943,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/reel-v.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/sada-police.png" : {
+      "ft" : 32768,
+      "iS" : 23162,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sada-police.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/sadae.png" : {
+      "ft" : 32768,
+      "iS" : 38040,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sadae.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/sadae2.png" : {
+      "ft" : 32768,
+      "iS" : 34510,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sadae2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/sitemap.gif" : {
+      "ft" : 4194304,
+      "iS" : 6448,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sitemap.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/build\/images\/sms-banner.jpg" : {
+      "ft" : 16384,
+      "iS" : 72619,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sms-banner.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/sport-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 72805,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sport-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/sportbg.jpg" : {
+      "ft" : 16384,
+      "iS" : 375385,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/sportbg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/build\/images\/strip.gif" : {
+      "ft" : 4194304,
+      "iS" : 43,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/strip.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
     "\/build\/images\/sync.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -1159,6 +1439,19 @@
       "opt" : 0,
       "plM" : 52780316221407,
       "prP" : 0
+    },
+    "\/build\/images\/vide-bg.jpg" : {
+      "ft" : 16384,
+      "iS" : 36296,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/build\/images\/vide-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
     },
     "\/build\/index.html" : {
       "cB" : 0,
@@ -1466,6 +1759,38 @@
       "oAP" : "\/src\/html\/col\/articles.html",
       "oF" : 0
     },
+    "\/src\/html\/col\/colAlbum.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/col\/colAlbum.html",
+      "oF" : 0
+    },
+    "\/src\/html\/col\/colArticles.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/col\/colArticles.html",
+      "oF" : 0
+    },
+    "\/src\/html\/col\/colTopRead.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/col\/colTopRead.html",
+      "oF" : 0
+    },
+    "\/src\/html\/col\/colVideo.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/col\/colVideo.html",
+      "oF" : 0
+    },
     "\/src\/html\/col\/paper.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1575,7 +1900,23 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/build\/list.html",
+      "oAP" : "\/src\/html\/list.html",
+      "oF" : 0
+    },
+    "\/src\/html\/list\/featured.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/list\/featured.html",
+      "oF" : 0
+    },
+    "\/src\/html\/list\/itemList.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/src\/html\/list\/itemList.html",
       "oF" : 0
     },
     "\/src\/html\/list\/list-album.html" : {
@@ -1926,7 +2267,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/src\/html\/nt\/topstory-swiper.html",
       "oF" : 0
     },
@@ -2131,6 +2472,51 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/components\/col\/_aricles.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/col\/_colAlbum.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/col\/_colAlbum.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/col\/_colTopRead.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/col\/_colTopRead.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/col\/_colVideo.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/col\/_colVideo.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -2371,6 +2757,21 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/components\/nc\/_ncWide.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/components\/nc\/_newsList.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/components\/nc\/_newsList.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -2933,6 +3334,21 @@
       "ma" : 1,
       "oA" : 1,
       "oAP" : "\/src\/scss\/critical\/layout\/_header3.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0,
+      "sct" : 1
+    },
+    "\/src\/scss\/critical\/layout\/_item-album.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/src\/scss\/critical\/layout\/_item-album.css",
       "oF" : 0,
       "oS" : 3,
       "pg" : 0,
@@ -4441,7 +4857,7 @@
       },
       "no-implicit-coercion" : {
         "active" : 0,
-        "optionString" : "{'boolean': true, 'number': true, 'string': true, 'allow': []}"
+        "optionString" : "{'boolean': true, 'number': true, 'string': true, 'disallowTemplateShorthand': false, 'allow': []}"
       },
       "no-implicit-globals" : {
         "active" : 0
@@ -4491,7 +4907,7 @@
         "active" : 0
       },
       "no-loss-of-precision" : {
-        "active" : 0
+        "active" : 1
       },
       "no-magic-numbers" : {
         "active" : 0,
@@ -4552,7 +4968,7 @@
         "active" : 0
       },
       "no-nonoctal-decimal-escape" : {
-        "active" : 0
+        "active" : 1
       },
       "no-obj-calls" : {
         "active" : 1
@@ -4716,12 +5132,12 @@
         "optionString" : "{'enforceForOrderingRelations': false}"
       },
       "no-unsafe-optional-chaining" : {
-        "active" : 0,
+        "active" : 1,
         "optionString" : "{'disallowArithmeticOperators': false}"
       },
       "no-unused-expressions" : {
         "active" : 0,
-        "optionString" : "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false}"
+        "optionString" : "{'allowShortCircuit': false, 'allowTernary': false, 'allowTaggedTemplates': false, 'enforceForJSX': false}"
       },
       "no-unused-labels" : {
         "active" : 1
@@ -4735,7 +5151,7 @@
         "optionString" : "{'functions': true, 'classes': true, 'variables': true}"
       },
       "no-useless-backreference" : {
-        "active" : 0
+        "active" : 1
       },
       "no-useless-call" : {
         "active" : 0
@@ -5009,7 +5425,7 @@
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
-      "minifierStyle" : 1,
+      "minifierStyle" : 0,
       "outputStyle" : 0,
       "sourceMapStyle" : 0,
       "syntaxCheckerStyle" : 1,
@@ -5087,7 +5503,7 @@
       "autoOutputPathReplace1" : "",
       "autoOutputPathReplace2" : "",
       "autoOutputPathStyle" : 0,
-      "orderOutput" : 0,
+      "orderOutput" : 1,
       "outputStyle" : 1
     },
     "languageDefaultsKIT" : {
@@ -5116,7 +5532,7 @@
       "rewriteURLStyle" : 0,
       "shouldRunAutoprefixer" : 0,
       "shouldRunBless" : 0,
-      "sourceMapStyle" : 1,
+      "sourceMapStyle" : 0,
       "strictImports" : 0,
       "strictUnits" : 0
     },
@@ -5172,7 +5588,7 @@
       "autoOutputPathStyle" : 0,
       "compileDebug" : 1,
       "htmlMinifierStyle" : 0,
-      "outputStyle" : 0,
+      "outputStyle" : 1,
       "shouldRunCacheBuster" : 0
     },
     "languageDefaultsSASS" : {

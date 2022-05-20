@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .topread-col {
 
     background: #F4F4F4;
@@ -5,13 +6,34 @@
     @media(min-width: 1200px) {
         .row.col-2 {
             grid-template-columns: 100% !important;
+=======
+@use '../../critical/helpers/var'as *;
+.top-read {
+    text-align: right;
+    .title {
+        a {
+            h2 {
+                .icon {
+                    float: right;
+                    height: 25px !important;
+                    width: 25px !important;
+                    margin-left: 10px;
+                }
+                background: $primary;
+                color: #fff;
+                fill:#fff;
+                padding: 0 10px;
+                font-size: 20px;
+            }
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         }
     }
-
-    .item-li {
-        .img-cont {
-            float: left;
+    .cont {
+        padding: 0;
+        .item-li {
+            padding: 10px;
+            border-bottom: 1px solid #dcdcdc;
+            margin-bottom: 0;
         }
     }
-
 }

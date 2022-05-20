@@ -1,4 +1,5 @@
 @use '../helpers/var'as *;
+<<<<<<< HEAD
 
 .block {
     float        : right;
@@ -107,13 +108,45 @@
                 .icon {
                     fill: #000;
                 }
+=======
+.block {
+    float: right;
+    width: 100%;
+    margin-bottom: 20px;
+    .title {
+        float: right;
+        width: 100%;
+        line-height: 30px;
+        border-bottom: 3px solid $primary;
+        a {
+            display: block;
+            width: 100%;
+            float: right;
+            h2 {
+                font-size: 24px;
+                margin: 0;
+                line-height: 40px;
+                padding: 0;
+                display: inline-block;
+                color: #000;
+            }
+            svg.icon {
+                float: left;
+                width: 26px !important;
+                height: 26px !important;
+                margin-top: 10px;
+            }
+            &:hover {
+                color: $primary;
+                fill: $primary;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
             }
         }
 
 
     }
-
     .cont {
+<<<<<<< HEAD
         float             : right;
         width             : 100%;
         //  padding       : 15px;
@@ -191,6 +224,32 @@ section {
             h2,
             .more {
                 color: #fff;
+=======
+        float: right;
+        width: 100%;
+        background: #fff;
+        border: 1px solid #dcdcdc;
+        padding: 10px;
+    }
+    .foot {
+        float: right;
+        width: 100%;
+        a {
+            display: block;
+            float: right;
+            width: 100%;
+            text-align: left;
+            color: #fff;
+            fill: #fff;
+            background: #3b3b3b;
+            line-height: 32px;
+            padding: 0 15px;
+            .icon {
+                fill: #fff;
+            }
+            &:hover {
+                background: #5d5d5d;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
             }
 
 

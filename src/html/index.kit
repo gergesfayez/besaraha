@@ -45,7 +45,11 @@
     <link rel="preload" href="css/home.css" as="style">
     <link rel="preload" href="css/swiper-bundle.min.css" as="style">
     <link rel="preload" href="js/lazysizes.min.js" as="style">
+<<<<<<< HEAD
 
+=======
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" as="style">
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
 
 
@@ -57,8 +61,12 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all">
 
     <script type="text/javascript" src="js/lazysizes.min.js" async></script>
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;800&display=swap" rel="stylesheet">
 
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 </head>
 
 <body>
@@ -68,6 +76,7 @@
 
 
     <main>
+<<<<<<< HEAD
         <div class="container">
             <!--@import "nt/topstory-wide.html"-->
 
@@ -85,10 +94,31 @@
                         <div class='txt-cont'>
                             <h3> قروض
                             </h3>
+=======
+        <div class="container main">
+            <div class="row top-story-row">
+                <div class="col-8 right-col">
+
+                    <!--@import "nt/topstory-swiper.html"-->
+                    <!--@import "nc/nc1.html"-->
+                    <!--@import "nc/nc1.html"-->
+                    <!--@import "nc/nc1.html"-->
+                    <!--@import "nc/nc1.html"-->
+                    <!--@import "nc/nc1.html"-->
+                    <!--@import "nc/nc1.html"-->
+                    <!--@import "nc/nc1.html"-->
+                    <!--@import "nc/nc1.html"-->
+                </div>
+
+
+
+
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
 
 
                         </div>
+<<<<<<< HEAD
                     </a>
                 </div>
                 <div class='item-cat  '>
@@ -109,6 +139,17 @@
 
                         </div>
                     </a>
+=======
+                    </div>
+                    <!--@import "col/colTopRead.html"-->
+                    <!--@import "col/colAlbum.html"-->
+                    <!--@import "col/colVideo.html"-->
+
+
+
+
+
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
                 </div>
                 <div class='item-cat  '>
                     <a href='list.html' title='تمويل عقاري'>
@@ -117,6 +158,7 @@
                         <div class='img-cont'>
 
 
+<<<<<<< HEAD
                             <img class="lazyload" src='images/no.jpg' data-src="images/3.png" loading="lazy"
                                 alt='تمويل عقاري' />
                         </div>
@@ -135,6 +177,9 @@
 
                         <div class='img-cont'>
 
+=======
+            </div>
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
                             <img class="lazyload" src='images/no.jpg' data-src="images/4.png" loading="lazy"
                                 alt='ودائع' />
@@ -152,6 +197,7 @@
                     <a href='list.html' title='بطاقات إئتمان'>
 
 
+<<<<<<< HEAD
                         <div class='img-cont'>
 
 
@@ -225,12 +271,18 @@
                 <!--@import "nc/nc-info.html"-->
             </div>
         </section>
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
         <section class="sec-profile">
             <div class="container">
                 <!--@import "nc/nc-profile.html"-->
 
+<<<<<<< HEAD
             </div>
+=======
+        </div>
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
         </section>
         <section class="w">
@@ -249,9 +301,12 @@
             <div class="container">
                 <!--@import "nc/nc1.html"-->
 
+<<<<<<< HEAD
             </div>
         </section>
 
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
 
     </main>
@@ -264,13 +319,56 @@
     <script type="text/javascript" src="js/core-min.js"></script>
     <script type="text/javascript" src="js/swiper-bundle-min.js"></script>
     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
 
 
+
+<<<<<<< HEAD
 
             var tsswiper = new Swiper('.ts-swiper', {
 
 
+=======
+            var tsThumbs = new Swiper('.ts-thumbs', {
+                spaceBetween: 1,
+                slidesPerView: 5,
+                loop: true,
+                freeMode: true,
+                loopedSlides: 5, //looped slides should be the same
+                watchSlidesVisibility: true,
+                watchSlidesProgress: true,
+                navigation: {
+                    nextEl: '.tst-nxt',
+                    prevEl: '.tst-prv',
+                },
+                breakpoints: {
+                    240: {
+                        slidesPerView: 2,
+                        spaceBetween: 3,
+                    },
+                    380: {
+                        slidesPerView: 3,
+                        spaceBetween: 2,
+                    },
+                    540: {
+                        slidesPerView: 4,
+                        spaceBetween: 2,
+                    },
+                    768: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
+                }
+            });
+
+            var tsswiper = new Swiper('.ts-swiper', {
+                loop: true,
+                loopFillGroupWithBlank: true,
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
                 autoplay: {
                     delay: 6500,
                     disableOnInteraction: false,
@@ -279,17 +377,26 @@
                     el: '.swiper-pagination',
 
                     clickable: true,
+<<<<<<< HEAD
                     renderBullet: function (index, className) {
                         return '<span class="' + className + '">' + (index + 1) + "</span>";
                     },
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
                 },
                 navigation: {
                     nextEl: '.ts-nxt',
                     prevEl: '.ts-prv',
                 },
+<<<<<<< HEAD
 
 
+=======
+                thumbs: {
+                    swiper: tsThumbs,
+                },
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
             });
 
 
@@ -307,6 +414,86 @@
                     delay: 6500,
                     disableOnInteraction: false,
                 },
+                navigation: {
+                    nextEl: '.tn-nxt',
+                    prevEl: '.tn-prv',
+                },
+                breakpoints: {
+                    440: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 3,
+<<<<<<< HEAD
+=======
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                }
+            });
+            var fswiper = new Swiper('.files-swiper', {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                centeredSlides: true,
+                autoplay: {
+                    delay: 8500,
+                    disableOnInteraction: false,
+                },
+                // init: false,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: '.f-nxt',
+                    prevEl: '.f-prv',
+                },
+                breakpoints: {
+                    440: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                    },
+                    640: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 4,
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                }
+            });
+            var videoswiper = new Swiper('.video-swiper', {
+                slidesPerView: 1,
+                spaceBetween: 10,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                // init: false,
+                autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+
                 navigation: {
                     nextEl: '.tn-nxt',
                     prevEl: '.tn-prv',

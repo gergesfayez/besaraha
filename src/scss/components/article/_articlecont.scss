@@ -31,6 +31,7 @@ article.cont {
     padding: 0;
     padding-top: 30px;
     .cat-name {
+<<<<<<< HEAD
         background: $primary;
         color: #fff;
         padding:3px 20px;
@@ -42,6 +43,16 @@ article.cont {
         }
         display: block;
         margin-bottom: 10px;
+=======
+        background: $secondary;
+        color: #fff;
+        padding: 5px 20px;
+        border-radius: 40px;
+        float: right;
+        font-size: 20px;
+        display: block;
+        margin-bottom: 20px;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         clear: both;
     }
     .pre-title {
@@ -71,6 +82,7 @@ article.cont {
         float: right;
         position: relative;
         font-weight: bold;
+<<<<<<< HEAD
         color: #000 !important;
         fill: $primary;
         width: 100%;
@@ -86,6 +98,13 @@ article.cont {
         a {
             color: #000;
             fill: $primary;
+=======
+        color: $secondary;
+        fill: $secondary;
+        a {
+            color: $secondary;
+            fill: $secondary;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         }
     }
     .article-author {
@@ -121,6 +140,7 @@ article.cont {
             display: inline-block;
             font-size: 14px;
             font-weight: bold;
+<<<<<<< HEAD
             color: #444;
             .icon {
                 fill: $primary;
@@ -163,10 +183,27 @@ article.cont {
                       border: 0;
                   }
               }
+=======
+            color: $primary;
+            .icon {
+                fill: $secondary;
+            }
+            strong {
+                color: $secondary;
+            }
+        }
+        .share-top {
+            float: left;
+            margin: 0;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
             @media(min-width: 768px) {
                 width: auto;
             }
         }
+<<<<<<< HEAD
+=======
+    }
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
     figure.main-img {
         float: right;
         width: 100%;
@@ -195,6 +232,7 @@ article.cont {
         figcaption {
             position: absolute;
             bottom: 0;
+<<<<<<< HEAD
             left: 0;
             width: auto;
             font-size: 14px;
@@ -202,6 +240,13 @@ article.cont {
             z-index: 33;
             text-align: center;
             background: rgba(#F5FBFF, 1);
+=======
+            width: 100%;
+            font-size: 14px;
+            z-index: 33;
+            text-align: center;
+            background: rgba(#fff, 0.6);
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         }
     }
     figure.img-inline {
@@ -347,10 +392,16 @@ article.cont {
 .keywords {
     float: right;
     width: 100%;
+<<<<<<< HEAD
     border-top: 1px solid $primary;
     padding: 0 15px;
     text-align: center;
     background: #f5fbff;
+=======
+    border-top: 1px solid #dcdcdc;
+    padding: 0 15px;
+    text-align: center;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
     .name {
         float: right;
         width: 100%;
@@ -369,6 +420,7 @@ article.cont {
     a {
         display: inline-block;
         background: transparent;
+<<<<<<< HEAD
         border: 1px solid $primary;
         background:#fff;
         margin: 5px;
@@ -377,6 +429,12 @@ article.cont {
         border-radius: 30px;
         font-weight: bold;
         font-size: 14px;
+=======
+        border: 1px solid #dcdcdc;
+        margin: 5px;
+        padding: 3px 10px;
+        cursor: pointer;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         &:hover {
             background: #f4f4f4;
             border: 1px solid $primary;

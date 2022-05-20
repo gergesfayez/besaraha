@@ -1,8 +1,8 @@
 @use '../critical/helpers/var'as *;
-
 //components
 @use '../components/nc/nc1';
 @use '../components/nc/nc2';
+<<<<<<< HEAD
 
 
 @use '../components/nc/ncsport';
@@ -20,4 +20,16 @@
 
 
 
+=======
+@use '../components/nc/nchalf';
+@use '../components/nc/ncsport';
+@use '../components/nc/nctopread';
+@use '../components/nc/nc-mogaz';
+@use '../components/nt/topstory-swiper';
+@use '../components/nt/ntvideo';
+@use '../components/col/poll';
+@use '../components/col/colTopRead';
+@use '../components/col/colAlbum';
+@use '../components/col/colVideo';
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 //plugins

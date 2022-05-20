@@ -1,21 +1,31 @@
 @use 'var'as *;
-
 a {
     text-decoration   : none;
     -webkit-transition: all 0.3s ease 0s;
+<<<<<<< HEAD
     -moz-transition   : all 0.3s ease 0s;
     -o-transition     : all 0.3s ease 0s;
     -ms-transition    : all 0.3s ease 0s;
     transition        : all 0.3s ease 0s;
     color             : #000;
 
+=======
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    color: #000;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
     &:hover {
         color: $secondary;
     }
 }
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
 }
+=======
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 
 .bg-gradient {
     background: rgb(38, 170, 210);
@@ -60,7 +70,6 @@ svg.icon {
     max-height: 100%;
     transition: all 0.35s;
 }
-
 
 svg {
     overflow      : hidden;
@@ -109,9 +118,19 @@ h5 {
 }
 
 body {
+<<<<<<< HEAD
     margin    : 0;
     padding   : 0;
     background: #f2f2f2;
+=======
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    .container.main {
+        background: #fff;
+        box-shadow: 0 0 103px 0 rgb(0 0 0 / 35%);
+    }
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
 }
 
 button {
@@ -119,17 +138,24 @@ button {
     border    : 0;
     outline   : 0;
     background: transparent;
+<<<<<<< HEAD
     cursor    : pointer;
 
+=======
+    cursor: pointer;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
     &:hover,
     &:focus {
         outline: 0;
     }
-
     &.btn-primary {
         background: $primary;
+<<<<<<< HEAD
         color     : #fff;
 
+=======
+        color: #fff;
+>>>>>>> 3ef62278f65874bb410451faea57be42d35419cf
         &:hover {
             background: $secondary;
             color     : #fff;
