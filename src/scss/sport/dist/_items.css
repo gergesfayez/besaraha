@@ -1,0 +1,136 @@
+:root {
+  --primary:$primary;
+  --secondary:$secondary;
+  --gray:$gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.item-match {
+  width: 288px;
+  float: right;
+  border-radius: 10px;
+  background: #2E4A5A;
+  color: #fff;
+  box-shadow: 0 0 6px 3px rgba(0, 0, 0, 0.04);
+  position: relative;
+  text-align: center;
+}
+.item-match .teams {
+  float: right;
+  width: 100%;
+}
+.item-match .league-name {
+  display: block;
+  float: right;
+  width: 90%;
+  margin: 0 5%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: rgba(255, 255, 255, 0.12);
+  text-align: center;
+  margin-bottom: 3px;
+  font-size: 9px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.item-match .status {
+  margin-top: -20px;
+  float: right;
+  width: 100%;
+  height: 42px;
+}
+.item-match .status .name {
+  border-radius: 30px;
+  background-color: transparent;
+  border: 1px solid #A5FA06;
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  font-family: tahoma, sans-serif;
+  width: 55px;
+  line-height: 20px;
+}
+.item-match .team {
+  width: 50%;
+  display: block;
+  float: right;
+  text-align: center;
+}
+.item-match .team .team-cont {
+  width: 123px;
+  display: inline-block;
+}
+.item-match .team .home-score {
+  float: left;
+  font-size: 24px;
+  color: red;
+  line-height: 34px;
+  width: 20px;
+}
+.item-match .team .away-score {
+  float: right;
+  font-size: 24px;
+  color: red;
+  line-height: 34px;
+  width: 20px;
+}
+.item-match .team .team-logo {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+}
+.item-match .team .team-logo img {
+  height: 34px;
+  width: auto;
+}
+.item-match .team .team-name {
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.item-match.live .name {
+  background-color: #A5FA06;
+  border: 1px solid #A5FA06;
+  color: #000;
+  -webkit-animation: pulse linear 300ms infinite;
+  -khtml-animation: pulse linear 300ms infinite;
+  -moz-animation: pulse linear 300ms infinite;
+  -ms-animation: pulse linear 300ms infinite;
+  -o-animation: pulse linear 300ms infinite;
+  animation: pulse linear 300ms infinite;
+}
+.item-match.live .home-score, .item-match.live .away-score {
+  color: #A5FA06;
+}
+.item-match.not-started .name {
+  background-color: transparent;
+  border: 1px solid #A5FA06;
+  color: #fff;
+}
+.item-match.not-started .home-score,
+.item-match.not-started .away-score {
+  color: #fff;
+}
+.item-match.finished .name {
+  background-color: rgba(243, 243, 243, 0.2);
+  border: 0;
+  color: #fff;
+}
+.item-match.finished .home-score,
+.item-match.finished .away-score {
+  color: #A5FA06;
+}

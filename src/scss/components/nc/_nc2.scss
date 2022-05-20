@@ -1,0 +1,36 @@
+@use '../../critical/helpers/var'as *;
+
+
+
+.nc2   {
+
+    .item-li {
+        .txt-cont {
+            h3{
+                height: 70px;
+            }
+        }
+        @media(min-width: 1400px) {
+    .img-cont {
+        width: 130px;
+    }
+
+    .txt-cont {
+        width: calc(100% - 130px);
+    }
+}
+    }
+}
+
+
+.nc3{
+    .item-card{
+        .img-cont {
+            &:after{
+                @media(min-width: 1200px){
+                    padding-top: 70.25%;
+                }
+            }
+        }
+    }
+}

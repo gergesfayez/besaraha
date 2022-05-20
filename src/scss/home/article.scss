@@ -2,13 +2,11 @@
 
 
 
-@use '../critical/plugins/splide';
 
 
 
-
+@use "../components/article/articlecont";
 @use "../components/article/newArticle";
-
 
 @use "../components/article/gallery";
 
@@ -17,66 +15,158 @@
 @use '../components/col/poll';
 
 @use '../components/col/top-read';
-@use '../components/col/top-readnum';
-@use '../components/col/top-read2';
 
 
+
+
+
+
+
+
+
+
+
+
+.post-share {
+    border-radius: 20px;
+}
+
+
+
+.news-post .social {
+    flex-wrap: wrap !important;
+}
+
+.post-share a,
+.post-share .mobile-native {
+    width      : 32px !important;
+    height     : 32px !important;
+    line-height: 28px !important;
+}
+
+.post-share .sharetitle,
+.post-share .mobile-native {
+    display      : inline-block;
+    border       : 1px solid $secondary;
+    border-radius: 30px;
+    line-height  : 28px;
+    height       : 32px;
+    width        : auto !important;
+    font-weight  : bold;
+    color        : $secondary;
+    fill         : $secondary;
+    margin       : 5px;
+    padding      : 0 5px;
+}
+
+.post-share a .icon {
+    width : 20px !important;
+    height: 20px !important;
+}
+
+.post-share .sharetitle {
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .post-share .sharetitle {
+        display: inline-block;
+
+    }
+}
+
+.news-post .post-tags {
+    border-top   : 2px solid #dcdcdc;
+    border-radius: 4px;
+    padding      : 5px;
+}
+
+.news-post .post-tags .name {
+    float      : right;
+    width      : 100%;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.news-post .post-tags a {
+    font-size    : 14px;
+    border-radius: 30px;
+    padding      : 2px 5px;
+    background   : #fff;
+}
+
+.news-post .post-share {
+    width     : auto;
+    background: #fff;
+}
+
+.share-inline {
+    float: right;
+    width: 100%;
+
+    text-align: center;
+}
+
+.share-inline .post-share {
+    float  : none;
+    display: inline-block;
+}
 
 .ratio {
     position: relative;
     overflow: hidden;
 
     &:after {
-        content: "";
-        display: block;
-        width: 100%;
+        content    : "";
+        display    : block;
+        width      : 100%;
         padding-top: 56.25%;
     }
 
     img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
+        position     : absolute;
+        top          : 0;
+        left         : 0;
+        right        : 0;
+        bottom       : 0;
+        width        : 100%;
+        height       : 100%;
         -o-object-fit: cover;
-        object-fit: cover;
+        object-fit   : cover;
     }
 }
 
 .breadcrumb {
-    display: -webkit-box;
-    display: flex;
-    flex-wrap: wrap;
-    padding: .75rem 1rem;
-    margin-bottom: 1rem;
-    list-style: none;
+    display         : -webkit-box;
+    display         : flex;
+    flex-wrap       : wrap;
+    padding         : .75rem 1rem;
+    margin-bottom   : 1rem;
+    list-style      : none;
     background-color: #e9ecef;
-    border-radius: 0;
-    margin-bottom: 10px;
+    border-radius   : 0;
+    margin-bottom   : 10px;
 }
 
 .rtl .breadcrumb-item+.breadcrumb-item,
 [dir=rtl] .breadcrumb-item+.breadcrumb-item {
     padding-right: .5rem;
-    padding-left: 0;
-    color: #6c757d;
-    content: "/";
+    padding-left : 0;
+    color        : #6c757d;
+    content      : "/";
 }
 
 .rtl .breadcrumb-item+.breadcrumb-item::before,
 [dir=rtl] .breadcrumb-item+.breadcrumb-item::before {
     padding-right: 0;
-    padding-left: .5rem;
+    padding-left : .5rem;
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-    display: inline-block;
+    display      : inline-block;
     padding-right: .5rem;
-    color: #6c757d;
-    content: "/";
+    color        : #6c757d;
+    content      : "/";
 }
 
 

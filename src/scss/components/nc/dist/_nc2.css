@@ -1,0 +1,33 @@
+:root {
+  --primary:$primary;
+  --secondary:$secondary;
+  --gray:$gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.nc2 .item-li .txt-cont h3 {
+  height: 70px;
+}
+@media (min-width: 1400px) {
+  .nc2 .item-li .img-cont {
+    width: 130px;
+  }
+  .nc2 .item-li .txt-cont {
+    width: calc(100% - 130px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .nc3 .item-card .img-cont:after {
+    padding-top: 70.25%;
+  }
+}

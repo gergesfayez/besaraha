@@ -1,120 +1,194 @@
 @use '../helpers/var'as *;
 
-
 footer {
-    float: right;
-    width: 100%;
-    background: $primary;
-    text-align: center;
-    padding-top: 10px;
+    float     : right;
+    width     : 100%;
+    background: #C7C7C7;
+    position  : relative;
+    overflow  : visible !important;
 
-    content-visibility: auto;
+    &:before {
+        content         : "";
+        width           : 100%;
+        top             : 0;
+        left            : 0;
+        height          : 4px;
+        background-color: $secondary;
+        position        : absolute;
 
-    .top {
-        float: right;
-        width: 100%;
-        border-bottom: 1px solid #dcdcdc;
 
-        .logo-area {
-            @media(min-width:768px) {
-                display: inline-block;
-                float: right;
-                width: auto;
+        box-shadow: $box-shadow-sm2, $box-shadow-sm2;
+    }
 
+    text-align               : center;
+    //  padding-top       : 10px;
+    // content-visibility    : auto;
+    margin-top               : 30px;
+
+    .up {
+        float         : right;
+        width         : 100%;
+        text-align    : center;
+        padding-bottom: 10px;
+        margin-top    : -10px;
+        position      : relative;
+        z-index       : 22;
+
+        .btp {
+            float        : right;
+            width        : 32px;
+            height       : 32px;
+            background   : #fff;
+            border-radius: 50%;
+            box-shadow   : $box-shadow-sm, $box-shadow-sm, $box-shadow-sm;
+            text-align   : center;
+            line-height  : 32px;
+
+            .icon {
+                fill     : $secondary;
+                transform: rotate(90deg);
+                width    : 13px;
+                height   : 13px;
 
             }
 
+            &:hover {
+                background: $primary;
 
-            .logo {
-                height: 70px;
-                display: block;
-                margin: 10px 0;
-
-                img {
-                    height: 100%;
-                    width: auto;
+                .icon {
+                    fill: #fff;
                 }
             }
         }
-
-
-        .follow {
-            display: inline-block;
-
-            color: #fff;
-            width: 100%;
-
-            @media(min-width: 768px) {
-                float: left;
-                width: auto;
-                margin-top: 20px;
-            }
-
-
-            .social {
-                a {
-                    background: #fff !important;
-                    color: $primary !important;
-                    fill: $primary !important;
-
-                    &:hover {
-                        background: #333 !important;
-                        color: #ffff !important;
-                        fill: #ffff !important;
-                    }
-                }
-            }
-        }
-
 
     }
 
+    .top {
+        float             : right;
+        width             : 100%;
+        // border-bottom: 1px solid  #707070;
+        text-align        : center;
+        display           : inline-flex;
+        //background      : #fff;
 
+        align-items    : center;
+        justify-content: center;
+
+        @media(max-width: 1299px) {
+            flex-wrap     : wrap;
+            flex-direction: column;
+        }
+
+        .container {
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+        }
+
+        .search-form {
+            display: none;
+
+            @media(min-width: 768px) {
+                display: inline-block;
+            }
+        }
+
+        .logo-area {
+
+            float: right;
+            width: auto;
+
+
+            .logo {
+                height : 70px;
+                display: block;
+                margin : 10px 0;
+
+                img {
+                    height: 100%;
+                    width : auto;
+                }
+            }
+
+
+        }
+
+
+
+
+
+        .social {
+            width  : auto;
+            display: inline-flex;
+            float  : left;
+
+            a {
+                background   : #000 !important;
+                color        : $secondary !important;
+                fill         : $secondary !important;
+                border-radius: 50%;
+                width        : 32px;
+                height       : 32px;
+                margin       : 3px;
+                line-height  : 29px;
+
+
+                &:hover {
+                    background: $secondary !important;
+                    color     : $primary !important;
+                    fill      : $primary !important;
+                }
+            }
+        }
+
+    }
 
     .fnav {
-        text-align: center;
-        float: right;
-        width: 100%;
+        text-align         : center;
+        float              : right;
+        width              : 100%;
+        margin             : 10px 0;
+        padding            : 10px 0;
+        //  text-decoration: dotted !important;
 
-
-
-
-
+        border-top   : 2px solid $secondary;
+        border-bottom: 2px solid $secondary;
 
 
         a {
             //  width: 120px;
-            margin: 10px;
-            display: inline-block;
+            font-size  : 12px;
+            margin     : 10px;
+            display    : inline-block;
             white-space: nowrap;
+            color      : #000;
 
-            color: #fff;
+            &:hover {
+                text-decoration      : underline;
+                text-decoration-color: $secondary;
+                //  color: $secondary;
 
+            }
         }
-
     }
 
-
     .copy {
-        background: #000;
-        color: #fff;
-        float: right;
-        width: 100%;
-        text-align: center;
-        font-family: sans-serif;
-        font-size: 14px;
-        padding: 10px 0;
-        direction: ltr;
-        line-height: 30px;
-        vertical-align: middle;
-        display: flex;
-        align-items: center;
-        align-content: center;
+        background     : #444;
+        border-top     : 1px solid $primary;
+        color          : #fff;
+        float          : right;
+        width          : 100%;
+        text-align     : center;
+        font-family    : tahoma;
+        font-size      : 12px;
+        padding        : 10px 0;
+        direction      : ltr;
+        line-height    : 30px;
+        vertical-align : middle;
+        display        : flex;
+        align-items    : center;
+        align-content  : center;
         justify-content: center;
 
     }
-
-
-
-
 }

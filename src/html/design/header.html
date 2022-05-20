@@ -1,270 +1,350 @@
-<header>
-    <div class="top">
-        <div class="container">
-
-            <div class="date">الاثنين - 28 ديسمبر 2020
+<div class="container">
+    <div class="searchInline" id="searchInline">
+        <form id="search-form" action="/search/term" autocomplete="off">
+            <label for="search"> البحث</label>
+            <input type="search" id="search" name="w" value="" aria-label="search"
+                placeholder="  إكتب كلمة البحث هنا" />
+            <div class="btns">
+                <button type="submit" class="btn btn-primary" aria-label="search"> <svg class="icon">
+                        <use xlink:href="images/icons.svg#magnifying-glass"></use>
+                    </svg> </button>
+                <button type="button" class="btn btn-primary" aria-label="close search" onclick="closeSearch()"> <svg
+                        class="icon close">
+                        <use xlink:href="images/icons.svg#cancel"></use>
+                    </svg></button>
             </div>
+        </form>
 
-            <a href="list.html" class=" btn btn-primary ">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24.883" height="21" viewBox="0 0 24.883 21">
-                    <path id="Icon_metro-feed" data-name="Icon metro-feed"
-                        d="M10.759,12.915a3.11,3.11,0,1,1,3.11,3.113,3.112,3.112,0,0,1-3.11-3.113Zm6.813-6.846a7.789,7.789,0,0,1,0,13.692,13.124,13.124,0,0,0,1.741-6.846A13.124,13.124,0,0,0,17.572,6.069ZM8.427,12.915a13.124,13.124,0,0,0,1.741,6.846,7.789,7.789,0,0,1,0-13.692A13.124,13.124,0,0,0,8.427,12.915Zm-4.666,0a16.718,16.718,0,0,0,3.418,10.5,12.461,12.461,0,0,1,0-21,16.718,16.718,0,0,0-3.418,10.5Zm16.8-10.5a12.461,12.461,0,0,1,0,21,16.718,16.718,0,0,0,3.418-10.5,16.718,16.718,0,0,0-3.418-10.5Z"
-                        transform="translate(-1.428 -2.415)" fill="#fff" />
-                </svg>
+    </div>
+    <header>
 
-
-                حالا
-
-            </a>
+        <div class="top">
 
 
+            <div class="time"></div>
+            <div class=" social ">
+                <a class="fb" href=" https://www.facebook.com/ " target=" _blank " rel=" noreferrer noopener
+                                                nofollow " title=" تابع علي فيسبوك ">
+                    <span class=" sr-only "> facebook</span>
+                    <svg class=" icon ">
+                        <use xlink:href=" images/icons.svg#facebook "></use>
+                    </svg>
 
-            <div class="search-form">
-                <form action="list.html">
-                    <input type="search" class="form-control" placeholder="بحث">
-                    <button type="submit" class="search-icn">
-                        <svg class="icon ">
-                            <use xlink:href="images/icons.svg#magnifying-glass" />
-                        </svg>
-                    </button>
 
-                </form>
+                </a>
+                <a class="tw" href=" https://twitter.com/ " target=" _blank " rel=" noreferrer noopener nofollow "
+                    title=" تابع علي تويتر ">
+                    <span class=" sr-only ">twitter</span>
+                    <svg class=" icon ">
+                        <use xlink:href=" images/icons.svg#twitter "></use>
+                    </svg> </a>
+                <a class="yt" href=" https://www.youtube.com/c/ " target=" _blank " rel=" noreferrer noopener
+                                                nofollow " title=" قناة علي يوتيوب "> <span
+                        class=" sr-only ">youtube</span>
+
+                    <svg class=" icon ">
+                        <use xlink:href=" images/icons.svg#youtube "></use>
+                    </svg></a>
+                <a class="in" href=" https://www.instagram.com/ " target=" _blank " rel=" noreferrer noopener
+                                                nofollow " title=" تابع علي انستاجرام "> <span
+                        class=" sr-only ">instagram</span>
+                    <svg class=" icon ">
+                        <use xlink:href=" images/icons.svg#instagram-sketched "></use>
+                    </svg></a>
+                <a class="rss" href=" /rss.aspx " target=" _blank " rel=" noreferrer noopener nofollow "
+                    title="   rss feed "><span class=" sr-only ">rss feed</span>
+                    <svg class=" icon ">
+                        <use xlink:href=" images/icons.svg#rss "></use>
+                    </svg></a>
             </div>
-
 
 
         </div>
-    </div>
-
-    <div class="md">
-        <div class="container">
+        <div class=" md ">
 
 
 
-            <div class="logo-area">
+            <div class=" logo-area ">
+                <a href="index.html" class="logo" title="logo">
+                    <img src="images/logo.png" alt=" " loading="lazy">
 
-                <a href="/" class="logo">
-                    <img src="images/logoh.svg" alt="" width="204" height="105"></a>
 
+
+                </a>
 
                 <div class="admin">
-
                     <div class="item">
-                        <div class="title"> رئيس التحرير
-
-                        </div>
-                        <div class="name ">
-                            محمود سعد الدين
-
-                        </div>
+                        <div class="title"> رئيس التحرير</div>
+                        <div class="name"> حازم عادل</div>
                     </div>
                 </div>
 
 
+
             </div>
 
 
-            <div class="adfull">
-                <div class="cont"></div>
+            <div class=" left-area ">
+
+
+                <div class="adfull">
+                    <div class="cont"></div>
+                </div>
+
+
+
             </div>
+
 
 
 
         </div>
-    </div>
-    <div id="navbar">
-        <nav class="navbar">
-            <div class="container">
 
 
-                <div class="nav-item-mobile">
 
-                    <a href="#" class="btn btn-primary menu" data-pushbar-target="menu" title="menu"
-                        rel="noreferrer noopener">
-                        <svg class="icon ">
+
+
+        <div id="navbar">
+
+            <nav class=" navbar ">
+
+                <div class=" nav-item-mobile ">
+                    <a href="#" class="btn menu" title="menu" data-pushbar-target="menu" title="menu"
+                        rel=" noreferrer noopener ">
+                        <svg class=" icon ">
                             <use xlink:href="images/icons.svg#list" />
                         </svg>
+
+
                     </a>
 
-                    <a href="/" class="logo" title=" name">
-                        <img class="red" src="images/logoh.svg" alt="name" loading="lazy">
+                    <a href=" # " class="logo" title="name"><img src="images/logo.png" width="204" height=" 105 "
+                            alt="name" loading=" lazy ">
 
 
 
-                        <div class="admin">
-
-                            <div class="item">
-                                <div class="title"> رئيس التحرير
-
-                                </div>
-                                <div class="name ">
-                                    محمود سعد الدين
-
-                                </div>
-                            </div>
-                        </div>
                     </a>
 
 
-                    <a href="#" class="btn btn-primary search" data-pushbar-target="search" title="search"
+                    <a href="#" class="btn btn-primary search" onclick="openSearch()" title="search"
                         rel="noreferrer noopener">
-                        <svg class="icon ">
+                        <svg class="icon">
                             <use xlink:href="images/icons.svg#magnifying-glass" />
                         </svg>
                     </a>
                 </div>
 
 
-                <div class="navbar-collapse">
 
-                    <div class="logo-area">
-                        <a href="#" class="logo"><img src="images/logof.svg" alt="name" loading="lazy"></a>
 
-                        <div class="admin">
 
-                            <div class="item">
-                                <div class="title"> رئيس التحرير
+                <div class=" navbar-collapse ">
 
-                                </div>
-                                <div class="name ">
-                                    محمود سعد الدين
 
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a href="index.html" class="nav-link" title=" الرئيسية">
-                                <svg class="icon ">
-                                    <use xlink:href="images/icons.svg#home" />
+
+
+
+                    <ul class=" navbar-nav ">
+                        <li class=" nav-item ">
+                            <a href=" index.html " class=" nav-link " title=" الرئيسية ">
+                                <svg class=" icon ">
+                                    <use xlink:href=" images/icons.svg#home " />
                                 </svg>
-                            </a>
-                        </li>
-                        <li class="nav-item  ">
-                            <a href="list.html" class="nav-link" title=" قسم">
-                                قسم
+
+
+
                             </a>
                         </li>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="/List/3/المدن-الحديثة" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">المدن الجديدة </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <a class="dropdown-item" href="/List/13/التجمع-الخامس">التجمع الخامس</a>
-                                <a class="dropdown-item" href="/List/14/العبور-الجديدة">العبور الجديدة</a>
-                                <a class="dropdown-item" href="/List/15/السويس-الجديدة">السويس الجديدة</a>
-                                <a class="dropdown-item" href="/List/16/دمياط-الجديدة">دمياط الجديدة</a>
-                                <a class="dropdown-item" href="/List/17/العلمين-الجديدة">العلمين الجديدة</a>
-                                <a class="dropdown-item" href="/List/19/العاصمة-الإدارية-الجديدة">العاصمة الإدارية
+
+                        <li class=" nav-item ">
+                            <a href=" list.html " class=" nav-link " title=" قسم ">
+                                عاجل
+                            </a>
+                        </li>
+
+                        <li class=" nav-item dropdown ">
+                            <a class=" nav-link dropdown-toggle " href=" /List/3/المدن-الحديثة " role=" button "
+                                data-toggle=" dropdown " aria-haspopup=" true " aria-expanded=" true "
+                                rel=" noreferrer noopener ">المدن الجديدة </a>
+                            <div class=" dropdown-menu " aria-labelledby=" navbarDropdown2 ">
+                                <a class=" dropdown-item " href=" /List/13/التجمع-الخامس ">التجمع الخامس</a>
+                                <a class=" dropdown-item " href=" /List/14/العبور-الجديدة ">العبور الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/15/السويس-الجديدة ">السويس الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/16/دمياط-الجديدة ">دمياط الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/17/العلمين-الجديدة ">العلمين الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/19/العاصمة-الإدارية-الجديدة ">العاصمة
+                                    الإدارية
                                     الجديدة</a>
-                                <a class="dropdown-item" href="/List/20/أسيوط-الجديدة">أسيوط الجديدة</a>
-                                <a class="dropdown-item" href="/List/21/الفيوم-الجديدة">الفيوم الجديدة</a>
-                                <a class="dropdown-item" href="/List/22/أسوان-الجديدة">أسوان الجديدة</a>
-                                <a class="dropdown-item" href="/List/23/مدينة-السادات">مدينة السادات</a>
-                                <a class="dropdown-item" href="/List/24/المنيا-الجديدة">المنيا الجديدة</a>
-                                <a class="dropdown-item" href="/List/25/العبور-الجديدة">العبور الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/20/أسيوط-الجديدة ">أسيوط الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/21/الفيوم-الجديدة ">الفيوم الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/22/أسوان-الجديدة ">أسوان الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/23/مدينة-السادات ">مدينة السادات</a>
+                                <a class=" dropdown-item " href=" /List/24/المنيا-الجديدة ">المنيا الجديدة</a>
+                                <a class=" dropdown-item " href=" /List/25/العبور-الجديدة ">العبور الجديدة</a>
                             </div>
                         </li>
-                        <li class="nav-item  ">
-                            <a href="list.html" class="nav-link" title=" قسم">
+                        <li class=" nav-item ">
+                            <a href=" list.html " class=" nav-link " title=" قسم ">
                                 قسم
                             </a>
                         </li>
-                        <li class="nav-item  ">
-                            <a href="list.html" class="nav-link" title=" قسم">
-                                قسم
+                        <li class=" nav-item ">
+                            <a href=" list.html " class=" nav-link " title=" قسم ">
+                                تقارير وتحقيقات
                             </a>
                         </li>
-                        <li class="nav-item  ">
-                            <a href="list.html" class="nav-link" title=" قسم">
-                                قسم
+                        <li class=" nav-item ">
+                            <a href=" list.html " class=" nav-link " title=" قسم ">
+                                رياضة
                             </a>
                         </li>
-                        <li class="nav-item menu ">
-                            <a href="#" class="nav-link" data-pushbar-target="menu" title="menu"
-                                rel="noreferrer noopener">
-                                <svg class="icon ">
+                        <li class=" nav-item ">
+                            <a href=" list.html " class=" nav-link " title=" قسم ">
+                                حوادث
+                            </a>
+                        </li>
+                        <li class=" nav-item ">
+                            <a href=" list.html " class=" nav-link " title=" قسم ">
+                                فن
+                            </a>
+                        </li>
+                        <li class=" nav-item ">
+                            <a href=" list.html " class=" nav-link " title=" قسم ">
+                                اقتصاد
+                            </a>
+                        </li>
+                        <li class=" nav-item ">
+                            <a href="#" class=" nav-link " title=" قسم " data-pushbar-target="menu" title=" menu "
+                                rel=" noreferrer noopener ">
+
+
+                                المزيد
+                                <svg class="icon">
                                     <use xlink:href="images/icons.svg#list" />
                                 </svg>
-                                القائمة
-
-
-
                             </a>
                         </li>
+
+
 
                     </ul>
 
-                    <div class="left-btns">
 
 
-                        <div class="social">
-                            <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"
-                                rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
-                                <span class="sr-only"> facebook</span>
+                    <div class="search-form">
+                        <form action="/Search" method="get">
+                            <label for="q" class="sr-only">بحث</label>
+                            <input type="search" class="form-control" name="q" placeholder="بحث">
+                            <button type="submit" class="search-icn">
                                 <svg class="icon">
-                                    <use xlink:href="images/icons.svg#facebook"></use>
+                                    <use xlink:href="images/icons.svg#magnifying-glass"></use>
                                 </svg>
-
-
-                            </a>
-                            <a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"
-                                rel="noreferrer noopener nofollow" title="تابع    علي تويتر"> <span
-                                    class="sr-only">twitter</span>
-                                <svg class="icon">
-                                    <use xlink:href="images/icons.svg#twitter"></use>
-                                </svg> </a>
-                            <a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"
-                                rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span
-                                    class="sr-only">youtube</span>
-
-                                <svg class="icon">
-                                    <use xlink:href="images/icons.svg#youtube"></use>
-                                </svg></a>
-                            <a class="ins" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"
-                                rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span
-                                    class="sr-only">instagram</span>
-                                <svg class="icon">
-                                    <use xlink:href="images/icons.svg#instagram-sketched"></use>
-                                </svg></a>
-                            <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow"
-                                title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
-                                <svg class="icon">
-                                    <use xlink:href="images/icons.svg#rss"></use>
-                                </svg></a>
-                        </div>
-
-
+                            </button>
+                        </form>
                     </div>
 
 
                 </div>
 
 
+
+            </nav>
+
+        </div>
+
+
+    </header>
+</div>
+
+
+
+<div id="search-box">
+    <button type="button" class="close" onclick="closeSearch()">×</button>
+    <form id=" search-form " action=" /search/term ">
+        <label for=" search "></label>
+        <input type="search" id="search" name="w" value="" placeholder=" إكتب كلمة البحث هنا " />
+        <div class=" btns ">
+            <button type=" submit " class=" btn btn-primary " aria-label=" search "> <svg class=" icon ">
+                    <use xlink:href=" images/icons.svg#magnifying-glass "></use>
+                </svg>
+                بحث</button>
+            <button type="button" class=" btn btn-primary " onclick=" closeSearch() ">
+                <svg class="icon">
+                    <use xlink:href=" images/icons.svg#cancel "></use>
+                </svg>
+                إلغاء</button>
+        </div>
+
+    </form>
+</div>
+<section>
+    <div class="container">
+        <div class="sponser-cont" style=" float: right; width:100%;  ">
+            <div class="stick stick-r" style=" height: 0; ">
+                <div class="sponser right stickyR" id="stick-r" data-margin-top="60px"> </div>
             </div>
-        </nav>
+            <div class=" stick stick-l " style=" height: 0; ">
+                <div class="sponser left stickyL" id="stick-l" data-margin-top="60px">
+
+                </div>
+            </div>
+
+
+
+        </div>
+
     </div>
+</section>
+<!--
+<div class="bc" id="breaking">
+    <div class=" container ">
+        <div class=" title "> عاجل </div>
+        <div class=" cont ">
+            <div class=" marquee3k " data-speed=" 1.25 " data-reverse=" R To L " data-pausable=" true " dir=" ltr ">
+                <div>
+                    <a href=" show.html " class=" " title=" "> " التعليم " تعلن رابط امتحانات المصريين بالخارج..
+                        وتؤكد:
+                        " الطالب سيمتحن ويسلم الإجابة للسفارة "</a>
 
+                    <a href=" show.html " class=" " title=" "> " التعليم " تعلن رابط امتحانات المصريين بالخارج..
+                        وتؤكد:
+                        " الطالب سيمتح لإجابة للسفارة "</a>
 
-</header>
-
-
-<div class="container">
-
-    <div class="sponser-cont" style="float: right; width:100%; z-index: 3333;">
-        <div class="stick stick-r" style="height: 0;">
-            <div class="sponser right  " id="stick-r"> <a href="show.html"
-                    style="display: block;width:100%; height: 100%;  "> text</a> </div>
-        </div>
-        <div class="stick stick-l" style="height: 0;">
-            <div class="sponser left  " id="stick-l">
+                </div>
 
             </div>
         </div>
 
-
-
+        <div class=" close ">
+            <a href=" # " onclick=" hideBN() " id=" close-bc " rel=" noopener nofollow noreferrer ">
+                <svg class=" icon ">
+                    <use xlink:href=" images/icons.svg#add "></use>
+                </svg></a>
+        </div>
     </div>
 </div>
+
+<script src=" js/marquee3k.min.js "></script>
+
+<script>
+    Marquee3k.init({
+        selector: 'marquee3k', // define a custom classname
+    });
+
+    window.onresize = function () {
+        Marquee3k.refreshAll();
+    };
+
+    function hideBN() {
+
+        var bn = document.getElementById('breaking');
+
+        bn.style.display = 'none';
+
+
+    }
+</script>
+
+--->

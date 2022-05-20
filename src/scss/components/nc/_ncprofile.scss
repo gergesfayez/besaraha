@@ -1,0 +1,79 @@
+ @use '../../critical/helpers/var'as *;
+
+
+ .sec-profile {
+     background: $primary;
+
+     .block {
+         .title {
+             h2 {
+                 color: #fff;
+             }
+
+             .more {
+                 color: #fff;
+             }
+         }
+     }
+ }
+
+ .ncprofile {
+
+     .swiper-slide {
+         width: 280px;
+
+         @media(min-width: 768px) {
+             width: 340px;
+         }
+     }
+
+     .item-card {
+         position: relative;
+
+
+         &:before {
+             content   : "";
+             width     : 100px;
+             height    : 2px;
+             background: $secondary;
+             position  : absolute;
+             top       : 10px;
+             right     : 10px;
+             z-index   : 22;
+
+         }
+
+         &:after {
+             content   : "";
+             width     : 2px;
+             height    : 100px;
+             background: $secondary;
+             position  : absolute;
+             top       : 10px;
+             right     : 10px;
+             z-index   : 33;
+
+         }
+
+         .img-cont {
+             &:after {
+                 padding-top: 90%;
+             }
+
+             img {
+                 filter: grayscale(100%);
+             }
+         }
+
+         .txt-cont {
+             background: $secondary;
+
+             h3 {
+                 display    : flex;
+                 align-items: center;
+                 text-align : center;
+
+             }
+         }
+     }
+ }

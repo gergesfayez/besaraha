@@ -1,0 +1,143 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.block {
+  float: right;
+  width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 0 15px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 0;
+}
+.block .title {
+  float: right;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+  border-top-left-radius: 20px;
+  border-right: 5px solid #FDDF1A;
+}
+.block .title h2 {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #343434;
+  display: inline-block;
+  z-index: 23;
+  position: relative;
+  font-weight: bolder;
+  line-height: 28px;
+  transition: all 0.35s;
+  padding: 0 15px;
+}
+.block .title .more {
+  position: absolute;
+  padding: 0 20px;
+  height: 30px;
+  left: 10px;
+  top: 7px;
+  border-radius: 50px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #000;
+  border: 1px solid #FDDF1A;
+  font-weight: bolder;
+  transition: all 0.35s;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block .title .more .icon {
+  width: 25px;
+  height: 25px;
+  fill: #FDDF1A;
+  margin-top: 8px;
+}
+.block .title .more:hover {
+  background: #FDDF1A;
+  color: #000;
+}
+.block .title .more:hover .icon {
+  fill: #000;
+}
+.block .cont {
+  float: right;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.block .foot {
+  float: right;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  border-top: 1px solid #dcdcdc;
+  position: relative;
+}
+.block .foot::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #343434;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  border-radius: 30px;
+}
+.block .foot a {
+  color: #343434;
+  font-weight: bold;
+  line-height: 28px;
+  display: inline-block;
+  font-size: 16px;
+}
+.block .foot a:hover {
+  background: #343434;
+  color: #fff;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background: #343434;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: #FDDF1A;
+}
+
+section {
+  width: 100%;
+  padding: 30px 0;
+  float: right;
+}
+section.drk {
+  background-color: #343434;
+}
+section.drk .title h2,
+section.drk .title .more {
+  color: #fff;
+}
+section.w {
+  background-color: #fff;
+}
+section .block {
+  margin-bottom: 0;
+}

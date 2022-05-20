@@ -1,0 +1,71 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.sec-profile {
+  background: #343434;
+}
+.sec-profile .block .title h2 {
+  color: #fff;
+}
+.sec-profile .block .title .more {
+  color: #fff;
+}
+
+.ncprofile .swiper-slide {
+  width: 280px;
+}
+@media (min-width: 768px) {
+  .ncprofile .swiper-slide {
+    width: 340px;
+  }
+}
+.ncprofile .item-card {
+  position: relative;
+}
+.ncprofile .item-card:before {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background: #FDDF1A;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 22;
+}
+.ncprofile .item-card:after {
+  content: "";
+  width: 2px;
+  height: 100px;
+  background: #FDDF1A;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 33;
+}
+.ncprofile .item-card .img-cont:after {
+  padding-top: 90%;
+}
+.ncprofile .item-card .img-cont img {
+  filter: grayscale(100%);
+}
+.ncprofile .item-card .txt-cont {
+  background: #FDDF1A;
+}
+.ncprofile .item-card .txt-cont h3 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}

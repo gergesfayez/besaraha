@@ -1,0 +1,71 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.nc1 .list .item-li {
+  border-bottom: 1px dashed #dcdcdc;
+  border-top: 1px dashed #dcdcdc;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+@media (min-width: 992px) {
+  .nc1 .list .item-li:first-child {
+    border: 0;
+  }
+  .nc1 .list .item-li:last-child {
+    border: 0;
+  }
+}
+.nc1 .item-li .txt-cont h3 {
+  height: 70px;
+}
+.nc1.bg2 .item-bg {
+  margin-bottom: 20px;
+}
+.nc1.bg2 .item-bg .img-cont:after {
+  padding-top: 90%;
+}
+.nc1.bg2 .item-bg .txt-cont h3 {
+  text-align: center;
+  font-weight: bold;
+}
+.nc1.cards .img-cont {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+@media (min-width: 992px) {
+  .nc1.cards .col-lg-6:first-child .item-card .img-cont:after {
+    padding-top: 70%;
+  }
+}
+.nc1.cards .col-lg-6:first-child .item-card .txt-cont {
+  background-color: #dcdcdc;
+}
+.nc1.cards.sport .col-lg-6:first-child .txt-cont {
+  background: #237100;
+}
+.nc1.cards.sport .col-lg-6:first-child .txt-cont h3,
+.nc1.cards.sport .col-lg-6:first-child .txt-cont p,
+.nc1.cards.sport .col-lg-6:first-child .txt-cont .time {
+  color: #fff;
+}
+.nc1.cards.art .col-lg-6:first-child .txt-cont {
+  background: #343434;
+}
+.nc1.cards.art .col-lg-6:first-child .txt-cont h3,
+.nc1.cards.art .col-lg-6:first-child .txt-cont p,
+.nc1.cards.art .col-lg-6:first-child .txt-cont .time {
+  color: #fff;
+}

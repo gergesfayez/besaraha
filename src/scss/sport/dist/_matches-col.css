@@ -1,0 +1,53 @@
+:root {
+  --primary:$primary;
+  --secondary:$secondary;
+  --gray:$gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.matches-col {
+  float: right;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.matches-col ul.nav-tabs {
+  float: right;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+.matches-col ul.nav-tabs li {
+  width: 30%;
+  border-radius: 30px;
+  background: #f4f4f4;
+  padding: 3px;
+  text-align: center;
+  display: inline-block;
+}
+.matches-col ul.nav-tabs li a {
+  display: block;
+  border-radius: 30px;
+  background-color: #444;
+  color: #fff;
+}
+.matches-col .tab-content {
+  float: right;
+  width: 100%;
+}
+.matches-col .tab-content .tab-pane {
+  display: none;
+}
+.matches-col .tab-content .tab-pane.active {
+  display: block;
+}

@@ -1,0 +1,26 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+body:before {
+  content: "";
+  height: 80px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #9AD4F2;
+  z-index: -1;
+}

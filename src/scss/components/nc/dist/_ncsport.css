@@ -1,0 +1,21 @@
+.sec-sport {
+  float: right;
+  width: 100%;
+  position: relative;
+  padding: 20px 0;
+  background: url("../images/sport-bg.jpg") no-repeat center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.sec-sport .title h2 {
+  color: #fff;
+}
+.sec-sport .cont .item-card {
+  background: transparent;
+}
+.sec-sport .cont .item-card .txt-cont {
+  background: transparent;
+}
+.sec-sport .cont .item-card .txt-cont h3 {
+  color: #fff;
+}

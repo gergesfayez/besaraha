@@ -5,11 +5,10 @@
 
 @use '../components/col/poll';
 @use '../components/col/top-read';
-@use '../components/col/top-readnum';
-@use '../components/col/top-read2';
+
 @use '../components/nc/nclist';
 
-
+@use '../components/nt/topstory-swiper';
 
 //plugins    
 
@@ -48,37 +47,81 @@
 }
 
 
-.pagination {
-
-    display: inline-block;
-    list-style: none;
-    width: 100%;
-    text-align: center;
-    height: 50px;
-    margin: 10px 0;
-    padding: 0;
-}
-
-.pagination a {
-    color: #000;
+.nav-pagination {
     float: right;
-    padding: 5px 10px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-    margin: 0 4px;
+    width: 100%;
+    justify-content: center;
 
-    &:hover {
-        background: $secondary;
-        color: #fff;
+    .pagination {
+        display: flex;
+        padding-left: 0;
+        padding-right: 0;
+        list-style: none;
+        flex-wrap: wrap;
     }
+
+    .page-link {
+        position: relative;
+        display: block;
+        color: $primary;
+        text-decoration: none;
+        background-color: #fff;
+        border: 1px solid #dcdcdc;
+        transition: all 0.35s ease;
+        padding: .375rem .75rem;
+
+        font-weight: bold;
+
+        &:hover {
+            z-index: 2;
+            color: #fff;
+            text-decoration: none;
+            background-color: $primary;
+            border-color: $primary;
+        }
+
+        &:focus {
+            z-index: 3;
+
+            color: #fff;
+            text-decoration: none;
+            background-color: $primary;
+            border-color: $primary;
+        }
+    }
+
+    .page-item {
+        &:not(:first-child) .page-link {
+            margin-right: 0;
+        }
+
+        &:last-child .page-link {
+            border-top-left-radius: .25rem;
+            border-bottom-left-radius: .25rem;
+        }
+
+        &:first-child .page-link {
+            border-top-right-radius: .25rem;
+            border-bottom-right-radius: .25rem;
+        }
+
+        &.active .page-link {
+            z-index: 3;
+            color: #fff;
+            text-decoration: none;
+            background-color: $primary;
+            border-color: $primary;
+        }
+
+
+    }
+
+
+
+
+
 }
 
-.pagination a.active {
-    background-color: $primary;
-    color: white;
-    border: 1px solid $primary;
-}
 
 .block.list {
     .foot {

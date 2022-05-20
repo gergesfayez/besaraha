@@ -1,19 +1,21 @@
 @use 'var'as *;
 
 a {
-    text-decoration: none;
+    text-decoration   : none;
     -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -o-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    color: #000;
+    -moz-transition   : all 0.3s ease 0s;
+    -o-transition     : all 0.3s ease 0s;
+    -ms-transition    : all 0.3s ease 0s;
+    transition        : all 0.3s ease 0s;
+    color             : #000;
 
     &:hover {
         color: $secondary;
     }
 }
-
+html {
+    scroll-behavior: smooth;
+}
 
 .bg-gradient {
     background: rgb(38, 170, 210);
@@ -32,7 +34,7 @@ a {
 
 img {
     max-width: 100%;
-    height: auto;
+    height   : auto;
 }
 
 .hide {
@@ -40,28 +42,28 @@ img {
 }
 
 .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    position   : absolute;
+    width      : 1px;
+    height     : 1px;
+    padding    : 0;
+    margin     : -1px;
+    overflow   : hidden;
+    clip       : rect(0, 0, 0, 0);
     white-space: nowrap;
-    border: 0;
+    border     : 0;
 }
 
 svg.icon {
-    width: 18px;
-    height: 18px;
-    max-width: 100%;
+    width     : 18px;
+    height    : 18px;
+    max-width : 100%;
     max-height: 100%;
     transition: all 0.35s;
 }
 
 
 svg {
-    overflow: hidden;
+    overflow      : hidden;
     vertical-align: middle;
 }
 
@@ -77,25 +79,25 @@ svg {
 }
 
 .btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 16px;
-    line-height: 1.42857;
-    border-radius: 0;
+    display            : inline-block;
+    margin-bottom      : 0;
+    font-weight        : 400;
+    text-align         : center;
+    vertical-align     : middle;
+    -ms-touch-action   : manipulation;
+    touch-action       : manipulation;
+    cursor             : pointer;
+    background-image   : none;
+    border             : 1px solid transparent;
+    white-space        : nowrap;
+    padding            : 6px 12px;
+    font-size          : 16px;
+    line-height        : 1.42857;
+    border-radius      : 0;
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    -moz-user-select   : none;
+    -ms-user-select    : none;
+    user-select        : none;
 }
 
 h1,
@@ -107,17 +109,17 @@ h5 {
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+    margin    : 0;
+    padding   : 0;
+    background: #f2f2f2;
 }
 
 button {
-    outline: 0;
-    border: 0;
-    outline: 0;
+    outline   : 0;
+    border    : 0;
+    outline   : 0;
     background: transparent;
-    cursor: pointer;
+    cursor    : pointer;
 
     &:hover,
     &:focus {
@@ -126,27 +128,27 @@ button {
 
     &.btn-primary {
         background: $primary;
-        color: #fff;
+        color     : #fff;
 
         &:hover {
             background: $secondary;
-            color: #fff;
+            color     : #fff;
         }
     }
 }
 
 .form-control {
-    display: block;
-    width: 100%;
-    height: 36px;
-    padding: 6px 12px;
-    font-size: 16px;
-    line-height: 1.42857;
-    color: #909090;
+    display         : block;
+    width           : 100%;
+    height          : 36px;
+    padding         : 6px 12px;
+    font-size       : 16px;
+    line-height     : 1.42857;
+    color           : #909090;
     background-color: #fff;
     background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    border          : 1px solid #ccc;
+    border-radius   : 0;
+    box-shadow      : inset 0 1px 1px rgba(0, 0, 0, .075);
+    transition      : border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }

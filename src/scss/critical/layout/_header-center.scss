@@ -2,40 +2,109 @@
 
 
 header {
-    background: #fff;
-    float: right;
-    width: 100%;
-    margin-bottom: 20px;
+
+    float                     : right;
+    width                     : 100%;
+    margin-bottom             : 20px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius: 20px;
+    background                : #fff;
 
 
-    .top {
-        width: 100%;
-        background: #f4f4f4;
-        float: right;
-        width: 100%;
+    .md {
 
-
-        .social {
-            float: left;
-
-        }
-
-        .date {
-            float: right;
-        }
+        width     : 100%;
+        text-align: center;
+        display   : flex;
+        flex-wrap : nowrap;
+        background: #fff;
 
         display: none;
 
-        @media(min-width: 768px) {
+
+        @media(min-width: 992px) {
             display: block;
+        }
+
+        border-bottom-left-radius : 20px;
+        border-bottom-right-radius: 20px;
+
+        justify-content: center;
+        align-items    : center;
+        position       : relative;
+        z-index        : 11;
+        box-shadow     : $box-shadow-sm,
+        $box-shadow-sm;
+
+        .right-area {
+            float: right;
+
+            .btn {
+                width        : 32px;
+                height       : 32px;
+                border-radius: 50%;
+                color        : #000;
+                fill         : #000;
+                border       : 1px solid #000;
+                padding      : 0;
+                text-align   : center;
+                line-height  : 32px;
+            }
 
         }
-    }
 
-    .md {
-        float: right;
-        width: 100%;
-        text-align: center;
+        .right-area,
+        .left-area {
+            padding-top: 20px;
+        }
+
+        .left-area {
+            float: left;
+
+
+
+
+        }
+
+        .logo-area {
+
+            width          : auto;
+            text-align     : center;
+            display        : inline-flex;
+            align-items    : center;
+            flex-wrap      : nowrap;
+            justify-content: center;
+
+            .admin {
+                display: inline-block;
+                float  : none !important;
+                color  : #000;
+                margin : 0;
+
+                .title {
+                    font-size  : 9px;
+                    font-weight: bold;
+                }
+
+                .name {
+                    font-size  : 12px;
+                    font-weight: bold;
+                    font-family: "Noto Kufi Arabic";
+
+                }
+
+            }
+
+            .logo {
+                display: inline-block;
+                float  : none !important;
+
+                img {
+                    width : 200px;
+                    height: auto;
+                }
+            }
+        }
 
         .container {
             width: 100%;
@@ -55,57 +124,14 @@ header {
 
 
 
-        display: block;
-        float: right;
-        width: 100%;
-
-        padding: 10px 0;
-
-        .logo-area {
-            display: none;
-        }
-
 
 
         .adfull {
-            width: 100%;
+            width    : 100%;
             max-width: 100%;
         }
 
 
-        @media(min-width: 1200px) {
-            .logo-area {
-                float: right;
-                display: block;
-
-                width: 100%;
-                text-align: center;
-
-                .logo {
-                    float: none;
-                    width: 204px;
-                    display: inline-block;
-
-                    img {
-                        width: 110%;
-                        height: auto;
-                    }
-                }
-
-                .admin {
-                    display: inline-block;
-                    float: none;
-                }
-
-
-            }
-
-            .adfull {
-                width: 728px;
-                height: 110px;
-                float: left;
-            }
-        }
 
 
 
@@ -121,25 +147,37 @@ header {
 
     #navbar.sticky {
         position: fixed;
-        top: 0;
-        z-index: 333;
-        width: 100%;
-        height: 50px;
+        top     : 0;
+        z-index : 333;
+        width   : 100%;
+        height  : 50px;
     }
 
     .navbar {
 
-        float: right;
-        width: 100%;
-        height: 50px;
-        border-top: 1px solid $third;
-        background: #fff;
-        margin-bottom: 0;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: $box-shadow-sm;
+        float                     : right;
+        width                     : 100%;
+        height                    : 50px;
+        border-bottom-left-radius : 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom             : 1px solid #dcdcdc;
+        border-left               : 1px solid #dcdcdc;
+        border-right              : 1px solid #dcdcdc;
+
+        background         : #fff;
+        margin-bottom      : 0;
+        display            : flex;
+        flex-wrap          : wrap;
+        align-items        : center;
+        justify-content    : space-between;
+        //  box-shadow     : $box-shadow-sm;
+
+
+        .btn.search {
+            .icon {
+                fill: #000;
+            }
+        }
 
         .container {
             @media(max-width: 1199px) {
@@ -152,22 +190,22 @@ header {
         .nav-item-mobile {
             float: right;
 
-            width: 100%;
-            height: 50px;
+            width     : 100%;
+            height    : 50px;
             text-align: center;
 
-            @media(min-width: 1200px) {
+            @media(min-width: 992px) {
                 display: none;
             }
 
             a {
-                display: inline-block;
-                height: 50px;
+                display    : inline-block;
+                height     : 50px;
                 line-height: 34px;
 
                 img {
                     height: 100%;
-                    width: auto;
+                    width : auto;
                 }
 
                 .icon {
@@ -177,15 +215,15 @@ header {
 
                 &.logo {
                     //  background: #fff;
-                    padding: 5px;
+                    padding      : 5px;
                     border-radius: 5px;
                 }
 
                 &.menu {
 
-                    float: right;
+                    float  : right;
                     display: block;
-                    width: 50px;
+                    width  : 50px;
 
 
 
@@ -194,8 +232,8 @@ header {
 
                 &.search {
                     display: block;
-                    float: left;
-                    width: 50px;
+                    float  : left;
+                    width  : 50px;
                 }
 
 
@@ -208,38 +246,40 @@ header {
 
 
         .navbar-collapse {
-            display: none;
-            flex-basis: 100%;
-            flex-grow: 1;
+            display    : none;
+            flex-basis : 100%;
+            flex-grow  : 1;
             align-items: center;
-            height: 50px;
+            height     : 50px;
 
-            @media(min-width:1200px) {
-                display: flex !important;
+            @media(min-width:992px) {
+                display   : flex !important;
                 flex-basis: auto;
+
+                justify-content: center;
             }
 
             .navbar-nav {
-                display: flex;
-                flex-direction: column;
-                padding-left: 0;
-                margin-bottom: 0;
-                list-style: none;
-                padding: 0 10px;
-                margin: 0;
+                display       : flex;
+                flex-direction: row;
+                padding-left  : 0;
+                margin-bottom : 0;
+                list-style    : none;
+                padding       : 0 10px;
+                margin        : 0;
 
                 @media(min-width: 1200px) {
 
                     flex-direction: row;
-                    height: 50px;
-                    width: auto;
+                    height        : 50px;
+                    width         : auto;
 
 
                 }
 
 
                 .nav-item {
-                    float: right;
+                    float : right;
                     margin: 0;
 
                     &:hover {
@@ -259,31 +299,33 @@ header {
                     }
 
                     .nav-link {
-                        display: block;
-                        line-height: 40px;
-                        color: #333;
-                        padding: 5px 17px;
-                        font-weight: bold;
+                        display        : block;
+                        line-height    : 40px;
+                        color          : #333;
+                        padding        : 5px 17px;
+                        font-weight    : bold;
                         text-decoration: none !important;
-                        position: relative;
+                        position       : relative;
+                        white-space    : nowrap;
+
 
                         svg {
 
-                            fill: $primary;
+                            fill  : $primary;
                             height: 20px;
 
 
                         }
 
                         &:after {
-                            content: "";
-                            opacity: 0;
-                            height: 1px;
+                            content   : "";
+                            opacity   : 0;
+                            height    : 1px;
                             background: $third;
-                            position: absolute;
-                            top: 0;
-                            left: 5%;
-                            width: 90%;
+                            position  : absolute;
+                            top       : 0;
+                            left      : 5%;
+                            width     : 90%;
 
 
 
@@ -308,7 +350,7 @@ header {
                             background: -o-linear-gradient(top, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
                             background: -ms-linear-gradient(top, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
                             background: linear-gradient(to bottom, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
-                            color: #fff;
+                            color     : #fff;
 
 
                             &:after {
@@ -329,37 +371,37 @@ header {
 
                         .dropdown-menu {
                             -webkit-transition: all .3s ease .15s;
-                            transition: all .3s ease .15s;
-                            display: block;
-                            visibility: hidden;
-                            position: absolute !important;
-                            opacity: 0;
-                            background: #f4f4f4;
+                            transition        : all .3s ease .15s;
+                            display           : block;
+                            visibility        : hidden;
+                            position          : absolute !important;
+                            opacity           : 0;
+                            background        : #f4f4f4;
 
-                            border-left: 0;
+                            border-left : 0;
                             border-right: 0;
-                            margin: 0;
-                            padding: 0;
-                            top: 50px;
-                            z-index: 33;
+                            margin      : 0;
+                            padding     : 0;
+                            top         : 50px;
+                            z-index     : 33;
 
 
 
 
                             .dropdown-item {
-                                display: block;
-                                width: 100%;
-                                padding: .25rem 1.5rem;
-                                clear: both;
-                                font-weight: 400;
-                                color: #212529;
-                                text-align: inherit;
-                                white-space: nowrap;
+                                display         : block;
+                                width           : 100%;
+                                padding         : .25rem 1.5rem;
+                                clear           : both;
+                                font-weight     : 400;
+                                color           : #212529;
+                                text-align      : inherit;
+                                white-space     : nowrap;
                                 background-color: transparent;
-                                border: 0;
-                                line-height: 30px;
-                                font-weight: bold;
-                                border-bottom: 1px solid #dcdcdc;
+                                border          : 0;
+                                line-height     : 30px;
+                                font-weight     : bold;
+                                border-bottom   : 1px solid #dcdcdc;
 
                                 &:hover {
                                     background: #fff;
@@ -371,7 +413,7 @@ header {
 
                         &:hover {
                             .dropdown-menu {
-                                opacity: 1;
+                                opacity   : 1;
                                 visibility: visible;
                             }
                         }
@@ -381,36 +423,24 @@ header {
 
             .icon {
                 height: 20px;
-                fill: #fff;
+                fill  : #fff;
             }
 
-
-            .btn.paper {
-                border-radius: 30px;
-                border: 1px solid #fff;
-                background: $secondary;
-                font-weight: bold;
-                color: #fff;
-
-                &:hover {
-                    background-color: $secondary;
-                }
-            }
 
             .left-btns {
                 margin-right: auto;
 
                 .search {
 
-                    background: rgb(38, 170, 210);
-                    background: -moz-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
-                    background: -webkit-gradient(linear, left, left, color-stop(0%, rgba(38, 170, 210, 1)), color-stop(100%, rgba(1, 120, 157, 1)));
-                    background: -webkit-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
-                    background: -o-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
-                    background: -ms-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
-                    background: linear-gradient(to left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
+                    background : rgb(38, 170, 210);
+                    background : -moz-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
+                    background : -webkit-gradient(linear, left, left, color-stop(0%, rgba(38, 170, 210, 1)), color-stop(100%, rgba(1, 120, 157, 1)));
+                    background : -webkit-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
+                    background : -o-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
+                    background : -ms-linear-gradient(left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
+                    background : linear-gradient(to left, rgba(38, 170, 210, 1) 0%, rgba(1, 120, 157, 1) 100%);
                     line-height: 39px;
-                    padding: 6px 15px;
+                    padding    : 6px 15px;
 
                     .icon {
                         fill: #fff;
@@ -437,33 +467,46 @@ header {
 
 }
 
+
+.social {
+    a {
+        border     : 1px solid $primary;
+        background : transparent !important;
+        line-height: 33px !important;
+
+        .icon {
+            fill: $primary;
+        }
+    }
+}
+
 .admin {
-    float: right;
-    width: 150px;
-    text-align: center;
+    float       : right;
+    width       : 150px;
+    text-align  : center;
     //margin-top: 20px;
-    color: #707070;
+    color       : #707070;
 
     .item {
-        float: right;
-        width: 100%;
-        line-height: 14px;
-        font-size: 13px;
+        float        : right;
+        width        : 100%;
+        line-height  : 14px;
+        font-size    : 13px;
         margin-bottom: 10px;
-        font-weight: lighter;
+        font-weight  : lighter;
 
         .title {
             max-width: 111px;
-            display: inline-block;
+            display  : inline-block;
         }
 
 
         .name {
 
-            font-size: 20px;
+            font-size  : 20px;
             font-weight: 700;
-            color: #000;
-            margin-top: 5px;
+            color      : #000;
+            margin-top : 5px;
 
             &.lg {
                 font-size: 24px;
@@ -475,13 +518,13 @@ header {
 }
 
 .admin.mobile {
-    width: 100%;
-    margin-top: 0;
+    width        : 100%;
+    margin-top   : 0;
     margin-bottom: 20px;
 
     .item {
-        width: 150px;
-        float: none;
+        width  : 150px;
+        float  : none;
         display: inline-block;
     }
 
@@ -493,25 +536,25 @@ header {
 
 .social {
 
-    width: 100%;
-    display: flex;
-    flex-wrap: nowrap;
+    width          : 100%;
+    display        : flex;
+    flex-wrap      : nowrap;
     justify-content: center;
 
     a {
-        display: inline-block;
+        display       : inline-block;
         flex-direction: row;
         vertical-align: middle;
-        margin: 5px;
+        margin        : 5px;
 
-        width: 32px;
-        height: 32px;
+        width        : 32px;
+        height       : 32px;
         border-radius: 50%;
-        text-align: center;
-        line-height: 29px;
+        text-align   : center;
+        line-height  : 29px;
 
 
-        fill: #fff;
+        fill      : #fff;
         background: $primary;
 
 
@@ -551,24 +594,24 @@ header {
 }
 
 #searchBx {
-    border-bottom-left-radius: 20px;
+    border-bottom-left-radius : 20px;
     border-bottom-right-radius: 20px;
-    overflow: visible;
-    content-visibility: auto;
-    border-bottom: 2px solid $secondary;
-    text-align: center;
-    backdrop-filter: blur(3px);
+    overflow                  : visible;
+    content-visibility        : auto;
+    border-bottom             : 2px solid $secondary;
+    text-align                : center;
+    backdrop-filter           : blur(3px);
 
     background: rgba(1, 120, 157, 1);
 
 
     .icon {
         display: inline-block;
-        height: 20px;
+        height : 20px;
     }
 
     label {
-        width: 100%;
+        width     : 100%;
         text-align: center;
     }
 
@@ -582,15 +625,15 @@ header {
 
     .btn {
         margin-bottom: 20px;
-        padding: 10px 50px;
+        padding      : 10px 50px;
         border-radius: 40px;
-        font-weight: bold;
+        font-weight  : bold;
 
         .icon {
-            display: block;
-            float: right;
-            height: 20px;
-            fill: #fff;
+            display    : block;
+            float      : right;
+            height     : 20px;
+            fill       : #fff;
             margin-left: 20px;
         }
 
@@ -605,34 +648,34 @@ header {
 
     .form-control {
 
-        line-height: 64px;
-        margin: 20px 0;
-        height: 64px;
-        font-size: 30px;
-        text-align: center;
+        line-height  : 64px;
+        margin       : 20px 0;
+        height       : 64px;
+        font-size    : 30px;
+        text-align   : center;
         border-radius: 40px;
 
         &:focus {
-            color: #000;
-            outline: 0;
+            color       : #000;
+            outline     : 0;
             border-color: $secondary;
         }
     }
 
     button.close {
 
-        width: 42px;
-        height: 42px;
+        width     : 42px;
+        height    : 42px;
         background: $secondary;
 
         position: absolute;
-        bottom: 0;
-        right: 0;
+        bottom  : 0;
+        right   : 0;
 
 
         .icon {
             transform: rotate(90deg);
-            fill: #fff;
+            fill     : #fff;
         }
 
     }

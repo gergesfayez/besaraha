@@ -1,0 +1,72 @@
+@use '../../critical/helpers/var'as *;
+
+
+.nc-topread {
+    .item-li.lg {
+        padding-right: 15px;
+
+        .img-cont {
+
+
+
+
+            @media(min-width:575px) {
+                width: 100%;
+
+                &:after {
+                    padding-top: 60%;
+                }
+            }
+
+            @media(min-width:768px) {
+                width: 120px;
+
+                &:after {
+                    padding-top: 80%;
+                }
+            }
+
+            @media(min-width:1200px) {
+                width: 180px;
+
+                &:after {
+                    padding-top: 60%;
+                }
+            }
+        }
+
+        .txt-cont {
+
+
+
+            @media(min-width:575px) {
+                width: 100%;
+            }
+
+            @media(min-width:768px) {
+                width: calc(100% - 120px);
+            }
+
+            @media(min-width:1200px) {
+                width: calc(100% - 180px);
+            }
+
+            h3 {
+                display    : flex;
+                align-items: center;
+            }
+        }
+
+
+        .num {
+            color      : $secondary;
+            text-shadow: $box-shadow-sm;
+            font-size  : 3.5rem;
+            position   : absolute;
+            right      : 8px;
+            top        : 5px;
+            z-index    : 22;
+            line-height: 90px;
+        }
+    }
+}

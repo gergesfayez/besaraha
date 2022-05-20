@@ -9,6 +9,11 @@
     <title> Site Name | Home </title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="css/critical.css" as="style">
+    <link rel="preload" href="css/article.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap"
+        as="style">
+    <link rel="preload" href="js/lazysizes.min.js" as="script">
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -30,331 +35,424 @@
 
     <meta name="description" content="text description for website">
 
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/critical.css" media="all">
     <link rel="stylesheet" href="css/article.css" media="all">
-
+    <script type="text/javascript" src="js/lazysizes.min.js"></script>
 
 
 
 </head>
 
 <body>
-    <header>
-        <div class="top">
-            <div class="container">
-    
-                <div class="date">الاثنين - 28 ديسمبر 2020
+    <div class="container">
+        <div class="searchInline" id="searchInline">
+            <form id="search-form" action="/search/term" autocomplete="off">
+                <label for="search"> البحث</label>
+                <input type="search" id="search" name="w" value="" aria-label="search"
+                    placeholder="  إكتب كلمة البحث هنا" />
+                <div class="btns">
+                    <button type="submit" class="btn btn-primary" aria-label="search"> <svg class="icon">
+                            <use xlink:href="images/icons.svg#magnifying-glass"></use>
+                        </svg> </button>
+                    <button type="button" class="btn btn-primary" aria-label="close search" onclick="closeSearch()"> <svg
+                            class="icon close">
+                            <use xlink:href="images/icons.svg#cancel"></use>
+                        </svg></button>
                 </div>
+            </form>
     
-                <a href="list.html" class=" btn btn-primary ">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24.883" height="21" viewBox="0 0 24.883 21">
-                        <path id="Icon_metro-feed" data-name="Icon metro-feed"
-                            d="M10.759,12.915a3.11,3.11,0,1,1,3.11,3.113,3.112,3.112,0,0,1-3.11-3.113Zm6.813-6.846a7.789,7.789,0,0,1,0,13.692,13.124,13.124,0,0,0,1.741-6.846A13.124,13.124,0,0,0,17.572,6.069ZM8.427,12.915a13.124,13.124,0,0,0,1.741,6.846,7.789,7.789,0,0,1,0-13.692A13.124,13.124,0,0,0,8.427,12.915Zm-4.666,0a16.718,16.718,0,0,0,3.418,10.5,12.461,12.461,0,0,1,0-21,16.718,16.718,0,0,0-3.418,10.5Zm16.8-10.5a12.461,12.461,0,0,1,0,21,16.718,16.718,0,0,0,3.418-10.5,16.718,16.718,0,0,0-3.418-10.5Z"
-                            transform="translate(-1.428 -2.415)" fill="#fff" />
-                    </svg>
+        </div>
+        <header>
     
-    
-                    حالا
-    
-                </a>
+            <div class="top">
     
     
+                <div class="time"></div>
+                <div class=" social ">
+                    <a class="fb" href=" https://www.facebook.com/ " target=" _blank " rel=" noreferrer noopener
+                                                    nofollow " title=" تابع علي فيسبوك ">
+                        <span class=" sr-only "> facebook</span>
+                        <svg class=" icon ">
+                            <use xlink:href=" images/icons.svg#facebook "></use>
+                        </svg>
     
-                <div class="search-form">
-                    <form action="list.html">
-                        <input type="search" class="form-control" placeholder="بحث">
-                        <button type="submit" class="search-icn">
-                            <svg class="icon ">
-                                <use xlink:href="images/icons.svg#magnifying-glass" />
-                            </svg>
-                        </button>
     
-                    </form>
+                    </a>
+                    <a class="tw" href=" https://twitter.com/ " target=" _blank " rel=" noreferrer noopener nofollow "
+                        title=" تابع علي تويتر ">
+                        <span class=" sr-only ">twitter</span>
+                        <svg class=" icon ">
+                            <use xlink:href=" images/icons.svg#twitter "></use>
+                        </svg> </a>
+                    <a class="yt" href=" https://www.youtube.com/c/ " target=" _blank " rel=" noreferrer noopener
+                                                    nofollow " title=" قناة علي يوتيوب "> <span
+                            class=" sr-only ">youtube</span>
+    
+                        <svg class=" icon ">
+                            <use xlink:href=" images/icons.svg#youtube "></use>
+                        </svg></a>
+                    <a class="in" href=" https://www.instagram.com/ " target=" _blank " rel=" noreferrer noopener
+                                                    nofollow " title=" تابع علي انستاجرام "> <span
+                            class=" sr-only ">instagram</span>
+                        <svg class=" icon ">
+                            <use xlink:href=" images/icons.svg#instagram-sketched "></use>
+                        </svg></a>
+                    <a class="rss" href=" /rss.aspx " target=" _blank " rel=" noreferrer noopener nofollow "
+                        title="   rss feed "><span class=" sr-only ">rss feed</span>
+                        <svg class=" icon ">
+                            <use xlink:href=" images/icons.svg#rss "></use>
+                        </svg></a>
                 </div>
-    
     
     
             </div>
-        </div>
-    
-        <div class="md">
-            <div class="container">
+            <div class=" md ">
     
     
     
-                <div class="logo-area">
+                <div class=" logo-area ">
+                    <a href="index.html" class="logo" title="logo">
+                        <img src="images/logo.png" alt=" " loading="lazy">
     
-                    <a href="/" class="logo">
-                        <img src="images/logoh.svg" alt="" width="204" height="105"></a>
     
+    
+                    </a>
     
                     <div class="admin">
-    
                         <div class="item">
-                            <div class="title"> رئيس التحرير
-    
-                            </div>
-                            <div class="name ">
-                                محمود سعد الدين
-    
-                            </div>
+                            <div class="title"> رئيس التحرير</div>
+                            <div class="name"> حازم عادل</div>
                         </div>
                     </div>
     
     
+    
                 </div>
     
     
-                <div class="adfull">
-                    <div class="cont"></div>
+                <div class=" left-area ">
+    
+    
+                    <div class="adfull">
+                        <div class="cont"></div>
+                    </div>
+    
+    
+    
                 </div>
+    
     
     
     
             </div>
-        </div>
-        <div id="navbar">
-            <nav class="navbar">
-                <div class="container">
     
     
-                    <div class="nav-item-mobile">
     
-                        <a href="#" class="btn btn-primary menu" data-pushbar-target="menu" title="menu"
-                            rel="noreferrer noopener">
-                            <svg class="icon ">
+    
+    
+            <div id="navbar">
+    
+                <nav class=" navbar ">
+    
+                    <div class=" nav-item-mobile ">
+                        <a href="#" class="btn menu" title="menu" data-pushbar-target="menu" title="menu"
+                            rel=" noreferrer noopener ">
+                            <svg class=" icon ">
                                 <use xlink:href="images/icons.svg#list" />
                             </svg>
+    
+    
                         </a>
     
-                        <a href="/" class="logo" title=" name">
-                            <img class="red" src="images/logoh.svg" alt="name" loading="lazy">
+                        <a href=" # " class="logo" title="name"><img src="images/logo.png" width="204" height=" 105 "
+                                alt="name" loading=" lazy ">
     
     
     
-                            <div class="admin">
-    
-                                <div class="item">
-                                    <div class="title"> رئيس التحرير
-    
-                                    </div>
-                                    <div class="name ">
-                                        محمود سعد الدين
-    
-                                    </div>
-                                </div>
-                            </div>
                         </a>
     
     
-                        <a href="#" class="btn btn-primary search" data-pushbar-target="search" title="search"
+                        <a href="#" class="btn btn-primary search" onclick="openSearch()" title="search"
                             rel="noreferrer noopener">
-                            <svg class="icon ">
+                            <svg class="icon">
                                 <use xlink:href="images/icons.svg#magnifying-glass" />
                             </svg>
                         </a>
                     </div>
     
     
-                    <div class="navbar-collapse">
     
-                        <div class="logo-area">
-                            <a href="#" class="logo"><img src="images/logof.svg" alt="name" loading="lazy"></a>
     
-                            <div class="admin">
     
-                                <div class="item">
-                                    <div class="title"> رئيس التحرير
+                    <div class=" navbar-collapse ">
     
-                                    </div>
-                                    <div class="name ">
-                                        محمود سعد الدين
     
-                                    </div>
-                                </div>
-                            </div>
     
-                        </div>
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a href="index.html" class="nav-link" title=" الرئيسية">
-                                    <svg class="icon ">
-                                        <use xlink:href="images/icons.svg#home" />
+    
+    
+    
+                        <ul class=" navbar-nav ">
+                            <li class=" nav-item ">
+                                <a href=" index.html " class=" nav-link " title=" الرئيسية ">
+                                    <svg class=" icon ">
+                                        <use xlink:href=" images/icons.svg#home " />
                                     </svg>
-                                </a>
-                            </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    قسم
+    
+    
+    
                                 </a>
                             </li>
     
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/List/3/المدن-الحديثة" role="button"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">المدن الجديدة </a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                    <a class="dropdown-item" href="/List/13/التجمع-الخامس">التجمع الخامس</a>
-                                    <a class="dropdown-item" href="/List/14/العبور-الجديدة">العبور الجديدة</a>
-                                    <a class="dropdown-item" href="/List/15/السويس-الجديدة">السويس الجديدة</a>
-                                    <a class="dropdown-item" href="/List/16/دمياط-الجديدة">دمياط الجديدة</a>
-                                    <a class="dropdown-item" href="/List/17/العلمين-الجديدة">العلمين الجديدة</a>
-                                    <a class="dropdown-item" href="/List/19/العاصمة-الإدارية-الجديدة">العاصمة الإدارية
+    
+                            <li class=" nav-item ">
+                                <a href=" list.html " class=" nav-link " title=" قسم ">
+                                    عاجل
+                                </a>
+                            </li>
+    
+                            <li class=" nav-item dropdown ">
+                                <a class=" nav-link dropdown-toggle " href=" /List/3/المدن-الحديثة " role=" button "
+                                    data-toggle=" dropdown " aria-haspopup=" true " aria-expanded=" true "
+                                    rel=" noreferrer noopener ">المدن الجديدة </a>
+                                <div class=" dropdown-menu " aria-labelledby=" navbarDropdown2 ">
+                                    <a class=" dropdown-item " href=" /List/13/التجمع-الخامس ">التجمع الخامس</a>
+                                    <a class=" dropdown-item " href=" /List/14/العبور-الجديدة ">العبور الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/15/السويس-الجديدة ">السويس الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/16/دمياط-الجديدة ">دمياط الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/17/العلمين-الجديدة ">العلمين الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/19/العاصمة-الإدارية-الجديدة ">العاصمة
+                                        الإدارية
                                         الجديدة</a>
-                                    <a class="dropdown-item" href="/List/20/أسيوط-الجديدة">أسيوط الجديدة</a>
-                                    <a class="dropdown-item" href="/List/21/الفيوم-الجديدة">الفيوم الجديدة</a>
-                                    <a class="dropdown-item" href="/List/22/أسوان-الجديدة">أسوان الجديدة</a>
-                                    <a class="dropdown-item" href="/List/23/مدينة-السادات">مدينة السادات</a>
-                                    <a class="dropdown-item" href="/List/24/المنيا-الجديدة">المنيا الجديدة</a>
-                                    <a class="dropdown-item" href="/List/25/العبور-الجديدة">العبور الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/20/أسيوط-الجديدة ">أسيوط الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/21/الفيوم-الجديدة ">الفيوم الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/22/أسوان-الجديدة ">أسوان الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/23/مدينة-السادات ">مدينة السادات</a>
+                                    <a class=" dropdown-item " href=" /List/24/المنيا-الجديدة ">المنيا الجديدة</a>
+                                    <a class=" dropdown-item " href=" /List/25/العبور-الجديدة ">العبور الجديدة</a>
                                 </div>
                             </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
+                            <li class=" nav-item ">
+                                <a href=" list.html " class=" nav-link " title=" قسم ">
                                     قسم
                                 </a>
                             </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    قسم
+                            <li class=" nav-item ">
+                                <a href=" list.html " class=" nav-link " title=" قسم ">
+                                    تقارير وتحقيقات
                                 </a>
                             </li>
-                            <li class="nav-item  ">
-                                <a href="list.html" class="nav-link" title=" قسم">
-                                    قسم
+                            <li class=" nav-item ">
+                                <a href=" list.html " class=" nav-link " title=" قسم ">
+                                    رياضة
                                 </a>
                             </li>
-                            <li class="nav-item menu ">
-                                <a href="#" class="nav-link" data-pushbar-target="menu" title="menu"
-                                    rel="noreferrer noopener">
-                                    <svg class="icon ">
+                            <li class=" nav-item ">
+                                <a href=" list.html " class=" nav-link " title=" قسم ">
+                                    حوادث
+                                </a>
+                            </li>
+                            <li class=" nav-item ">
+                                <a href=" list.html " class=" nav-link " title=" قسم ">
+                                    فن
+                                </a>
+                            </li>
+                            <li class=" nav-item ">
+                                <a href=" list.html " class=" nav-link " title=" قسم ">
+                                    اقتصاد
+                                </a>
+                            </li>
+                            <li class=" nav-item ">
+                                <a href="#" class=" nav-link " title=" قسم " data-pushbar-target="menu" title=" menu "
+                                    rel=" noreferrer noopener ">
+    
+    
+                                    المزيد
+                                    <svg class="icon">
                                         <use xlink:href="images/icons.svg#list" />
                                     </svg>
-                                    القائمة
-    
-    
-    
                                 </a>
                             </li>
+    
+    
     
                         </ul>
     
-                        <div class="left-btns">
     
     
-                            <div class="social">
-                                <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="  تابع    علي فيسبوك">
-                                    <span class="sr-only"> facebook</span>
+                        <div class="search-form">
+                            <form action="/Search" method="get">
+                                <label for="q" class="sr-only">بحث</label>
+                                <input type="search" class="form-control" name="q" placeholder="بحث">
+                                <button type="submit" class="search-icn">
                                     <svg class="icon">
-                                        <use xlink:href="images/icons.svg#facebook"></use>
+                                        <use xlink:href="images/icons.svg#magnifying-glass"></use>
                                     </svg>
-    
-    
-                                </a>
-                                <a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="تابع    علي تويتر"> <span
-                                        class="sr-only">twitter</span>
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#twitter"></use>
-                                    </svg> </a>
-                                <a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span
-                                        class="sr-only">youtube</span>
-    
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#youtube"></use>
-                                    </svg></a>
-                                <a class="ins" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"
-                                    rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span
-                                        class="sr-only">instagram</span>
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#instagram-sketched"></use>
-                                    </svg></a>
-                                <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow"
-                                    title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
-                                    <svg class="icon">
-                                        <use xlink:href="images/icons.svg#rss"></use>
-                                    </svg></a>
-                            </div>
-    
-    
+                                </button>
+                            </form>
                         </div>
     
     
                     </div>
     
     
+    
+                </nav>
+    
+            </div>
+    
+    
+        </header>
+    </div>
+    
+    
+    
+    <div id="search-box">
+        <button type="button" class="close" onclick="closeSearch()">×</button>
+        <form id=" search-form " action=" /search/term ">
+            <label for=" search "></label>
+            <input type="search" id="search" name="w" value="" placeholder=" إكتب كلمة البحث هنا " />
+            <div class=" btns ">
+                <button type=" submit " class=" btn btn-primary " aria-label=" search "> <svg class=" icon ">
+                        <use xlink:href=" images/icons.svg#magnifying-glass "></use>
+                    </svg>
+                    بحث</button>
+                <button type="button" class=" btn btn-primary " onclick=" closeSearch() ">
+                    <svg class="icon">
+                        <use xlink:href=" images/icons.svg#cancel "></use>
+                    </svg>
+                    إلغاء</button>
+            </div>
+    
+        </form>
+    </div>
+    <section>
+        <div class="container">
+            <div class="sponser-cont" style=" float: right; width:100%;  ">
+                <div class="stick stick-r" style=" height: 0; ">
+                    <div class="sponser right stickyR" id="stick-r" data-margin-top="60px"> </div>
                 </div>
-            </nav>
+                <div class=" stick stick-l " style=" height: 0; ">
+                    <div class="sponser left stickyL" id="stick-l" data-margin-top="60px">
+    
+                    </div>
+                </div>
+    
+    
+    
+            </div>
+    
         </div>
+    </section>
+    <!--
+    <div class="bc" id="breaking">
+        <div class=" container ">
+            <div class=" title "> عاجل </div>
+            <div class=" cont ">
+                <div class=" marquee3k " data-speed=" 1.25 " data-reverse=" R To L " data-pausable=" true " dir=" ltr ">
+                    <div>
+                        <a href=" show.html " class=" " title=" "> " التعليم " تعلن رابط امتحانات المصريين بالخارج..
+                            وتؤكد:
+                            " الطالب سيمتحن ويسلم الإجابة للسفارة "</a>
     
+                        <a href=" show.html " class=" " title=" "> " التعليم " تعلن رابط امتحانات المصريين بالخارج..
+                            وتؤكد:
+                            " الطالب سيمتح لإجابة للسفارة "</a>
     
-    </header>
-    
-    
-    <div class="container">
-    
-        <div class="sponser-cont" style="float: right; width:100%; z-index: 3333;">
-            <div class="stick stick-r" style="height: 0;">
-                <div class="sponser right  " id="stick-r"> <a href="show.html"
-                        style="display: block;width:100%; height: 100%;  "> text</a> </div>
-            </div>
-            <div class="stick stick-l" style="height: 0;">
-                <div class="sponser left  " id="stick-l">
+                    </div>
     
                 </div>
             </div>
     
-    
-    
+            <div class=" close ">
+                <a href=" # " onclick=" hideBN() " id=" close-bc " rel=" noopener nofollow noreferrer ">
+                    <svg class=" icon ">
+                        <use xlink:href=" images/icons.svg#add "></use>
+                    </svg></a>
+            </div>
         </div>
     </div>
+    
+    <script src=" js/marquee3k.min.js "></script>
+    
+    <script>
+        Marquee3k.init({
+            selector: 'marquee3k', // define a custom classname
+        });
+    
+        window.onresize = function () {
+            Marquee3k.refreshAll();
+        };
+    
+        function hideBN() {
+    
+            var bn = document.getElementById('breaking');
+    
+            bn.style.display = 'none';
+    
+    
+        }
+    </script>
+    
+    --->
     <div class="menu-nav" data-pushbar-id="menu" data-pushbar-direction="right" style="right: 0;
             transform: translateZ(0) translateX(100%);">
         
             <div class="nav-side-menu">
                 <div class="brand">
-                    <a href="/" class="logo" title="site nname"><img src="images/logo.svg" alt="site name" class="lazyload"
+                    <a href="index.html" class="logo" title="site nname"><img src="images/logo.png" alt="site name"
                             loading="lazy"></a>
                     <button type="button" aria-label="close" class="close" data-pushbar-close>
                         <svg class="icon lg">
-                            <use xlink:href="images/icons.svg#next"></use>
+                            <use xlink:href="images/icons.svg#cancel"></use>
                         </svg>
                     </button>
                 </div>
                 <div class="menu-list">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" title="موقع صدي البلد" href="/">
-                                الرئيسية
+                            <a class="nav-link active" title="موقع  site name" href="index.html">
+                                <svg class="icon ">
+                                    <use xlink:href="images/icons.svg#home"></use>
+                                </svg> الرئيسية
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title=" صدي البلد - اهم الاخبار">
-                                أهم الاخبار
+                            <a href="#" class="nav-link" title="  site name - اهم الاخبار">
+                                <svg class="icon lg">
+                                    <use xlink:href="images/icons.svg#back"></use>
+                                </svg> أهم الاخبار
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title=" صدي البلد  - أخبار البلد">
-                                أخبار البلد
+                            <a href="#" class="nav-link" title="  site name  - أخبار البلد">
+                                <svg class="icon lg">
+                                    <use xlink:href="images/icons.svg#back"></use>
+                                </svg> أخبار البلد
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
-                                حوادث
+                            <a href="#" class="nav-link" title="    site name ">
+                                <svg class="icon lg">
+                                    <use xlink:href="images/icons.svg#back"></use>
+                                </svg> حوادث
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
-                                رياضة
+                            <a href="#" class="nav-link" title="    site name ">
+                                <svg class="icon lg">
+                                    <use xlink:href="images/icons.svg#back"></use>
+                                </svg> رياضة
                             </a>
                         </li>
                         <li class="nav-item dropdown">
         
         
-                            <a href="#" class="nav-link" title="   صدي البلد ">
-                                حوادث
+                            <a href="#" class="nav-link" title="    site name ">
+                                <svg class="icon lg">
+                                    <use xlink:href="images/icons.svg#back"></use>
+                                </svg> حوادث
                             </a>
         
         
@@ -363,108 +461,108 @@
         
         
                         <li class=" nav-item dropdown-menu">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 فن
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 تعليم
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 توك شو
                             </a>
                         </li>
                         <li class="nav-item dropdown-toggle">
-                            <a href="javascript:void(0)" class="nav-link" title="   صدي البلد ">
+                            <a href="javascript:void(0)" class="nav-link" title="    site name " rel="noopener noreferrer">
                                 مرأة
                             </a>
                         </li>
         
                         <li class=" nav-item dropdown-menu">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 حوادث
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 ديني
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" title="   صدي البلد ">
+                            <a href="#" class="nav-link" title="    site name ">
                                 اخبار العالم
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" title="   صدي البلد ">
+                            <a class="nav-link" href="#" title="    site name ">
                                 اخبار العالم
                             </a>
                         </li>
         
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4023">أصل الحكاية</a>
+                            <a class="nav-link" href="/list/4023" title="    site name ">أصل الحكاية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4022">فيديو جراف</a>
+                            <a class="nav-link" href="/list/4022" title="    site name ">فيديو جراف</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/3">محافظات</a>
+                            <a class="nav-link" href="/list/3" title="    site name ">محافظات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/6">اقتصاد</a>
+                            <a class="nav-link" href="/list/6" title="    site name ">اقتصاد</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/11">منوعات</a>
+                            <a class="nav-link" href="/list/11" title="    site name " منوعات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4027">بين الناس</a>
+                            <a class="nav-link" href="/list/4027" title="    site name ">بين الناس</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/17">سيارات</a>
+                            <a class="nav-link" href="/list/17" title="    site name ">سيارات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/4727/tech">تكنولوجيا</a>
+                            <a class="nav-link" href="/list/4727/tech" title="    site name ">تكنولوجيا</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2066">مقالات</a>
+                            <a class="nav-link" href="/list/2066" title="    site name ">مقالات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2067">ثقافة</a>
+                            <a class="nav-link" href="/list/2067" title="    site name ">ثقافة</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list.aspx?type=2">فيديو</a>
+                            <a class="nav-link" href="/list.aspx?type=2" title="    site name ">فيديو</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list.aspx?type=1">صور</a>
+                            <a class="nav-link" href="/list.aspx?type=1" title="    site name ">صور</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2070">ساحة رأي</a>
+                            <a class="nav-link" href="/list/2070" title="    site name ">ساحة رأي</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2">برلمان</a>
+                            <a class="nav-link" href="/list/2" title="    site name ">برلمان</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/list/2065">ملفات</a>
+                            <a class="nav-link" href="/list/2065" title="    site name ">ملفات</a>
                         </li>
         
                     </ul>
@@ -481,19 +579,19 @@
         
         
                     </a>
-                    <a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank" rel="noreferrer noopener nofollow"
+                    <a class="tw" href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow"
                         title="تابع    علي تويتر"> <span class="sr-only">twitter</span>
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#twitter"></use>
                         </svg> </a>
-                    <a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"
-                        rel="noreferrer noopener nofollow" title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
+                    <a class="yt" href="https://www.youtube.com/c/" target="_blank" rel="noreferrer noopener nofollow"
+                        title="قناة    علي يوتيوب"> <span class="sr-only">youtube</span>
         
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#youtube"></use>
                         </svg></a>
-                    <a class="ins" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"
-                        rel="noreferrer noopener nofollow" title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
+                    <a class="ins" href="https://www.instagram.com//" target="_blank" rel="noreferrer noopener nofollow"
+                        title="تابع    علي انستاجرام"> <span class="sr-only">instagram</span>
                         <svg class="icon">
                             <use xlink:href="images/icons.svg#instagram-sketched"></use>
                         </svg></a>
@@ -524,7 +622,7 @@
                                 <!--end of col-->
                                 <div class="col-12 ">
         
-                                    <input class="form-control form-control-lg   " name="search" type="search "
+                                    <input class="form-control form-control-lg   " id="search" name="search" type="search "
                                         placeholder="البحث   ">
                                 </div>
                                 <!--end of col-->
@@ -550,822 +648,636 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-8 right-col">
+                <div class="col-lg-8 right-col">
 
-                    <div class="block news-article">
-                        <div class="cont">
-                            <a class="article-author" href=" list.html" title="">
-                                <figure class="writer">
-                                    <div class="img-cont">
-                    
-                                        <img src="images/no.jpg" data-src="https://www.elbalad.news/upload/photo/writers/0/2/77x98o/287.jpg"
-                                            class="lazyload" alt="image  alt" title="image title" />
-                    
+
+                    <div class='block news-article'>
+
+                        <article class='cont'>
+
+
+                            <a class="btn btn-primary btn-lg cat-name" href="list.html" title="catname">اسم القسم </a>
+                            <!---  <div class="article-author" rel="author">
+                                <a href='list.html' title='writer'>
+                                    <div class='img-cont'>
+                                        <img class='lazyload' src='images/no.jpg' data-src='images/no.jpg'
+                                            alt="writer name">
                                     </div>
-                    
-                                </figure>
-                    
-                                <div class="writer-name">
-                    
-                                    د.جهاد عودة
-                    
-                                </div>
-                            </a>
-                    
+
+                                    <div class='name'>
+                                        اسم كاتب المقال
+                                    </div>
+                                </a>
+
+                            </div>-->
+                            <p class="pre-title">
+
+                                في أول اتصال منذ تنصيب بايدن
+
+
+                            </p>
+
+
                             <h1>
-                                رشا مجدي: النائب محمد أبو العينين يخوض الانتخابات البرلمانية تحت شعار معا من أجل مصر
+                                أول تعليق من إيرباص على الاتفاق التجاري بين بريطانيا وأوروبا
+
+
                             </h1>
-                            <div class="post-info">
-                                <div class="time">
+                            <div class='publish'>
+
+
+                                <div class='item'>
                                     <svg class="icon">
-                                        <use xlink:href="images/icons.svg#clock"></use>
+                                        <use xlink:href="images/icons.svg#update"></use>
                                     </svg>
-                                    <time>
-                    
-                                        الإثنين 05/أكتوبر/2020 - 10:21 ص
-                                    </time>
+                                    <time>الخميس 2021/2/18 12:35 ص </time>
+
                                 </div>
-                                <div class=" share-left ">
-                                    <div class="post-share social-share social">
-                                        <a class="fb fbshare" target="_blank" rel="noreferrer noopener nofollow" title="facebook">
-                                            <svg class="icon">
-                                                <use xlink:href="images/icons.svg#facebook" />
-                                            </svg>
-                                        </a>
-                                        <a class="tw twshare" rel="noreferrer noopener nofollow" title="twitter" target="_blank">
-                                            <svg class="icon">
-                                                <use xlink:href="images/icons.svg#twitter" />
-                                            </svg>
-                                        </a>
-                    
-                                        <a class="wa whatsapp" rel="noreferrer noopener nofollow" title="whatsapp">
-                                            <svg class="icon">
-                                                <use xlink:href="images/icons.svg#whatsapp" />
-                                            </svg>
-                                        </a>
-                                        <a class="telegram" rel="noreferrer noopener nofollow" title="email share" target="_blank">
-                                            <svg class="icon">
-                                                <use xlink:href="images/icons.svg#telegram" />
-                                            </svg>
-                                        </a>
-                                        <a class="viber" rel="noreferrer noopener nofollow" title="viber share" target="_blank">
-                                            <svg class="icon">
-                                                <use xlink:href="images/icons.svg#viber" />
-                                            </svg>
-                                        </a>
-                    
-                    
-                    
-                                        <button type="button" class=" mobile-native " aria-label="mobile native share">
-                    
-                    
-                                            <svg class="icon">
-                                                <use xlink:href="images/icons.svg#share" />
-                                            </svg>
-                                            <span> شارك</span>
-                    
-                    
-                                        </button>
-                    
-                    
-                                    </div>
-                                </div>
+
+
+
+
                             </div>
-                            <figure>
-                                <picture>
-                                    <source type="images/webp"
-                                        data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.webp ">
-                    
-                                    <source type="image/jpeg"
-                                        data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1 ">
-                    
-                    
-                                    <img src="images/no.jpg"
-                                        data-src="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1" class="lazyload"
-                                        alt="image  alt" title="image title" />
-                    
-                                </picture>
-                    
-                                <figcaption>
-                                    محمد ابو العينين
-                                </figcaption>
-                    
+
+
+
+
+
+                            <figure class="main-img">
+
+
+                                <img class="lazyload" src="images/no.jpg"
+                                    data-src="https://cdn.al-ain.com/images/2020/12/24/62-222407-airbus-trade-agreement-britain-europe_700x400.jpg"
+                                    alt="img alt">
+
+
+
+                                <figcaption class="brief">
+                                    جو بايدن وبنيامين نتنياهو- أرشيفية </figcaption>
                             </figure>
-                    
-                    
-                    
-                    
-                            <div class="author">
-                                <svg class="icon">
-                                    <use xlink:href="images/icons.svg#edit"></use>
-                                </svg>
-                                <a href="list.html" title="اسم الكاتب"> اسم الكاتب</a>
+
+
+                            <div class="author" rel="author">
+
+                                <a href='list.html' title='writer'>
+                                    <svg class="icon">
+                                        <use xlink:href="images/icons.svg#edit"></use>
+                                    </svg>
+                                    وكالات أنباء
+                                </a>
+
+
+
                             </div>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                            <div class="paragraph-list">
-                    
-                    
-                                <div class="ni-content">
-                    
-                    
-                                    <p> قالت الاعلامية رشا مجدي، إن النائب محمد أبو العينين شارك في مؤتمر تيكاد باليابان العام الماضي وسط
-                                        حضور أكثر من 55 رئيس دولة، وكان الهدف من مشاركته هو دعم الدولة في الانفتاح على قارة افريقيا وتعزيز
-                                        مشاركة القطاع العام والخاص في مشروعات مشتركة مع الاصدقاء في القارة.
-                                    </p>
-                                    <p>
-                                        وقال محمد أبو العينين، رجل الأعمال والصناعة الاول، خلال مشاركته في تلك القمة إن افريقيا تتقدم وتتغير
-                                        وتدعو كل مستثمري العالم ممن له تكنولوجيا او خبرة او غيرها ان يأتي للاستثمار في أفريقيا، معقبا:
-                                        "افريقيا ترحب بكم".
-                                    </p>
-                                    <div class="embed-wrap">
-                    
-                                        <div class="embed-container">
-                                            <iframe class="lazyload" title="iframe namee"
-                                                data-src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FYahdothFiMasr%2Fvideos%2F699509857497878%2F&show_text=0&width=560"
-                                                width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                                                allowTransparency="true" allowFullScreen="true"></iframe>
-                                        </div>
-                    
-                                    </div>
-                    
-                                    <p>
-                                        واوضح انه في احدى أحاديث الرئيس السيسي استوقفته تلك الكلمة وهي "ان شعوب القارة تنتظر نتائج ملموسة،
-                                        وتريد ان تشعر ان المشروعات العملاقة التي تخدم البنية الأساسية تسير في مسارها الطبيعي".
-                                    </p>
-                    
-                                    <p>
-                                        وأضاف محمد أبو العينين، ان مشروع القاهرة كيب تاون في افريقيا يعد هو محور التنمية الحقيقي في القارة
-                                        الافريقية، وهو يربط كل دول افريقيا من خلال محور رئيسي وعدة فروع عرضية، لافتا الى ان الصناعة في
-                                        افريقيا هي حجر الأساس.
-                                    </p>
-                    
-                                    <figure class="img-right">
-                                        <picture>
-                                            <source type="images/webp"
-                                                data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.webp ">
-                    
-                                            <source type="image/jpeg"
-                                                data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1 ">
-                    
-                    
-                                            <img src="images/no.jpg"
-                                                data-src="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1"
-                                                class="lazyload" alt="image  alt" title="image title" />
-                    
-                                        </picture>
-                    
-                                        <figcaption>
-                                            محمد ابو العينين
-                                        </figcaption>
-                    
-                                    </figure>
-                    
-                    
-                    
-                    
-                                    <p>
-                                        تمسك أحمد رمضان بيكهام لاعب الفريق الأول لكرة القدم بنادى وادى دجلة بالانتقال إلى الأهلى خلال فترة
-                                        الانتقالات الصيفية
-                                        الجارية بعد تلقيه عرضا رسميا من قبل القلعة الحمراء .
-                                    </p>
-                    
-                                    <p>
-                                        وشهدت الأيام الماضية تعطل المفاوضات بين الأهلى ووادى دجلة بشأن ضم أحمد بيكهام بسبب المغالاة المالية
-                                        من قبل مسئولى وادى
-                                        دجلة وهو الأمر الذى تم رفضه من قبل الأهلى.
-                                    </p>
-                                    <div class="embed-wrap twitter">
-                    
-                    
-                                        <blockquote class="twitter-tweet  lazyload" data-twitter="twitter-tweet" data-lang="ar"
-                                            data-dnt="true" data-theme="light">
-                                            <p lang="ar" dir="rtl">إيلون ماسك يطلق تغريدة مدوية عن أهرام مصر تشعل موجه شديدة من التفاعل <a
-                                                    href="https://t.co/C02N3lH02U">https://t.co/C02N3lH02U</a></p>&mdash; RTARABIC
-                                            (@RTarabic)
-                                            <a href="https://twitter.com/RTarabic/status/1289087519963873281?ref_src=twsrc%5Etfw">٣١ يوليو
-                                                ٢٠٢٠</a>
-                                        </blockquote>
-                    
-                                    </div>
-                                    <script>
-                                        (function () {
-                    
-                                            'use strict';
-                                            var scriptadded;
-                    
-                                            function loadExecuteTwitter() {
-                                                if (window.twttr && twttr.widgets) {
-                                                    twttr.widgets.load();
-                                                    return;
-                                                }
-                    
-                                                if (scriptadded) {
-                                                    return;
-                                                }
-                    
-                                                var elem = document.createElement('script');
-                                                var insertElem = document.getElementsByTagName('script')[0];
-                    
-                                                elem.src = '//platform.twitter.com/widgets.js';
-                    
-                                                scriptadded = true;
-                                                insertElem.parentNode.insertBefore(elem, insertElem);
-                                            }
-                    
-                                            document.addEventListener('lazybeforeunveil', function (e) {
-                                                var twttrWidget = e.target.getAttribute('data-twitter');
-                    
-                                                if (twttrWidget) {
-                                                    lazySizes.aC(e.target, twttrWidget);
-                                                    loadExecuteTwitter();
-                                                }
-                                            });
-                    
-                                        })();
-                    
-                    
-                                    </script>
-                                    <p>
-                                        وتشهد الساعات الحالية، محاولات مكثفة من قبل أحمد بيكهام بالضغط على مسئولي ناديه من أجل السماح له
-                                        بالانتقال إلى الأهلى
-                                        مؤكدا أن رغبته الأولي والأخيرة هى الانضمام للقلعة الحمراء فى الصيف الجارى.
-                                    </p>
-                    
-                                    <p>
-                                        وطالب أحمد بيكهام مسئولى ناديه بالتنازل عن بعض مطالبهم المادية من أجل تسهيل انتقاله إلى الأهلى فى
-                                        الميركاتو الصيفي خوفا
-                                        من ضياع تحقيق حلمه وانسحاب الأهلى بشكل رسمي من المفاوضات.
-                                    </p>
-                                    <p>
-                                        تمسك أحمد رمضان بيكهام لاعب الفريق الأول لكرة القدم بنادى وادى دجلة بالانتقال إلى الأهلى خلال فترة
-                                        الانتقالات الصيفية
-                                        الجارية بعد تلقيه عرضا رسميا من قبل القلعة الحمراء .
-                                    </p>
-                    
-                                    <figure class="img-center">
-                                        <picture>
-                                            <source type="images/webp"
-                                                data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.webp ">
-                    
-                                            <source type="image/jpeg"
-                                                data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1 ">
-                    
-                    
-                                            <img src="images/no.jpg"
-                                                data-src="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1"
-                                                class="lazyload" alt="image  alt" title="image title" />
-                    
-                                        </picture>
-                    
-                                        <figcaption>
-                                            محمد ابو العينين
-                                        </figcaption>
-                    
-                                    </figure>
-                    
-                    
-                                    <p>
-                                        وشهدت الأيام الماضية تعطل المفاوضات بين الأهلى ووادى دجلة بشأن ضم أحمد بيكهام بسبب المغالاة المالية
-                                        من قبل مسئولى وادى
-                                        دجلة وهو الأمر الذى تم رفضه من قبل الأهلى.
-                                    </p>
-                    
-                                    <p>
-                                        وتشهد الساعات الحالية، محاولات مكثفة من قبل أحمد بيكهام بالضغط على مسئولي ناديه من أجل السماح له
-                                        بالانتقال إلى الأهلى
-                                        مؤكدا أن رغبته الأولي والأخيرة هى الانضمام للقلعة الحمراء فى الصيف الجارى.
-                                    </p>
-                    
-                                    <p>
-                                        وطالب أحمد بيكهام مسئولى ناديه بالتنازل عن بعض مطالبهم المادية من أجل تسهيل انتقاله إلى الأهلى فى
-                                        الميركاتو الصيفي خوفا
-                                        من ضياع تحقيق حلمه وانسحاب الأهلى بشكل رسمي من المفاوضات.
-                                    </p>
-                                    <p>
-                                        تمسك أحمد رمضان بيكهام لاعب الفريق الأول لكرة القدم بنادى وادى دجلة بالانتقال إلى الأهلى خلال فترة
-                                        الانتقالات الصيفية
-                                        الجارية بعد تلقيه عرضا رسميا من قبل القلعة الحمراء .
-                                    </p>
-                    
-                                    <p>
-                                        وشهدت الأيام الماضية تعطل المفاوضات بين الأهلى ووادى دجلة بشأن ضم أحمد بيكهام بسبب المغالاة المالية
-                                        من قبل مسئولى وادى
-                                        دجلة وهو الأمر الذى تم رفضه من قبل الأهلى.
-                                    </p>
-                    
-                                    <p>
-                                        وتشهد الساعات الحالية، محاولات مكثفة من قبل أحمد بيكهام بالضغط على مسئولي ناديه من أجل السماح له
-                                        بالانتقال إلى الأهلى
-                                        مؤكدا أن رغبته الأولي والأخيرة هى الانضمام للقلعة الحمراء فى الصيف الجارى.
-                                    </p>
-                    
-                                    <p>
-                                        وطالب أحمد بيكهام مسئولى ناديه بالتنازل عن بعض مطالبهم المادية من أجل تسهيل انتقاله إلى الأهلى فى
-                                        الميركاتو الصيفي خوفا
-                                        من ضياع تحقيق حلمه وانسحاب الأهلى بشكل رسمي من المفاوضات.
-                                    </p>
-                    
-                                    <figure class="img-left">
-                                        <picture>
-                                            <source type="images/webp"
-                                                data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.webp ">
-                    
-                                            <source type="image/jpeg"
-                                                data-scrset="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1 ">
-                    
-                    
-                                            <img src="images/no.jpg"
-                                                data-src="https://www.elbalad.news/upload/photo/news/452/1/600x338o/946.jpg?q=1"
-                                                class="lazyload" alt="image  alt" title="image title" />
-                    
-                                        </picture>
-                    
-                                        <figcaption>
-                                            محمد ابو العينين
-                                        </figcaption>
-                    
-                                    </figure>
-                    
-                    
-                    
-                                    <div class="embed-wrap pdf">
-                                        <iframe title="pdf" allowtransparency="true"
-                                            data-src="https://rosaelyoussef.com/UserFiles/Attachments/2020/11/07/781309/rosa_4821.pdf"
-                                            class="lazyload" frameborder="0"></iframe>
-                                    </div>
-                    
-                                    <p>
-                                        وعلم " صدى البلد" أن التواصل بين الأهلى وأحمد بيكهام لم ينقطع فى ظل تمسك اللاعب باللعب فى القلعة
-                                        الحمراء ، وتلقي بيكهام
-                                        وعدا من الأهلى بإعادة المفاوضات الجادة خلال الفترة القليلة وحسم الصفقة بشكل رسمي.
-                    
-                    
-                    
-                                    <div class="embed-wrap">
-                    
-                                        <iframe title="instagram" allowtransparency="true" frameborder="0" height="710" scrolling="no"
-                                            data-src="//instagram.com/p/B8e2HWBpf_7/embed/" width="612" class="lazyload"></iframe>
-                    
-                    
-                                    </div>
-                    
-                    
-                                    <p>
-                                        واشار الى ان الصناعة هي التي تحاكي تقدم الأمم، واكد على ضرورة ان تنخرط في مسار الثورة الصناعية
-                                        الرابعة لاستقطاب صناعات المستقبل وتوطينها في افريقيا، الى جانب استغلال الثروة البشرية الافريقية.
-                    
-                                    </p>
-                    
-                                    <div class="embed-wrap">
-                                        <div class="embed-container">
-                                            <div class="youtube" data-embed="apJpK5ZFjdE">
-                                                <div class="play-button"> <svg class="icon">
-                                                        <use xlink:href="images/icons.svg#youtube"></use>
-                                                    </svg></div>
-                                            </div>
-                    
-                                        </div>
-                                    </div>
-                    
-                                    <script>
-                                        (function () {
-                                            /// youtube lazyload
-                                            var youtube = document.querySelectorAll(".youtube");
-                    
-                                            for (var i = 0; i < youtube.length; i++) {
-                    
-                                                var source = "https://img.youtube.com/vi/" + youtube[i].dataset.embed +
-                                                    "/sddefault.jpg";
-                    
-                                                var image = new Image();
-                                                image.src = "images/no.jpg";
-                                                image.classList.add('lazyload');
-                                                image.setAttribute("data-src", source);
-                                                image.setAttribute("alt", "youtube");
-                                                image.addEventListener("load", function () {
-                                                    youtube[i].appendChild(image);
-                                                }(i));
-                    
-                                                youtube[i].addEventListener("click", function () {
-                    
-                                                    var iframe = document.createElement("iframe");
-                    
-                                                    iframe.setAttribute("frameborder", "0");
-                                                    iframe.setAttribute("allowfullscreen", "");
-                                                    iframe.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset
-                                                        .embed + "?rel=0&showinfo=0&autoplay=1");
-                    
-                                                    this.innerHTML = "";
-                                                    this.appendChild(iframe);
-                                                });
-                                            };
-                    
-                    
-                    
-                    
-                    
-                                        })();
-                                    </script>
-                    
-                    
-                    
-                    
-                    
-                    
-                                </div>
-                            </div>
-                            <div class=" share-inline ">
+
+                            <div class="share-top">
+
                                 <div class="post-share social-share social">
-                                    <a class="fb fbshare" target="_blank" rel="noreferrer noopener nofollow" title="facebook">
+                                    <button type="button" class="mobile-native " aria-label="mobile native share">
                                         <svg class="icon">
-                                            <use xlink:href="images/icons.svg#facebook" />
+                                            <use xlink:href="images/icons.svg#share"></use>
                                         </svg>
-                                    </a>
-                                    <a class="tw twshare" rel="noreferrer noopener nofollow" title="twitter" target="_blank">
-                                        <svg class="icon">
-                                            <use xlink:href="images/icons.svg#twitter" />
-                                        </svg>
-                                    </a>
-                    
-                                    <a class="wa whatsapp" rel="noreferrer noopener nofollow" title="whatsapp">
-                                        <svg class="icon">
-                                            <use xlink:href="images/icons.svg#whatsapp" />
-                                        </svg>
-                                    </a>
-                                    <a class="telegram" rel="noreferrer noopener nofollow" title="email share" target="_blank">
-                                        <svg class="icon">
-                                            <use xlink:href="images/icons.svg#telegram" />
-                                        </svg>
-                                    </a>
-                                    <a class="viber" rel="noreferrer noopener nofollow" title="viber share" target="_blank">
-                                        <svg class="icon">
-                                            <use xlink:href="images/icons.svg#viber" />
-                                        </svg>
-                                    </a>
-                    
-                    
-                    
-                                    <button type="button" class=" mobile-native " aria-label="mobile native share">
-                    
-                    
-                                        <svg class="icon">
-                                            <use xlink:href="images/icons.svg#share" />
-                                        </svg>
-                                        <span> شارك</span>
-                    
-                    
+                                        شارك
                                     </button>
-                    
-                    
+                                
+                                    <a class="fb fbshare" target="_blank" rel="noreferrer noopener nofollow" title="facebook share"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                
+                                
+                                    <a class="tw twshare" rel="noreferrer noopener nofollow" title="twitter share" target="_blank"
+                                        href="https://twitter.com/intent/tweet?text=تامر مرسي ينشر البوستر الرسمي الأول لمسلسل الاختيار 2&amp;url=https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="ws whatsapp" rel="noreferrer noopener nofollow" title="whatsapp share"
+                                        href="whatsapp://send?text=تامر مرسي ينشر البوستر الرسمي الأول لمسلسل الاختيار 2 https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="print  " target="_blank" rel="noreferrer noopener nofollow" title="facebook share"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#printer"></use>
+                                        </svg>
+                                    </a>
+                                
                                 </div>
                             </div>
+
+
+                            <div class="paragraph-list">
+
+                                <p>
+                                    عقب ساعات من إعلان التوصل لاتفاق بين بريطانيا والاتحاد الأوروبي، أثنت شركة صناعة
+                                    الطائرات إيرباص على الاتفاق وأعربت عن
+                                    سعادتها.
+
+                                </p>
+
+
+                                <p>
+                                    قال متحدث باسم شركة صناعة الطائرات الأوروبية إيرباص إن الشركة تحتاج إلى تحليل
+                                    تداعيات الاتفاق التجاري بين الاتحاد
+                                    الأوروبي وبريطانيا بعد تنفيذ قرار خروج الأخيرة من الاتحاد (بريكست) على أنشطتها.
+
+
+
+                                </p>
+
+                                <ul>
+                                    <li><a href="/" title=" link title" target="_blank">رسميا.. اتفاق تجاري بين الاتحاد
+                                            الأوروبي وبريطانيا لمرحلة ما بعد بريكست</a></li>
+                                </ul>
+                                <div class="related-inline">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class='item-li'>
+                                                <a href='show.html' title=''>
+                                                    <div class='img-cont'>
+                                                        <img class="lazyload" src="images/no.jpg"
+                                                            data-src='https://cdn.al-ain.com/images/2021/2/16/85-231417--3_1602c1989738bd_140x80.jpg'
+                                                            alt='' />
+                                                    </div>
+                                                    <div class='txt-cont'>
+                                                        <h3> بايدن ونتنياهو.. تأخر الاتصال يثير تساؤلات </h3>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class='item-li'>
+                                                <a href='show.html' title=''>
+                                                    <div class='img-cont'>
+                                                        <img class="lazyload" src="images/no.jpg"
+                                                            data-src='https://cdn.al-ain.com/images/2021/2/16/85-231417--3_1602c1989738bd_140x80.jpg'
+                                                            alt='' />
+                                                    </div>
+                                                    <div class='txt-cont'>
+                                                        <h3> بايدن ونتنياهو.. تأخر الاتصال يثير تساؤلات </h3>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <p>
+                                    وأضاف أن "الشركة سعيدة بتجنب سيناريو خروج بريطانيا بدون اتفاق وما كان سيؤدي إليه ذلك
+                                    من اضطراب الأنشطة التجارية".
+
+                                </p>
+                                <p>
+                                    من ناحيته، قال جيلو فوري الرئيس التنفيذي لشركة الموجود مقرها في مدينة تولوز الفرنسية
+                                    إنه "سعيد لاستمرار العمل مع الكثير
+                                    من مساهمينا بروح التعاون والشراكة طويلة المدى"
+
+                                </p>
+                                <p>
+                                    وأشارت وكالة بلومبرج للأنباء إلى أن مصانع أيرباص في بريطانيا مسؤولة عن تصميم وإنتاج
+                                    أجنحة الطائرات التي تنتجها الشركة من
+                                    مختلف الطرز.
+
+                                </p>
+                                <p>
+                                    من ناحية أخرى قال اتحاد شركات "أصنع بريطانيا" الذي يمثل شركات التصنيع البريطانية إن
+                                    الاتفاق التجاري مع الاتحاد الأوروبي
+                                    "تجنب كارثة الخروج دون اتفاق وما يترتب عليه من رسوم ونظام للحصص" لكن الأمر سيحتاج
+                                    إلى مزيد من الفحص لتحديد التأثير على
+                                    قطاع التصنيع.
+                                </p>
+                                <p>
+                                    وقال ستيفن فيبسون الرئيس التنفيذي للتجمع "حتى مع وجود اتفاق، ستحتاج الشركات إلى وقت
+                                    للتكيف مع التغييرات الضخمة والمعقدة
+                                    القادمة".
+
+                                </p>
+
+                                <h2> بنود الاتفاق</h2>
+                                <p>
+                                    توصّل المفاوضون الأوروبيون والبريطانيون إلى اتفاق تجاري لمرحلة ما بعد بريكست الخميس،
+                                    وفق ما أفاد مسؤولون من الجانبين.
+
+                                </p>
+                                <p>
+                                    وأكد بوريس جونسون، رئيس الوزراء البريطاني، "التوصل لاتفاق" مع الاتحاد الأوروبي، فيما
+                                    قالت رئيسة المفوضية الأوروبية
+                                    أورسولا فون دير لايين، إن اتفاق بريكست "جيّد ومتوازن" و"منصف" للطرفين.
+
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="/" title=" link title" target="_blank">رسميا.. اتفاق تجاري بين الاتحاد
+                                            تحذير من إيرباص بعد "ضبابية" بريكست</a></p>
+                                    </li>
+                                </ul>
+
+                                <figure class="img-inline center">
+
+                                    <img class="lazyload" src="images/no.jpg"
+                                        data-src="https://cdn.al-ain.com/images/2021/2/16/85-231417--3_1602c1989738bd_700x400.jpg"
+                                        alt="img alt">
+                                    <figcaption>
+                                        لقاء سابق بين بايدن وبنيامين نتنياهو
+                                    </figcaption>
+                                </figure>
+                                <p>
+                                    وقال مكتب رئيس الوزراء الإسرائيلي في بيان تلقته "العين الإخبارية": "تحدث رئيس
+                                    الوزراء
+                                    بنيامين نتنياهو هذا المساء هاتفيا
+                                    مع الرئيس الأمريكي جو بايدن".
+                                </p>
+                                <p>
+                                    وأضاف: "كانت المكالمة ودية ودافئة للغاية واستمرت أكثر من ساعة".
+                                </p>
+
+
+
+
+                                <figure class="img-inline center">
+
+                                    <img class="lazyload" src="images/no.jpg"
+                                        data-src="https://cdn.al-ain.com/lg/images/2021/2/17/143-013342--2_1602c3a3659175.jpg"
+                                        alt="img alt" width="768" height="841">
+                                    <figcaption>
+                                        لقاء سابق بين بايدن وبنيامين نتنياهو
+
+                                    </figcaption>
+                                </figure>
+                                <p>
+                                    ولفت إلى أن: "الزعيمان أشارا إلى العلاقة الشخصية التي تربط بينهما والتي تستمر
+                                    منذ
+                                    سنوات
+                                    عديدة، وقالا إنهما سيعملان معا
+                                    على تعزيز التحالف المتين القائم بين إسرائيل والولايات المتحدة".
+                                </p>
+
+
+                                <p>
+                                    وقال مكتب رئيس الوزراء الإسرائيلي: "إن الرئيس بايدن ورئيس الوزراء نتنياهو بحثا
+                                    الاستمرار
+                                    في دفع اتفاقيات السلام قدما
+                                    والتهديد الإيراني والتحديات الاقليمية واتفقا على مواصلة الحوار بينهما".
+                                </p>
+                                <p>
+                                    وأضاف: "هنأ الرئيس بايدن رئيس الوزراء نتنياهو على زعامته في مكافحة فيروس كورونا
+                                    وتبادل
+                                    معه الآراء حول سبل التعامل مع
+                                    الجائحة".
+
+                                    وهذا هو أول اتصال هاتفي بين نتنياهو والرئيس الأمريكي منذ تنصيب الأخير قبل نحو
+                                    شهر.
+                                </p>
+
+                                <p>
+                                    إقرأ آيضا
+
+                                <ul>
+                                    <li>
+                                        <a href="show.html" target="_blank" title="text">
+                                            دبلوماسي إسرائيلي يكشف رد نتنياهو على عدم اتصال بايدن
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="show.html" target="_blank" title="text">
+                                            البيت الأبيض يكشف عن مباحثات بين بايدن ونتنياهو قريبا
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="show.html" target="_blank" title="text">
+                                            نتنياهو يشيد بريادة الإمارات: لديها قيادة تتمتع برؤية ثاقبة </a>
+                                    </li>
+                                </ul>
+
+
+
+                                </p>
+                            </div>
+
+
+                            <div class="share-bottom">
+
+                                <div class="post-share social-share social">
+                                    <button type="button" class="mobile-native " aria-label="mobile native share">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#share"></use>
+                                        </svg>
+                                        شارك
+                                    </button>
+                                
+                                    <a class="fb fbshare" target="_blank" rel="noreferrer noopener nofollow" title="facebook share"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                
+                                
+                                    <a class="tw twshare" rel="noreferrer noopener nofollow" title="twitter share" target="_blank"
+                                        href="https://twitter.com/intent/tweet?text=تامر مرسي ينشر البوستر الرسمي الأول لمسلسل الاختيار 2&amp;url=https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="ws whatsapp" rel="noreferrer noopener nofollow" title="whatsapp share"
+                                        href="whatsapp://send?text=تامر مرسي ينشر البوستر الرسمي الأول لمسلسل الاختيار 2 https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                    <a class="print  " target="_blank" rel="noreferrer noopener nofollow" title="facebook share"
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://www.khbar.news/90">
+                                        <svg class="icon">
+                                            <use xlink:href="images/icons.svg#printer"></use>
+                                        </svg>
+                                    </a>
+                                
+                                </div>
+                            </div>
+
+
+                            <div class="keywords">
+
+                                <div class="name">
+                                    الكلمات الدالة
+                                </div>
+
+                                <ul>
+                                    <li><a href="https://al-ain.com/country/united-state-america/">أمريكا</a></li>
+                                    <li><a href="https://al-ain.com/country/israel/">إسرائيل</a></li>
+                                    <li><a href="https://al-ain.com/page/681/">غرفة الأخبار</a></li>
+                                </ul>
+
+                            </div>
+
+
+                        </article>
+
+                        <div class='foot'>
+                            <a href='list.html'> المزيد </a>
                         </div>
-                        <!---pagragaph/list-->
-                    
-                    
                     </div>
-                    <div class="block keywords">
-                        <div class="title">
-                            <h2>الكلمات المفتاحية</h2>
-                        </div>
-                        <div class="cont">
-                    
-                            <a href="list.html" title="name"> ابو العينين </a>
-                            <a href="list.html" title="name"> افريقيا </a>
-                            <a href="list.html" title="name"> اخبار التوك شو </a>
-                            <a href="list.html" title="name"> مؤتمر تيكاد </a>
-                    
-                        </div>
-                    </div>
-                    
-                    <script>
-                        var url = "https://www.elbalad.news/4521946";
-                        var title = "أفريقيا ترحب بكم.. أبو العينين يوجه رسالة مهمة لمستثمري العالم ";
-                        var desc = "قالت الاعلامية رشا مجدي، إن النائب محمد أبو العينين شارك في مؤتمر تيكاد باليابان العام الماضي وسط حضور أكثر من 55 رئيس دولة، وكان الهدف من مشاركته هو دعم الدولة في الانفتاح على قارة افريقيا وتعزيز مشاركة القطاع العام والخاص في مشروعات مشتركة مع الاصدقاء في القارة.  ";
-                    
-                        var fbBtn = document.getElementsByClassName("fbshare");
-                        var twBtn = document.getElementsByClassName("twshare");
-                        var waBtn = document.getElementsByClassName("whatsapp");
-                        var tgBtn = document.getElementsByClassName("telegram");
-                        var vibBtn = document.getElementsByClassName("viber");
-                        var mailBtn = document.getElementsByClassName("mail");
-                    
-                        for (var i = 0; i < fbBtn.length; i++) {
-                            fbBtn[i].href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
-                        }
-                    
-                        for (var i = 0; i < twBtn.length; i++) {
-                            twBtn[i].href = 'https://twitter.com/intent/tweet?text=' + title + url;
-                        }
-                    
-                        for (var i = 0; i < waBtn.length; i++) {
-                            waBtn[i].href = "whatsapp://send?text=" + title + " " + url;
-                        }
-                    
-                        for (var i = 0; i < tgBtn.length; i++) {
-                            tgBtn[i].href = "https://telegram.me/share/url?url=" + url + "&text=" + title;
-                        }
-                    
-                        for (var i = 0; i < vibBtn.length; i++) {
-                            vibBtn[i].href = "viber://forward?text=" + title + " " + url;
-                        }
-                    
-                        for (var i = 0; i < mailBtn.length; i++) {
-                            mailBtn[i].href = 'mailto:?body=' + encodeURIComponent(url) + '%0A%0A' + encodeURIComponent(desc) +
-                                '&subject=' + encodeURIComponent(title) + '';
-                        }
-                    
-                        var NativeShareBtn = document.getElementsByClassName("mobile-native");
-                        for (var i = 0; i < NativeShareBtn.length; i++) {
-                            NativeShareBtn[i].addEventListener('click', function () {
-                    
-                                if (typeof navigator.share === 'undefined') {
-                                    log("No share API available!");
-                                } else {
-                                    navigator.share({
-                                        title: '' + title + '',
-                                        url: '' + url + '',
-                                        text: '' + desc + ''
-                                    })
-                    
-                                        .then(function () {
-                                            log("Share success!");
-                                        })
-                                        .catch(function () {
-                                            log("Share failure!");
-                                        });
-                                }
-                            });
-                    
-                    
-                    
-                        }
-                    </script>
+
 
                 </div>
 
-                <div class=" col-4 left-col">
-                    <div class="block-wrap">
-                        <div class="block articels-col">
-                            <div class="title">
-                                <a href="list.html" title="catName">
-                                    <h2>مقالات</h2>
+                <div class=" col-lg-4 left-col">
+                    <div class="block  topread-col ">
+                        <div class="title">
+                            <a href="list.html" title="catName">
+                                <h2>اسم قسم</h2>
+                    
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="15.574" height="12.504"
+                                    viewBox="0 0 15.574 12.504">
+                                    <path id="Icon_awesome-angle-double-left" data-name="Icon awesome-angle-double-left"
+                                        d="M8.738,9.336l5.313-5.312a.934.934,0,0,1,1.324,0l.883.883a.934.934,0,0,1,0,1.324L12.5,10l3.766,3.766a.934.934,0,0,1,0,1.324l-.883.887a.934.934,0,0,1-1.324,0L8.742,10.664A.935.935,0,0,1,8.738,9.336Zm-7.5,1.328,5.313,5.313a.934.934,0,0,0,1.324,0l.883-.883a.934.934,0,0,0,0-1.324L5,10,8.762,6.234a.934.934,0,0,0,0-1.324l-.883-.887a.934.934,0,0,0-1.324,0L1.242,9.336A.935.935,0,0,0,1.238,10.664Z"
+                                        transform="translate(-0.963 -3.748)" fill="#18c" />
+                                </svg>
+                    
+                    
+                            </a>
+                        </div>
+                    
+                        <div class="cont">
+                            <div class='item-card'>
+                                <a href='show.html' title=''>
+                                    <div class='img-cont'>
+                                        <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
+                                            alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                    </div>
+                                    <div class='txt-cont'>
+                                        <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                        </h3>
+                    
+                    
+                                    </div>
                                 </a>
                             </div>
-                    
-                            <div class="cont">
-                    
-                                <div class="row ">
+                            <div class="row ">
                     
                     
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-li'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
                     
                     
-                                                <div class='img-cont'>
-                    
-                    
-                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
+                                            </div>
+                                        </a>
                                     </div>
-                    
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                    
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                    
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg " loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="  col-md-6 col-xl-12">
-                                        <div class='item-article'>
-                                            <a href='show.html' title=''>
-                                                <div class='img-cont'>
-                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
-                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                </div>
-                                                <div class='txt-cont'>
-                                                    <div class="writer">اسم الكاتب</div>
-                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                    </h3>
-                    
-                    
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                    
-                    
                                 </div>
-                            </div>
                     
-                            <div class="foot">
-                                <a href="list.html" class="more" title="cat name"> المزيد</a>
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-li'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-li'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg " loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="  col-md-6 col-xl-12">
+                                    <div class='item-li'>
+                                        <a href='show.html' title=''>
+                                            <div class='img-cont'>
+                                                <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
+                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                            </div>
+                                            <div class='txt-cont'>
+                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                </h3>
+                    
+                    
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                    
+                    
                             </div>
                         </div>
+                    
+                        <div class="foot">
+                            <a href="list.html" class="more" title="cat name"> المزيد</a>
+                        </div>
                     </div>
-                    <div class="block-wrap">
-                                            <div class="block paper">
-                                                <div class="title">
-                                                    <a href="list.html" title="catName">
-                                                        <h2> العدد الورقي</h2>
-                                                    </a>
-                                                </div>
+                    <div class="block articels-col">
+                                            <div class="title">
+                                                <a href="list.html" title="catName">
+                                                    <h2>مقالات</h2>
+                                                </a>
+                                            </div>
                                         
-                                                <div class="cont">
+                                            <div class="cont">
                                         
-                                                    <div class='item-paper'>
-                                                        <a href='show.html' title=''>
-                                                            <div class='img-cont'>
-                                                                <img class="lazyload" src='images/no.jpg' data-src="  images/paper.jpg " loading="lazy"
-                                                                    alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
-                                                            </div>
-                                                            <div class='txt-cont'>
-                                                                <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
-                                                                </h3>
+                                                <div class="row ">
                                         
                                         
-                                                            </div>
-                                                        </a>
+                                                    <div class="  col-md-6 col-xl-12">
+                                                        <div class='item-article'>
+                                                            <a href='show.html' title=''>
+                                        
+                                        
+                                                                <div class='img-cont'>
+                                        
+                                        
+                                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
+                                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                                </div>
+                                        
+                                                                <div class='txt-cont'>
+                                                                    <div class="writer">اسم الكاتب</div>
+                                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                                    </h3>
+                                        
+                                        
+                                        
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                        
+                                                    <div class="  col-md-6 col-xl-12">
+                                                        <div class='item-article'>
+                                                            <a href='show.html' title=''>
+                                                                <div class='img-cont'>
+                                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
+                                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                                </div>
+                                        
+                                                                <div class='txt-cont'>
+                                                                    <div class="writer">اسم الكاتب</div>
+                                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                                    </h3>
+                                        
+                                        
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                        
+                                                    <div class="  col-md-6 col-xl-12">
+                                                        <div class='item-article'>
+                                                            <a href='show.html' title=''>
+                                                                <div class='img-cont'>
+                                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg    " loading="lazy"
+                                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                                </div>
+                                        
+                                                                <div class='txt-cont'>
+                                                                    <div class="writer">اسم الكاتب</div>
+                                        
+                                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                                    </h3>
+                                        
+                                        
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                        
+                                                    <div class="  col-md-6 col-xl-12">
+                                                        <div class='item-article'>
+                                                            <a href='show.html' title=''>
+                                                                <div class='img-cont'>
+                                                                    <img class="lazyload" src='images/no.jpg' data-src="  images/img.jpg " loading="lazy"
+                                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                                </div>
+                                        
+                                                                <div class='txt-cont'>
+                                                                    <div class="writer">اسم الكاتب</div>
+                                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                                    </h3>
+                                        
+                                        
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="  col-md-6 col-xl-12">
+                                                        <div class='item-article'>
+                                                            <a href='show.html' title=''>
+                                                                <div class='img-cont'>
+                                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
+                                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                                </div>
+                                        
+                                                                <div class='txt-cont'>
+                                                                    <div class="writer">اسم الكاتب</div>
+                                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                                    </h3>
+                                        
+                                        
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="  col-md-6 col-xl-12">
+                                                        <div class='item-article'>
+                                                            <a href='show.html' title=''>
+                                                                <div class='img-cont'>
+                                                                    <img class="lazyload" src='images/no.jpg' data-src="images/img.jpg" loading="lazy"
+                                                                        alt='ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة' />
+                                                                </div>
+                                        
+                                                                <div class='txt-cont'>
+                                                                    <div class="writer">اسم الكاتب</div>
+                                                                    <h3> ثنائية رونالدو تقود اليوفي للفوز على برشلونة وانتزاع الصدارة
+                                                                    </h3>
+                                        
+                                        
+                                                                </div>
+                                                            </a>
+                                                        </div>
                                                     </div>
                                         
                                         
-                                        
-                                        
-                                                </div>
-                                                <div class="foot">
-                                                    <a href="list.html" class="more" title="cat name"> المزيد</a>
                                                 </div>
                                             </div>
+                                        
+                                            <div class="foot">
+                                                <a href="list.html" class="more" title="cat name"> المزيد</a>
+                                            </div>
                                         </div>
-                    <div class="block-wrap">
-                                                                <div class="block">
-                                                                    <div class="title">
-                                                                        <h2>
-                                                                            استطلاع رأي
-                                                                        </h2>
-                                                                    </div>
-                                                                    <div class="cont">
-                                                                        <div class="voteform" id="pnlResult">
-                                                                            <div class="form-group formq" style="color:#000;font-weight:bold">
-                                                                                هل تؤيد مقترح إنشاء صندوق لدعم غير القادرين لدفع قيمة التصالحات؟
-                                                                            </div>
-                                                                            <div class="opt ">
-                                                                                <p><label for="p3387">
-                                                                                        <span class="fa fa-caret-left"></span>
-                                                                                        نعم
-                                                                                        <span class="pull-left">
-                                                                                            39%
-                                                                                        </span>
-                                                                                    </label></p>
-                                                                                <div class="progress">
-                                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="39" aria-valuemin="0"
-                                                                                        aria-valuemax="100" style="width: 39%;">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="opt ">
-                                                                                <p><label for="p3388">
-                                                                                        <span class="fa fa-caret-left"></span>
-                                                                                        لا
-                                                                                        <span class="pull-left">
-                                                                                            43%
-                                                                                        </span>
-                                                                                    </label></p>
-                                                                                <div class="progress">
-                                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="43" aria-valuemin="0"
-                                                                                        aria-valuemax="100" style="width: 43%;">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="opt ">
-                                                                                <p><label for="p3389">
-                                                                                        <span class="fa fa-caret-left"></span>
-                                                                                        لا
-                                                                                        <span class="pull-left">
-                                                                                            18%
-                                                                                        </span>
-                                                                                    </label></p>
-                                                                                <div class="progress">
-                                                                                    <div class="progress-bar" role="progressbar" aria-valuenow="18" aria-valuemin="0"
-                                                                                        aria-valuemax="100" style="width: 18%;">
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <form role="form" class="voteform" id="pnlForm">
-                                                                            <div class="form-group formq" style="color:#000;font-weight:bold">
-                                                                                هل تؤيد مقترح إنشاء صندوق لدعم غير القادرين لدفع قيمة التصالحات؟
-                                                                            </div>
-                                                                            <div class="form-group choices">
-                                                                                <div class="radio choice">
-                                                                                    <label>
-                                                                                        <input type="radio" name="poll1043" id="p3387" selector=".master_poll" />
-                                                                                        نعم </label>
-                                                                                </div>
-                                                                                <div class="radio choice">
-                                                                                    <label>
-                                                                                        <input type="radio" name="poll1043" id="p3388" selector=".master_poll" />
-                                                                                        لا </label>
-                                                                                </div>
-                                                                                <div class="radio choice">
-                                                                                    <label>
-                                                                                        <input type="radio" name="poll1043" id="p3389" selector=".master_poll" />
-                                                                                        لا أهتم </label>
-                                                                                </div>
-                                                                            </div>
-                                                                            <button type="button" class="btn btn-primary  btn-sm" id="btnVote">تصويت </button>
-                                                                            <button type="button" class="btn btn-primary btn-sm" id="btnResult">النتائج</button>
-                                                                        </form>
-                                                            
-                                                            
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+
 
 
                 </div>
@@ -1381,120 +1293,170 @@
     </main>
 
     <footer>
-        <div class="top">
-            <div class="container">
+        <div class="container">
     
+    
+            <div class="up">
+                <a href="#top" class="btp" rel="noreferrer noopener nofollow"><svg class="icon">
+                        <use xlink:href="images/icons.svg#back"></use>
+                    </svg></a>
+    
+            </div>
+        </div>
+    
+        <div class="top">
+    
+            <div class="container">
+                <div class="search-form">
+                    <form action="/Search" method="get">
+                        <label for="q" class="sr-only">بحث</label>
+                        <input type="search" class="form-control" name="q" placeholder="بحث">
+                        <button type="submit" class="search-icn">
+                            <svg class="icon">
+                                <use xlink:href="images/icons.svg#magnifying-glass"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
     
                 <div class="logo-area">
-                    <a href="/" class="logo" title="sitename"><img class="lazyload" data-src="images/logof.svg" alt=""
+                    <a href="/" class="logo" title="sitename"><img class="lazyload" data-src="images/logo.png" alt=""
                             width="204" height="105" class="lazyload"></a>
                 </div>
     
     
     
-    
-                <div class="follow">
-    
-                    <div class="social">
-                        <a class="fb" href="https://www.facebook.com/ElBaladOfficial" target="_blank"
-                            rel="noreferrer noopener nofollow" title="  تابع الشوري علي فيسبوك">
-                            <span class="sr-only"> facebook</span>
-                            <svg class="icon">
-                                <use xlink:href="images/icons.svg#facebook"></use>
-                            </svg>
+                <div class="social">
+                    <a c href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener nofollow"
+                        title="  تابع   علي فيسبوك">
+                        <span class="sr-only"> facebook</span>
+                        <svg class="icon">
+                            <use xlink:href="images/icons.svg#facebook"></use>
+                        </svg>
     
     
-                        </a>
-                        <a class="tw" href="https://twitter.com/ElBaladOfficial" target="_blank"
-                            rel="noreferrer noopener nofollow" title="تابع الشوري علي تويتر"> <span
-                                class="sr-only">twitter</span>
-                            <svg class="icon">
-                                <use xlink:href="images/icons.svg#twitter"></use>
-                            </svg> </a>
-                        <a class="yt" href="https://www.youtube.com/c/ElBaladOfficial" target="_blank"
-                            rel="noreferrer noopener nofollow" title="قناة الشوري علي يوتيوب"> <span
-                                class="sr-only">youtube</span>
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener nofollow"
+                        title="تابع   علي تويتر"> <span class="sr-only">twitter</span>
+                        <svg class="icon">
+                            <use xlink:href="images/icons.svg#twitter"></use>
+                        </svg> </a>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener nofollow"
+                        title="قناة   علي يوتيوب"> <span class="sr-only">youtube</span>
     
-                            <svg class="icon">
-                                <use xlink:href="images/icons.svg#youtube"></use>
-                            </svg></a>
-                        <a class="ins" href="https://www.instagram.com/ElBaladOfficial/" target="_blank"
-                            rel="noreferrer noopener nofollow" title="تابع الشوري علي انستاجرام"> <span
-                                class="sr-only">instagram</span>
-                            <svg class="icon">
-                                <use xlink:href="images/icons.svg#instagram-sketched"></use>
-                            </svg></a>
-                        <a class="rss" href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow"
-                            title="elbalad.news rss feed "><span class="sr-only">rss feed</span>
-                            <svg class="icon">
-                                <use xlink:href="images/icons.svg#rss"></use>
-                            </svg></a>
-                    </div>
-    
-    
+                        <svg class="icon">
+                            <use xlink:href="images/icons.svg#youtube"></use>
+                        </svg></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener nofollow"
+                        title="تابع   علي انستاجرام"> <span class="sr-only">instagram</span>
+                        <svg class="icon">
+                            <use xlink:href="images/icons.svg#instagram-sketched"></use>
+                        </svg></a>
+                    <a href="/rss.aspx" target="_blank" rel="noreferrer noopener nofollow" title="  rss feed "><span
+                            class="sr-only">rss feed</span>
+                        <svg class="icon">
+                            <use xlink:href="images/icons.svg#rss"></use>
+                        </svg></a>
                 </div>
     
-    
-    
-    
-    
-    
-            </div>
-        </div>
-    
-        </div>
-        <div class="btm">
-            <div class="container">
-                <div class="col-12">
-                    <div class="fnav">
-    
-                        <a href="/"> الرئيسية </a>
-                        <a class="c105" href="/list/105">أخبار مصر</a>
-                        <a class="c107" href="/list/107">حوادث وقضايا</a>
-                        <a class="c112" href="/list/112">فن وثقافة</a>
-                        <a class="c106" href="/list/106">اسلام سياسى</a>
-                        <a class="c111" href="/list/111">الرياضة</a>
-                        <a class="c108" href="/list/108">حوارات وتحقيقات</a>
-                        <a class="c115" href="/list/115">شئون العالم</a>
-                        <a class="c109" href="/list/109">محافظات</a>
-                        <a class="c114" href="/list/114">برلمان واحزاب</a>
-                        <a class="c110" href="/list/110">اقتصاد</a>
-                        <a class="c1121" href="/list/1121">أجراس الاحد</a>
-                        <a class="c1122" href="/list/1122">قبلة الله</a>
-                        <a class="c116" href="/list/116">توك شو</a>
-                        <a class="c1105" href="/list/1105">انفوجراف</a>
-                        <a class="c1123" href="/list/1123">سياحة وطيران</a>
-                        <a class="c1124" href="/list/1124">اتصلات وتكنولوجيا</a>
-                        <a class="c117" href="/list/117">المرأه والطفل</a>
-                        <a class="c1106" href="/list/1106">الشورى العقاري</a>
-                        <a class="c122" href="/list/122">منوعات</a>
-                        <a class="c123" href="/list/123">الشورى T.V</a>
-                        <a class="c1125" href="/list/1125">صحافة اليوم</a>
-                        <a class="c1107" href="/list/1107">انت الصحفى</a>
-                        <a class="c1108" href="/list/1108">كاريكاتير</a>
-                        <a class="c120" href="/list/120">تعليم وصحة</a>
-                        <a class="c1126" href="/list/1126">برجك اليوم</a>
-    
-    
-                        </ul>
-    
-                    </div>
-                </div>
             </div>
     
     
-            <div class="col-12">
-                <div class="fnav"></div>
-            </div>
+    
+    
+    
+    
+    
+    
     
         </div>
-        <div class="copy">
-            <div> 2020 © All Rights Reserved. Powered by powered by sync solutionns
+    
+    
+    
+    
+    
+        <div class="fnav">
+            <a href="#">من نحن</a>
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">اتصل بنا </a>
+        </div>
+        <div class=" copy">
+            <div> 2022 © All Rights Reserved. Powered by sync solutionns
             </div>
         </div>
+        </div>
+    
+    
+    
+    
     </footer>
 
+    <!-- show plugins--->
 
+    <script>
+        /* Share */
+        var url = "URL Here";
+        var title = "Sanitized title here ";
+        var desc = "sanitized desc Here";
+
+        var fbBtn = document.getElementsByClassName("fbshare");
+        var twBtn = document.getElementsByClassName("twshare");
+        var waBtn = document.getElementsByClassName("whatsapp");
+        var tgBtn = document.getElementsByClassName("telegram");
+        var vibBtn = document.getElementsByClassName("viber");
+        var mailBtn = document.getElementsByClassName("mail");
+
+        for (var i = 0; i < fbBtn.length; i++) {
+            fbBtn[i].href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+        }
+
+        for (var i = 0; i < twBtn.length; i++) {
+            twBtn[i].href = 'https://twitter.com/intent/tweet?text=' + title + url;
+        }
+
+        for (var i = 0; i < waBtn.length; i++) {
+            waBtn[i].href = "whatsapp://send?text=" + title + " " + url;
+        }
+
+        for (var i = 0; i < tgBtn.length; i++) {
+            tgBtn[i].href = "https://telegram.me/share/url?url=" + url + "&text=" + title;
+        }
+
+        for (var i = 0; i < vibBtn.length; i++) {
+            vibBtn[i].href = "viber://forward?text=" + title + " " + url;
+        }
+
+        for (var i = 0; i < mailBtn.length; i++) {
+            mailBtn[i].href = 'mailto:?body=' + encodeURIComponent(url) + '%0A%0A' + encodeURIComponent(desc) +
+                '&subject=' + encodeURIComponent(title) + '';
+        }
+
+        var NativeShareBtn = document.getElementsByClassName("mobile-native");
+        for (var i = 0; i < NativeShareBtn.length; i++) {
+            NativeShareBtn[i].addEventListener('click', function () {
+
+                if (typeof navigator.share === 'undefined') {
+                    log("No share API available!");
+                } else {
+                    navigator.share({
+                        title: '' + title + '',
+                        url: '' + url + '',
+                        text: '' + desc + ''
+                    })
+
+                        .then(function () {
+                            log("Share success!");
+                        })
+                        .catch(function () {
+                            log("Share failure!");
+                        });
+                }
+            });
+
+
+
+        }
+    </script>
     <script type="text/javascript" src="js/core-min.js"></script>
 </body>
 

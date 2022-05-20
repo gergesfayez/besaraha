@@ -1,0 +1,28 @@
+* {
+  font-family: "Almarai", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.005);
+  letter-spacing: 0 !important;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: "Almarai", sans-serif;
+}
+
+.nav-link {
+  font-weight: normal;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-weight: 800;
+}

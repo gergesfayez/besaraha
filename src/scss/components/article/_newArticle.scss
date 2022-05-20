@@ -1,19 +1,19 @@
 @use '../../critical/helpers/var'as *;
 
 .news-post {
-    float: right;
-    width: 100%;
+    float     : right;
+    width     : 100%;
     background: #fff;
-    border: 1px solid $primary;
+    border    : 1px solid $primary;
 
     article.cont {
-        padding: 20px;
+        padding    : 20px;
         padding-top: 0;
     }
 
     .secondary-title {
         font-size: 14px;
-        color: #666;
+        color    : #666;
 
         @media(min-width: 768px) {
             font-size: 16px;
@@ -21,9 +21,9 @@
     }
 
     .primary-title {
-        font-size: 18px;
+        font-size  : 18px;
         font-weight: bold;
-        margin: 15px 0;
+        margin     : 15px 0;
 
         @media(min-width: 768px) {
             font-size: 20px;
@@ -37,14 +37,14 @@
     .paragraph-list,
     .paragraph-list * {
 
-        font-size: 19px;
-        line-height: 2.2;
-        /* color: #353535 !important; */
-        text-align: right;
-        direction: rtl;
-        max-width: 100% !important;
+        font-size       : 19px;
+        line-height     : 2.2;
+        /* color        : #353535 !important; */
+        text-align      : right;
+        direction       : rtl;
+        max-width       : 100% !important;
         background-color: #FFF;
-        font-weight: 400;
+        font-weight     : 400;
 
         p {
             text-align: justify;
@@ -52,7 +52,7 @@
 
         img {
             max-width: 100%;
-            height: auto;
+            height   : auto;
         }
     }
 
@@ -61,25 +61,25 @@
         width: 100%;
 
         a {
-            display: inline-block;
-            margin: 5px;
-            font-size: 12px;
-            border-radius: 3px;
-            border: 1px solid $secondary;
+            display          : inline-block;
+            margin           : 5px;
+            font-size        : 12px;
+            border-radius    : 3px;
+            border           : 1px solid $secondary;
             //text-decoration: underline;
-            padding: 0px 5px;
+            padding          : 0px 5px;
 
             &:hover {
-                color: #fff;
+                color     : #fff;
                 background: $primary;
             }
         }
     }
 
     .post-action {
-        float: right;
-        width: 100%;
-        padding: 10px;
+        float        : right;
+        width        : 100%;
+        padding      : 10px;
         border-bottom: 1px solid #dcdcdc;
         margin-bottom: 20px;
 
@@ -92,27 +92,27 @@
 
             .name,
             .name-done {
-                font-size: 16px;
-                color: #888;
+                font-size  : 16px;
+                color      : #888;
                 line-height: 32px;
             }
 
             .btn {
                 border-radius: 50%;
-                padding: 0;
-                width: 32px;
-                height: 32px;
-                line-height: 32px;
-                text-align: center;
-                margin: 0 5px;
-                float: right;
+                padding      : 0;
+                width        : 32px;
+                height       : 32px;
+                line-height  : 32px;
+                text-align   : center;
+                margin       : 0 5px;
+                float        : right;
             }
         }
     }
 
     .post-writer {
-        float: right;
-        width: 100%;
+        float        : right;
+        width        : 100%;
         margin-bottom: 20px;
 
         @media(min-width: 768px) {
@@ -120,9 +120,9 @@
         }
 
         .img-cont {
-            float: right;
-            width: 60px;
-            height: 60px;
+            float   : right;
+            width   : 60px;
+            height  : 60px;
             overflow: hidden;
 
             border-radius: 50%;
@@ -134,17 +134,17 @@
         }
 
         .txt-cont {
-            float: right;
-            line-height: 30px;
+            float        : right;
+            line-height  : 30px;
             padding-right: 10px;
 
             span {
                 font-size: 12px;
-                color: #888;
+                color    : #888;
             }
 
             h5 {
-                font-size: 14px;
+                font-size  : 14px;
                 font-weight: bold;
             }
         }
@@ -153,7 +153,7 @@
             width: 100%;
 
             .img-cont {
-                width: 150px;
+                width : 150px;
                 height: 150px;
             }
 
@@ -166,17 +166,17 @@
     }
 
     .post-info {
-        float: right;
-        width: 100%;
+        float        : right;
+        width        : 100%;
         margin-bottom: 10px;
-        padding: 5px;
+        padding      : 5px;
 
         //background: #f2f2f2;
         //border-top: 1px solid #dcdcdc;
         .post-writer2 {
-            float: right;
-            width: 100%;
-            font-size: 14px !important;
+            float      : right;
+            width      : 100%;
+            font-size  : 14px !important;
             line-height: 32px;
 
             span {
@@ -184,7 +184,7 @@
             }
 
             h5 {
-                font-size: 14px !important;
+                font-size  : 14px !important;
                 line-height: 32px;
             }
         }
@@ -202,14 +202,14 @@
         }
 
         .time {
-            float: right;
-            font-size: 14px;
+            float      : right;
+            font-size  : 14px;
             line-height: 24px;
-            color: #444;
+            color      : #444;
 
             .icon {
-                fill: $primary;
-                width: 20px;
+                fill  : $primary;
+                width : 20px;
                 height: 20px;
             }
 
@@ -236,65 +236,65 @@
     }
 
     .main-img {
-        float: right;
-        width: 100%;
-        position: relative;
+        float     : right;
+        width     : 100%;
+        position  : relative;
         background: #fff;
 
 
         img {
-            width: 100%;
+            width : 100%;
             height: auto;
         }
 
         .caption {
-            float: left;
-            width: 100%;
-            z-index: 444;
+            float        : left;
+            width        : 100%;
+            z-index      : 444;
             // background: rgba(#000, 0.7);
 
 
             font-weight: 400;
             padding-top: 18px;
-            color: #666;
-            font-size: 14px;
-            padding: 10px;
+            color      : #666;
+            font-size  : 14px;
+            padding    : 10px;
         }
     }
 
     blockquote {
-        font-size: 1.6rem;
-        font-weight: 700;
-        font-style: italic;
-        line-height: 1.25;
-        text-align: center;
-        color: $primary;
-        padding-top: 27px;
+        font-size     : 1.6rem;
+        font-weight   : 700;
+        font-style    : italic;
+        line-height   : 1.25;
+        text-align    : center;
+        color         : $primary;
+        padding-top   : 27px;
         padding-bottom: 27px;
-        position: relative;
-        margin-top: 26px;
-        margin-bottom: 33px;
+        position      : relative;
+        margin-top    : 26px;
+        margin-bottom : 33px;
 
         &:before {
-            content: '';
-            top: 0;
-            left: 50%;
-            position: absolute;
-            width: 150px;
-            height: 2px;
+            content         : '';
+            top             : 0;
+            left            : 50%;
+            position        : absolute;
+            width           : 150px;
+            height          : 2px;
             background-color: #ececec;
-            margin-left: -75px;
+            margin-left     : -75px;
         }
 
         &:after {
-            content: '';
-            bottom: 0;
-            left: 50%;
-            position: absolute;
-            width: 150px;
-            height: 2px;
+            content         : '';
+            bottom          : 0;
+            left            : 50%;
+            position        : absolute;
+            width           : 150px;
+            height          : 2px;
             background-color: #ececec;
-            margin-left: -75px;
+            margin-left     : -75px;
         }
     }
 
@@ -306,31 +306,31 @@
         }
 
         img {
-            width: 100%;
+            width : 100%;
             height: auto;
         }
 
         .caption {
             line-height: 20px;
-            font-size: 14px;
+            font-size  : 14px;
             font-weight: normal;
-            text-align: center;
-            float: right;
-            width: 100%;
-            background: #f4f4f4;
+            text-align : center;
+            float      : right;
+            width      : 100%;
+            background : #f4f4f4;
         }
     }
 
     .related-inline {
-        background: #fff;
-        border-top: 2px solid $primary !important;
+        background   : #fff;
+        border-top   : 2px solid $primary !important;
         border-bottom: 2px solid $primary !important;
-        float: right;
-        width: 100%;
+        float        : right;
+        width        : 100%;
         // border: 1px solid #ececec;
-        margin-top: 1em;
+        margin-top   : 1em;
         margin-bottom: 1em;
-        padding: 20px 20px 0;
+        padding      : 20px 20px 0;
 
         h5 {
             display: none !important;
@@ -341,15 +341,15 @@
             box-shadow: $box-shadow-sm;
 
             @media(min-width: 768px) {
-                width: 49%;
+                width : 49%;
                 margin: 5px 0.5%;
             }
 
             .txt-cont {
                 h3 {
                     line-height: 1.8 !important;
-                    height: 53px !important;
-                    font-size: 15px !important;
+                    height     : 53px !important;
+                    font-size  : 15px !important;
                 }
             }
 
@@ -365,21 +365,21 @@
 }
 
 .post-cluster {
-    float: right;
-    width: 100%;
+    float        : right;
+    width        : 100%;
     margin-bottom: 20px;
 
     .btn-primary.btn-border {
-        border: 1px solid $primary;
+        border    : 1px solid $primary;
         background: transparent;
-        color: #888;
-        font-size: 12px;
+        color     : #888;
+        font-size : 12px;
     }
 }
 
 
 .embed-responsive {
-    margin: 20px 0;
+    margin    : 20px 0;
     text-align: center;
 
     .twitter-tweet-rendered {
@@ -389,24 +389,24 @@
 
 
 .news-post .post-share {
-    width: 100%;
-    float: right;
+    width     : 100%;
+    float     : right;
     text-align: center;
 
     &.btm {
-        border-top: 1px solid #dcdcdc;
+        border-top   : 1px solid #dcdcdc;
         border-bottom: 1px solid #dcdcdc;
-        padding: 20px 0;
-        margin: 20px 0;
+        padding      : 20px 0;
+        margin       : 20px 0;
     }
 
     a {
-        width: 48px;
-        height: 48px;
+        width      : 48px;
+        height     : 48px;
         line-height: 47px;
 
         .icon {
-            width: 25px;
+            width : 25px;
             height: 25px;
         }
     }
@@ -414,14 +414,14 @@
     .mobile-native {
 
         border-radius: 50px;
-        background: darkred;
-        fill: #fff;
-        color: #fff;
-        line-height: 32px;
-        height: 48px;
-        padding: 0 10px;
-        display: inline-block;
-        margin: 5px;
+        background   : darkred;
+        fill         : #fff;
+        color        : #fff;
+        line-height  : 32px;
+        height       : 48px;
+        padding      : 0 10px;
+        display      : inline-block;
+        margin       : 5px;
 
         @media(min-width: 768px) {
             display: none;
@@ -431,39 +431,39 @@
 
 .youtube-player {
     height: 480px;
-    float: right;
-    width: 100%;
+    float : right;
+    width : 100%;
     margin: 15px 0;
 }
 
 /// listed-gallery
 .list-gallery {
-    float: right;
-    width: 100%;
-    margin: 20px 0;
+    float     : right;
+    width     : 100%;
+    margin    : 20px 0;
     text-align: center;
 
     .item {
-        display: inline-block;
-        max-width: 100%;
-        margin: 10px 0;
-        position: relative;
+        display   : inline-block;
+        max-width : 100%;
+        margin    : 10px 0;
+        position  : relative;
         text-align: center;
-        width: 100%;
+        width     : 100%;
 
         .caption {
-            color: #888 !important;
-            font-size: 14px;
+            color      : #888 !important;
+            font-size  : 14px;
             line-height: 32px;
-            float: right;
-            width: 100%;
+            float      : right;
+            width      : 100%;
 
         }
 
         img {
-            width: auto;
+            width    : auto;
             max-width: 100%;
-            width: 100%;
+            width    : 100%;
 
             @media(min-width: 768px) {
                 width: 80%;
@@ -480,12 +480,13 @@
     margin-bottom: 12px;
     padding-right: 30px;
 */
-    opacity: 1;
-    color: #000000;
-    font-weight: 300;
-    font-size: 1.125rem;
-    line-height: 1.56;
+    opacity      : 1;
+    color        : #000000;
+    font-weight  : 300;
+    font-size    : 1.125rem;
+    line-height  : 1.56;
     margin-bottom: 1.625rem;
+
 }
 
 .paragraph-list>div,
@@ -494,21 +495,21 @@
 .paragraph-list h2,
 .paragraph-list h3,
 .paragraph-list h4 {
-    float: none !important;
-    margin: 0 !important;
+    float        : none !important;
+    margin       : 0 !important;
     margin-bottom: 12px !important;
-    padding: 0 !important;
-    font-size: inherit !important;
-    font-weight: inherit !important;
-    font-family: inherit !important;
-    border: 0 !important;
+    padding      : 0 !important;
+    font-size    : inherit !important;
+    font-weight  : inherit !important;
+    font-family  : inherit !important;
+    border       : 0 !important;
 }
 
 .paragraph-list h2,
 .paragraph-list h3,
 .paragraph-list h4 {
     font-weight: bold !important;
-    font-size: 22px !important;
+    font-size  : 22px !important;
     line-height: 2.4 !important;
 }
 
@@ -519,7 +520,7 @@
 }
 
 .paragraph-list>.related-inline {
-    float: right !important;
-    display: block !important;
+    float     : right !important;
+    display   : block !important;
     //  border: 1px solid #dcdcdc !important;
 }

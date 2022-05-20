@@ -1,0 +1,105 @@
+@use '../../critical/helpers/var'as *;
+
+.nc-mogaz {
+    float: right;
+    width: 100%;
+    background: transparent;
+
+
+    .cont {
+        padding-top: 30px;
+        background: #fff;
+
+        padding-right: 30px;
+        padding-left: 30px;
+
+
+        .swiper-container {
+            padding-bottom: 50px;
+        }
+
+    }
+
+    .title {
+        background: transparent;
+
+        text-align: center;
+        margin-bottom: -25px;
+
+        h2 {
+            float: none;
+            display: inline-block;
+        }
+
+    }
+
+
+
+    .item-card {
+        background: transparent;
+
+        .cat {
+            right: 30px;
+            font-size: 12px;
+        }
+
+        .img-cont {
+            width: calc(100% - 30px);
+            margin-right: 15px;
+            border-bottom: 2px solid $secondary;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .txt-cont {
+            border-radius: 5px;
+            padding-top: 50px;
+            margin-top: -40px;
+            padding-right: 15px;
+            padding-left: 15px;
+            background: $primary;
+
+            h3 {
+                color: #fff;
+            }
+
+
+        }
+    }
+
+    .swiper-pagination {
+        text-align: center;
+        padding: 10px;
+        bottom: 0;
+
+
+
+
+
+        .swiper-pagination-bullet {
+
+            width: 10px;
+            height: 10px;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 4px;
+            background: rgba($primary, 0.3);
+            opacity: 1;
+            font-family: sans-serif;
+            font-weight: bold;
+            backdrop-filter: blur(3px);
+            color: $primary;
+
+            &:focus {
+                outline: 0;
+            }
+
+            &.swiper-pagination-bullet-active {
+                background: $secondary;
+                color: #fff;
+            }
+        }
+    }
+
+
+}

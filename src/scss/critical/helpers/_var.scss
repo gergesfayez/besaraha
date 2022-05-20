@@ -1,22 +1,53 @@
-$primary: #9E0F11 !default;
+$secondary     :#F32507 !default;
+$primary       :#9AD4F2 !default;
+$primary-light :#FEF7FF !default;
+$third         :#9E0F11 !default;
+$dark          :#343434 !default;
+$border-color  :#dcdcdc !default;
+$gray          :#C2CCD3 !default;
+$border-radius : 5px !default;
+$fb            : #3b5998 !default;
+$tw            : #1da1f2 !default;
+$ins           : radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !default;
+$rss           : orange !default;
+$yt            : #d32323 !default;
+$ws            : #25d366 !default;
+$viber         : #8176d6 !default;
+$tel           : #39a7da !default;
+$box-shadow-sm : 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !default;
+$box-shadow-sm2: 0 0.125rem 0.25rem rgba(#FDDF1A, 0.075) !default;
+$graidient     :linear-gradient(to right, #f5fbff 0%, rgba(245, 251, 255, 0.85) 15.45%, rgba(245, 251, 255, 0) 100%) !default;
 
-$secondary:$primary !default;
-$third:#9E0F11 !default;
+$primary-ligt:#F3E9E8 !default;
+$green-light : #F0FFF1 !default;
+
+:root {
+   --primary  : $primary;
+   --secondary: $secondary;
+   --gray     : $gray;
+   --white    : #fff;
+   --black    : #000;
+   --facebook : #3b5998;
+   --twitter  : #4099ff;
+   --linkedin : #0077b5;
+   --reddit   : #ff5700;
+   --whatsapp : #4dc247;
+   --line     : #00c300;
+   --sina     : #00b900;
+   --email    : #007ebb;
+}
 
 
-$border-color:#dcdcdc !default;
+body {
+   &:before {
+      content : "";
+      height  : 80px;
+      width   : 100%;
+      position: absolute;
+      top     : 0;
+      left    : 0;
 
-
-$border-radius: 5px !default;
-
-$fb: #3b5998 !default;
-$tw: #1da1f2 !default;
-$ins: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !default;
-
-$rss : orange !default;
-$yt: #d32323 !default;
-$ws: #25d366 !default;
-$viber: #8176d6 !default;
-$tel: #39a7da !default;
-
-$box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !default;
+      background: $primary;
+      z-index   : -1;
+   }
+}

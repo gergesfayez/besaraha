@@ -1,0 +1,72 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.nc-topread .item-li.lg {
+  padding-right: 15px;
+}
+@media (min-width: 575px) {
+  .nc-topread .item-li.lg .img-cont {
+    width: 100%;
+  }
+  .nc-topread .item-li.lg .img-cont:after {
+    padding-top: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .nc-topread .item-li.lg .img-cont {
+    width: 120px;
+  }
+  .nc-topread .item-li.lg .img-cont:after {
+    padding-top: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .nc-topread .item-li.lg .img-cont {
+    width: 180px;
+  }
+  .nc-topread .item-li.lg .img-cont:after {
+    padding-top: 60%;
+  }
+}
+@media (min-width: 575px) {
+  .nc-topread .item-li.lg .txt-cont {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .nc-topread .item-li.lg .txt-cont {
+    width: calc(100% - 120px);
+  }
+}
+@media (min-width: 1200px) {
+  .nc-topread .item-li.lg .txt-cont {
+    width: calc(100% - 180px);
+  }
+}
+.nc-topread .item-li.lg .txt-cont h3 {
+  display: flex;
+  align-items: center;
+}
+.nc-topread .item-li.lg .num {
+  color: #FDDF1A;
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  font-size: 3.5rem;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+  z-index: 22;
+  line-height: 90px;
+}

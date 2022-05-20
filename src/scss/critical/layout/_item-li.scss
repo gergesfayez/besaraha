@@ -1,55 +1,43 @@
 @use '../helpers/var'as *;
 
 .item-li {
-    margin-bottom: 10px;
-    float: right;
-    width: 100%;
-    margin-bottom: 10px;
-    box-shadow: $box-shadow-sm;
-    background: #fff;
+    margin-bottom    : 10px;
+    float            : right;
+    width            : 100%;
+    margin-bottom    : 20px;
+    // box-shadow: $box-shadow-sm;
+    //  background   : #fff;
 
+    overflow     : hidden;
+    border-radius: 5px;
+
+    // padding      : 5px;
     .img-cont {
 
-        width: 100px;
+        width: 90px;
 
         &:after {
-            padding-top: 80%;
-        }
-
-        @media(min-width:768px) and (max-width: 1199px) {
-            width: 120px;
-        }
-
-        @media(min-width:1500px) {
-            width: 120px;
+            padding-top: 90px;
         }
 
 
     }
 
     .txt-cont {
-        padding-top: 0;
+        padding-top   : 0;
         padding-bottom: 0;
 
 
-        width: calc(100% - 100px);
+        width     : calc(100% - 90px);
+        height    : 90px;
+        text-align: right;
 
+        h3 {
+            height   : 90px;
+            font-size: 14px;
 
-        @media(min-width:768px) and (max-width: 1199px) {
-            width: calc(100% - 120px);
-
-            h3 {
-                height: 90px;
-            }
         }
 
-        @media(min-width:1500px) {
-            width: calc(100% - 120px);
-
-            h3 {
-                height: 90px;
-            }
-        }
 
     }
 
@@ -62,10 +50,10 @@
 
 .to-li-sm {
     @media(max-width: 767px) {
-
-        padding: 5px 0;
-        background: #fff;
-        box-shadow: $box-shadow-sm;
+        border-radius: 5px;
+        padding      : 5px;
+        background   : #fff;
+        box-shadow   : $box-shadow-sm;
 
 
         .img-cont {
@@ -77,10 +65,14 @@
         }
 
         .txt-cont {
-            padding-top: 0;
+            padding-top   : 0;
             padding-bottom: 0;
 
             width: calc(100% - 100px);
+
+            &:before {
+                opacity: 0;
+            }
         }
 
     }

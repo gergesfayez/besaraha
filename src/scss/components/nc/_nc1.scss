@@ -1,130 +1,106 @@
-.nc1 {
+ @use '../../critical/helpers/var'as *;
 
-    .item-bg {
+ .nc1 {
+     .list {
+         .item-li {
+             border-bottom: 1px dashed #dcdcdc;
+             border-top   : 1px dashed #dcdcdc;
+             margin-bottom: 0;
+             padding      : 10px 0;
 
+             @media(min-width: 992px) {
+                 &:first-child {
+                     border: 0;
+                 }
 
-        @media(min-width: 768px) {
-            .img-cont {
-                &::after {
-                    padding-top: 274px;
+                 &:last-child {
+                     border: 0;
+                 }
+             }
+         }
+     }
 
-                }
-            }
-        }
-
-        @media(min-width: 1200px) {
-            .img-cont {
-                &::after {
-                    padding-top: 274px;
-
-                }
-            }
-        }
-
-        @media(min-width: 1300px) {
-            .img-cont {
-                &::after {
-                    padding-top: 324px;
-
-                }
-            }
-        }
-
-        @media(min-width: 1500px) {
-            .img-cont {
-                &::after {
-                    padding-top: 504px;
-
-                }
-            }
-        }
-    }
+     .item-li .txt-cont h3 {
+         height: 70px;
+     }
 
 
-    .item-li.lg {
-        .img-cont {
-            @media(min-width: 768px) {
-                width: 150px;
+     &.bg2 {
 
-                &:after {
-                    padding-top: 56.25%;
-                }
-            }
+         .item-bg {
+             margin-bottom: 20px;
 
-            @media(min-width:1300px) {
-                width: 180px;
+             .img-cont {
+                 &:after {
+                     padding-top: 90%;
+                 }
+             }
 
-                &:after {
-                    padding-top: 56.25%;
-                }
-            }
-
-            @media(min-width: 1500px) {
-                width: 280px;
-
-                &:after {
-                    padding-top: 56.25%;
-                }
-            }
-
-        }
-
-        .txt-cont {
+             .txt-cont {
+                 h3 {
+                     text-align : center;
+                     font-weight: bold;
+                 }
+             }
+         }
+     }
 
 
-            h3 {
-                line-height: 25px;
-                height: auto;
-                max-height: 75px;
-            }
 
-            p {
-                display: none;
-                line-height: 20px;
-                height: auto;
-                max-height: 60px;
-                overflow: hidden;
-                color: #393939;
-            }
+     &.cards {
 
+         .img-cont {
+             border-bottom-left-radius : 0;
+             border-bottom-right-radius: 0;
+         }
 
-            @media(min-width: 768px) {
-                width: calc(100% - 150px);
+         .col-lg-6:first-child {
+             .item-card {
+                 .img-cont {
+                     &:after {
+                         @media(min-width: 992px) {
+                             padding-top: 70%;
+                         }
+                     }
+                 }
 
-                p {
-                    display: none;
-
-                }
-
-
-            }
-
-            @media(min-width:1300px) {
-                width: calc(100% - 180px);
-
-                p {
-                    display: none;
-
-                }
+                 .txt-cont {
+                     background-color: #dcdcdc;
+                 }
+             }
+         }
 
 
-            }
+         &.sport {
+             .col-lg-6:first-child {
+                 .txt-cont {
+                     background: #237100;
 
-            @media(min-width: 1500px) {
-                width: calc(100% - 280px);
+                     h3,
+                     p,
+                     .time {
+                         color: #fff;
+                     }
+                 }
+             }
+         }
 
-                h3 {
-                    font-size: 20px;
-                }
+         &.art {
+             .col-lg-6:first-child {
+                 .txt-cont {
+                     background: $primary;
 
-                p {
-                    display: block;
+                     h3,
+                     p,
+                     .time {
+                         color: #fff;
+                     }
+                 }
+             }
+         }
+     }
 
-                }
 
 
-            }
 
-        }
-    }
-}
+ }

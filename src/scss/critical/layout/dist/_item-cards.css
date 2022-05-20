@@ -1,0 +1,40 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.item-card {
+  float: right;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.item-card .img-cont,
+.item-card picture {
+  float: right;
+  width: 100%;
+}
+.item-card .txt-cont {
+  float: right;
+  width: 100%;
+  position: relative;
+  padding: 10px 0;
+}
+.item-card.lg .txt-cont h3 {
+  border-right: 5px solid #FDDF1A;
+  height: auto;
+  max-height: 60px;
+  padding-right: 20px;
+}

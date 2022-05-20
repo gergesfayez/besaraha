@@ -1,0 +1,122 @@
+
+@use '../critical/helpers/var'as *;
+
+.matches-wide{
+    float: right;
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+
+   
+    //background-color: #fff;
+   // padding: 0 10px;
+
+
+    margin: 10px 0;
+   // border:1px solid #c12b25;
+    //border-radius: 10px;
+.btn-all {
+    position   : absolute;
+    bottom     : 2px;
+ 
+    white-space: nowrap;
+    left       : 0;
+    background : $primary;
+    color      : $secondary;
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    line-height: 24px;
+    padding:0 15px;
+    font-size  : 12px;}
+    .days-tabs{
+      
+        float: right;
+        width: 100%;
+        text-align: center;
+    margin: 0;
+    padding: 0;
+        list-style: none;
+        position: relative;
+        z-index: 3;
+        li{
+            display: inline-block;
+
+            &.active{
+                a{
+background-color: $secondary;
+color: #000;
+
+                }
+            }
+        }
+
+ 
+        a {
+            display: inline-block;
+            border:1px solid #dcdcdc;
+            border-radius: 3px;
+            font-weight: bold;
+            background: $primary;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+           
+        }
+    }
+
+    .days-cont{
+        float: right;
+        width:100%;
+        padding: 10px 0;
+        position: relative;
+        overflow: hidden;
+          background : url("../images/ptrn.png") no-repeat left center $gray;
+.swiper-button-prev {
+    left: 0;
+    right: auto;
+    background: rgba($secondary,0.7);
+  height: 95px;
+    top: 0;
+    margin: 0;
+      &:after{
+             font-size: 20px;
+     }
+   
+}
+.swiper-button-next{
+    right: 0;
+    left: auto;
+    background: rgba($secondary,0.7);
+     height: 95px;
+     top: 0;
+     margin: 0;
+     &:after{
+             font-size: 20px;
+     }
+}
+        .swiper-slide {
+            width: 290px;
+        }
+
+        .swiper-tab {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.34s ease-in-out;
+            position: relative;
+            &.active {
+                display: block;
+                opacity: 1;
+            }
+        }
+
+        .swiper-container{
+            display: none;
+           
+        }
+    }
+}

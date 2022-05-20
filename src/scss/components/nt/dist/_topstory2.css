@@ -1,0 +1,73 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.topstory2 {
+  width: 100%;
+  text-align: center;
+}
+.topstory2 .item-card {
+  position: relative;
+  background: transparent;
+  border-radius: 0;
+}
+.topstory2 .item-card .txt-cont {
+  float: left;
+  width: calc(100% - 20px);
+  position: relative;
+  background: #FDDF1A;
+  margin-left: 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 0;
+}
+.topstory2 .item-card .txt-cont h3 {
+  color: #fff;
+  position: relative;
+  z-index: 22;
+  text-size-adjust: 100%;
+  padding-right: 15px;
+  padding-left: 5px;
+}
+.topstory2 .item-card .txt-cont:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -10px;
+  top: -10px;
+  background: #343434;
+  z-index: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.topstory2 .item-card.sm .img-cont {
+  z-index: 1;
+}
+.topstory2 .item-card.sm .txt-cont {
+  margin-left: 10px !important;
+  padding: 0;
+  z-index: 22;
+  margin-top: -30px;
+}
+.topstory2 .item-card.sm .txt-cont h3 {
+  font-size: 15px;
+  line-height: 20px;
+}
+.topstory2 .item-card.sm .txt-cont:after {
+  left: -5px;
+  top: -5px;
+}
+.topstory2 .item-card:hover .img-cont img {
+  filter: grayscale(100%);
+}

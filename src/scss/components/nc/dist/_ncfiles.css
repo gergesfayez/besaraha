@@ -1,0 +1,54 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.ncfiles {
+  position: relative;
+  background: #FEF7FF;
+}
+.ncfiles .title {
+  background: transparent;
+  border-bottom: 1px solid #E62126;
+  text-align: center;
+}
+.ncfiles .title:before, .ncfiles .title:after {
+  opacity: 0;
+}
+.ncfiles .swiper-slide {
+  width: 280px;
+}
+.ncfiles .swiper-slide .item-files {
+  width: 100%;
+}
+.ncfiles .swiper-slide .item-files .img-cont:after {
+  padding-top: 250px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  background: #72327C;
+  border-radius: 5px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px !important;
+  color: #fff;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #E62126;
+}

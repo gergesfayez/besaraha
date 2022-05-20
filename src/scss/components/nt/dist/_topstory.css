@@ -1,0 +1,27 @@
+.topstory {
+  float: right;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+.topstory .swiper-container {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 20px;
+}
+.topstory .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  background: #269699;
+}
+.topstory .swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #E93027;
+}
+.topstory .list {
+  float: right;
+  width: 100%;
+  padding: 10px;
+}

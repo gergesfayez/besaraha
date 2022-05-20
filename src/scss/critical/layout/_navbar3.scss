@@ -1,0 +1,217 @@
+
+    @use '../helpers/var'as *;
+
+
+    .navbar{
+        float: right;
+        width: 100%;
+        position: relative;
+
+
+        .left-area{
+            float: left;
+            text-align: left;
+            padding-top: 5px;
+
+            .btn{
+                display: inline-block;
+
+                .icon {
+                    fill:$secondary;
+
+                }
+                color: $primary;
+
+                
+            }
+
+            .search-form{
+float        : left;
+line-height  : 30px;
+background   : #fff;
+transition   : all .35s;
+border       : 1px solid $primary;
+border-radius: 5px;
+transition   : all .34s ease-in-out;
+margin-right : 20px ;
+
+&:hover{
+    border:1px solid $secondary
+}
+
+
+ .form-control {
+    background : 0 0;
+    border     : 0;
+    outline    : 0;
+    display    : inline-block;
+    width      :150px;
+    font-weight: 700;
+    padding    : 0 12px;
+    height     : 36px;
+    line-height: 36px;
+    color      : #fff;
+    &:focus{
+        background: $primary;
+    }
+}
+
+ .search-icn {
+    display: inline-block;
+    border : 0;
+    outline: 0;
+    width  : 36px;
+    height : 36px;
+    fill   : $secondary;
+}
+            }
+        }
+    }
+
+
+.navbar-nav {
+    display       : inline-flex;
+    flex-direction: row;
+    padding-left  : 0;
+    margin-bottom : 0;
+    list-style    : none;
+    padding       : 0 0;
+    margin        : 0;
+    flex-wrap     : nowrap;
+
+    /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media(min-width: 992px) {
+        flex-direction: row;
+        height        : 50px;
+        // width: ;
+    }
+
+    .nav-item {
+        float : right;
+        margin: 0;
+
+        &:hover {
+
+            // background: $secondary;
+            .nav-link {
+                &:after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .nav-link {
+            display        : block;
+            line-height    : 40px;
+            color          : $primary;
+            padding        : 5px 10px;
+            font-weight    : bold;
+            text-decoration: none !important;
+            position       : relative;
+            white-space    : nowrap;
+            font-size      : 20px;
+            font-size: 15px;
+
+
+            svg {
+                fill  : $secondary;
+                height: 20px;
+                width : 30px;
+            }
+
+
+            &:after {
+                content   : "";
+                opacity   : 0;
+                height    : 2px;
+                background: $secondary;
+                position  : absolute;
+                bottom    : 0px;
+                right     : 12px;
+                width     : 1px;
+                transition: all 0.34s ease;
+
+
+
+
+            }
+
+            &.menu {
+                .icon {
+                    display: block;
+                }
+            }
+        }
+
+        &:hover,
+        &.active {
+            .nav-link {
+                background: $gray;
+                fill : $primary;
+                color: $primary;
+
+                .icon {
+                    fill: $secondary;
+                }
+
+                &:after {
+                    opacity: 1;
+                       width : calc(100% - 24px);
+                }
+            }
+        }
+
+        &.dropdown {
+            position: relative;
+
+            .dropdown-menu {
+                -webkit-transition: all .3s ease .15s;
+                transition        : all .3s ease .15s;
+                display           : block;
+                visibility        : hidden;
+                position          : absolute !important;
+                opacity           : 0;
+                background        : #f4f4f4;
+                border-left       : 0;
+                border-right      : 0;
+                margin            : 0;
+                padding           : 0;
+                top               : 50px;
+                z-index           : 33;
+
+                .dropdown-item {
+                    display         : block;
+                    width           : 100%;
+                    padding         : .25rem 1.5rem;
+                    clear           : both;
+                    font-weight     : 400;
+                    color           : #212529;
+                    text-align      : inherit;
+                    white-space     : nowrap;
+                    background-color: transparent;
+                    border          : 0;
+                    line-height     : 30px;
+                    font-weight     : bold;
+                    border-bottom   : 1px solid #dcdcdc;
+
+                    &:hover {
+                        background: #fff;
+                    }
+                }
+            }
+
+            &:hover {
+                .dropdown-menu {
+                    opacity   : 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+

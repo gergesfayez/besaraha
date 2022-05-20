@@ -1,115 +1,207 @@
 @use '../helpers/var'as *;
 
-
 .block {
-    float: right;
-    width: 100%;
-    margin-bottom: 20px;
-    // border: 1px solid #dcdcdc;
+    float        : right;
+    width        : 100%;
+    margin-bottom: 30px;
+
+    // border                      : 1px solid #dcdcdc;
+    //background                : #fff;
+    position                  : relative;
+    padding                   : 0 15px;
+    border-top-left-radius    : 0;
+    border-top-right-radius   : 20px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius: 0;
+
+    // border: 1px solid #DCDCDC;
 
 
-    // background: #fff;
-
-    position: relative;
-    padding-top: 0;
-
-    box-shadow: $box-shadow-sm;
 
 
+
+
+    //   box-shadow: $box-shadow-sm;
     .title {
         float: right;
         width: 100%;
-        padding: 5px 10px;
-        background: #fff;
 
         position: relative;
-        // border-bottom: 1px solid $third;
-        padding-right: 15px;
-        box-shadow: $box-shadow-sm;
 
-        &:after {
-            content: "";
-            width: calc(100% - 60px);
-            position: absolute;
-            right: 30px;
-            top: 23px;
-            height: 2px;
-            background: $primary;
+        padding               : 10px 0;
+        border-top-left-radius: 20px;
 
 
-        }
+        //  background: url("../images/ptrn.png") no-repeat left center $primary;
+        //  background-size: 60%;
+        // border-bottom: 1px solid #dcdcdc;
+
+        border-right: 5px solid $secondary;
 
 
 
-        &:before {
-            content: "";
-            width: 16px;
-            height: 36px;
 
-            position: absolute;
-            bottom: 0;
-            right: 10px;
-            background: url("../images/icn-pn.svg") no-repeat center;
-            background-size: contain !important;
-            transition: all 1.35s;
-            z-index: 33;
-
-        }
+        // padding-right: 25px;
+        // box-shadow: $box-shadow-sm;
 
         h2 {
-            font-size: 1.2rem;
-            line-height: 1.8rem;
-            background: #fff;
-            display: inline-block;
-            z-index: 23;
-            position: relative;
-            padding: 0 20px;
+            font-size    : 1.3rem;
+            line-height  : 1.8rem;
+            color        : $primary;
+            // background: #fff;
+            display      : inline-block;
+            z-index      : 23;
+            position     : relative;
+            //padding: 0 20px;
 
+            font-weight        : bolder;
+            //   background: $secondary;
+            //  border-radius: 30px;
+            line-height        : 28px;
+            transition         : all 0.35s;
+            //background       : $primary;
+
+
+            padding: 0 15px;
+
+            &:hover {
+                // background: darkred;
+            }
         }
 
-        .icon {
+        .more {
+
             position: absolute;
-            left: 10px;
-            top: 14px;
-            fill: $primary;
+            padding : 0 20px;
 
+            height       : 30px;
+            left         : 10px;
+            top          : 7px;
+            border-radius: 50px;
+            line-height  : 30px;
+
+            font-size    : 14px;
+            color        : #000;
+            //background : #fff;
+            border       : 1px solid $secondary;
+            font-weight  : bolder;
+            transition   : all 0.35s;
+            text-align   : center;
+            cursor       : pointer;
+
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            .icon {
+                width     : 25px;
+                height    : 25px;
+                fill      : $secondary;
+                margin-top: 8px;
+            }
+
+            &:hover {
+                background: $secondary;
+                color     : #000;
+
+                .icon {
+                    fill: #000;
+                }
+            }
         }
+
+
     }
 
     .cont {
-        float: right;
-        width: 100%;
-        padding: 5px;
-        padding-top: 10px;
-
-
-
-
+        float             : right;
+        width             : 100%;
+        //  padding       : 15px;
+        padding-top       : 20px;
+        padding-bottom    : 10px;
     }
 
     .foot {
-        float: right;
-        width: 100%;
-        // border-top: 1px solid #dcdcdc;
-        text-align: center;
-        padding: 5px;
-        background-color: #fff;
+        float              : right;
+        width              : 100%;
+        text-align         : left;
+        padding            : 5px;
+        // background-color: #fff;
+        border-top         : 1px solid #dcdcdc;
+
+        position: relative;
+
+        &::before {
+            content      : "";
+            width        : 40px;
+            height       : 3px;
+            background   : $primary;
+            position     : absolute;
+            left         : 0;
+            top          : -1px;
+            border-radius: 30px;
+
+        }
 
         a {
-            color: $primary;
+            color      : $primary;
             font-weight: bold;
-            line-height: 24px;
-            border: 1px solid $primary;
-            padding: 3px 35px;
-            display: inline-block;
-            border-radius: 30px;
-            font-size: 14px;
+            line-height: 28px;
+
+
+            display  : inline-block;
+            font-size: 16px;
+
 
 
             &:hover {
                 background: $primary;
-                color: #fff;
+                color     : #fff;
             }
         }
+    }
+}
+
+
+.swiper-pagination {
+    bottom: 0;
+
+    .swiper-pagination-bullet {
+        background: $primary;
+
+
+    }
+
+    .swiper-pagination-bullet-active {
+        background: $secondary;
+    }
+}
+
+
+section {
+    width  : 100%;
+    padding: 30px 0;
+    float  : right;
+
+    &.drk {
+        background-color: $primary;
+
+        .title {
+
+            h2,
+            .more {
+                color: #fff;
+            }
+
+
+        }
+    }
+
+    &.w {
+        background-color: #fff;
+    }
+
+    .block {
+        margin-bottom: 0;
     }
 }

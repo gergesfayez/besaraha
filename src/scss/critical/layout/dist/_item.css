@@ -1,0 +1,322 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.cat {
+  color: #343434;
+  padding: 0px 10px;
+  background: #FDDF1A;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 33;
+  font-weight: bold;
+  font-size: 12px;
+  height: 16px;
+  line-height: 16px;
+}
+
+.time-cat {
+  float: right;
+  border-radius: 40px;
+  border: 1px solid #dcdcdc;
+  line-height: 20px;
+  margin: 5px 0;
+  background: #343434;
+  overflow: hidden;
+  font-size: 12px;
+}
+.time-cat div {
+  color: #fff;
+  display: inline;
+  padding: 0 10px;
+  float: right;
+  height: 20px;
+  font-family: "Noto nash";
+}
+.time-cat time {
+  display: inline;
+  background: #fff;
+  padding: 0 10px;
+  border-radius: 40px;
+}
+.time-cat time .icon {
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+  margin-left: 4px;
+  fill: #343434;
+}
+
+.img-cont {
+  float: right;
+  width: 100%;
+  overflow: hidden;
+}
+.img-cont .icn-cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 33;
+  fill: #fff;
+  width: 32px;
+  height: 32px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  text-align: center;
+}
+
+.txt-cont {
+  float: right;
+  width: 100%;
+  padding: 10px;
+}
+.txt-cont .cat {
+  position: relative;
+  float: right;
+  top: auto;
+  right: auto;
+  margin-bottom: 10px;
+  background: #FDDF1A;
+}
+.txt-cont h3 {
+  float: right;
+  width: 100%;
+  color: #222;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0;
+  padding: 0;
+  height: 69px;
+  font-weight: 800;
+  transition: all 0.35s;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.txt-cont .writer {
+  float: right;
+  padding: 5px 10px;
+  color: #343434;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.txt-cont .writer .icon {
+  fill: #FDDF1A;
+  margin-left: 10px;
+}
+.txt-cont .time {
+  float: right;
+  width: 100%;
+  font-size: 12px;
+  color: #343434;
+}
+.txt-cont .time .icon {
+  width: 15px;
+  height: 15px;
+  fill: #FDDF1A;
+}
+.txt-cont p {
+  float: right;
+  width: 100%;
+  font-size: 14px;
+  color: #000;
+}
+
+.item-li:hover .txt-cont h3,
+.item-card:hover .txt-cont h3,
+.item-articles:hover .txt-cont h3,
+.item-files:hover .txt-cont h3 {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #FDDF1A;
+}
+
+.cats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+  margin: 30px 0;
+}
+
+.item-cat {
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+  position: relative;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+}
+.item-cat .img-cont {
+  position: relative;
+  z-index: 1;
+}
+.item-cat .txt-cont {
+  width: auto;
+  display: inline-block;
+  background-color: #FDDF1A;
+  float: none;
+  padding: 0 10px;
+  margin-top: -10px;
+  z-index: 22;
+  width: 120px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  position: relative;
+}
+.item-cat .txt-cont h3 {
+  white-space: nowrap;
+  color: #000;
+  font-size: 12px;
+  height: auto !important;
+  line-height: 32px;
+}
+.item-cat:hover {
+  transform: scale(1.1);
+}
+.item-cat:hover .img-cont img {
+  filter: grayscale(100%);
+}
+.item-cat:hover .txt-cont {
+  background-color: #343434;
+}
+.item-cat:hover .txt-cont h3 {
+  color: #fff;
+}
+
+.item-files {
+  width: 180px;
+  border-radius: 15px;
+  position: relative;
+  float: none;
+  display: inline-block;
+}
+.item-files .img-cont {
+  position: relative;
+  z-index: 1;
+}
+.item-files .img-cont::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 70%;
+  z-index: 1;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
+}
+.item-files .img-cont:after {
+  padding-top: 60%;
+}
+.item-files .txt-cont {
+  position: absolute;
+  bottom: 20px;
+  padding: 0;
+  border-radius: 30px;
+  z-index: 3;
+  width: 90%;
+}
+.item-files .txt-cont h3 {
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 90px;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+.item-album {
+  float: right;
+  width: 100%;
+  position: relative;
+}
+.item-album .pic-cont {
+  float: right;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+.item-album .pic-cont:after {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+.item-album .pic-cont .img-cont {
+  border: 5px solid #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.71);
+  z-index: 111;
+  position: absolute;
+  width: 90%;
+  right: 5%;
+  transition: all 0.35s;
+}
+.item-album .pic-cont .img-cont:after {
+  padding-top: 70%;
+}
+.item-album .pic-cont .img-cont:nth-child(3) {
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  z-index: 2;
+}
+.item-album .pic-cont .img-cont:nth-child(2) {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  z-index: 1;
+}
+.item-album .txt-cont {
+  position: absolute;
+  bottom: 30%;
+  text-align: center;
+  width: 70%;
+  right: 15%;
+  backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 222;
+  transition: all 0.35s;
+}
+.item-album .txt-cont h3 {
+  height: auto;
+  max-height: 49px;
+}
+.item-album:hover .pic-cont .img-cont:nth-child(2) {
+  transform: rotate(-10deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+}
+.item-album:hover .pic-cont .img-cont:nth-child(3) {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+}
+.item-album:hover .txt-cont {
+  background: rgba(52, 52, 52, 0.7);
+}
+.item-album:hover .txt-cont h3 {
+  color: #fff;
+}

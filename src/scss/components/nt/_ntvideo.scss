@@ -1,22 +1,193 @@
 @use '../../critical/helpers/var'as *;
 
-.ntvideo {
 
-    background: #1C2527;
+
+.sec-video {
+    float        : right;
+    width        : 100%;
+    padding      : 10px 0;
+    //background : url("../images/ptrn.png") no-repeat left center $primary;
+    margin       : 20px 0;
+
+
+    .item-card {
+        margin-bottom: 30px;
+
+        .txt-cont {
+            background: $secondary;
+            width     : 95%;
+            float     : left;
+            margin-top: -20px;
+            z-index   : 22;
+
+            .icon {
+                width : 40px;
+                height: 40px;
+                float : right;
+                margin: 0 10px;
+            }
+
+            h3 {
+                width  : calc(100% - 70px);
+                color  : #000;
+                display: inline-flex;
+
+            }
+        }
+    }
+
+}
+
+
+
+.ncvideo .icn-ply {
+    position                  : absolute;
+    bottom                    : 10px;
+    right                     : 10px;
+    width                     : 42px;
+    height                    : 42px;
+    z-index                   : 11;
+    background-color          : #BE2F21;
+    z-index                   : 33;
+    border-top-left-radius    : 10px;
+    border-bottom-right-radius: 10px;
+
+    &:before {
+        content     : "";
+        position    : absolute;
+        border      : 0;
+        background  : 0 0;
+        box-sizing  : border-box;
+        width       : 0;
+        height      : 18px;
+        border-color: transparent transparent transparent #fff;
+        transition  : 100ms all ease;
+        cursor      : pointer;
+        border-style: solid;
+        border-width: 8px 0 8px 15px;
+        left        : 15px;
+        top         : 12px;
+    }
+}
+
+
+.ncvideo {
 
 
     .title {
         h2 {
-            color: #fff;
-        }
-    }
-
-
-    .item-card {
-        .txt-cont {
-            h3 {
-                color: #fff;
+            .icon {
+                fill: $secondary;
             }
         }
     }
+
+    .swiper-pagination {
+        width     : 100%;
+        text-align: center !important;
+
+        .swiper-pagination-bullet {
+            margin: 3px;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $primary !important;
+        color           : #fff;
+    }
+
+    .cont {
+        position: relative;
+
+    }
+
+    .swiper-container {
+        padding-bottom: 50px !important;
+        width         : calc(100% - 50px);
+
+        .swiper-pagination {
+            bottom: 0 !important;
+
+            .swiper-pagination-bullet {
+                background: #fff;
+
+                &.swiper-pagination-bullet-active {
+
+                    background: $secondary;
+
+                }
+            }
+        }
+    }
+
+
+    .swiper-slide {
+        width: 270px;
+
+        @media(min-width: 1200px) {
+            width: 350px;
+        }
+    }
+
+
+    .item-bg {
+        border-radius             : 0;
+        border-bottom-right-radius: 28px;
+        overflow                  : hidden;
+
+        box-shadow: 10px 10px 0 0 $secondary;
+        margin    : 15px;
+
+        .img-cont {
+            border-radius: 0;
+
+            &:after {
+                padding-top: 300px;
+            }
+        }
+
+        position: relative;
+
+    }
+
+    .item-card {
+        background: transparent;
+
+        .img-cont {
+            border-bottom-left-radius : 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .txt-cont {
+            //    background: #373B3E;
+            padding-bottom: 0;
+
+            .time {
+                height          : 20px;
+                line-height     : 20px;
+                //    border-top:1px solid #999;
+                color           : #A8A8A8;
+                font-weight     : normal;
+            }
+
+            .icn-cont {
+                width: 32px;
+                float: right;
+                fill : #fff;
+
+                .icon {
+                    width : 28px;
+                    height: 28px;
+                }
+            }
+
+            h3 {
+                //   width: calc(100% - 32px);
+
+                color: #000;
+            }
+
+        }
+    }
+
 }

@@ -1,0 +1,64 @@
+:root {
+  --primary: $primary;
+  --secondary: $secondary;
+  --gray: $gray;
+  --white: #fff;
+  --black: #000;
+  --facebook: #3b5998;
+  --twitter: #4099ff;
+  --linkedin: #0077b5;
+  --reddit: #ff5700;
+  --whatsapp: #4dc247;
+  --line: #00c300;
+  --sina: #00b900;
+  --email: #007ebb;
+}
+
+.item-li {
+  margin-bottom: 10px;
+  float: right;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.item-li .img-cont {
+  width: 90px;
+}
+.item-li .img-cont:after {
+  padding-top: 90px;
+}
+.item-li .txt-cont {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: calc(100% - 90px);
+  height: 90px;
+  text-align: right;
+}
+.item-li .txt-cont h3 {
+  height: 90px;
+  font-size: 14px;
+}
+
+@media (max-width: 767px) {
+  .to-li-sm {
+    border-radius: 5px;
+    padding: 5px;
+    background: #fff;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  }
+  .to-li-sm .img-cont {
+    width: 100px;
+  }
+  .to-li-sm .img-cont:after {
+    padding-top: 80%;
+  }
+  .to-li-sm .txt-cont {
+    padding-top: 0;
+    padding-bottom: 0;
+    width: calc(100% - 100px);
+  }
+  .to-li-sm .txt-cont:before {
+    opacity: 0;
+  }
+}
